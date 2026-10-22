@@ -1,1 +1,13 @@
-# audreyyuan-svg.github.io
+# AI Tracker
+
+面向 TMT 研究的科技资讯、市场行情与调研纪要。
+
+公开阅读：https://audreyyuan-svg.github.io/
+
+- 日报：北京时间每日 08:30，独立日报归档。
+- 周报：计划每周日 18:00，逐栏概览并综合久谦周度纪要；来源授权验证前尚未创建自动任务。
+- 月报：每月最后一天 18:00，汇总已归档日报/周报，逐栏概览与跨期判断变化；不直接访问私有CLI。
+
+采集规范位于 `data/config.json`。周报与月报分别使用 `data/weekly/`、`data/monthly/`，不覆盖日报历史。待接入任务的完整规范和计划见 `data/report-plans.json`。
+
+纪要仅通过用户已授权的 Cubox / 飞书 CLI 只读采集，不在此公开仓库保存凭据、原始全文、附件或个人信息。

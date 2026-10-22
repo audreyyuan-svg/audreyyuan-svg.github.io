@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
-  "title": "TMT晨读｜Claude Duet、TI/Lam/IBM财报与柏林GTC细节 · 10月22日",
-  "intro": "科技资讯、市场行情两个并列栏目。今日补全主动式Agent产品、半导体/软件财报和NVIDIA欧洲GTC分项发布；投资人观点新增Coatue、Apollo，观察AI投入的融资、交付与付费回报。市场栏目新增美伊、俄乌、中美及美国中期选举短卡，与利率油价和股市资金面分开阅读。",
+  "title": "AI Tracker 日报｜Claude Duet、TI/Lam/IBM财报与柏林GTC细节 · 10月22日",
+  "intro": "AI Tracker 现设科技资讯、市场行情、调研纪要三个并列栏目；本期纪要来源仍待授权验证。今日补全主动式Agent产品、半导体/软件财报和NVIDIA欧洲GTC分项发布；投资人观点新增Coatue、Apollo，观察AI投入的融资、交付与付费回报。市场栏目新增美伊、俄乌、中美及美国中期选举短卡，与利率油价和股市资金面分开阅读。",
   "coverage": "截至北京时间2026年10月22日早间的公开资料；优先近24小时并补查前7天。共27条：科技22条、宏观点评3条、市场资金面2条。今日增补TI、Lam Research、IBM财报，Netflix和Supermicro预告明确标注10月20日补录；SpaceX为10月20日财报深读跟进，10月21日刊原条目保留。Coatue补录10月15日原图，Apollo核验10月20/21日两篇。NVIDIA GTC细分为DSX、OpenShell、物理AI，官方测试与商业化时间分开。last30days沿用今晨已实际采集的记录，本次人工补录未重跑；X、Google Drive与动态IR页的访问缺口见来源检查。",
   "takeaways": [
     "财报补全：TI营收同比+28%、Lam环比+22%；IBM软件增长强于咨询。均统一“公司名＋报告期＋财报”标题，并分清实际、指引和调整后口径。",
@@ -913,7 +913,19 @@
       "status": "有更新",
       "note": "核验10月21日拟议在华三方会晤及美国议员关于俄AI假广告的表态。拟议峰会未获三方共同确认；中方曾否认干预，议员强调无证据显示可篡改投票结果，未把指控、民调当结果。",
       "url": "https://www.reuters.com/world/us/lawmakers-say-us-briefing-showed-russia-targeting-democrats-with-misinformation-2026-10-21/"
+    },
+    {
+      "name": "Cubox／AceCamp调研纪要",
+      "status": "未完成",
+      "note": "已实际运行Cubox CLI 1.0.10的只读folder list，返回not logged in；当前任务未能读取前一天收藏，不能报告为无收藏或无更新。用户已在另一ChatGPT会话安装，授权尚未在本环境验证。",
+      "url": "https://github.com/OLCUBO/cubox-cli"
+    },
+    {
+      "name": "飞书／久谦周度纪要",
+      "status": "未完成",
+      "note": "已运行lark-cli 1.0.98的auth status及user身份久谦文件夹搜索，返回not configured；目标文件夹未定位，不生成纪要摘要。周报接入待实际读取验证。",
+      "url": "https://github.com/larksuite/cli"
     }
   ],
-  "updatedAt": "2026-10-22T01:34:09.118Z"
+  "updatedAt": "2026-10-22T01:55:33.707Z"
 }

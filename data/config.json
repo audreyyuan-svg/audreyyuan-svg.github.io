@@ -1,6 +1,6 @@
 {
-  "title": "AI 晨读 · 科技与宏观资金面更新规范",
-  "version": 6,
+  "title": "AI Tracker · 更新规范",
+  "version": 7,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -601,6 +601,36 @@
           "url": "https://www.mfa.gov.cn/"
         }
       ]
+    },
+    {
+      "name": "Cubox · AceCamp纪要",
+      "type": "调研纪要",
+      "people": [
+        "AceCamp／用户收藏"
+      ],
+      "url": "https://cubox.pro/",
+      "focus": "每日只读采集前一天新增收藏的AceCamp原文。收藏时间与纪要日期分别记录，逐条精读并详细总结，保留数据口径、来源归属和不确定性。授权未完成须如实写缺口。",
+      "links": [
+        {
+          "name": "Cubox官方CLI",
+          "url": "https://github.com/OLCUBO/cubox-cli"
+        }
+      ]
+    },
+    {
+      "name": "飞书 · 久谦文件夹",
+      "type": "调研纪要",
+      "people": [
+        "久谦／用户已授权文件夹"
+      ],
+      "url": "https://www.feishu.cn/",
+      "focus": "周报递归检查久谦文件夹及子文件夹本周新增/实质更新纪要，按原始文档去重，并保留更新时间、纪要日期及受访者判断归属。月报合并周度变化。须先验证授权和目标文件夹，不能把无权限当无更新。",
+      "links": [
+        {
+          "name": "飞书官方CLI",
+          "url": "https://github.com/larksuite/cli"
+        }
+      ]
     }
   ],
   "pendingSources": [],
@@ -620,10 +650,12 @@
     "Apollo：The Daily Spark、Torsten Slok、Marc Rowan及官方研究/播客",
     "美国主要科技公司当日财报：逐一核验IR/SEC，必查TI、Lam Research、IBM",
     "Anthropic产品页与开发者文档（含Claude Duet），NVIDIA重大活动全部相关分项公告",
-    "美伊、俄乌战争/谈判、中美重要政治事件与美国选举：逐向每日实查"
+    "美伊、俄乌战争/谈判、中美重要政治事件与美国选举：逐向每日实查",
+    "Cubox：前一天收藏AceCamp纪要，逐页分页及全文读取，失败如实记录",
+    "周报：飞书久谦文件夹及子文件夹本统计期新增/实质更新纪要，先确认文件夹唯一性和只读授权"
   ],
   "procedure": [
-    "固定两个并列大栏目：科技资讯、市场行情。页面使用一致的导读、筛选、卡片结构，市场内容不在科技页重复展示。宏观政策/利率油价使用category=宏观点评，市场收盘/资金面复盘使用category=市场资金面；不要再混入产业链新闻。旧日报按同名标签兼容归类。宏观2则（海外/中国）、市场2则（美股/亚洲），保持精简，来源链接和局限仍完整保留。",
+    "固定三个并列内容大栏目：科技资讯、市场行情、调研纪要；沿用相同导读、筛选与卡片版式，分类互斥不重复。宏观点评/市场资金面仅市场行情，纪要category=调研纪要仅纪要栏。顶部切换日报、周报、月报。",
     "宏观点评：海外约100—150中文字，关注美债2Y/10Y及bp变动、美元、Brent/WTI、美国选举与财政货币政策，注明报价时点、合约和民调局限；中国约100字，优先官方政策，区分宣布、实施、额度和实际投放。非银赎回支持工具等债市后盾不能直接当成股市新增资金。另用一句解释TMT融资成本/折现率/风险偏好传导。",
     "市场资金面：美股必含标普500、纳指、道指、SOX及可核验成交量/宽度/ETF资金；亚洲含A股、港股、日本、韩国、台湾，逐市场一句、合计约250字。使用最近完整交易日，休市明确标注；区分交易所净买卖、供应商估算与价格推断，不编造北向日频净流入或日本日频外资，数据冲突如实写缺口。",
     "中国模型每天逐一检查，不只DeepSeek；The Information只读取免费公开部分，FUNDA Substack必须查最新文章公开段落；Musk与SpaceX为独立账号逐日检查。未读到原文不冒充全文核验，付费墙不绕过，未检查不填无更新。",
@@ -639,7 +671,11 @@
     "Sundar Pichai与Andy Jassy为长期固定人物。每天跨平台搜索近24小时并回查7天，覆盖本人/公司公开渠道、主持人与活动方、YouTube及播客平台，节目不限于Big Technology、All-In、BG2、CNBC、Bloomberg、WSJ、The Information等；仅用免费可读部分。先核验嘉宾身份、首发/录制/转载日期和原始URL，再依据原始文字稿或字幕总结，尽量附时间戳或章节。第三方转述、短剪、旧采访重发不能冒充本人新长访谈；找不到原始内容写sourceChecks缺口并继续追踪。",
     "Ara Kharazian与Ramp AI列为长期固定来源：Ara身份以Ramp官方作者页确认，X @arakharazian、LinkedIn /in/akharazian/、Econ Lab https://econlab.substack.com/；Ramp指ramp.com公司及AI Index/Economics Lab，X @tryramp、LinkedIn /company/ramp、https://ramp.com/data/ai-index 与 /data。每日分别检查本人、官方研究数据和公司社媒近24小时更新，回查7天；跨平台检索YouTube访谈/官方视频及其他官方互链的公开社媒，发现新账号先核实归属再登记，不依赖固定帖子URL。保留原帖/文章链接、绝对发布日期、统计期、样本量与范围、指标分母、覆盖支付渠道、修订和方法变化；区分企业采用率、美元支出份额、token份额与全市场收入，Ramp客户样本不能外推全体美国企业；Ara个人判断、Ramp自有交易数据、公司营销和独立测评分别标注。优先AI商业化、模型竞争、企业IT预算、Agent落地及就业，纯宣传和无关日常不凑数。同一图表或研究跨平台发布合并一条。科技内容放科技资讯，确属宏观就业/资金条件的内容可归宏观点评，不重复两栏。X/LinkedIn登录墙、Substack付费或YouTube字幕受限即注明；仅用免费公开材料和现有套餐工具，不索取密码、不新增付费、不用未授权Cookie。sourceChecks分别记录Ara与Ramp实查状态，未检查不填无更新。",
     "\n\n新增长期规则（2026-10-22）\n1. 投资人观点固定加入Coatue（https://www.coatue.com/c/takes、官网Public Markets Update、X @coatuemgmt、官网互链LinkedIn/YouTube）与Apollo（https://www.apollo.com/wealth/insights-news/insights/daily-spark、Apollo官方研究/播客；重点Torsten Slok、Marc Rowan及相关投资负责人）。每天实查近24小时、回查7天；按原始发布日期收录，旧观点补录标记日期。机构投资观点、情景推演与实证数据分开，Apollo与Coatue均使用category=投资人观点并保留同名标签；纯宏观观点也按用户要求放投资人观点，市场栏不重复。\n2. 产业链新闻固定覆盖美国主要科技公司（至少Apple、Microsoft、Alphabet/Google、Amazon/AWS、Meta、NVIDIA、Tesla，并覆盖IBM、Oracle、Netflix、半导体TI/Texas Instruments、Lam Research、AMD、Intel、Broadcom、Micron及重要设备/云/软件公司）。每天查IR/SEC、财报日历及重大公告；财报季逐一核对当日发布，不能只查新闻首页而漏报。财报标题统一“公司名 YYYY年Qn财报”（财年不同用“公司名 FYyyyy Qn财报（截至YYYY-MM-DD）”），不要加宣传式后缀；关键变化放summary。均使用category=产业链新闻、tags含财报、半导体/软件/云等。摘要分清实际/一致预期/公司指引、GAAP/调整后、同比/环比；尽量列营收、EPS、分部趋势、毛利率、现金流/资本开支和下期指引，缺数据明确缺口，业绩发布与电话会时间分别标注。未发布的财报不能当成业绩；来源检查逐公司记录结果。\n3. 市场行情每天实查美伊战争/谈判、俄乌战争/谈判、中美重要政治事件（尤其美国大选/中期选举、关税、出口管制、外交会晤）近24小时重大变化。用category=宏观点评，tags含宏观点评及战争与政治，和海外利率油价卡关联但不重复堆砌；可加一张精简战争与政治卡，覆盖美伊、俄乌、中美/选举，每个方向一句并附TMT能源成本/供应链/风险偏好传导。区分当事方表态、匿名来源、已落实政策、拟议会晤、战场事实与未独立核验主张；停火谈判不等于停火，民调/提前投票不等于结果；当天无可核实重大变化或访问缺口写入sourceChecks，不编造日更。\n4. 查漏补缺重点：Claude Duet（产品页而非只Anthropic新闻页）、NVIDIA欧洲GTC的官方主旨/分项公告/技术文档（具体硬件、系统、软件、部署前置条件、合作方、可用日期、性能测量口径，官方指标与独立实测分开）、SpaceX季度业绩（官网IR/SEC、分部营收、资本开支、经营利润、现金流及指引）。发布日期和补录归属准确，同一事件跨来源合并。\n5. 每次发布前新增检查Coatue/Apollo、美国主要科技公司当日财报、产品页/开发者文档、GTC/重大活动全部分项公告、美伊/俄乌/中美与美国选举。此处补充写入仓库data/config.json并保留原规则；公开站仍只更新data JSON，保留历史与两栏目。\n",
-    "财报预告/初步结果须在标题写明预告，不使用正式财报标题冒充。日常每天北京时间08:30启动更新，财报日期按公司原文时区并标北京时间归期；08:30后发布的重大公告在下一期或手动补录中注明时间。"
+    "财报预告/初步结果须在标题写明预告，不使用正式财报标题冒充。日常每天北京时间08:30启动更新，财报日期按公司原文时区并标北京时间归期；08:30后发布的重大公告在下一期或手动补录中注明时间。",
+    "2026-10-22新规则优先于此前仅两栏目要求：项目统一AI Tracker。每日加入Cubox前一天收藏AceCamp纪要详细总结；周报每栏须有sectionOverviews概览，并加入久谦文件夹本统计期纪要更新。月报每栏同样先概览，按主题综合月内变化而非拼接日报。周报与月报独立索引，绝不替换日报latest或删除历史。",
+    "周报统计以Asia/Shanghai上次周报截点至本次周日18:00（左闭右开），首期回溯7天；月报每月最后一日18:00启动，以前次月报截点至本次截点覆盖，首期为当月1日00:00至截点。明确18:00后内容顺延下一期，避免漏掉月末晚间，不能声称覆盖尚未发生时段。每栏overview包括概览、判断变化、分歧/反证及后续观察。",
+    "详细纪要除原Issue字段外可加research{meetingDate,savedAt,updatedAt,sample,topics:[{heading,bullets,text?}]}；summary为200—300字提要，topics承载详细精读。保留原始URL、必要时用户端Cubox阅读链接；没有全文不能根据平台AI摘要扩写，没有真实纪要就只写sourceChecks缺口，不造条目。",
+    "月报任务已创建，任务ID 6ad96e5f92848191b4448d94ccb6cb72；仅聚合仓库已入库资料并以免费公开原文核验，不直接调用Cubox/飞书。周报直接久谦采集尚待授权，只保存计划，不应声称周报已启用。"
   ],
   "categories": [
     "模型发布",
@@ -649,12 +685,99 @@
     "产业链新闻",
     "播客精华",
     "宏观点评",
-    "市场资金面"
+    "市场资金面",
+    "调研纪要"
   ],
   "dailyUpdateTime": {
     "timezone": "Asia/Shanghai",
     "time": "08:30",
     "effectiveFrom": "2026-10-23"
   },
-  "updatedAt": "2026-10-22T01:34:43.442Z"
+  "updatedAt": "2026-10-22T01:53:37.425412Z",
+  "projectName": "AI Tracker",
+  "sections": [
+    {
+      "id": "brief",
+      "name": "科技资讯",
+      "categories": [
+        "模型发布",
+        "核心团队",
+        "投资人观点",
+        "独立测评",
+        "产业链新闻",
+        "播客精华"
+      ]
+    },
+    {
+      "id": "macro",
+      "name": "市场行情",
+      "categories": [
+        "宏观点评",
+        "市场资金面"
+      ]
+    },
+    {
+      "id": "research",
+      "name": "调研纪要",
+      "categories": [
+        "调研纪要"
+      ]
+    }
+  ],
+  "researchCollection": {
+    "status": "awaiting_access",
+    "statusText": "纪要来源尚未连接，当前没有可核验的 AceCamp 或久谦内容。",
+    "daily": {
+      "provider": "cubox-cli",
+      "source": "AceCamp",
+      "dateBasis": "收藏时间 created_at，非纪要原始发布日期",
+      "window": "Asia/Shanghai 前一自然日00:00:00至23:59:59.999",
+      "filter": "获取期内全部收藏（包括已归档），按原始URL域名、来源或正文验证AceCamp归属，不要求星标；全文逐条读取。",
+      "status": "awaiting_authorization"
+    },
+    "weekly": {
+      "provider": "lark-cli",
+      "folderName": "久谦",
+      "folderToken": null,
+      "scope": "目标文件夹及子文件夹中本统计期新增或实质更新纪要",
+      "status": "awaiting_authorization"
+    },
+    "detailFormat": [
+      "核心结论",
+      "业务与产品进展",
+      "关键数据及统计口径",
+      "竞争格局/上下游反馈",
+      "分歧与相反证据",
+      "对TMT研究的意义",
+      "后续待验证问题"
+    ],
+    "length": "通常每篇800—1500中文字，依原文信息密度调整；短文不凑字数。",
+    "sourcePolicy": "仅用户授权读取；不改动Cubox收藏/阅读状态，不改动飞书文件；不将密钥、完整原文、附件或个人信息放入公开仓库。摘要以自有表述保留原始出处与访问要求，受访者/渠道说法不能当公司官方披露。"
+  },
+  "reportPlans": {
+    "daily": {
+      "time": "08:30",
+      "timezone": "Asia/Shanghai",
+      "status": "active",
+      "archivePath": "data/index.json"
+    },
+    "weekly": {
+      "time": "18:00",
+      "weekday": "SU",
+      "timezone": "Asia/Shanghai",
+      "status": "awaiting_access",
+      "firstPlannedDate": "2026-10-25",
+      "archivePath": "data/weekly/index.json"
+    },
+    "monthly": {
+      "time": "18:00",
+      "monthDay": "last",
+      "timezone": "Asia/Shanghai",
+      "status": "active",
+      "firstPlannedDate": "2026-10-31",
+      "archivePath": "data/monthly/index.json",
+      "automationId": "6ad96e5f92848191b4448d94ccb6cb72",
+      "sourceMode": "已归档日报/周报与公开原文核验；不直接调用私有CLI"
+    }
+  }
 }
