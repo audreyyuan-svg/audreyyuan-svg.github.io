@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 7,
+  "version": 8,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -693,7 +693,7 @@
     "time": "08:30",
     "effectiveFrom": "2026-10-23"
   },
-  "updatedAt": "2026-10-22T01:53:37.425412Z",
+  "updatedAt": "2026-10-22T02:34:47.102Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -725,8 +725,8 @@
     }
   ],
   "researchCollection": {
-    "status": "awaiting_access",
-    "statusText": "纪要来源尚未连接，当前没有可核验的 AceCamp 或久谦内容。",
+    "status": "partially_connected",
+    "statusText": "久谦周报采集已接入，周报任务已启用；Cubox AceCamp仍待接通。",
     "daily": {
       "provider": "cubox-cli",
       "source": "AceCamp",
@@ -740,7 +740,7 @@
       "folderName": "久谦",
       "folderToken": null,
       "scope": "目标文件夹及子文件夹中本统计期新增或实质更新纪要",
-      "status": "awaiting_authorization"
+      "status": "connected"
     },
     "detailFormat": [
       "核心结论",
@@ -765,9 +765,11 @@
       "time": "18:00",
       "weekday": "SU",
       "timezone": "Asia/Shanghai",
-      "status": "awaiting_access",
+      "status": "active",
       "firstPlannedDate": "2026-10-25",
-      "archivePath": "data/weekly/index.json"
+      "archivePath": "data/weekly/index.json",
+      "automationId": "6ad976253c8c819187839a1294a2fbe1",
+      "sourceMode": "飞书CLI直接读取久谦；AceCamp从已归档日报聚合"
     },
     "monthly": {
       "time": "18:00",
