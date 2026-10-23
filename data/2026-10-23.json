@@ -1,1 +1,422 @@
-{"date":"2026-10-23","title":"AI Tracker 日报｜Google算力紧约束、对华科技投资新规与AI交易重估 · 10月23日","intro":"科技资讯的增量集中在三条线：Sundar Pichai披露Gemini 4早期用量与Google内部Agent用法；美国财政部拟扩大对外投资审查；Apollo用Ramp样本质疑最重度AI支出是否过度依赖风险资本。市场端出现明显的AI去风险交易：SOX单日跌6.7%，但美股整体宽度并未同步恶化，美债大涨而油价因中东供应风险冲高。Cubox仍未在当前运行环境接通，调研纪要不冒充“无收藏”。","coverage":"截至北京时间2026年10月23日08:30的免费公开资料；优先近24小时并回查前7天。共12条：科技资讯7条、宏观点评3条、市场资金面2条。中国模型逐一检查后未发现10月22日可核验的新版本，MiniMax M3.1 Flash仍处发布后72小时跟踪窗口，但今日没有新增可复现独立测评，故不凑条数。昨日已收录的Meta、Tesla、TI、Lam Research、IBM与SpaceX财报不重复刊登，今天只保留新的市场反应和后续业务线索。","takeaways":["Google算力仍是硬约束：Pichai称Gemini 4 Argon首72小时处理约25万亿token、约为Gemini 3同期三倍；更轻量版本用于扩容，数据为公司口径而非独立测评。","美国财政部拟扩展对外投资审查至中国、俄罗斯等经济体的AI、半导体、生物科技等敏感领域；目前是拟议规则，不等于已经生效的全面禁投。","Apollo引用Ramp样本称AI支出最高1%企业中80%获VC支持、而中位支出者仅13%；它提示token需求与风险资本循环，但Ramp客户样本不能外推全市场。","AI交易进入回报审查：10月22日SOX跌6.7%、纳指跌2.6%，成交量高于20日均值；不过NYSE上涨家数略多于下跌家数，属于权重科技集中去风险而非全市场一致恐慌。","宏观对TMT形成双向拉扯：官方美债2Y/10Y分别降至4.65%/4.96%，折现率下行；Brent近月结算升4%至113.17美元，能源与数据中心运营成本风险上升。"],"items":[{"id":"sundar-pichai-sources-gemini4-compute-20261021","category":"核心团队","title":"Sundar Pichai新访谈：Gemini 4首72小时约25万亿token，算力仍供不应求","summary":"Sources主持人Alex Heath于10月21日发布59分钟访谈。Pichai称Gemini 4 Argon首72小时处理约25万亿token，约为Gemini 3同期三倍；Google仍受算力限制，正在开发更高效版本以扩大可用性。他把消费级Agent描述为可持续后台执行、跨Search/Gmail/Gemini携带上下文的“一个入口”，并称自己用Agent跟踪模型进展和算力利用率。访谈还覆盖DeepMind管理调整、Project Suncatcher太空数据中心和量子计算。","why":"这是本人长访谈与节目文字稿，可与10月20日Big Technology访谈区分。25万亿token和内部用法均为公司/管理层口径，未披露活跃用户、推理档位、单位成本或重试率，不能据此判断独立性能或商业回报。","source":"Sources with Alex Heath／原始节目文字稿","url":"https://sources.news/p/sundar-pichai-gemini-4-google-other-bets","publishedAt":"2026-10-21","evidence":"本人访谈／原始文字稿；公司口径，非独立测评","tags":["Sundar Pichai","Google","Gemini 4 Argon","算力","Agent","访谈"]},{"id":"apollo-ai-token-spend-circularity-20261022","category":"投资人观点","title":"Apollo｜AI重度用户的token支出是否由风险资本循环支撑","summary":"Torsten Slok 10月22日引用Ramp AI Index称，AI支出最高1%的企业中80%有VC支持，而中位支出企业仅13%有VC支持。他据此提出：如果AI回报兑现偏慢，VC回报和后续募资收缩可能反过来削弱算力需求。","why":"这是值得跟踪的融资质量问题，但属于Apollo对Ramp数据的解释，不是因果检验。Ramp覆盖其企业卡和账单支付客户，最高1%支出者的分母、行业结构和公司规模可能与全体美国企业不同；“VC出资”也不等于支出完全没有经营现金流支撑。","source":"Apollo The Daily Spark／Torsten Slok","url":"https://www.apollo.com/wealth/insights-news/insights/daily-spark/circularity-in-ai-shows-up-in-token-spending-too","publishedAt":"2026-10-22","evidence":"投资人观点／基于Ramp样本的二次分析","tags":["投资人观点","Apollo","Torsten Slok","Ramp AI Index","Token支出","风险资本"]},{"id":"us-outbound-investment-rule-proposal-20261022","category":"产业链新闻","title":"美国拟扩大对外科技投资审查：AI、半导体与生物科技进入重点范围","summary":"美国财政部10月22日发布拟议规则，落实2025财年国防授权法中的COINS Act，对美国人投资中国、俄罗斯、朝鲜、伊朗和古巴的部分敏感技术活动提出新的禁止或申报框架，并把生物科技纳入重点。Reuters称规则不再把委内瑞拉列为适用国家；公开股票多数仍不在核心覆盖范围。","why":"这会提高美国基金、企业风投及跨境技术交易的尽调与合规成本，可能影响中国AI/芯片/生物科技的美元融资和战略协作。当前仍是征求意见的NPRM，行业阈值、例外和最终生效日要等正式规则，不能写成全面禁投已落地。","source":"美国财政部／Reuters","url":"https://home.treasury.gov/news/press-releases/sb0667","publishedAt":"2026-10-22","evidence":"官方拟议规则；尚未最终生效","tags":["科技监管","美国财政部","对外投资","中国","AI","半导体","生物科技"]},{"id":"apple-iphone-duo-sales-20261023","category":"产业链新闻","title":"Apple iPhone Duo开售：预订排至明年，首批测评仍指向软件适配短板","summary":"Apple首款折叠屏iPhone Duo于10月23日开售，起价1,999美元。Apple确认预订10月16日开始、28个后续市场10月30日起供货；Reuters称预订开启后交付日期很快延至2027年1月，部分国家线下库存有限。早期测评认可铰链和整机设计，但指出缺少长焦、第三方应用适配及折叠态可用性限制。","why":"短期看，约束更像供给而非需求，利好高端机结构件、铰链与柔性显示链；但预订排期不能直接等同终端销量，首批评测暴露的软件适配决定其能否从高价小众新品扩大为新形态平台。","source":"Apple Newsroom／Reuters","url":"https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/","publishedAt":"2026-10-23（销售开始；产品于2026-09发布）","evidence":"公司披露＋媒体早期评测汇总","tags":["Apple","iPhone Duo","折叠屏","消费电子","供应链","开售"]},{"id":"spacex-80000-cell-sites-report-20261022","category":"产业链新闻","title":"SpaceX被曝洽谈接入8万个美国蜂窝站点，地面移动网络野心升温","summary":"Reuters转述Bloomberg 10月22日报道称，SpaceX正与蜂窝基础设施公司洽谈获取至少8万个美国站点的接入权，潜在目标是建设第四家全国性无线运营商。SpaceX官网与官方X在公开可读范围内尚未发布同等口径确认。","why":"若落实，SpaceX将从卫星直连手机向卫星＋地面站点的混合网络推进，对铁塔、回传、频谱以及美国三大运营商竞争格局都有影响。但目前为匿名消息源的谈判线索，没有披露交易对手、资本开支、租约年限或覆盖节奏，不能视为已签约。","source":"Reuters转述Bloomberg；SpaceX未公开确认","url":"https://www.reuters.com/business/media-telecom/spacex-seeks-access-80000-us-cell-sites-wireless-network-bloomberg-news-reports-2026-10-22/","publishedAt":"2026-10-22","evidence":"媒体报道／匿名知情人士；公司未确认","tags":["SpaceX","Starlink","无线运营商","蜂窝站点","电信","媒体报道"]},{"id":"aws-qwen3-trainium-torchtitan-20261021","category":"产业链新闻","title":"AWS发布Qwen3在Trainium2训练路径：单机三种后端共用启动与配置结构","summary":"AWS机器学习博客10月21日给出在单台trn2.48xlarge上用torchtitan训练Qwen3的三条路径：Hugging Face Transformers v5建模后端、torchtitan原生Qwen3，以及NKI MoE内核。三种方式保持相同torchrun启动器和配置结构，并支持读取/保存公开Hugging Face safetensors。","why":"这是中国开源模型与AWS自研加速器生态互操作的工程信号，有助于降低从CUDA工作流迁移的集成成本。它是厂商技术教程而非成本/吞吐独立对比，未给出与GPU的同任务价格、收敛质量和端到端训练时长，采购判断仍需可复现实测。","source":"AWS Machine Learning Blog","url":"https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/","publishedAt":"2026-10-21","evidence":"官方技术教程；非独立性能测评","tags":["AWS","Trainium2","Qwen3","torchtitan","开源模型","AI芯片"]},{"id":"bill-gates-verge-ai-disruption-interview-20261022","category":"核心团队","title":"Bill Gates访谈：AI冲击可能持续20年，安全与就业不能只靠行业自律","summary":"The Verge 10月22日发布对Bill Gates的长访谈。Gates把未来约20年描述为就业、教育与安全体系的剧烈调整期，重点担忧网络攻击、生物风险和白领岗位替代，同时主张政府建立更强的能力评估与监管框架，而非只依赖公司自愿承诺。","why":"这是科技领袖的风险判断，不是预测模型。对TMT投资更直接的含义是：AI应用收入扩张可能同时伴随合规、验证、保险与人力再培训成本上升；需要把规范性观点与已实施政策分开。","source":"The Verge／原始播客访谈","url":"https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation","publishedAt":"2026-10-22","evidence":"个人观点／长访谈","tags":["Bill Gates","AI安全","就业","监管","访谈","个人观点"]},{"id":"macro-global-20261023","category":"宏观点评","title":"海外宏观｜美债急涨对冲科技去风险，油价冲五个月高位","summary":"10月22日美国财政部3:30pm ET口径：2Y 4.65%、较前日-16bp；10Y 4.96%、-17bp。Reuters收盘口径10Y为4.953%、-19.3bp。Brent近月结算113.17美元/桶、+4.0%，WTI 99.47美元、+2.4%；欧元兑美元跌0.09%至1.1222，美元对日元跌0.75%。股债反向主要来自AI权重股去风险，而油价受胡塞袭击沙特目标带动。","why":"TMT传导：无风险利率下行缓解长久期估值，但油价与电力/物流成本上升、Fed加息概率回升会抵消这一利好；当前更像避险压低长端而非增长和通胀风险同时消失。","source":"美国财政部／Reuters全球市场","url":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026","publishedAt":"2026-10-22美市收盘","evidence":"官方利率＋Reuters收盘数据；报价时点已分开","tags":["宏观点评","美债","Brent","WTI","美元","TMT折现率"]},{"id":"macro-china-fdi-20261023","category":"宏观点评","title":"中国宏观｜前三季实际使用外资降幅收窄，高技术领域逆势增长","summary":"商务部10月22日披露，2026年前三季实际使用外资5488亿元，同比下降4.3%，较前8个月-5.3%有所收窄；同期非金融类对外直接投资1010亿美元。Reuters援引商务部称高技术领域外资增长33.8%，但地缘政治、保护主义和全球增长偏弱仍压制总量。","why":"点评：结构改善强于总量，研发设计等高技术服务仍能吸引资金，但不能把单一行业高增写成外资全面回流；对TMT更重要的是后续项目落地、利润再投资与跨境技术限制。","source":"中国商务部数据／Reuters","url":"https://www.reuters.com/world/asia-pacific/foreign-investment-flows-into-china-fall-43-yy-first-three-quarters-2026-10-22/","publishedAt":"2026-10-22","evidence":"官方统计经媒体核验；总量与结构分开","tags":["宏观点评","中国","外商投资","高技术产业","资本流动"]},{"id":"geopolitics-war-election-20261023","category":"宏观点评","title":"战争与政治｜美伊风险抬升、俄乌拟复谈；中期选举开始直接影响科技交易","summary":"美伊：胡塞袭击沙特目标推升油价，美国监管机构继续调查与对伊行动相关的可疑原油交易，未出现已落实的新停火。俄乌：Putin称愿在11月恢复美国斡旋谈判，目标是最终安全框架而非短期停火；谈判日期和领土分歧仍未解决。中美/选举：美国财政部提出对外科技投资新规；11月3日中期选举临近，数据中心电价、土地和监管反弹已成为AI交易的政策变量。","why":"TMT传导：中东风险经油电成本和通胀预期抬高融资成本；俄乌谈判仅降低尾部风险、不能当成停火；美国选举对AI数据中心审批、跨境资本与国会调查的影响，可能先体现在项目延迟和风险溢价。","source":"Reuters／美国财政部","url":"https://www.reuters.com/world/europe/putin-says-talks-must-focus-security-russia-ukraine-europe-overall-2026-10-22/","publishedAt":"2026-10-22至2026-10-23早间","evidence":"当事方表态、官方拟议规则与媒体核验分开；谈判不等于停火","tags":["宏观点评","战争与政治","美伊","俄乌","中美关系","美国中期选举"]},{"id":"us-market-flows-20261022","category":"市场资金面","title":"美股资金面｜SOX跌6.7%，高成交下权重科技集中去风险","summary":"10月22日完整收盘：标普500 -1.21%至7,663.43，纳指-2.60%至26,008.86，道指+0.02%至52,867.98，SOX -6.7%。美国交易所成交187.9亿股，高于20日均值171.9亿股约9.9%。NYSE上涨/下跌家数比1.01:1，Nasdaq下跌家数为上涨的1.37倍；新高/新低分别为NYSE 173/366、Nasdaq 82/342。Meta -7%、Tesla -3.1%，Intel、AMD、SanDisk和Marvell均跌逾8%。","why":"资金面判断：不是全市场同步踩踏，而是高成交下从AI/半导体权重股向防御和债券集中轮动。SOX从6月高点已回撤逾26%，但年内仍涨51.5%；短期反弹需要成交缩减、半导体宽度改善和现金流预期企稳共同确认。","source":"Reuters美国收盘","url":"https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/","publishedAt":"2026-10-22美市收盘","evidence":"完整交易日指数、成交量与市场宽度；未取得可靠ETF申赎","tags":["市场资金面","美股","SOX","半导体","成交量","市场宽度"]},{"id":"asia-market-flows-20261022","category":"市场资金面","title":"亚洲资金面｜AI链同步减仓，港股南向转净卖；台湾今日休市","summary":"10月22日当地完整收盘：上证综指3,658.03、-1.48%，深成指约-2.96%；恒指22,934.68、-3.03%，公开Stock Connect汇总显示南向净卖约92.2亿港元。日经约-2.65%；KOSPI 5,533.77、-3.52%，报道指向外资与机构同步卖出。台湾加权约-1.81%；交易所公告10月23日因台风Champi休市。日本TOPIX与日频外资、台湾10月22日准确外资净额未取得一致公开值，因此不硬填。","why":"资金面判断：下跌集中在日韩台半导体链和港股科技，A股/港股同时受外资总量偏弱影响。港股南向净卖说明内地资金未在大跌日提供同等缓冲；台湾休市后重新开盘可能承接美股SOX的补跌压力。","source":"HKEX/TWSE公告、韩国收盘报道及公开市场数据","url":"https://www.reuters.com/world/china/global-markets-global-markets-2026-10-22/","publishedAt":"2026-10-22当地完整收盘；台湾2026-10-23休市","evidence":"跨市场收盘复盘；冲突数据降级并明示缺口","tags":["市场资金面","A股","港股","日本","韩国","台湾","南向资金"]}],"sourceChecks":[{"name":"DeepSeek","status":"已查无重要更新","note":"检查官网、API文档、GitHub/Hugging Face及公开索引；近24小时无可核验新版本。美国政府禁用/禁购已在10月20日历史条目收录，今日不重复。"},{"name":"MiniMax","status":"跟踪中，无新增可复现测评","note":"M3.1 Flash仍在发布后72小时窗口；检查官方公告、模型卡、Artificial Analysis和公开开发者实测。昨日已收录Plotly 43题；今日未发现新增可复现实测，不重复灌入旧榜单。"},{"name":"Qwen","status":"有工程更新，无新模型","note":"官方模型发布未见新版本；AWS于10月21日发布Qwen3在Trainium2/torchtitan三种训练路径，作为云与芯片生态更新收录，明确非独立性能测评。"},{"name":"Kimi / Moonshot","status":"已查无重要更新","note":"检查官方发布、模型卡与公开模型库，近24小时无新权重、API价格或开放方式变化。"},{"name":"GLM / Z.ai","status":"已查无重要更新","note":"检查官网、模型卡、GitHub/Hugging Face与API入口，近24小时无可核验新版本。"},{"name":"StepFun","status":"已查无重要更新","note":"检查官方模型库与开发者资料；Step 5 Preview的10月15日开放权重已在历史期补录，今日无新增版本或独立测评。"},{"name":"其他中国模型","status":"已查无重要更新","note":"补查MiMo及主要公开模型/评测索引，未发现需单列的新发布；汇总站无法回溯原始材料的排名不收录。"},{"name":"OpenAI官方与核心成员","status":"已查无重要更新","note":"检查OpenAI官方索引、开发者资料与核心成员公开网页；近24小时未发现高影响新发布。昨日Google Cloud分发、代理监控与PHP漏洞内容不重复。"},{"name":"Anthropic官方与核心成员","status":"已查无重要更新","note":"检查新闻、产品页和公开索引；Claude Duet已于昨日收录，10月22日无新的高影响产品/模型发布。"},{"name":"Artificial Analysis / Epoch / METR","status":"未见新增专题","note":"围绕MiniMax M3.1 Flash及中国模型检查；近24小时未发现新的可复现分项测评。检索页无法完整读取的分数不转述，METR/Epoch无新专题。"},{"name":"Gavin Baker","status":"原文访问受限","note":"检查本人X、Medium、BG2及访谈索引；X正文未授权，未发现近24小时可用原始材料核验的新长文。"},{"name":"Brad Gerstner / Altimeter","status":"有线索，未单列","note":"定位到10月21日CNBC Squawk Box片段，主题含SpaceX-Tesla融资/合并；未取得完整官方视频或文字稿，不基于二次摘要扩写。"},{"name":"Sarah Guo / Conviction","status":"原文访问受限","note":"检查Conviction、No Priors与公开索引；X正文受限，近24小时未发现可核验的新长访谈或长文。"},{"name":"Elad Gil","status":"已查无重要更新","note":"检查个人博客、播客和公开视频索引，近24小时无新长文或本人访谈。"},{"name":"Coatue","status":"已查无重要更新","note":"检查C:Takes、官网Insights、公开X/LinkedIn/YouTube索引；最新公开Takes仍为10月15日，已在昨日补录。"},{"name":"Apollo / Torsten Slok / Marc Rowan","status":"有更新","note":"读取10月22日The Daily Spark全文，收录AI重度支出者与VC支持率的Ramp样本；明确这是Apollo解释、非因果检验。Marc Rowan近24小时未见新原始长访谈。"},{"name":"The Information","status":"原文访问受限","note":"检查免费公开标题与导语；订阅墙即止。未发现能够通过公司公告或Reuters完成交叉核验、且未在历史期收录的新独家。"},{"name":"FUNDA AI Substack与X","status":"已查无重要更新","note":"检查Substack主页、最新文章公开段落与公开X索引；近24小时未见需单列的新文章。X正文受限，未把索引摘要当原帖。"},{"name":"Elon Musk本人X","status":"原文访问受限","note":"公开X原帖无授权；不索取账号密码、不复用Cookie。Tesla/SpaceX后续仅采用公司文件与可核验媒体材料。"},{"name":"SpaceX官方X与官网","status":"有媒体线索，官方未确认","note":"官网仅见常规发射信息；公开X正文受限。8万个蜂窝站点为Bloomberg匿名消息经Reuters转述，正文明确未获SpaceX确认。"},{"name":"Sundar Pichai跨平台访谈","status":"有更新","note":"核验10月21日Sources 59分钟新访谈及原始文字稿，与10月20日Big Technology访谈去重；保留公司口径和未披露指标。"},{"name":"Andy Jassy跨平台访谈","status":"已查无重要更新","note":"检查Amazon官方、公开视频、YouTube与播客索引；未确认近24小时新的本人长访谈。"},{"name":"Ara Kharazian","status":"已查无重要更新","note":"检查作者页、Econ Lab/Substack及公开社媒索引；最新重要原文仍为10月14日Ramp AI Index，已在历史期补录。"},{"name":"Ramp AI Index / Economics Lab","status":"被Apollo引用，无新原始版本","note":"10月22日Apollo使用Ramp十月样本提出token支出循环性观点；Ramp原始指数未在近24小时发布新版本。样本只代表Ramp客户支付。"},{"name":"美国主要科技公司与财报日历","status":"已完成逐项检查","note":"核对Apple、Microsoft、Alphabet、Amazon/AWS、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron。10月22日无新的重点公司正式财报；Meta、Tesla、TI、Lam、IBM已在10月22日报收录。Microsoft/Alphabet预计10月28日、Amazon 10月29日；Intel官方称10月29日。今日收录Apple开售和AWS技术教程。"},{"name":"NVIDIA GTC与产品文档","status":"已查无新的分项发布","note":"昨日已按DSX POD、OpenShell和Physical AI拆分收录柏林GTC官方公告；10月22日未发现新的技术文档或独立实测，不重复。"},{"name":"last30days免费社媒补充","status":"已实际执行，证据较薄","note":"以2026-10-22至23为窗口，运行Reddit、Hacker News、GitHub三类免费来源：Reddit 3条、HN 7条、GitHub 2条进入证据层。YouTube工具在本环境不可用；X未配置且按规则未接Cookie。社区线索仅用于发现，未以热度替代证据。"},{"name":"Cubox / AceCamp调研纪要","status":"未完成／原文访问受限","note":"站内Cubox连接状态实测为未连接，按北京时间2026-10-22自然日分页读取收藏与归档收藏均被拒绝。不能报告为无收藏，也未写入任何原文、附件或凭据。"},{"name":"海外宏观：美债、美元、原油","status":"有更新","note":"美国财政部官方CMT：10月22日2Y 4.65%、10Y 4.96%；Reuters收盘补充10Y 4.953%、Brent 113.17、WTI 99.47与汇率。官方3:30pm ET与收盘口径分开。"},{"name":"中国宏观与监管","status":"有更新","note":"核验商务部前三季外资总量与结构；央行、证监会近24小时未见高影响新工具落地。非银大额赎回工具已在历史期收录，不重复。"},{"name":"美伊战争与谈判","status":"有更新","note":"胡塞对沙特目标的新袭击推升油价；CFTC继续调查与对伊行动相关可疑原油交易。未核实新的停火或正式谈判结果。"},{"name":"俄乌战争与谈判","status":"有更新","note":"Putin确认愿于11月恢复美国斡旋谈判，Zelenskiy称支持谈判和停火倡议；领土与安排未解决，明确不写成已停火。"},{"name":"中美政治与美国中期选举","status":"有更新","note":"美国财政部对外投资NPRM与11月3日选举相关数据中心反弹构成科技政策变量。民调和竞选表态未写成选举结果。"},{"name":"美股指数与资金面（含SOX）","status":"有更新","note":"核验10月22日完整收盘、SOX、187.9亿股成交对20日均值171.9亿、NYSE/Nasdaq宽度与新高新低；未取得可靠ETF申赎，未填。"},{"name":"中日韩台与港股资金面","status":"有更新但部分数据缺口","note":"核验10月22日主要指数与港股南向净卖；韩国报道确认外资/机构同步卖出。日本TOPIX日终值、台湾精确外资净额与A股可比全市场资金流数据未取得一致公开值，降级为方向/缺口，不使用“主力净流入”替代。台湾交易所确认10月23日休市。"}],"updatedAt":"2026-10-23T00:32:52Z"}
+{
+  "date": "2026-10-23",
+  "title": "AI Tracker 日报｜Google算力紧约束、对华科技投资新规与AI交易重估 · 10月23日",
+  "intro": "科技资讯的增量集中在三条线：Sundar Pichai披露Gemini 4早期用量与Google内部Agent用法；美国财政部拟扩大对外投资审查；Apollo用Ramp样本质疑最重度AI支出是否过度依赖风险资本。市场端出现明显的AI去风险交易：SOX单日跌6.7%，但美股整体宽度并未同步恶化，美债大涨而油价因中东供应风险冲高。Cubox仍未在当前运行环境接通，调研纪要不冒充“无收藏”。",
+  "coverage": "截至北京时间2026年10月23日08:30的免费公开资料；优先近24小时并回查前7天。共12条：科技资讯7条、宏观点评3条、市场资金面2条。中国模型逐一检查后未发现10月22日可核验的新版本，MiniMax M3.1 Flash仍处发布后72小时跟踪窗口，但今日没有新增可复现独立测评，故不凑条数。昨日已收录的Meta、Tesla、TI、Lam Research、IBM与SpaceX财报不重复刊登，今天只保留新的市场反应和后续业务线索。",
+  "takeaways": [
+    "Google算力仍是硬约束：Pichai称Gemini 4 Argon首72小时处理约25万亿token、约为Gemini 3同期三倍；更轻量版本用于扩容，数据为公司口径而非独立测评。",
+    "美国财政部拟扩展对外投资审查至中国、俄罗斯等经济体的AI、半导体、生物科技等敏感领域；目前是拟议规则，不等于已经生效的全面禁投。",
+    "Apollo引用Ramp样本称AI支出最高1%企业中80%获VC支持、而中位支出者仅13%；它提示token需求与风险资本循环，但Ramp客户样本不能外推全市场。",
+    "AI交易进入回报审查：10月22日SOX跌6.7%、纳指跌2.6%，成交量高于20日均值；不过NYSE上涨家数略多于下跌家数，属于权重科技集中去风险而非全市场一致恐慌。",
+    "宏观对TMT形成双向拉扯：官方美债2Y/10Y分别降至4.65%/4.96%，折现率下行；Brent近月结算升4%至113.17美元，能源与数据中心运营成本风险上升。"
+  ],
+  "items": [
+    {
+      "id": "sundar-pichai-sources-gemini4-compute-20261021",
+      "category": "核心团队",
+      "title": "Sundar Pichai新访谈：Gemini 4首72小时约25万亿token，算力仍供不应求",
+      "summary": "Sources主持人Alex Heath于10月21日发布59分钟访谈。Pichai称Gemini 4 Argon首72小时处理约25万亿token，约为Gemini 3同期三倍；Google仍受算力限制，正在开发更高效版本以扩大可用性。他把消费级Agent描述为可持续后台执行、跨Search/Gmail/Gemini携带上下文的“一个入口”，并称自己用Agent跟踪模型进展和算力利用率。访谈还覆盖DeepMind管理调整、Project Suncatcher太空数据中心和量子计算。",
+      "why": "这是本人长访谈与节目文字稿，可与10月20日Big Technology访谈区分。25万亿token和内部用法均为公司/管理层口径，未披露活跃用户、推理档位、单位成本或重试率，不能据此判断独立性能或商业回报。",
+      "source": "Sources with Alex Heath／原始节目文字稿",
+      "url": "https://sources.news/p/sundar-pichai-gemini-4-google-other-bets",
+      "publishedAt": "2026-10-21",
+      "evidence": "本人访谈／原始文字稿；公司口径，非独立测评",
+      "tags": [
+        "Sundar Pichai",
+        "Google",
+        "Gemini 4 Argon",
+        "算力",
+        "Agent",
+        "访谈"
+      ]
+    },
+    {
+      "id": "apollo-ai-token-spend-circularity-20261022",
+      "category": "投资人观点",
+      "title": "Apollo｜AI重度用户的token支出是否由风险资本循环支撑",
+      "summary": "Torsten Slok 10月22日引用Ramp AI Index称，AI支出最高1%的企业中80%有VC支持，而中位支出企业仅13%有VC支持。他据此提出：如果AI回报兑现偏慢，VC回报和后续募资收缩可能反过来削弱算力需求。",
+      "why": "这是值得跟踪的融资质量问题，但属于Apollo对Ramp数据的解释，不是因果检验。Ramp覆盖其企业卡和账单支付客户，最高1%支出者的分母、行业结构和公司规模可能与全体美国企业不同；“VC出资”也不等于支出完全没有经营现金流支撑。",
+      "source": "Apollo The Daily Spark／Torsten Slok",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/circularity-in-ai-shows-up-in-token-spending-too",
+      "publishedAt": "2026-10-22",
+      "evidence": "投资人观点／基于Ramp样本的二次分析",
+      "tags": [
+        "投资人观点",
+        "Apollo",
+        "Torsten Slok",
+        "Ramp AI Index",
+        "Token支出",
+        "风险资本"
+      ]
+    },
+    {
+      "id": "us-outbound-investment-rule-proposal-20261022",
+      "category": "产业链新闻",
+      "title": "美国拟扩大对外科技投资审查：AI、半导体与生物科技进入重点范围",
+      "summary": "美国财政部10月22日发布拟议规则，落实2025财年国防授权法中的COINS Act，对美国人投资中国、俄罗斯、朝鲜、伊朗和古巴的部分敏感技术活动提出新的禁止或申报框架，并把生物科技纳入重点。Reuters称规则不再把委内瑞拉列为适用国家；公开股票多数仍不在核心覆盖范围。",
+      "why": "这会提高美国基金、企业风投及跨境技术交易的尽调与合规成本，可能影响中国AI/芯片/生物科技的美元融资和战略协作。当前仍是征求意见的NPRM，行业阈值、例外和最终生效日要等正式规则，不能写成全面禁投已落地。",
+      "source": "美国财政部／Reuters",
+      "url": "https://home.treasury.gov/news/press-releases/sb0667",
+      "publishedAt": "2026-10-22",
+      "evidence": "官方拟议规则；尚未最终生效",
+      "tags": [
+        "科技监管",
+        "美国财政部",
+        "对外投资",
+        "中国",
+        "AI",
+        "半导体",
+        "生物科技"
+      ]
+    },
+    {
+      "id": "apple-iphone-duo-sales-20261023",
+      "category": "产业链新闻",
+      "title": "Apple iPhone Duo开售：预订排至明年，首批测评仍指向软件适配短板",
+      "summary": "Apple首款折叠屏iPhone Duo于10月23日开售，起价1,999美元。Apple确认预订10月16日开始、28个后续市场10月30日起供货；Reuters称预订开启后交付日期很快延至2027年1月，部分国家线下库存有限。早期测评认可铰链和整机设计，但指出缺少长焦、第三方应用适配及折叠态可用性限制。",
+      "why": "短期看，约束更像供给而非需求，利好高端机结构件、铰链与柔性显示链；但预订排期不能直接等同终端销量，首批评测暴露的软件适配决定其能否从高价小众新品扩大为新形态平台。",
+      "source": "Apple Newsroom／Reuters",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "publishedAt": "2026-10-23（销售开始；产品于2026-09发布）",
+      "evidence": "公司披露＋媒体早期评测汇总",
+      "tags": [
+        "Apple",
+        "iPhone Duo",
+        "折叠屏",
+        "消费电子",
+        "供应链",
+        "开售"
+      ]
+    },
+    {
+      "id": "spacex-80000-cell-sites-report-20261022",
+      "category": "产业链新闻",
+      "title": "SpaceX被曝洽谈接入8万个美国蜂窝站点，地面移动网络野心升温",
+      "summary": "Reuters转述Bloomberg 10月22日报道称，SpaceX正与蜂窝基础设施公司洽谈获取至少8万个美国站点的接入权，潜在目标是建设第四家全国性无线运营商。SpaceX官网与官方X在公开可读范围内尚未发布同等口径确认。",
+      "why": "若落实，SpaceX将从卫星直连手机向卫星＋地面站点的混合网络推进，对铁塔、回传、频谱以及美国三大运营商竞争格局都有影响。但目前为匿名消息源的谈判线索，没有披露交易对手、资本开支、租约年限或覆盖节奏，不能视为已签约。",
+      "source": "Reuters转述Bloomberg；SpaceX未公开确认",
+      "url": "https://www.reuters.com/business/media-telecom/spacex-seeks-access-80000-us-cell-sites-wireless-network-bloomberg-news-reports-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "evidence": "媒体报道／匿名知情人士；公司未确认",
+      "tags": [
+        "SpaceX",
+        "Starlink",
+        "无线运营商",
+        "蜂窝站点",
+        "电信",
+        "媒体报道"
+      ]
+    },
+    {
+      "id": "aws-qwen3-trainium-torchtitan-20261021",
+      "category": "产业链新闻",
+      "title": "AWS发布Qwen3在Trainium2训练路径：单机三种后端共用启动与配置结构",
+      "summary": "AWS机器学习博客10月21日给出在单台trn2.48xlarge上用torchtitan训练Qwen3的三条路径：Hugging Face Transformers v5建模后端、torchtitan原生Qwen3，以及NKI MoE内核。三种方式保持相同torchrun启动器和配置结构，并支持读取/保存公开Hugging Face safetensors。",
+      "why": "这是中国开源模型与AWS自研加速器生态互操作的工程信号，有助于降低从CUDA工作流迁移的集成成本。它是厂商技术教程而非成本/吞吐独立对比，未给出与GPU的同任务价格、收敛质量和端到端训练时长，采购判断仍需可复现实测。",
+      "source": "AWS Machine Learning Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+      "publishedAt": "2026-10-21",
+      "evidence": "官方技术教程；非独立性能测评",
+      "tags": [
+        "AWS",
+        "Trainium2",
+        "Qwen3",
+        "torchtitan",
+        "开源模型",
+        "AI芯片"
+      ]
+    },
+    {
+      "id": "bill-gates-verge-ai-disruption-interview-20261022",
+      "category": "核心团队",
+      "title": "Bill Gates访谈：AI冲击可能持续20年，安全与就业不能只靠行业自律",
+      "summary": "The Verge 10月22日发布对Bill Gates的长访谈。Gates把未来约20年描述为就业、教育与安全体系的剧烈调整期，重点担忧网络攻击、生物风险和白领岗位替代，同时主张政府建立更强的能力评估与监管框架，而非只依赖公司自愿承诺。",
+      "why": "这是科技领袖的风险判断，不是预测模型。对TMT投资更直接的含义是：AI应用收入扩张可能同时伴随合规、验证、保险与人力再培训成本上升；需要把规范性观点与已实施政策分开。",
+      "source": "The Verge／原始播客访谈",
+      "url": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
+      "publishedAt": "2026-10-22",
+      "evidence": "个人观点／长访谈",
+      "tags": [
+        "Bill Gates",
+        "AI安全",
+        "就业",
+        "监管",
+        "访谈",
+        "个人观点"
+      ]
+    },
+    {
+      "id": "macro-global-20261023",
+      "category": "宏观点评",
+      "title": "海外宏观｜美债急涨对冲科技去风险，油价冲五个月高位",
+      "summary": "10月22日美国财政部3:30pm ET口径：2Y 4.65%、较前日-16bp；10Y 4.96%、-17bp。Reuters收盘口径10Y为4.953%、-19.3bp。Brent近月结算113.17美元/桶、+4.0%，WTI 99.47美元、+2.4%；欧元兑美元跌0.09%至1.1222，美元对日元跌0.75%。股债反向主要来自AI权重股去风险，而油价受胡塞袭击沙特目标带动。",
+      "why": "TMT传导：无风险利率下行缓解长久期估值，但油价与电力/物流成本上升、Fed加息概率回升会抵消这一利好；当前更像避险压低长端而非增长和通胀风险同时消失。",
+      "source": "美国财政部／Reuters全球市场",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "publishedAt": "2026-10-22美市收盘",
+      "evidence": "官方利率＋Reuters收盘数据；报价时点已分开",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "Brent",
+        "WTI",
+        "美元",
+        "TMT折现率"
+      ]
+    },
+    {
+      "id": "macro-china-fdi-20261023",
+      "category": "宏观点评",
+      "title": "中国宏观｜前三季实际使用外资降幅收窄，高技术领域逆势增长",
+      "summary": "商务部10月22日披露，2026年前三季实际使用外资5488亿元，同比下降4.3%，较前8个月-5.3%有所收窄；同期非金融类对外直接投资1010亿美元。Reuters援引商务部称高技术领域外资增长33.8%，但地缘政治、保护主义和全球增长偏弱仍压制总量。",
+      "why": "点评：结构改善强于总量，研发设计等高技术服务仍能吸引资金，但不能把单一行业高增写成外资全面回流；对TMT更重要的是后续项目落地、利润再投资与跨境技术限制。",
+      "source": "中国商务部数据／Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/foreign-investment-flows-into-china-fall-43-yy-first-three-quarters-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "evidence": "官方统计经媒体核验；总量与结构分开",
+      "tags": [
+        "宏观点评",
+        "中国",
+        "外商投资",
+        "高技术产业",
+        "资本流动"
+      ]
+    },
+    {
+      "id": "geopolitics-war-election-20261023",
+      "category": "宏观点评",
+      "title": "战争与政治｜美伊风险抬升、俄乌拟复谈；中期选举开始直接影响科技交易",
+      "summary": "美伊：胡塞袭击沙特目标推升油价，美国监管机构继续调查与对伊行动相关的可疑原油交易，未出现已落实的新停火。俄乌：Putin称愿在11月恢复美国斡旋谈判，目标是最终安全框架而非短期停火；谈判日期和领土分歧仍未解决。中美/选举：美国财政部提出对外科技投资新规；11月3日中期选举临近，数据中心电价、土地和监管反弹已成为AI交易的政策变量。",
+      "why": "TMT传导：中东风险经油电成本和通胀预期抬高融资成本；俄乌谈判仅降低尾部风险、不能当成停火；美国选举对AI数据中心审批、跨境资本与国会调查的影响，可能先体现在项目延迟和风险溢价。",
+      "source": "Reuters／美国财政部",
+      "url": "https://www.reuters.com/world/europe/putin-says-talks-must-focus-security-russia-ukraine-europe-overall-2026-10-22/",
+      "publishedAt": "2026-10-22至2026-10-23早间",
+      "evidence": "当事方表态、官方拟议规则与媒体核验分开；谈判不等于停火",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "美伊",
+        "俄乌",
+        "中美关系",
+        "美国中期选举"
+      ]
+    },
+    {
+      "id": "us-market-flows-20261022",
+      "category": "市场资金面",
+      "title": "美股资金面｜SOX跌6.7%，高成交下权重科技集中去风险",
+      "summary": "10月22日完整收盘：标普500 -1.21%至7,663.43，纳指-2.60%至26,008.86，道指+0.02%至52,867.98，SOX -6.7%。美国交易所成交187.9亿股，高于20日均值171.9亿股约9.9%。NYSE上涨/下跌家数比1.01:1，Nasdaq下跌家数为上涨的1.37倍；新高/新低分别为NYSE 173/366、Nasdaq 82/342。Meta -7%、Tesla -3.1%，Intel、AMD、SanDisk和Marvell均跌逾8%。",
+      "why": "资金面判断：不是全市场同步踩踏，而是高成交下从AI/半导体权重股向防御和债券集中轮动。SOX从6月高点已回撤逾26%，但年内仍涨51.5%；短期反弹需要成交缩减、半导体宽度改善和现金流预期企稳共同确认。",
+      "source": "Reuters美国收盘",
+      "url": "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/",
+      "publishedAt": "2026-10-22美市收盘",
+      "evidence": "完整交易日指数、成交量与市场宽度；未取得可靠ETF申赎",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体",
+        "成交量",
+        "市场宽度"
+      ]
+    },
+    {
+      "id": "asia-market-flows-20261022",
+      "category": "市场资金面",
+      "title": "亚洲资金面｜AI链同步减仓，港股南向转净卖；台湾今日休市",
+      "summary": "10月22日当地完整收盘：上证综指3,658.03、-1.48%，深成指约-2.96%；恒指22,934.68、-3.03%，公开Stock Connect汇总显示南向净卖约92.2亿港元。日经约-2.65%；KOSPI 5,533.77、-3.52%，报道指向外资与机构同步卖出。台湾加权约-1.81%；交易所公告10月23日因台风Champi休市。日本TOPIX与日频外资、台湾10月22日准确外资净额未取得一致公开值，因此不硬填。",
+      "why": "资金面判断：下跌集中在日韩台半导体链和港股科技，A股/港股同时受外资总量偏弱影响。港股南向净卖说明内地资金未在大跌日提供同等缓冲；台湾休市后重新开盘可能承接美股SOX的补跌压力。",
+      "source": "HKEX/TWSE公告、韩国收盘报道及公开市场数据",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-22/",
+      "publishedAt": "2026-10-22当地完整收盘；台湾2026-10-23休市",
+      "evidence": "跨市场收盘复盘；冲突数据降级并明示缺口",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾",
+        "南向资金"
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "DeepSeek",
+      "status": "已查无重要更新",
+      "note": "检查官网、API文档、GitHub/Hugging Face及公开索引；近24小时无可核验新版本。美国政府禁用/禁购已在10月20日历史条目收录，今日不重复。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "跟踪中，无新增可复现测评",
+      "note": "M3.1 Flash仍在发布后72小时窗口；检查官方公告、模型卡、Artificial Analysis和公开开发者实测。昨日已收录Plotly 43题；今日未发现新增可复现实测，不重复灌入旧榜单。"
+    },
+    {
+      "name": "Qwen",
+      "status": "有工程更新，无新模型",
+      "note": "官方模型发布未见新版本；AWS于10月21日发布Qwen3在Trainium2/torchtitan三种训练路径，作为云与芯片生态更新收录，明确非独立性能测评。"
+    },
+    {
+      "name": "Kimi / Moonshot",
+      "status": "已查无重要更新",
+      "note": "检查官方发布、模型卡与公开模型库，近24小时无新权重、API价格或开放方式变化。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "已查无重要更新",
+      "note": "检查官网、模型卡、GitHub/Hugging Face与API入口，近24小时无可核验新版本。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已查无重要更新",
+      "note": "检查官方模型库与开发者资料；Step 5 Preview的10月15日开放权重已在历史期补录，今日无新增版本或独立测评。"
+    },
+    {
+      "name": "其他中国模型",
+      "status": "已查无重要更新",
+      "note": "补查MiMo及主要公开模型/评测索引，未发现需单列的新发布；汇总站无法回溯原始材料的排名不收录。"
+    },
+    {
+      "name": "OpenAI官方与核心成员",
+      "status": "已查无重要更新",
+      "note": "检查OpenAI官方索引、开发者资料与核心成员公开网页；近24小时未发现高影响新发布。昨日Google Cloud分发、代理监控与PHP漏洞内容不重复。"
+    },
+    {
+      "name": "Anthropic官方与核心成员",
+      "status": "已查无重要更新",
+      "note": "检查新闻、产品页和公开索引；Claude Duet已于昨日收录，10月22日无新的高影响产品/模型发布。"
+    },
+    {
+      "name": "Artificial Analysis / Epoch / METR",
+      "status": "未见新增专题",
+      "note": "围绕MiniMax M3.1 Flash及中国模型检查；近24小时未发现新的可复现分项测评。检索页无法完整读取的分数不转述，METR/Epoch无新专题。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "原文访问受限",
+      "note": "检查本人X、Medium、BG2及访谈索引；X正文未授权，未发现近24小时可用原始材料核验的新长文。"
+    },
+    {
+      "name": "Brad Gerstner / Altimeter",
+      "status": "有线索，未单列",
+      "note": "定位到10月21日CNBC Squawk Box片段，主题含SpaceX-Tesla融资/合并；未取得完整官方视频或文字稿，不基于二次摘要扩写。"
+    },
+    {
+      "name": "Sarah Guo / Conviction",
+      "status": "原文访问受限",
+      "note": "检查Conviction、No Priors与公开索引；X正文受限，近24小时未发现可核验的新长访谈或长文。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "已查无重要更新",
+      "note": "检查个人博客、播客和公开视频索引，近24小时无新长文或本人访谈。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已查无重要更新",
+      "note": "检查C:Takes、官网Insights、公开X/LinkedIn/YouTube索引；最新公开Takes仍为10月15日，已在昨日补录。"
+    },
+    {
+      "name": "Apollo / Torsten Slok / Marc Rowan",
+      "status": "有更新",
+      "note": "读取10月22日The Daily Spark全文，收录AI重度支出者与VC支持率的Ramp样本；明确这是Apollo解释、非因果检验。Marc Rowan近24小时未见新原始长访谈。"
+    },
+    {
+      "name": "The Information",
+      "status": "原文访问受限",
+      "note": "检查免费公开标题与导语；订阅墙即止。未发现能够通过公司公告或Reuters完成交叉核验、且未在历史期收录的新独家。"
+    },
+    {
+      "name": "FUNDA AI Substack与X",
+      "status": "已查无重要更新",
+      "note": "检查Substack主页、最新文章公开段落与公开X索引；近24小时未见需单列的新文章。X正文受限，未把索引摘要当原帖。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "原文访问受限",
+      "note": "公开X原帖无授权；不索取账号密码、不复用Cookie。Tesla/SpaceX后续仅采用公司文件与可核验媒体材料。"
+    },
+    {
+      "name": "SpaceX官方X与官网",
+      "status": "有媒体线索，官方未确认",
+      "note": "官网仅见常规发射信息；公开X正文受限。8万个蜂窝站点为Bloomberg匿名消息经Reuters转述，正文明确未获SpaceX确认。"
+    },
+    {
+      "name": "Sundar Pichai跨平台访谈",
+      "status": "有更新",
+      "note": "核验10月21日Sources 59分钟新访谈及原始文字稿，与10月20日Big Technology访谈去重；保留公司口径和未披露指标。"
+    },
+    {
+      "name": "Andy Jassy跨平台访谈",
+      "status": "已查无重要更新",
+      "note": "检查Amazon官方、公开视频、YouTube与播客索引；未确认近24小时新的本人长访谈。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已查无重要更新",
+      "note": "检查作者页、Econ Lab/Substack及公开社媒索引；最新重要原文仍为10月14日Ramp AI Index，已在历史期补录。"
+    },
+    {
+      "name": "Ramp AI Index / Economics Lab",
+      "status": "被Apollo引用，无新原始版本",
+      "note": "10月22日Apollo使用Ramp十月样本提出token支出循环性观点；Ramp原始指数未在近24小时发布新版本。样本只代表Ramp客户支付。"
+    },
+    {
+      "name": "美国主要科技公司与财报日历",
+      "status": "已完成逐项检查",
+      "note": "核对Apple、Microsoft、Alphabet、Amazon/AWS、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron。10月22日无新的重点公司正式财报；Meta、Tesla、TI、Lam、IBM已在10月22日报收录。Microsoft/Alphabet预计10月28日、Amazon 10月29日；Intel官方称10月29日。今日收录Apple开售和AWS技术教程。"
+    },
+    {
+      "name": "NVIDIA GTC与产品文档",
+      "status": "已查无新的分项发布",
+      "note": "昨日已按DSX POD、OpenShell和Physical AI拆分收录柏林GTC官方公告；10月22日未发现新的技术文档或独立实测，不重复。"
+    },
+    {
+      "name": "last30days免费社媒补充",
+      "status": "已实际执行，证据较薄",
+      "note": "以2026-10-22至23为窗口，运行Reddit、Hacker News、GitHub三类免费来源：Reddit 3条、HN 7条、GitHub 2条进入证据层。YouTube工具在本环境不可用；X未配置且按规则未接Cookie。社区线索仅用于发现，未以热度替代证据。"
+    },
+    {
+      "name": "Cubox / AceCamp调研纪要",
+      "status": "CLI已恢复／账号未连接",
+      "note": "2026-10-23复查确认官方源码及skill仍在，当前环境此前缺少可执行文件；已恢复安装Cubox CLI 1.0.10并实际运行version成功。folder list及北京时间2026-10-23自然日普通/归档收藏查询均返回not logged in；站内只读连接也返回connected=false。未能读取AceCamp全文，不能报告为无收藏或生成纪要摘要。需要在所有者连接页完成一次安全设置，凭据不进入公开仓库。"
+    },
+    {
+      "name": "海外宏观：美债、美元、原油",
+      "status": "有更新",
+      "note": "美国财政部官方CMT：10月22日2Y 4.65%、10Y 4.96%；Reuters收盘补充10Y 4.953%、Brent 113.17、WTI 99.47与汇率。官方3:30pm ET与收盘口径分开。"
+    },
+    {
+      "name": "中国宏观与监管",
+      "status": "有更新",
+      "note": "核验商务部前三季外资总量与结构；央行、证监会近24小时未见高影响新工具落地。非银大额赎回工具已在历史期收录，不重复。"
+    },
+    {
+      "name": "美伊战争与谈判",
+      "status": "有更新",
+      "note": "胡塞对沙特目标的新袭击推升油价；CFTC继续调查与对伊行动相关可疑原油交易。未核实新的停火或正式谈判结果。"
+    },
+    {
+      "name": "俄乌战争与谈判",
+      "status": "有更新",
+      "note": "Putin确认愿于11月恢复美国斡旋谈判，Zelenskiy称支持谈判和停火倡议；领土与安排未解决，明确不写成已停火。"
+    },
+    {
+      "name": "中美政治与美国中期选举",
+      "status": "有更新",
+      "note": "美国财政部对外投资NPRM与11月3日选举相关数据中心反弹构成科技政策变量。民调和竞选表态未写成选举结果。"
+    },
+    {
+      "name": "美股指数与资金面（含SOX）",
+      "status": "有更新",
+      "note": "核验10月22日完整收盘、SOX、187.9亿股成交对20日均值171.9亿、NYSE/Nasdaq宽度与新高新低；未取得可靠ETF申赎，未填。"
+    },
+    {
+      "name": "中日韩台与港股资金面",
+      "status": "有更新但部分数据缺口",
+      "note": "核验10月22日主要指数与港股南向净卖；韩国报道确认外资/机构同步卖出。日本TOPIX日终值、台湾精确外资净额与A股可比全市场资金流数据未取得一致公开值，降级为方向/缺口，不使用“主力净流入”替代。台湾交易所确认10月23日休市。"
+    }
+  ],
+  "updatedAt": "2026-10-23T12:15:55.707Z"
+}
