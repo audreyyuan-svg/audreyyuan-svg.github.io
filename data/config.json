@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 8,
+  "version": 9,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -675,7 +675,8 @@
     "2026-10-22新规则优先于此前仅两栏目要求：项目统一AI Tracker。每日加入Cubox前一天收藏AceCamp纪要详细总结；周报每栏须有sectionOverviews概览，并加入久谦文件夹本统计期纪要更新。月报每栏同样先概览，按主题综合月内变化而非拼接日报。周报与月报独立索引，绝不替换日报latest或删除历史。",
     "周报统计以Asia/Shanghai上次周报截点至本次周日18:00（左闭右开），首期回溯7天；月报每月最后一日18:00启动，以前次月报截点至本次截点覆盖，首期为当月1日00:00至截点。明确18:00后内容顺延下一期，避免漏掉月末晚间，不能声称覆盖尚未发生时段。每栏overview包括概览、判断变化、分歧/反证及后续观察。",
     "详细纪要除原Issue字段外可加research{meetingDate,savedAt,updatedAt,sample,topics:[{heading,bullets,text?}]}；summary为200—300字提要，topics承载详细精读。保留原始URL、必要时用户端Cubox阅读链接；没有全文不能根据平台AI摘要扩写，没有真实纪要就只写sourceChecks缺口，不造条目。",
-    "月报任务已创建，任务ID 6ad96e5f92848191b4448d94ccb6cb72；仅聚合仓库已入库资料并以免费公开原文核验，不直接调用Cubox/飞书。周报直接久谦采集尚待授权，只保存计划，不应声称周报已启用。"
+    "月报任务已创建，任务ID 6ad96e5f92848191b4448d94ccb6cb72；仅聚合仓库已入库资料并以免费公开原文核验，不直接调用Cubox/飞书。周报直接久谦采集尚待授权，只保存计划，不应声称周报已启用。",
+    "2026-10-23连接状态修正（优先于旧未授权描述）：Cubox持久化只读连接已验证，日常采集先用AI Tracker的cubox_connection_status、cubox_list_cards、cubox_read_card读取；本机CLI缺文件或未登录不代表账号未授权，不重复索取API链接。按北京时间前一天取全普通及归档收藏，逐篇读全文，保留原URL并与全部归档去重。10月23日即时补入当日5篇，10月24日晨报不重复刊登。久谦周报已在10月22日完成只读验证并启用，旧等待授权/未创建文字已过时。"
   ],
   "categories": [
     "模型发布",
@@ -693,7 +694,7 @@
     "time": "08:30",
     "effectiveFrom": "2026-10-23"
   },
-  "updatedAt": "2026-10-22T02:34:47.102Z",
+  "updatedAt": "2026-10-23T12:31:31.081Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -725,15 +726,26 @@
     }
   ],
   "researchCollection": {
-    "status": "partially_connected",
-    "statusText": "久谦周报采集已接入，周报任务已启用；Cubox AceCamp仍待接通。",
+    "status": "connected",
+    "statusText": "Cubox AceCamp已接通并验证收藏清单及全文读取；久谦周报采集已接入。",
     "daily": {
-      "provider": "cubox-cli",
+      "provider": "AI Tracker持久化Cubox只读连接（CLI同源API）",
       "source": "AceCamp",
       "dateBasis": "收藏时间 created_at，非纪要原始发布日期",
       "window": "Asia/Shanghai 前一自然日00:00:00至23:59:59.999",
       "filter": "获取期内全部收藏（包括已归档），按原始URL域名、来源或正文验证AceCamp归属，不要求星标；全文逐条读取。",
-      "status": "awaiting_authorization"
+      "status": "connected",
+      "verifiedAt": "2026-10-23T12:31:31.081Z",
+      "connectionMethod": "优先调用AI Tracker cubox_connection_status、cubox_list_cards、cubox_read_card；按date=前一北京时间自然日，archived=false/true分别分页到底，按URL/id去重。连接由所有者在安全页设置，凭据仅加密保存在服务端，不导出到CLI或仓库。",
+      "fallback": "本机CLI已安装不代表登录成功。CLI未登录时不得据此宣称Cubox整体未授权；须先检查站内持久化连接。不得要求重复授权，除非实时只读校验确认凭据失效。",
+      "deduplication": "用户即时要求可采集当日截至执行时点的收藏；次日晨报对已入库原URL去重，仅实质更新另行跟进。",
+      "lastSuccessfulCollection": {
+        "savedDate": "2026-10-23",
+        "totalSavedCards": 25,
+        "archivedCards": 0,
+        "acecampFullTexts": 5,
+        "issueDate": "2026-10-23"
+      }
     },
     "weekly": {
       "provider": "lark-cli",
