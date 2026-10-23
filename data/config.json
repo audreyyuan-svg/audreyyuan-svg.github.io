@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 10,
+  "version": 11,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -655,6 +655,7 @@
     "周报：飞书久谦文件夹及子文件夹本统计期新增/实质更新纪要，先确认文件夹唯一性和只读授权"
   ],
   "procedure": [
+    "2026-10-23周末频次调整（优先于此前每天日报）：日报仅北京时间周一至周五08:30；周六和周日晨间不采集、不生成日报、不更新日报索引。任何旧每日触发仍运行时，读取配置后按Asia/Shanghai判断周几，周六/周日立即跳过且不发送日更通知。周日18:00仅生成周报，逐栏综合科技资讯、市场行情、调研纪要。由于周末无日报，周报须通过已验证Cubox持久化只读工具直接采集尚未入库的周末收藏（至少周五00:00至周日18:00，统计期左闭右开），不再仅依赖日报聚合；全量主题概览及逐条链接，精选2—4篇重要材料精读，另加飞书久谦本统计期更新。周一晨报补查周五00:00至周日23:59:59.999收藏，确保周日18:00后内容不漏，已入库者链接历史期、不重复精读；科技与宏观新闻同步回补上次日报以来的重要变化。周报和月报保持独立索引、全部历史保留，月报既有月底18:00计划不变。",
     "固定三个并列内容大栏目：科技资讯、市场行情、调研纪要；沿用相同导读、筛选与卡片版式，分类互斥不重复。宏观点评/市场资金面仅市场行情，纪要category=调研纪要仅纪要栏。顶部切换日报、周报、月报。",
     "宏观点评：海外约100—150中文字，关注美债2Y/10Y及bp变动、美元、Brent/WTI、美国选举与财政货币政策，注明报价时点、合约和民调局限；中国约100字，优先官方政策，区分宣布、实施、额度和实际投放。非银赎回支持工具等债市后盾不能直接当成股市新增资金。另用一句解释TMT融资成本/折现率/风险偏好传导。",
     "市场资金面：美股必含标普500、纳指、道指、SOX及可核验成交量/宽度/ETF资金；亚洲含A股、港股、日本、韩国、台湾，逐市场一句、合计约250字。使用最近完整交易日，休市明确标注；区分交易所净买卖、供应商估算与价格推断，不编造北向日频净流入或日本日频外资，数据冲突如实写缺口。",
@@ -693,9 +694,17 @@
   "dailyUpdateTime": {
     "timezone": "Asia/Shanghai",
     "time": "08:30",
-    "effectiveFrom": "2026-10-23"
+    "effectiveFrom": "2026-10-23",
+    "weekdays": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "weekend": "不更新晨间日报；仅周日18:00周报"
   },
-  "updatedAt": "2026-10-23T13:03:59.956Z",
+  "updatedAt": "2026-10-23T14:25:50.680Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -733,7 +742,7 @@
       "provider": "AI Tracker持久化Cubox只读连接（CLI同源API）",
       "source": "全部收藏；AceCamp为重点来源之一",
       "dateBasis": "收藏时间 created_at，非纪要原始发布日期",
-      "window": "Asia/Shanghai 前一自然日00:00:00至23:59:59.999",
+      "window": "周二至周五：前一北京时间自然日；周一：回查周五00:00至周日23:59:59.999，合并去重",
       "filter": "获取期内全部收藏（包括已归档），按原始URL域名、来源或正文验证AceCamp归属，不要求星标；全文逐条读取。",
       "status": "connected",
       "verifiedAt": "2026-10-23T12:31:31.081Z",
@@ -787,7 +796,8 @@
       "folderName": "久谦",
       "folderToken": null,
       "scope": "目标文件夹及子文件夹中本统计期新增或实质更新纪要",
-      "status": "connected"
+      "status": "connected",
+      "cuboxWeekendCollection": "直接通过站内持久化只读工具采集未入库的周末全部收藏，至少周五00:00至周日18:00；周日18:00后顺延周一晨报。"
     },
     "detailFormat": [
       "核心结论",
@@ -806,7 +816,17 @@
       "time": "08:30",
       "timezone": "Asia/Shanghai",
       "status": "active",
-      "archivePath": "data/index.json"
+      "archivePath": "data/index.json",
+      "weekdays": [
+        "MO",
+        "TU",
+        "WE",
+        "TH",
+        "FR"
+      ],
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Shanghai:20261026T083000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+      "weekendSkip": true,
+      "schedulerVerification": "pending_service_recovery"
     },
     "weekly": {
       "time": "18:00",
@@ -816,7 +836,7 @@
       "firstPlannedDate": "2026-10-25",
       "archivePath": "data/weekly/index.json",
       "automationId": "6ad976253c8c819187839a1294a2fbe1",
-      "sourceMode": "飞书CLI直接读取久谦；AceCamp从已归档日报聚合"
+      "sourceMode": "飞书CLI直接读取久谦；归档资料综合，并通过持久化Cubox工具补采未入库周末收藏"
     },
     "monthly": {
       "time": "18:00",
