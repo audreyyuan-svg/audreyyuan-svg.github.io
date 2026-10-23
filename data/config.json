@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 9,
+  "version": 10,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -676,7 +676,8 @@
     "周报统计以Asia/Shanghai上次周报截点至本次周日18:00（左闭右开），首期回溯7天；月报每月最后一日18:00启动，以前次月报截点至本次截点覆盖，首期为当月1日00:00至截点。明确18:00后内容顺延下一期，避免漏掉月末晚间，不能声称覆盖尚未发生时段。每栏overview包括概览、判断变化、分歧/反证及后续观察。",
     "详细纪要除原Issue字段外可加research{meetingDate,savedAt,updatedAt,sample,topics:[{heading,bullets,text?}]}；summary为200—300字提要，topics承载详细精读。保留原始URL、必要时用户端Cubox阅读链接；没有全文不能根据平台AI摘要扩写，没有真实纪要就只写sourceChecks缺口，不造条目。",
     "月报任务已创建，任务ID 6ad96e5f92848191b4448d94ccb6cb72；仅聚合仓库已入库资料并以免费公开原文核验，不直接调用Cubox/飞书。周报直接久谦采集尚待授权，只保存计划，不应声称周报已启用。",
-    "2026-10-23连接状态修正（优先于旧未授权描述）：Cubox持久化只读连接已验证，日常采集先用AI Tracker的cubox_connection_status、cubox_list_cards、cubox_read_card读取；本机CLI缺文件或未登录不代表账号未授权，不重复索取API链接。按北京时间前一天取全普通及归档收藏，逐篇读全文，保留原URL并与全部归档去重。10月23日即时补入当日5篇，10月24日晨报不重复刊登。久谦周报已在10月22日完成只读验证并启用，旧等待授权/未创建文字已过时。"
+    "2026-10-23连接状态修正（优先于旧未授权描述）：Cubox持久化只读连接已验证，日常采集先用AI Tracker的cubox_connection_status、cubox_list_cards、cubox_read_card读取；本机CLI缺文件或未登录不代表账号未授权，不重复索取API链接。按北京时间前一天取全普通及归档收藏，逐篇读全文，保留原URL并与全部归档去重。10月23日即时补入当日5篇，10月24日晨报不重复刊登。久谦周报已在10月22日完成只读验证并启用，旧等待授权/未创建文字已过时。",
+    "2026-10-23收藏栏目新规则（优先于仅AceCamp精读）：每日08:30沿用既有任务，汇总前一北京时间自然日00:00:00至23:59:59.999保存的全部Cubox收藏，包括普通、已归档、未星标、网页与文本卡片。优先使用AI Tracker持久化Cubox只读工具，分别分页到底、按ID和原URL去重。调研纪要栏目先给“昨日收藏概览”：总数、主题分布、3—5条综合观察，并对全部去重收藏逐条给标题、1—2句简要概括、来源/收藏日期和链接。网页优先原文链接；无原URL的文本卡片使用https://cubox.pro/web/card/ID（国际服使用cubox.cc），注明需本人登录；不得编造公开原文。概括依据实际可读正文/片段，只有标题时标为“仅标题线索”，不能用私人批注当文章结论。相同事件多收藏合并但保留各来源链接；链接清单覆盖所有收藏，不只AceCamp，且不受新闻条数配额截断。随后选通常2—4篇、最多5篇重要材料精读，不限AceCamp：依据TMT/宏观资金面相关性、信息增量、数据/方法透明度、对投资判断的影响及相反证据选择，明确一句入选理由。资料价值不足可少选或不选，不凑数。精读逐条读全文，沿用200—300字提要＋通常800—1500字详细精读和research结构，付费/登录限制、专家归属、日期、单位、样本和待验证问题保留；无全文不扩写。概览可用category=调研纪要、tags含收藏概览及按主题分组的relatedSources数组承载逐条链接，每项evidence写简述与访问范围，精读tags含重点精读。已手动精读材料次日仍进入该日收藏完整概览，但不要重复全文精读，只链接历史期；仅实质更新再跟进。不得公开个人批注、私人信息、账号或整篇原文，不更改收藏状态。"
   ],
   "categories": [
     "模型发布",
@@ -694,7 +695,7 @@
     "time": "08:30",
     "effectiveFrom": "2026-10-23"
   },
-  "updatedAt": "2026-10-23T12:31:31.081Z",
+  "updatedAt": "2026-10-23T13:03:59.956Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -727,10 +728,10 @@
   ],
   "researchCollection": {
     "status": "connected",
-    "statusText": "Cubox AceCamp已接通并验证收藏清单及全文读取；久谦周报采集已接入。",
+    "statusText": "Cubox已接通：每日汇总昨日全部收藏与链接，并精选重要材料精读；久谦周报采集已接入。",
     "daily": {
       "provider": "AI Tracker持久化Cubox只读连接（CLI同源API）",
-      "source": "AceCamp",
+      "source": "全部收藏；AceCamp为重点来源之一",
       "dateBasis": "收藏时间 created_at，非纪要原始发布日期",
       "window": "Asia/Shanghai 前一自然日00:00:00至23:59:59.999",
       "filter": "获取期内全部收藏（包括已归档），按原始URL域名、来源或正文验证AceCamp归属，不要求星标；全文逐条读取。",
@@ -745,6 +746,40 @@
         "archivedCards": 0,
         "acecampFullTexts": 5,
         "issueDate": "2026-10-23"
+      },
+      "scope": "全部Cubox收藏概览（不限AceCamp）＋编辑精选全文精读",
+      "overview": {
+        "required": true,
+        "window": "前一北京时间自然日",
+        "includeArchived": true,
+        "includeUnstarred": true,
+        "includeTextCards": true,
+        "fields": [
+          "标题",
+          "1—2句概括",
+          "来源",
+          "收藏时间",
+          "原始URL或本人Cubox阅读链接"
+        ],
+        "groupBy": "主题；同事件合并但保留全部来源",
+        "summaryPoints": "3—5条跨收藏综合观察，注明信息范围",
+        "coverage": "全部去重收藏；仅标题可见标明仅标题线索"
+      },
+      "deepReadSelection": {
+        "typicalCount": "2—4篇",
+        "maxCount": 5,
+        "sourceScope": "不限AceCamp",
+        "criteria": [
+          "TMT/宏观资金面相关性",
+          "信息增量",
+          "数据及方法可核验程度",
+          "改变投资判断的潜力",
+          "分歧、反证与失败案例"
+        ],
+        "requireReason": true,
+        "requireFullText": true,
+        "length": "200—300字提要，通常800—1500字精读；依信息密度调整",
+        "deduplication": "完整概览覆盖全部当天收藏；已精读者仅链接历史精读，实质更新除外"
       }
     },
     "weekly": {
