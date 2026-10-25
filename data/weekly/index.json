@@ -1,4 +1,9 @@
 {
-  "latest": null,
-  "archive": []
+  "latest": "2026-10-25",
+  "archive": [
+    {
+      "date": "2026-10-25",
+      "updated_at": "2026-10-25T10:16:03.355Z"
+    }
+  ]
 }
