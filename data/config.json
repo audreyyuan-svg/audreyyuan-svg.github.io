@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 11,
+  "version": 12,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -268,16 +268,29 @@
       "name": "播客精华",
       "type": "播客精华",
       "people": [
+        "All-In Podcast",
         "BG2",
         "No Priors",
         "Dwarkesh Podcast",
         "Lex Fridman Podcast",
         "Latent Space",
-        "The Cognitive Revolution"
+        "The Cognitive Revolution",
+        "Big Technology Podcast",
+        "AI Engineer Podcast",
+        "SemiAnalysis / Chipstrat",
+        "Thrive / 重要CEO访谈"
       ],
-      "url": "https://www.dwarkesh.com/",
-      "focus": "跟踪新节目及重要访谈；依据原始节目、公开文字稿或可读取字幕总结，附嘉宾、发布日期和具体片段。",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "focus": "把用户提供的小宇宙节目页作为发现清单，筛出AI、半导体、云、软件、互联网、科技监管与TMT投资相关节目；文学、社科、艺术、医药、泛消费不纳入。回到官方节目页、原始视频、字幕或逐字稿核验，生成可折叠的详细bullet总结。",
       "links": [
+        {
+          "name": "小宇宙科技播客发现页",
+          "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f"
+        },
+        {
+          "name": "All-In",
+          "url": "https://www.allinpodcast.co/"
+        },
         {
           "name": "BG2",
           "url": "https://www.bg2pod.com/"
@@ -285,10 +298,6 @@
         {
           "name": "Dwarkesh",
           "url": "https://www.dwarkesh.com/"
-        },
-        {
-          "name": "Lex Fridman",
-          "url": "https://lexfridman.com/podcast/"
         },
         {
           "name": "No Priors",
@@ -301,6 +310,14 @@
         {
           "name": "The Cognitive Revolution",
           "url": "https://www.cognitiverevolution.ai/"
+        },
+        {
+          "name": "Big Technology",
+          "url": "https://www.bigtechnology.com/"
+        },
+        {
+          "name": "SemiAnalysis",
+          "url": "https://semianalysis.com/"
         }
       ]
     },
@@ -642,7 +659,7 @@
     "Meta、NVIDIA、Google及其他重要模型公司",
     "Reuters、FT、ZDNet Korea、公司公告的产业链新闻",
     "Artificial Analysis、Epoch、METR及开发者实测",
-    "BG2、No Priors、Dwarkesh、Lex、Latent Space新节目或公开文字稿",
+    "播客精华：小宇宙科技播客发现页＋All-In、BG2、No Priors、Dwarkesh、Lex（科技）、Latent Space、Cognitive Revolution、Big Technology、AI Engineer、SemiAnalysis/Chipstrat等；过滤文学/社科/艺术/医药/消费，回到官方原始节目与字幕核验",
     "Sundar Pichai / Andy Jassy：跨平台公开访谈、播客、演讲，按人物而非固定网址查新",
     "Ara Kharazian：本人X、LinkedIn、Econ Lab Substack、新访谈",
     "Ramp AI：AI Index、Economics Lab、官方社媒与AI产品/数据更新",
@@ -651,7 +668,7 @@
     "美国主要科技公司当日财报：逐一核验IR/SEC，必查TI、Lam Research、IBM",
     "Anthropic产品页与开发者文档（含Claude Duet），NVIDIA重大活动全部相关分项公告",
     "美伊、俄乌战争/谈判、中美重要政治事件与美国选举：逐向每日实查",
-    "Cubox：前一天收藏AceCamp纪要，逐页分页及全文读取，失败如实记录",
+    "Cubox：仅检查前一日AceCamp纪要，普通/归档分别分页，列全标题与原始链接，精选数据密度高者全文精读；其他收藏不入站",
     "周报：飞书久谦文件夹及子文件夹本统计期新增/实质更新纪要，先确认文件夹唯一性和只读授权"
   ],
   "procedure": [
@@ -678,7 +695,9 @@
     "详细纪要除原Issue字段外可加research{meetingDate,savedAt,updatedAt,sample,topics:[{heading,bullets,text?}]}；summary为200—300字提要，topics承载详细精读。保留原始URL、必要时用户端Cubox阅读链接；没有全文不能根据平台AI摘要扩写，没有真实纪要就只写sourceChecks缺口，不造条目。",
     "月报任务已创建，任务ID 6ad96e5f92848191b4448d94ccb6cb72；仅聚合仓库已入库资料并以免费公开原文核验，不直接调用Cubox/飞书。周报直接久谦采集尚待授权，只保存计划，不应声称周报已启用。",
     "2026-10-23连接状态修正（优先于旧未授权描述）：Cubox持久化只读连接已验证，日常采集先用AI Tracker的cubox_connection_status、cubox_list_cards、cubox_read_card读取；本机CLI缺文件或未登录不代表账号未授权，不重复索取API链接。按北京时间前一天取全普通及归档收藏，逐篇读全文，保留原URL并与全部归档去重。10月23日即时补入当日5篇，10月24日晨报不重复刊登。久谦周报已在10月22日完成只读验证并启用，旧等待授权/未创建文字已过时。",
-    "2026-10-23收藏栏目新规则（优先于仅AceCamp精读）：每日08:30沿用既有任务，汇总前一北京时间自然日00:00:00至23:59:59.999保存的全部Cubox收藏，包括普通、已归档、未星标、网页与文本卡片。优先使用AI Tracker持久化Cubox只读工具，分别分页到底、按ID和原URL去重。调研纪要栏目先给“昨日收藏概览”：总数、主题分布、3—5条综合观察，并对全部去重收藏逐条给标题、1—2句简要概括、来源/收藏日期和链接。网页优先原文链接；无原URL的文本卡片使用https://cubox.pro/web/card/ID（国际服使用cubox.cc），注明需本人登录；不得编造公开原文。概括依据实际可读正文/片段，只有标题时标为“仅标题线索”，不能用私人批注当文章结论。相同事件多收藏合并但保留各来源链接；链接清单覆盖所有收藏，不只AceCamp，且不受新闻条数配额截断。随后选通常2—4篇、最多5篇重要材料精读，不限AceCamp：依据TMT/宏观资金面相关性、信息增量、数据/方法透明度、对投资判断的影响及相反证据选择，明确一句入选理由。资料价值不足可少选或不选，不凑数。精读逐条读全文，沿用200—300字提要＋通常800—1500字详细精读和research结构，付费/登录限制、专家归属、日期、单位、样本和待验证问题保留；无全文不扩写。概览可用category=调研纪要、tags含收藏概览及按主题分组的relatedSources数组承载逐条链接，每项evidence写简述与访问范围，精读tags含重点精读。已手动精读材料次日仍进入该日收藏完整概览，但不要重复全文精读，只链接历史期；仅实质更新再跟进。不得公开个人批注、私人信息、账号或整篇原文，不更改收藏状态。"
+    "2026-10-23收藏栏目新规则（优先于仅AceCamp精读）：每日08:30沿用既有任务，汇总前一北京时间自然日00:00:00至23:59:59.999保存的全部Cubox收藏，包括普通、已归档、未星标、网页与文本卡片。优先使用AI Tracker持久化Cubox只读工具，分别分页到底、按ID和原URL去重。调研纪要栏目先给“昨日收藏概览”：总数、主题分布、3—5条综合观察，并对全部去重收藏逐条给标题、1—2句简要概括、来源/收藏日期和链接。网页优先原文链接；无原URL的文本卡片使用https://cubox.pro/web/card/ID（国际服使用cubox.cc），注明需本人登录；不得编造公开原文。概括依据实际可读正文/片段，只有标题时标为“仅标题线索”，不能用私人批注当文章结论。相同事件多收藏合并但保留各来源链接；链接清单覆盖所有收藏，不只AceCamp，且不受新闻条数配额截断。随后选通常2—4篇、最多5篇重要材料精读，不限AceCamp：依据TMT/宏观资金面相关性、信息增量、数据/方法透明度、对投资判断的影响及相反证据选择，明确一句入选理由。资料价值不足可少选或不选，不凑数。精读逐条读全文，沿用200—300字提要＋通常800—1500字详细精读和research结构，付费/登录限制、专家归属、日期、单位、样本和待验证问题保留；无全文不扩写。概览可用category=调研纪要、tags含收藏概览及按主题分组的relatedSources数组承载逐条链接，每项evidence写简述与访问范围，精读tags含重点精读。已手动精读材料次日仍进入该日收藏完整概览，但不要重复全文精读，只链接历史期；仅实质更新再跟进。不得公开个人批注、私人信息、账号或整篇原文，不更改收藏状态。",
+    "2026-10-26 AceCamp范围修正（优先并覆盖所有“全部Cubox收藏／不限AceCamp”旧规则）：日报调研纪要只收录Cubox中可核验为AceCamp的纪要，其他收藏完全忽略。页面固定使用“全部动态”和“文章精读”两个筛选：全部动态逐条列出期内全部AceCamp标题与原始链接；文章精读只保留已读全文且数据密度高的精选纪要，通常2—4篇。匿名专家或渠道数字必须标注为未获公司确认。",
+    "2026-10-26 播客覆盖与呈现规则：用户提供的小宇宙节目页作为每日发现源，筛选AI、半导体、云、软件、互联网、科技监管和TMT投资内容，排除文学、泛社科、艺术、医药和消费。重点补查All-In、Anthropic管理层、SemiAnalysis及重要芯片分析师同台讨论等节目；回到官方节目页/原始视频/公开逐字稿核验。播客卡片提供更详细的主题化bullets，并使用可折叠详情，默认不占满页面。"
   ],
   "categories": [
     "模型发布",
@@ -704,7 +723,7 @@
     ],
     "weekend": "不更新晨间日报；仅周日18:00周报"
   },
-  "updatedAt": "2026-10-23T14:25:50.680Z",
+  "updatedAt": "2026-10-26T05:15:00Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -737,58 +756,56 @@
   ],
   "researchCollection": {
     "status": "connected",
-    "statusText": "Cubox已接通：每日汇总昨日全部收藏与链接，并精选重要材料精读；久谦周报采集已接入。",
+    "statusText": "Cubox已接通：日报仅整理AceCamp来源，先列出昨日全部AceCamp收藏与链接，再精选数据密度高的纪要精读；久谦仅用于周报。",
     "daily": {
       "provider": "AI Tracker持久化Cubox只读连接（CLI同源API）",
-      "source": "全部收藏；AceCamp为重点来源之一",
+      "source": "仅Cubox内可核验为AceCamp／acecamptech.com的纪要",
       "dateBasis": "收藏时间 created_at，非纪要原始发布日期",
       "window": "周二至周五：前一北京时间自然日；周一：回查周五00:00至周日23:59:59.999，合并去重",
-      "filter": "获取期内全部收藏（包括已归档），按原始URL域名、来源或正文验证AceCamp归属，不要求星标；全文逐条读取。",
+      "filter": "分别分页读取期内普通与已归档收藏并按id/原URL去重；仅保留domain=acecamptech.com、原URL属于AceCamp，或正文/来源元数据能明确核验为AceCamp的纪要；其他Cubox收藏一律不进入AI Tracker。",
       "status": "connected",
       "verifiedAt": "2026-10-23T12:31:31.081Z",
       "connectionMethod": "优先调用AI Tracker cubox_connection_status、cubox_list_cards、cubox_read_card；按date=前一北京时间自然日，archived=false/true分别分页到底，按URL/id去重。连接由所有者在安全页设置，凭据仅加密保存在服务端，不导出到CLI或仓库。",
       "fallback": "本机CLI已安装不代表登录成功。CLI未登录时不得据此宣称Cubox整体未授权；须先检查站内持久化连接。不得要求重复授权，除非实时只读校验确认凭据失效。",
       "deduplication": "用户即时要求可采集当日截至执行时点的收藏；次日晨报对已入库原URL去重，仅实质更新另行跟进。",
       "lastSuccessfulCollection": {
-        "savedDate": "2026-10-23",
-        "totalSavedCards": 25,
+        "savedDate": "2026-10-25",
+        "totalSavedCards": 5,
         "archivedCards": 0,
         "acecampFullTexts": 5,
-        "issueDate": "2026-10-23"
+        "issueDate": "2026-10-26"
       },
-      "scope": "全部Cubox收藏概览（不限AceCamp）＋编辑精选全文精读",
+      "scope": "AceCamp全部动态（标题＋原始链接）＋编辑精选文章精读",
       "overview": {
         "required": true,
-        "window": "前一北京时间自然日",
+        "window": "前一北京时间自然日；周一回查周五00:00至周日23:59:59.999并与已入库内容去重",
+        "sourceScope": "仅AceCamp／acecamptech.com",
         "includeArchived": true,
         "includeUnstarred": true,
-        "includeTextCards": true,
         "fields": [
           "标题",
-          "1—2句概括",
-          "来源",
+          "AceCamp原始链接",
           "收藏时间",
-          "原始URL或本人Cubox阅读链接"
+          "纪要原始日期（若可核验）"
         ],
-        "groupBy": "主题；同事件合并但保留全部来源",
-        "summaryPoints": "3—5条跨收藏综合观察，注明信息范围",
-        "coverage": "全部去重收藏；仅标题可见标明仅标题线索"
+        "layoutLabel": "全部动态",
+        "coverage": "列出期内全部去重AceCamp纪要；不展示其他Cubox收藏"
       },
       "deepReadSelection": {
         "typicalCount": "2—4篇",
         "maxCount": 5,
-        "sourceScope": "不限AceCamp",
+        "sourceScope": "仅AceCamp／acecamptech.com",
         "criteria": [
-          "TMT/宏观资金面相关性",
-          "信息增量",
-          "数据及方法可核验程度",
-          "改变投资判断的潜力",
-          "分歧、反证与失败案例"
+          "数据点数量与口径完整度",
+          "TMT基本面相关性",
+          "对收入、成本、份额、供需或资本开支判断的增量",
+          "分歧、反证与待验证性"
         ],
         "requireReason": true,
         "requireFullText": true,
         "length": "200—300字提要，通常800—1500字精读；依信息密度调整",
-        "deduplication": "完整概览覆盖全部当天收藏；已精读者仅链接历史精读，实质更新除外"
+        "deduplication": "完整概览覆盖全部当天收藏；已精读者仅链接历史精读，实质更新除外",
+        "layoutLabel": "文章精读"
       }
     },
     "weekly": {
@@ -809,7 +826,7 @@
       "后续待验证问题"
     ],
     "length": "通常每篇800—1500中文字，依原文信息密度调整；短文不凑字数。",
-    "sourcePolicy": "仅用户授权读取；不改动Cubox收藏/阅读状态，不改动飞书文件；不将密钥、完整原文、附件或个人信息放入公开仓库。摘要以自有表述保留原始出处与访问要求，受访者/渠道说法不能当公司官方披露。"
+    "sourcePolicy": "日报仅使用用户授权Cubox内的AceCamp纪要；周报另可使用已授权飞书久谦。只读，不改动收藏、阅读、归档、飞书文件或权限；不把密钥、完整原文、附件或个人信息放入公开仓库。摘要以自有表述保留原始出处；匿名专家/渠道数字不得写成公司官方披露。"
   },
   "reportPlans": {
     "daily": {
@@ -848,5 +865,52 @@
       "automationId": "6ad96e5f92848191b4448d94ccb6cb72",
       "sourceMode": "已归档日报/周报与公开原文核验；不直接调用私有CLI"
     }
+  },
+  "podcastTracking": {
+    "status": "active",
+    "discoverySource": {
+      "name": "小宇宙科技播客发现页",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "role": "线索发现，不能替代原始节目核验"
+    },
+    "includeTopics": [
+      "AI模型与产品",
+      "半导体与算力",
+      "云与数据中心",
+      "企业软件与Agent",
+      "互联网平台与商业化",
+      "科技监管与TMT投资"
+    ],
+    "excludeTopics": [
+      "文学",
+      "泛社科",
+      "艺术",
+      "医药健康",
+      "消费生活方式",
+      "与TMT无直接关系的泛谈"
+    ],
+    "coreShows": [
+      "All-In Podcast",
+      "BG2",
+      "No Priors",
+      "Dwarkesh Podcast",
+      "Lex Fridman Podcast（仅科技）",
+      "Latent Space",
+      "The Cognitive Revolution",
+      "Big Technology Podcast",
+      "AI Engineer Podcast",
+      "Acquired（仅TMT公司）",
+      "SemiAnalysis／Chipstrat／CASPA半导体讨论",
+      "Bloomberg Technology／The Circuit"
+    ],
+    "verification": "先核验节目首发日期、完整嘉宾身份和官方原始URL；优先官方节目页、原始视频、公开文字稿或可读取字幕。短剪、搬运和第三方摘要仅作线索。",
+    "presentation": "category=播客精华。卡片摘要给出核心判断；podcast.topics按主题提供详细bullets，默认折叠，用户点击后展开；保留时间戳/章节（若可核验）、数据口径、分歧与局限。",
+    "dailyChecks": [
+      "近24小时逐一检查核心节目",
+      "回查7天防漏",
+      "小宇宙发现页只保留TMT科技内容",
+      "同一节目跨平台合并",
+      "无原始字幕/文字稿不扩写"
+    ]
   }
 }
