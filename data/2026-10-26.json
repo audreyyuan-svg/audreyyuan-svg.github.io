@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-26",
+  "title": "AI Tracker 日报｜Kimi实测反例、Claude Code人才流动与AI信用风险 · 10月26日",
+  "intro": "周末科技增量不多但有三条值得保留：Kimi K3.1 Pro出现缺少可复现设置的负面真实体验，价值在于提醒榜单与工作流体验可能错位；Claude Code两名工程师公开确认离职，但没有证据支持对产品节奏作强推断；Apollo继续从劳动生产率和资本市场两端提示AI回报仍高度集中。市场端使用10月23日最近完整收盘，周一早盘油价自高位回落但中东与俄乌仍主导风险溢价。调研纪要仅纳入周日晚18:00后新增的15条Cubox收藏，全部附原始或Cubox链接，并精读昆仑芯、ASIC成本、Muse企业Agent和CoreWeave信用四篇。",
+  "coverage": "科技、宏观与市场资料截至北京时间2026年10月26日08:30，优先近24小时并回查7天；美股及亚洲市场采用10月23日最近完整交易日，油价单独标注10月26日早盘报价。Cubox按周一规则检查10月23日00:00至10月25日23:59，因10月25日18:00前内容已由周报覆盖，本期仅收录18:00后15条增量并与历史去重。共13条：科技资讯3条、市场行情5条、调研纪要5条；调研纪要总览覆盖15条收藏，4篇展开精读。",
+  "takeaways": [
+    "Kimi K3.1 Pro出现一条明确负面使用体验，但原帖没有任务、提示词或推理档位；评论区也直接质疑不可复现，因此只作为“榜单—真实任务错位”的反例线索，不当作独立性能结论。",
+    "Claude Code两名工程师Thariq Shihipar与Anthony Morris分别在本人X发文确认离开Anthropic；公开材料未说明共同原因或下一站，不能据此推断产品停滞。",
+    "Apollo认为AI收入/劳动生产率改善仍集中于大型科技公司；其证据适合提示回报扩散不足，但不是AI对非科技行业没有作用的因果证明。",
+    "周一早盘Brent与WTI分别约115.79和102.28美元，较周五结算回落约0.8%和1.0%；仍处高位，数据中心电力、物流与硬件供应链的成本风险未解除。",
+    "周日晚新增收藏的共同主线是“AI资本开支回报约束”：自研ASIC的理论降本远大于实际系统级差异，CoreWeave信用利差与高利率又把融资可持续性推到前台。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "没有可核验的新基础模型正式发布；增量来自Kimi真实体验反例、Anthropic人才流动及Apollo对AI回报集中度的再评估。",
+      "points": [
+        "Kimi反例缺少可复现设置，证据等级低于Artificial Analysis标准化测评。",
+        "Anthropic离职为本人披露，原因与产品影响未知。",
+        "周末未发现美国主要科技公司正式发布新财报。"
+      ]
+    },
+    "markets": {
+      "summary": "最近完整交易日美股回落但SOX相对抗跌；亚洲科技股分化。中东、俄乌与美国中期选举前政策表态继续影响油价和风险偏好。",
+      "points": [
+        "美债2Y/10Y最近完整收盘均上行约4bp，折现率压力回升。",
+        "油价周一早盘回落，但仍处高位且时点不同于周五收盘。",
+        "中国非银流动性支持工具周末未见新增额度或实际投放披露。"
+      ]
+    },
+    "research": {
+      "summary": "共核验周日晚18:00后15条Cubox收藏；全量给出链接，精读4篇，重点覆盖国产AI芯片、ASIC系统成本、企业Agent记忆及AI基础设施信用。",
+      "points": [
+        "昆仑芯文章为匿名二手调研，份额与客户采购均需官方或渠道交叉验证。",
+        "ASIC理论BOM降本不等于实际数据中心总成本降幅。",
+        "CoreWeave信用利差提示AI需求、融资成本与资产供给可能形成负反馈。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "kimi-k31-pro-real-use-counterexample-20261025",
+      "category": "独立测评",
+      "title": "Kimi K3.1 Pro｜真实使用负面反馈出现，但测试设置不足以复现",
+      "summary": "r/LocalLLaMA一名用户称，Kimi K3.1 Pro经OpenRouter在其实际工作流中弱于MiMo 2.6和DeepSeek 4.1 Flash；但原帖未提供任务、提示词、样本量、推理档位、温度、上下文长度或成功率。评论区多名用户要求给出训练集外任务和具体例子。另有一个GitHub项目issue称Kimi在高推理档审查计划时给出13条被接受的发现，但同样是单项目轶事。",
+      "why": "这类相反体验可提醒我们：标准化榜单与工具调用、长上下文、代码审查等真实任务之间可能存在落差；不过当前证据不可复现，不能据此否定Artificial Analysis结果或比较模型总体能力。后续观察应要求同一任务、同一网关、固定推理预算和可公开输入输出。",
+      "source": "Reddit r/LocalLLaMA／GitHub用户案例",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xercio/artificial_analysis_index_is_nonrepresentative_of/",
+      "publishedAt": "2026-10-25",
+      "evidence": "个人体验／反例线索；缺少完整测试设置",
+      "tags": [
+        "Kimi",
+        "K3.1 Pro",
+        "独立测评",
+        "个人体验",
+        "反例",
+        "不可复现"
+      ]
+    },
+    {
+      "id": "anthropic-claude-code-engineers-depart-20261024",
+      "category": "核心团队",
+      "title": "Anthropic核心团队｜Claude Code两名工程师确认离职",
+      "summary": "Thariq Shihipar与Anthony Morris分别在本人X发文确认离开Anthropic。公开转录显示，Morris称10月23日是最后一天，并提到曾参与Claude Code桌面端；Shihipar也确认结束在Anthropic的任期。两人均未在可核验公开材料中说明共同原因或下一站。",
+      "why": "Claude Code处于快速产品化阶段，关键工程师流动值得跟踪；但两则个人公告不足以判断团队整体流失、路线变化或发布节奏，更不能与融资、IPO传闻建立因果关系。X原帖访问受限，本期以公开可读的本人帖转录交叉确认。",
+      "source": "本人X公开帖的可读转录／公开报道",
+      "url": "https://fourweekmba.com/ai-claude-code-on-desktop-creator-exits-anthropic-before-ipo/",
+      "publishedAt": "2026-10-24",
+      "evidence": "本人披露经公开转录核验；离职原因未知",
+      "tags": [
+        "Anthropic",
+        "Claude Code",
+        "核心团队",
+        "人才流动",
+        "Thariq Shihipar",
+        "Anthony Morris"
+      ]
+    },
+    {
+      "id": "apollo-ai-payoff-concentration-japan-20261025",
+      "category": "投资人观点",
+      "title": "Apollo周末观点｜AI回报仍集中科技公司，日本治理改革强化盈利线索",
+      "summary": "Apollo 10月24日图表称，按收入/员工衡量，Mag 7近年上升而其余S&P 500大致持平，并据此质疑AI生产率红利是否已扩散到科技业外。10月25日的日本周前瞻则称，日本股东提案数较2018年增长逾三倍，资本额1亿至10亿日元企业利润处历史高位。两者共同指向：AI与治理改善的回报仍集中在可见的公司群体。",
+      "why": "这是资产配置视角而非因果研究。收入/员工受价格、行业结构与裁员影响，不能直接等同AI生产率；日本股东行动与利润同时上升也不证明前者导致后者。对TMT而言，应跟踪AI工具使用是否开始转化为非科技行业毛利率、收入/员工与自由现金流。",
+      "source": "Apollo The Daily Spark",
+      "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "publishedAt": "2026-10-24—2026-10-25",
+      "evidence": "机构投资人观点／公开图表；非因果检验",
+      "tags": [
+        "投资人观点",
+        "Apollo",
+        "Torsten Slok",
+        "AI生产率",
+        "日本",
+        "公司治理"
+      ]
+    },
+    {
+      "id": "global-rates-oil-macro-20261026",
+      "category": "宏观点评",
+      "title": "海外宏观｜美债收益率回升，周一早盘油价自高位小幅回落",
+      "summary": "10月23日最近完整收盘，美国国债2Y/10Y收益率分别为4.69%和5.00%，日变动均约+4bp。10月26日亚洲早盘，WTI约102.28美元、Brent约115.79美元，分别较周五结算低约1.0%和0.8%；美元指数同一时点的可靠公开报价未核到，暂不填数。",
+      "why": "利率回升直接抬高长久期科技股折现率；油价虽回落但仍在高位，对数据中心电力、物流与硬件供应链成本构成二阶压力。收益率为周五收盘、油价为周一早盘，二者不作同一时点因果比较。",
+      "source": "美国财政部／Reuters市场报价",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+      "publishedAt": "2026-10-23—2026-10-26 07:15（北京时间）",
+      "evidence": "官方收益率＋媒体早盘期货报价；时点分开",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "Brent",
+        "WTI",
+        "折现率",
+        "能源成本"
+      ]
+    },
+    {
+      "id": "china-liquidity-policy-followup-20261026",
+      "category": "宏观点评",
+      "title": "中国宏观｜非银大额赎回支持工具周末未见新增实施参数",
+      "summary": "截至10月26日08:30，公开官方材料仍停留在10月19日金融街论坛对“应对非银机构大额赎回的流动性支持工具”的宣布；周末未核到额度、抵押品范围、触发条件或实际投放数据的新披露。",
+      "why": "该工具首先是债市流动性后盾，有助于降低赎回冲击向信用利差和融资条件传导；在额度与使用数据公布前，不能写成无条件放水，也不能直接等同股市增量资金。",
+      "source": "中国人民银行／金融街论坛公开信息",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
+      "publishedAt": "2026-10-26（跟踪状态）",
+      "evidence": "官方政策后续检查；未见新增参数",
+      "tags": [
+        "宏观点评",
+        "中国",
+        "流动性",
+        "非银机构",
+        "债市",
+        "政策跟踪"
+      ]
+    },
+    {
+      "id": "wars-politics-update-20261026",
+      "category": "宏观点评",
+      "title": "战争与政治｜美伊维持间接沟通，俄乌能源战升温，中美关税仍是选举变量",
+      "summary": "美伊：多方继续通过中间渠道传话，美方称当日未实施新一轮打击，但不等于停火或达成协议。俄乌：双方围绕能源设施的袭击与报复继续，潜在会谈没有形成可核验突破。中美与美国选举：特朗普在密歇根集会称加拿大关税协议“很快”达成但未给细节；11月3日中期选举前，关税与对华科技限制仍是政策不确定性来源。",
+      "why": "油运与能源设施风险决定油价尾部；俄乌能源战影响欧洲电价；关税和出口管制直接影响半导体、云和消费电子供应链。以上区分了当事方表态与已落实政策，谈判或预测均不当作结果。",
+      "source": "Reuters／AP公开报道",
+      "url": "https://www.reuters.com/world/",
+      "publishedAt": "2026-10-25—2026-10-26",
+      "evidence": "媒体交叉核验；谈判与表态不等于落地",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "美伊",
+        "俄乌",
+        "中美",
+        "美国中期选举",
+        "关税"
+      ]
+    },
+    {
+      "id": "us-market-flows-20261023",
+      "category": "市场资金面",
+      "title": "美国市场资金面｜权重指数回落，SOX相对抗跌但量能低于20日均值",
+      "summary": "10月23日标普500收7623.68（-0.52%）、纳指25955.34（-0.21%）、道指52215.16（-1.23%），SOX约+0.4%。美股总成交约154亿股，较20日均量172亿股低约10.5%；NYSE与Nasdaq下跌/上涨家数比分别约1.72和1.57。",
+      "why": "这更像缩量防御与权重分化，并非半导体同步杀跌。SOX相对强于大盘，但市场宽度偏弱，科技增量买盘是否恢复仍需看本周财报后的成交量、期权偏度和板块扩散。",
+      "source": "Reuters市场收盘数据",
+      "url": "https://www.reuters.com/markets/us/",
+      "publishedAt": "2026-10-23（最近完整交易日）",
+      "evidence": "完整收盘／成交量与市场宽度",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "S&P 500",
+        "Nasdaq",
+        "Dow",
+        "SOX",
+        "成交量",
+        "市场宽度"
+      ]
+    },
+    {
+      "id": "asia-market-flows-20261023",
+      "category": "市场资金面",
+      "title": "亚洲市场资金面｜A股科技放量、港股南向转卖，日韩外资分化",
+      "summary": "10月23日A股上证+0.89%、创业板+4.16%，成交约1.96万亿元；港股恒指+0.69%、恒生科技+2.05%，南向资金净卖出约16.70亿港元。日本日经225收62693.16（-0.34%）。韩国KOSPI+0.30%，外资净卖出约9928亿韩元、机构净买入约8722亿韩元。台湾因台风休市，未用旧收盘冒充当日行情。",
+      "why": "A股科技涨幅和成交扩张显示本地风险偏好回升，但港股南向与韩国外资流向并未同步，区域科技交易仍是分化而非共振。日本日频外资净买卖无统一公开口径，本期不填。",
+      "source": "交易所公开数据／Reuters市场汇总",
+      "url": "https://www.reuters.com/markets/asia/",
+      "publishedAt": "2026-10-23（最近完整交易日）",
+      "evidence": "完整交易日；休市与资金口径单列",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾",
+        "南向资金",
+        "外资"
+      ]
+    },
+    {
+      "id": "cubox-acecamp-overview-20261025-post18",
+      "category": "调研纪要",
+      "title": "Cubox昨日收藏概览｜周报后15条增量，聚焦AI资本开支与硬件链",
+      "summary": "周日18:00后共15条新增收藏，全部已读取正文并附链接。主题包括：昆仑芯份额与客户采购的二手调研；10月25日匿名市场信息；物理AI数据与应用瓶颈；1GW AI数据中心自研ASIC的理论/实际降本差异；3D DRAM及芯片存储路线；PCB涨价链；Google与Muse产品机制；AI研究员薪酬；硅谷70场会面的个人见闻；CoreWeave信用风险；10T模型训练者；投研方法与市场风格；Pichai访谈译文；中材科技三季报点评。Pichai条目对应已收录的Big Technology访谈，不重复展开。",
+      "why": "收藏整体从“谁有最好模型”转向“算力供给、系统成本、融资与应用分发能否支撑回报”。多数为二手调研、个人观察或券商式点评，不能当作公司披露；下列四篇因信息密度和TMT传导价值较高而精读。",
+      "source": "用户Cubox收藏（AceCamp相关筛选）",
+      "url": "https://cubox.pro/my/card",
+      "publishedAt": "2026-10-25 18:00—23:59（收藏时间）",
+      "evidence": "只读核验15条正文；与周报去重",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Cubox",
+        "昨日收藏",
+        "概览"
+      ],
+      "research": {
+        "meetingDate": "多日期／原文日期不一",
+        "savedAt": "2026-10-25 18:17—23:23 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "15条收藏；二手调研、访谈、个人评论与业绩点评混合",
+        "topics": [
+          {
+            "heading": "国产AI芯片与硬件",
+            "bullets": [
+              "昆仑芯二手调研：https://mp.weixin.qq.com/s/AR3XENE1OSC6tW52JBEBBw",
+              "AI芯片与存储路线：https://mp.weixin.qq.com/s/DPYRlm2RHLVOfkFkPX3bXA",
+              "PCB涨价链：https://cubox.pro/web/card/7514031874440695686",
+              "中材科技业绩点评：https://cubox.pro/web/card/7513977677598949880"
+            ]
+          },
+          {
+            "heading": "AI基础设施与资本效率",
+            "bullets": [
+              "1GW数据中心与ASIC成本：https://mp.weixin.qq.com/s/_gyY_g-rZfR2E7zeMfR5uQ",
+              "CoreWeave与法国高利率裂缝：https://mp.weixin.qq.com/s/ylyQquD1Lgc0VFqsoUsQOg",
+              "谁在训练10T模型：https://mp.weixin.qq.com/s/-INW-YWDJaegbI_U5FtkBQ"
+            ]
+          },
+          {
+            "heading": "Agent、人才与应用",
+            "bullets": [
+              "为什么不是Google做出Muse：https://mp.weixin.qq.com/s/qFRlp1yAuTwME5M0dC2oFg",
+              "物理AI炒作的意义：https://mp.weixin.qq.com/s/tctzxkw6KtWddEOcydeuGw",
+              "AI研究员薪酬：https://mp.weixin.qq.com/s/PJtyCVAZ0PUS8-7Qk15HcQ",
+              "Pichai访谈译文：https://mp.weixin.qq.com/s/zeAeDVfr70hm5pVNAZif2A"
+            ]
+          },
+          {
+            "heading": "市场与投资方法",
+            "bullets": [
+              "一些信息1025：https://mp.weixin.qq.com/s/8cA853Jhn1sX4jBAJtDnPg",
+              "硅谷国庆见闻：https://mp.weixin.qq.com/s/95EAK9WOfiXgNB5c9rNB6w",
+              "投研思维与投资水平：https://mp.weixin.qq.com/s/C--t3Rp8MC56YEVXiWGfYA",
+              "民工看市：https://mp.weixin.qq.com/s/0vkvKaO0cs0qWTmSnUStXA"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "research-kunlun-chip-secondary-20261025",
+      "category": "调研纪要",
+      "title": "精读｜昆仑芯调研里透露出的一些细节",
+      "summary": "公开二手调研文章称，2025年国内H100级加速卡市场中英伟达约50%、华为约25%、其他国产约25%，并预计2026年英伟达降至20%以下、华为升至约45%、昆仑芯约5%—8%；同时转述互联网、科技和汽车客户采购计划。文章认为推理是昆仑芯主要落点，多模态训练仍更依赖英伟达生态，并提到P800与M100在代工与可信供应链上的差异。",
+      "why": "如果国产卡需求从一次性替代转为互联网公司持续扩容，份额和盈利弹性会明显不同；但文中份额、近10万张需求及具体客户采购均来自匿名二手渠道，没有官方订单、出货或收入交叉验证。应跟踪实际交付、利用率、软件迁移成本、推理TCO和下游应用变现。",
+      "source": "公开二手调研文章／Cubox收藏",
+      "url": "https://mp.weixin.qq.com/s/AR3XENE1OSC6tW52JBEBBw",
+      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
+      "evidence": "匿名二手调研；非公司披露",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "昆仑芯",
+        "国产AI芯片",
+        "推理",
+        "份额"
+      ],
+      "research": {
+        "meetingDate": "未披露",
+        "savedAt": "2026-10-25 23:22:56 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "匿名产业调研转述；样本与受访者未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "文章预期国产卡份额继续提升，昆仑芯主攻推理。",
+              "互联网、科技、汽车被称为主要需求端，但客户采购数字未获公司确认。"
+            ]
+          },
+          {
+            "heading": "技术与供应链",
+            "bullets": [
+              "多模态训练被认为仍受英伟达生态优势约束。",
+              "P800/M100代工与可信供应链说法需晶圆、封装和客户准入材料验证。"
+            ]
+          },
+          {
+            "heading": "反证与跟踪",
+            "bullets": [
+              "国产替代可能只是一轮集中采购，不能直接外推持续增长。",
+              "观察交付、上架利用率、故障率、软件适配成本与推理单位成本。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "research-asic-system-cost-20261025",
+      "category": "调研纪要",
+      "title": "精读｜600亿美元AI数据中心，自研ASIC为何不是200亿美元",
+      "summary": "文章围绕1GW AI数据中心拆分成本：SemiAnalysis的理论讨论认为去掉英伟达及芯片设计商利润后，超过600亿美元的项目底部可能接近200亿美元；但文中引用Bernstein系统级估算称，GB200约365亿美元、Vera Rubin约395亿美元、AMD MI455X约357亿美元、TPU v7约390亿美元、OpenAI Jalapeño约346亿美元，定制ASIC相对Rubin仅低约12%，远小于“降三分之二”。模型中约127亿美元基础设施成本相对固定。",
+      "why": "关键不是裸芯片毛利，而是内存、网络、机架、电力、散热、软件、验证和良率构成的系统TCO。自研ASIC只有在工作负载足够稳定、规模足够大且软件生态可控时才可能兑现优势。文章关于Anthropic自研芯片与设计周期的说法未获官方确认，9个月设计到流片和16个月组队到流片也不是同一起点。",
+      "source": "公开产业分析文章／Cubox收藏",
+      "url": "https://mp.weixin.qq.com/s/_gyY_g-rZfR2E7zeMfR5uQ",
+      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
+      "evidence": "二手行业模型；成本假设非实际采购预算",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "ASIC",
+        "AI数据中心",
+        "TCO",
+        "资本开支"
+      ],
+      "research": {
+        "meetingDate": "不适用",
+        "savedAt": "2026-10-25 23:19:29 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "公开二手成本模型；多个方案的假设口径未完全披露",
+        "topics": [
+          {
+            "heading": "成本拆解",
+            "bullets": [
+              "理论去利润情景不等于可采购价格。",
+              "基础设施约127亿美元在模型中相对固定，限制了芯片降价向整站资本开支的传导。"
+            ]
+          },
+          {
+            "heading": "自研条件",
+            "bullets": [
+              "适合稳定、大规模、重复的工作负载。",
+              "需把EDA、验证、良率、编译器、网络和运维计入全生命周期。"
+            ]
+          },
+          {
+            "heading": "待验证",
+            "bullets": [
+              "不同系统的功耗、性能和使用率是否同口径。",
+              "所谓设计周期是否从组队、架构冻结或流片开始计时。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "research-muse-enterprise-agent-memory-20261025",
+      "category": "调研纪要",
+      "title": "精读｜为什么不是Google做出了Muse：企业Agent的程序性记忆与分发",
+      "summary": "一篇公开播客整理采访Muse产品负责人Lewis；他自述曾是Google Gemini早期产品经理，参与PaLM 2到API与定价的产品化。核心判断是：企业Agent的“程序性记忆”应把过去任务轨迹蒸馏为可复用技能，而不仅是检索历史文本。Muse通过Gmail和日历等上下文提出任务建议，试图解决用户不知道该给Agent什么提示的问题；企业部署还要处理权限、来源追溯和本地/云端边界。",
+      "why": "这把Agent竞争从模型能力推进到任务发现、记忆、权限与分发。Google没有率先做出Muse是受访者观点，不是Google官方复盘；“8—9人早期团队”等叙述也需独立验证。对中国互联网生态，应重点观察封闭数据入口是否使系统级Agent更难跨应用执行，以及本地运行能否真正改善隐私与延迟。",
+      "source": "公开播客整理／Cubox收藏",
+      "url": "https://mp.weixin.qq.com/s/qFRlp1yAuTwME5M0dC2oFg",
+      "publishedAt": "2026-10-25（收藏；原节目日期以页面为准）",
+      "evidence": "个人访谈／产品观点；非Google或Muse正式披露",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Muse",
+        "企业Agent",
+        "程序性记忆",
+        "Google"
+      ],
+      "research": {
+        "meetingDate": "原节目日期未核到",
+        "savedAt": "2026-10-25 21:05:00 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "单一受访者长访谈的公开整理",
+        "topics": [
+          {
+            "heading": "产品机制",
+            "bullets": [
+              "从历史任务轨迹提炼可复用程序性技能。",
+              "用邮件和日历提示潜在任务，降低用户发现成本。"
+            ]
+          },
+          {
+            "heading": "企业约束",
+            "bullets": [
+              "权限、审计、来源追溯和数据驻留决定可部署性。",
+              "本地与云端组合需在隐私、延迟和能力间取舍。"
+            ]
+          },
+          {
+            "heading": "反证与观察",
+            "bullets": [
+              "个人叙事不能证明大公司必然缺乏创新。",
+              "观察建议任务的采纳率、成功率、人工接管率和跨应用权限失败。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "research-coreweave-credit-rates-20261025",
+      "category": "调研纪要",
+      "title": "精读｜CoreWeave与高利率下的两道裂缝",
+      "summary": "文章引用Goldman等公开框架追踪AI基础设施信用：称CoreWeave 2031年到期、票息9.75%的债券收益率从5月约8.89%升至一度15.70%，随后约15%附近；5年CDS约1117bp，文中模型对应五年累计违约概率约63%。文章还列举AI相关发行人30年期信用利差差异，说明市场正在按资产负债表与现金流质量重新定价，而不是把全部AI资本开支视为同一风险。",
+      "why": "若需求增速放缓或再融资成本维持高位，数据中心项目的资本开支、抵押融资和上架节奏可能形成负反馈。信用利差是实时风险价格，不是实际违约结论；63%取决于回收率和模型，约140亿美元债务及单一租户结构也属于二手说法。后续应核对债券成交、CDS曲线、客户集中度、租约、资本开支承诺和自由现金流。",
+      "source": "公开信用市场分析／Cubox收藏",
+      "url": "https://mp.weixin.qq.com/s/ylyQquD1Lgc0VFqsoUsQOg",
+      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
+      "evidence": "二手市场数据与模型；非公司业绩披露",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "CoreWeave",
+        "AI基础设施",
+        "信用利差",
+        "融资成本"
+      ],
+      "research": {
+        "meetingDate": "不适用",
+        "savedAt": "2026-10-25 20:53:00 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "公开债券/CDS报价与二手分析；报价时点和供应商口径未完全披露",
+        "topics": [
+          {
+            "heading": "市场信号",
+            "bullets": [
+              "高收益债与CDS均显示风险溢价显著上升。",
+              "AI发行人利差分化，市场开始区分现金流质量与融资依赖。"
+            ]
+          },
+          {
+            "heading": "传导机制",
+            "bullets": [
+              "融资成本上升可能压缩数据中心项目IRR并延缓供给。",
+              "若供给收缩又推高算力价格，会反过来影响模型公司和应用层毛利。"
+            ]
+          },
+          {
+            "heading": "局限",
+            "bullets": [
+              "信用价格不等于需求已崩塌或公司必然违约。",
+              "需用公司披露核对债务、租户集中和资本开支，而非沿用二手数字。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "仓库配置与历史",
+      "status": "完成",
+      "note": "读取data/config.json、data/index.json、2026-10-23日报及2026-10-25周报；按周报18:00截点去重。"
+    },
+    {
+      "name": "Cubox／AceCamp",
+      "status": "完成",
+      "note": "只读连接成功；分页检查周末收藏，周日18:00后15条增量均读取正文，0条归档增量，未改变收藏状态。"
+    },
+    {
+      "name": "last30days",
+      "status": "部分完成",
+      "note": "v3.28.1按免费模式实际运行；Reddit 18、Hacker News 1、GitHub 11条结果。YouTube因本地证书链校验失败未完成，未使用Cookie或付费后端。"
+    },
+    {
+      "name": "OpenAI及核心成员",
+      "status": "完成",
+      "note": "官方公开页面及近7日公开索引已查，未发现10月25日可核验的新正式发布。"
+    },
+    {
+      "name": "Anthropic及核心成员",
+      "status": "完成",
+      "note": "官方页与公开社媒索引已查；收录两名Claude Code工程师本人离职披露，原X页面直读受限。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "完成",
+      "note": "官网、GitHub/Hugging Face与公开更新索引已查，未发现10月25日新模型或小版本。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "完成",
+      "note": "官网、API/模型页及公开更新索引已查，未发现10月25日新版本；既有模型不重复。"
+    },
+    {
+      "name": "Qwen",
+      "status": "完成",
+      "note": "官方博客、GitHub/Hugging Face与模型页已查，未发现10月25日新版本。"
+    },
+    {
+      "name": "Kimi／Moonshot",
+      "status": "完成",
+      "note": "官方发布历史与公开开发者讨论已查；新增一条不可复现负面体验和一条单项目正面案例，按低证据等级收录。"
+    },
+    {
+      "name": "GLM／Z.ai",
+      "status": "完成",
+      "note": "官网、GitHub/Hugging Face与更新索引已查，未发现10月25日可核验新版本。"
+    },
+    {
+      "name": "StepFun及其他中国模型",
+      "status": "完成",
+      "note": "StepFun官方渠道与公开模型索引已查，未发现10月25日可核验新版本。"
+    },
+    {
+      "name": "Artificial Analysis／Epoch／METR",
+      "status": "完成",
+      "note": "检查Kimi发布后72小时跟踪；未发现10月25日新增标准化结果，现有AA结果不重复；Epoch/METR无新相关报告。"
+    },
+    {
+      "name": "Gavin Baker／Brad Gerstner／Sarah Guo／Elad Gil",
+      "status": "完成",
+      "note": "公开网页、播客与X索引已查，未发现近24小时可核验且与TMT主线相关的新长文或访谈。"
+    },
+    {
+      "name": "Coatue",
+      "status": "完成",
+      "note": "Takes、Public Markets Update及公开社媒索引已查，未见10月25日新增；仅有旧材料不补凑。"
+    },
+    {
+      "name": "Apollo",
+      "status": "完成",
+      "note": "Daily Spark与公开研究已查，收录10月24—25日两项周末观点并明确方法限制。"
+    },
+    {
+      "name": "The Information",
+      "status": "受限",
+      "note": "免费标题/导语已查；10月25日AI安全倡议线索位于订阅墙且未找到足够原始材料交叉验证，未作为事实条目收录。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "完成",
+      "note": "Substack最新文章日期、公开段落与X索引已查，未发现10月25日有足够增量的新材料。"
+    },
+    {
+      "name": "Elon Musk X",
+      "status": "受限",
+      "note": "公开X索引已查；原帖直读不稳定，未把摘要当全文，未发现需收录的科技/宏观增量。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "完成",
+      "note": "官网、公开公告与X索引已查，未发现10月25日新业绩披露或重大正式公告。"
+    },
+    {
+      "name": "Sundar Pichai／Andy Jassy",
+      "status": "完成",
+      "note": "本人、公司、主持人及YouTube/播客公开索引回查7天；未发现新的本人长访谈，Pichai旧访谈收藏与历史去重。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "部分完成",
+      "note": "Econ Lab、Ramp作者页及公开X/LinkedIn索引已查；登录墙限制原帖全文，未发现近24小时可核验增量。"
+    },
+    {
+      "name": "Ramp AI／Economics Lab",
+      "status": "完成",
+      "note": "AI Index、Data与公开社媒索引已查，最新可核验更新仍早于本期，无新统计期数据。"
+    },
+    {
+      "name": "美国主要科技公司与财报",
+      "status": "完成",
+      "note": "Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron的IR/日历已查；周日无新正式财报，未把预告当业绩。"
+    },
+    {
+      "name": "重大活动／产品页",
+      "status": "完成",
+      "note": "Anthropic产品页与NVIDIA/Oracle活动页已查；Oracle AI World尚在注册/开幕阶段，未见可核验分项产品公告。"
+    },
+    {
+      "name": "战争、政治与美国选举",
+      "status": "完成",
+      "note": "Reuters/AP近24小时公开报道已查；区分间接沟通、战场主张、预测与已落实政策。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "完成",
+      "note": "央行、金融监管、证监会与财政公开页面已查；非银流动性工具周末未见额度或实际投放更新。"
+    },
+    {
+      "name": "全球市场与资金面",
+      "status": "完成",
+      "note": "美国财政部、交易所与Reuters公开数据已查；股市用10月23日完整交易日，油价用10月26日早盘，时点未混写。"
+    }
+  ],
+  "updatedAt": "2026-10-26T00:48:00.000Z"
+}
