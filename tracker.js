@@ -24,7 +24,8 @@ function isResearchOverview(item) {
   return /overview|collection/i.test(item.id || "") || (item.tags || []).some(tag => /收藏概览|全部动态/.test(tag));
 }
 function archiveSummary(issue) {
-  const value = issue?.archiveSummary || issue?.sectionOverviews?.technology?.summary || issue?.takeaways?.[0] || issue?.intro || "";
+  const candidates = [issue?.archiveSummary, issue?.takeaways?.[0], issue?.sectionOverviews?.technology?.summary, issue?.intro].filter(Boolean);
+  const value = candidates.find(text => !/补录|补全|进入.{0,4}跟踪|建立专题|已收录|新增来源|精选精读|本期更新|查漏补缺/.test(String(text))) || candidates[0] || "";
   const clean = String(value).replace(/\s+/g, " ").trim();
   if (!clean) return "本期精要待读取";
   const sentence = clean.split(/(?<=[。！？；])/)[0] || clean;
