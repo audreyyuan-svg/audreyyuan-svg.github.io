@@ -1,22 +1,22 @@
 {
   "date": "2026-10-26",
-  "title": "AI Tracker 日报｜Kimi实测反例、Claude Code人才流动与AI信用风险 · 10月26日",
-  "intro": "周末科技增量不多但有三条值得保留：Kimi K3.1 Pro出现缺少可复现设置的负面真实体验，价值在于提醒榜单与工作流体验可能错位；Claude Code两名工程师公开确认离职，但没有证据支持对产品节奏作强推断；Apollo继续从劳动生产率和资本市场两端提示AI回报仍高度集中。市场端使用10月23日最近完整收盘，周一早盘油价自高位回落但中东与俄乌仍主导风险溢价。调研纪要仅纳入周日晚18:00后新增的15条Cubox收藏，全部附原始或Cubox链接，并精读昆仑芯、ASIC成本、Muse企业Agent和CoreWeave信用四篇。",
-  "coverage": "科技、宏观与市场资料截至北京时间2026年10月26日08:30，优先近24小时并回查7天；美股及亚洲市场采用10月23日最近完整交易日，油价单独标注10月26日早盘报价。Cubox按周一规则检查10月23日00:00至10月25日23:59，因10月25日18:00前内容已由周报覆盖，本期仅收录18:00后15条增量并与历史去重。共13条：科技资讯3条、市场行情5条、调研纪要5条；调研纪要总览覆盖15条收藏，4篇展开精读。",
+  "title": "AI Tracker 日报｜Kimi长程推理、AI算力约束与三场科技播客 · 10月26日",
+  "intro": "本期在原有科技与市场更新上做两项实质补齐：播客新增All-In的AI支出/网络安全讨论、Anthropic总裁Daniela Amodei长访谈，以及SemiAnalysis Dylan Patel与Bernstein Stacy Rasgon的半导体圆桌，详细要点默认折叠。调研纪要严格收窄为Cubox内5篇AceCamp收藏，全部列出标题和原始链接，并精选Kimi、企业Agent/MaaS、存储与火山云四篇精读；其他收藏不再展示。",
+  "coverage": "科技、宏观与市场资料截至北京时间2026年10月26日08:30，优先近24小时并回查7天；美股及亚洲市场采用10月23日最近完整交易日，油价单独标注10月26日早盘报价。Cubox仅检查并收录北京时间10月25日00:00—23:59:59.999可核验为AceCamp的收藏：普通5篇、归档0篇，全文均已读取；其他Cubox收藏已排除。播客条目回到原始节目元数据、完整视频或公开逐字稿核验。共16条：科技资讯6条、市场行情5条、调研纪要5条；调研栏目1条覆盖全部5篇链接，4篇展开精读。",
   "takeaways": [
-    "Kimi K3.1 Pro出现一条明确负面使用体验，但原帖没有任务、提示词或推理档位；评论区也直接质疑不可复现，因此只作为“榜单—真实任务错位”的反例线索，不当作独立性能结论。",
-    "Claude Code两名工程师Thariq Shihipar与Anthony Morris分别在本人X发文确认离开Anthropic；公开材料未说明共同原因或下一站，不能据此推断产品停滞。",
-    "Apollo认为AI收入/劳动生产率改善仍集中于大型科技公司；其证据适合提示回报扩散不足，但不是AI对非科技行业没有作用的因果证明。",
-    "周一早盘Brent与WTI分别约115.79和102.28美元，较周五结算回落约0.8%和1.0%；仍处高位，数据中心电力、物流与硬件供应链的成本风险未解除。",
-    "周日晚新增收藏的共同主线是“AI资本开支回报约束”：自研ASIC的理论降本远大于实际系统级差异，CoreWeave信用利差与高利率又把融资可持续性推到前台。"
+    "SemiAnalysis Dylan Patel与Bernstein Stacy Rasgon的共同结论不是“需求无忧”，而是融资、电力与多层供应链同时限制建设速度；这既延长紧缺，也提高项目对真实收入和利用率的敏感度。",
+    "AceCamp的Kimi调研给出200万token、100步以上Agent、400B日均token及海外收入提升等线索，但均为匿名专家口径；后续必须用官方模型卡、API数据和可复现实测验证。",
+    "企业Agent调研把POC阻力拆成预算/采购/合规60%、系统与数据30%、价值量化10%；即便技术可用，FDE成本、权限与单位任务毛利仍决定商业化。",
+    "最新All-In把AI支出集中与Agent网络安全放在同一框架：收入质量和身份/权限/责任边界将同时影响云、模型与安全厂商估值。",
+    "周一早盘Brent与WTI仍处高位；折现率、能源成本与融资约束继续放大AI资本开支回报的分化。"
   ],
   "sectionOverviews": {
     "technology": {
-      "summary": "没有可核验的新基础模型正式发布；增量来自Kimi真实体验反例、Anthropic人才流动及Apollo对AI回报集中度的再评估。",
+      "summary": "周末科技增量集中在三场长播客与AceCamp渠道调研：AI支出质量、算力融资/供给瓶颈、Agent责任边界和Anthropic产品哲学成为共同主线。",
       "points": [
-        "Kimi反例缺少可复现设置，证据等级低于Artificial Analysis标准化测评。",
-        "Anthropic离职为本人披露，原因与产品影响未知。",
-        "周末未发现美国主要科技公司正式发布新财报。"
+        "All-In讨论AI支出集中、开放模型审计与Agent网络安全责任。",
+        "SemiAnalysis × Bernstein圆桌把融资、内存/载板/洁净室与定制芯片放入同一供给框架。",
+        "Daniela Amodei访谈强调AI应释放人的时间而非替代亲密关系；属管理层价值观，不是经营披露。"
       ]
     },
     "markets": {
@@ -28,11 +28,11 @@
       ]
     },
     "research": {
-      "summary": "共核验周日晚18:00后15条Cubox收藏；全量给出链接，精读4篇，重点覆盖国产AI芯片、ASIC系统成本、企业Agent记忆及AI基础设施信用。",
+      "summary": "Cubox仅保留5篇AceCamp纪要：全部标题与原始链接集中展示，Kimi、企业Agent/MaaS、存储和火山云四篇因数据密度较高进入文章精读。",
       "points": [
-        "昆仑芯文章为匿名二手调研，份额与客户采购均需官方或渠道交叉验证。",
-        "ASIC理论BOM降本不等于实际数据中心总成本降幅。",
-        "CoreWeave信用利差提示AI需求、融资成本与资产供给可能形成负反馈。"
+        "匿名专家数字一律标记为未获公司确认，不能替代财报、模型卡或标准化测评。",
+        "共同主线是单位经济：长程任务成功率、FDE成本、MaaS收入确认、存储供给和算力价格。",
+        "Ceres Power/SOFC条目已列入全部动态，因与当前TMT主线相关性较低未展开精读。"
       ]
     }
   },
@@ -195,253 +195,403 @@
       ]
     },
     {
-      "id": "cubox-acecamp-overview-20261025-post18",
-      "category": "调研纪要",
-      "title": "Cubox昨日收藏概览｜周报后15条增量，聚焦AI资本开支与硬件链",
-      "summary": "周日18:00后共15条新增收藏，全部已读取正文并附链接。主题包括：昆仑芯份额与客户采购的二手调研；10月25日匿名市场信息；物理AI数据与应用瓶颈；1GW AI数据中心自研ASIC的理论/实际降本差异；3D DRAM及芯片存储路线；PCB涨价链；Google与Muse产品机制；AI研究员薪酬；硅谷70场会面的个人见闻；CoreWeave信用风险；10T模型训练者；投研方法与市场风格；Pichai访谈译文；中材科技三季报点评。Pichai条目对应已收录的Big Technology访谈，不重复展开。",
-      "why": "收藏整体从“谁有最好模型”转向“算力供给、系统成本、融资与应用分发能否支撑回报”。多数为二手调研、个人观察或券商式点评，不能当作公司披露；下列四篇因信息密度和TMT传导价值较高而精读。",
-      "source": "用户Cubox收藏（AceCamp相关筛选）",
-      "url": "https://cubox.pro/my/card",
-      "publishedAt": "2026-10-25 18:00—23:59（收藏时间）",
-      "evidence": "只读核验15条正文；与周报去重",
+      "id": "podcast-all-in-ai-cyber-20261023",
+      "category": "播客精华",
+      "title": "All-In Podcast｜AI支出集中、开源模型与Agent网络安全",
+      "summary": "最新一期All-In由Chamath、Jason Calacanis、David Friedberg主持，Palo Alto Networks CEO Nikesh Arora参加科技段。节目把Ken Griffin的“AI泡沫”警告与企业支出集中联系起来，并讨论PHP高危漏洞、AI加速漏洞发现、Agent访问银行账户时的责任边界，以及企业为何需要可审计的开放模型。后半段法国与美国政治内容已压缩，不纳入科技要点。",
+      "why": "用户点名最新All-In；AI支出质量、企业开源偏好与Agent责任边界都直接影响TMT商业化和安全预算。",
+      "source": "All-In Podcast / Apple Podcasts",
+      "url": "https://podcasts.apple.com/ca/podcast/ai-cyber-panic-ken-griffins-bubble-warning-the-fall/id1502871393?i=1000797862912",
+      "publishedAt": "2026-10-24 07:08 +08:00",
+      "evidence": "官方节目元数据与章节；节目观点/嘉宾观点",
       "tags": [
-        "调研纪要",
-        "AceCamp",
-        "Cubox",
-        "昨日收藏",
-        "概览"
+        "播客精华",
+        "播客",
+        "All-In",
+        "AI商业化",
+        "网络安全"
       ],
-      "research": {
-        "meetingDate": "多日期／原文日期不一",
-        "savedAt": "2026-10-25 18:17—23:23 +08:00",
-        "updatedAt": "2026-10-25",
-        "sample": "15条收藏；二手调研、访谈、个人评论与业绩点评混合",
+      "podcast": {
+        "guests": "Chamath Palihapitiya、Jason Calacanis、David Friedberg；Nikesh Arora（Palo Alto Networks）",
+        "duration": "1小时43分",
+        "recordedAt": "2026-10-23 23:08 UTC首发",
         "topics": [
           {
-            "heading": "国产AI芯片与硬件",
+            "heading": "00:11｜AI泡沫与收入质量",
             "bullets": [
-              "昆仑芯二手调研：https://mp.weixin.qq.com/s/AR3XENE1OSC6tW52JBEBBw",
-              "AI芯片与存储路线：https://mp.weixin.qq.com/s/DPYRlm2RHLVOfkFkPX3bXA",
-              "PCB涨价链：https://cubox.pro/web/card/7514031874440695686",
-              "中材科技业绩点评：https://cubox.pro/web/card/7513977677598949880"
+              "讨论以Ken Griffin警告为起点：AI长期转型可以成立，但资本开支、收入质量与生产率兑现速度可能错配。",
+              "节目引用Ramp口径称约1%的企业贡献90%的AI支出、其中80%来自亏损的VC支持初创；这是特定支付样本与嘉宾引用，不能外推全体市场。",
+              "研究含义：关注云/模型收入中外部真实付费、关联资本循环、客户集中度、续约与单位经济，而不只看token或ARR增长。"
             ]
           },
           {
-            "heading": "AI基础设施与资本效率",
+            "heading": "08:19—44:17｜开源、漏洞与Agent责任",
             "bullets": [
-              "1GW数据中心与ASIC成本：https://mp.weixin.qq.com/s/_gyY_g-rZfR2E7zeMfR5uQ",
-              "CoreWeave与法国高利率裂缝：https://mp.weixin.qq.com/s/ylyQquD1Lgc0VFqsoUsQOg",
-              "谁在训练10T模型：https://mp.weixin.qq.com/s/-INW-YWDJaegbI_U5FtkBQ"
-            ]
-          },
-          {
-            "heading": "Agent、人才与应用",
-            "bullets": [
-              "为什么不是Google做出Muse：https://mp.weixin.qq.com/s/qFRlp1yAuTwME5M0dC2oFg",
-              "物理AI炒作的意义：https://mp.weixin.qq.com/s/tctzxkw6KtWddEOcydeuGw",
-              "AI研究员薪酬：https://mp.weixin.qq.com/s/PJtyCVAZ0PUS8-7Qk15HcQ",
-              "Pichai访谈译文：https://mp.weixin.qq.com/s/zeAeDVfr70hm5pVNAZif2A"
-            ]
-          },
-          {
-            "heading": "市场与投资方法",
-            "bullets": [
-              "一些信息1025：https://mp.weixin.qq.com/s/8cA853Jhn1sX4jBAJtDnPg",
-              "硅谷国庆见闻：https://mp.weixin.qq.com/s/95EAK9WOfiXgNB5c9rNB6w",
-              "投研思维与投资水平：https://mp.weixin.qq.com/s/C--t3Rp8MC56YEVXiWGfYA",
-              "民工看市：https://mp.weixin.qq.com/s/0vkvKaO0cs0qWTmSnUStXA"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "research-kunlun-chip-secondary-20261025",
-      "category": "调研纪要",
-      "title": "精读｜昆仑芯调研里透露出的一些细节",
-      "summary": "公开二手调研文章称，2025年国内H100级加速卡市场中英伟达约50%、华为约25%、其他国产约25%，并预计2026年英伟达降至20%以下、华为升至约45%、昆仑芯约5%—8%；同时转述互联网、科技和汽车客户采购计划。文章认为推理是昆仑芯主要落点，多模态训练仍更依赖英伟达生态，并提到P800与M100在代工与可信供应链上的差异。",
-      "why": "如果国产卡需求从一次性替代转为互联网公司持续扩容，份额和盈利弹性会明显不同；但文中份额、近10万张需求及具体客户采购均来自匿名二手渠道，没有官方订单、出货或收入交叉验证。应跟踪实际交付、利用率、软件迁移成本、推理TCO和下游应用变现。",
-      "source": "公开二手调研文章／Cubox收藏",
-      "url": "https://mp.weixin.qq.com/s/AR3XENE1OSC6tW52JBEBBw",
-      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
-      "evidence": "匿名二手调研；非公司披露",
-      "tags": [
-        "调研纪要",
-        "AceCamp",
-        "昆仑芯",
-        "国产AI芯片",
-        "推理",
-        "份额"
-      ],
-      "research": {
-        "meetingDate": "未披露",
-        "savedAt": "2026-10-25 23:22:56 +08:00",
-        "updatedAt": "2026-10-25",
-        "sample": "匿名产业调研转述；样本与受访者未披露",
-        "topics": [
-          {
-            "heading": "核心结论",
-            "bullets": [
-              "文章预期国产卡份额继续提升，昆仑芯主攻推理。",
-              "互联网、科技、汽车被称为主要需求端，但客户采购数字未获公司确认。"
-            ]
-          },
-          {
-            "heading": "技术与供应链",
-            "bullets": [
-              "多模态训练被认为仍受英伟达生态优势约束。",
-              "P800/M100代工与可信供应链说法需晶圆、封装和客户准入材料验证。"
-            ]
-          },
-          {
-            "heading": "反证与跟踪",
-            "bullets": [
-              "国产替代可能只是一轮集中采购，不能直接外推持续增长。",
-              "观察交付、上架利用率、故障率、软件适配成本与推理单位成本。"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "research-asic-system-cost-20261025",
-      "category": "调研纪要",
-      "title": "精读｜600亿美元AI数据中心，自研ASIC为何不是200亿美元",
-      "summary": "文章围绕1GW AI数据中心拆分成本：SemiAnalysis的理论讨论认为去掉英伟达及芯片设计商利润后，超过600亿美元的项目底部可能接近200亿美元；但文中引用Bernstein系统级估算称，GB200约365亿美元、Vera Rubin约395亿美元、AMD MI455X约357亿美元、TPU v7约390亿美元、OpenAI Jalapeño约346亿美元，定制ASIC相对Rubin仅低约12%，远小于“降三分之二”。模型中约127亿美元基础设施成本相对固定。",
-      "why": "关键不是裸芯片毛利，而是内存、网络、机架、电力、散热、软件、验证和良率构成的系统TCO。自研ASIC只有在工作负载足够稳定、规模足够大且软件生态可控时才可能兑现优势。文章关于Anthropic自研芯片与设计周期的说法未获官方确认，9个月设计到流片和16个月组队到流片也不是同一起点。",
-      "source": "公开产业分析文章／Cubox收藏",
-      "url": "https://mp.weixin.qq.com/s/_gyY_g-rZfR2E7zeMfR5uQ",
-      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
-      "evidence": "二手行业模型；成本假设非实际采购预算",
-      "tags": [
-        "调研纪要",
-        "AceCamp",
-        "ASIC",
-        "AI数据中心",
-        "TCO",
-        "资本开支"
-      ],
-      "research": {
-        "meetingDate": "不适用",
-        "savedAt": "2026-10-25 23:19:29 +08:00",
-        "updatedAt": "2026-10-25",
-        "sample": "公开二手成本模型；多个方案的假设口径未完全披露",
-        "topics": [
-          {
-            "heading": "成本拆解",
-            "bullets": [
-              "理论去利润情景不等于可采购价格。",
-              "基础设施约127亿美元在模型中相对固定，限制了芯片降价向整站资本开支的传导。"
-            ]
-          },
-          {
-            "heading": "自研条件",
-            "bullets": [
-              "适合稳定、大规模、重复的工作负载。",
-              "需把EDA、验证、良率、编译器、网络和运维计入全生命周期。"
-            ]
-          },
-          {
-            "heading": "待验证",
-            "bullets": [
-              "不同系统的功耗、性能和使用率是否同口径。",
-              "所谓设计周期是否从组队、架构冻结或流片开始计时。"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "research-muse-enterprise-agent-memory-20261025",
-      "category": "调研纪要",
-      "title": "精读｜为什么不是Google做出了Muse：企业Agent的程序性记忆与分发",
-      "summary": "一篇公开播客整理采访Muse产品负责人Lewis；他自述曾是Google Gemini早期产品经理，参与PaLM 2到API与定价的产品化。核心判断是：企业Agent的“程序性记忆”应把过去任务轨迹蒸馏为可复用技能，而不仅是检索历史文本。Muse通过Gmail和日历等上下文提出任务建议，试图解决用户不知道该给Agent什么提示的问题；企业部署还要处理权限、来源追溯和本地/云端边界。",
-      "why": "这把Agent竞争从模型能力推进到任务发现、记忆、权限与分发。Google没有率先做出Muse是受访者观点，不是Google官方复盘；“8—9人早期团队”等叙述也需独立验证。对中国互联网生态，应重点观察封闭数据入口是否使系统级Agent更难跨应用执行，以及本地运行能否真正改善隐私与延迟。",
-      "source": "公开播客整理／Cubox收藏",
-      "url": "https://mp.weixin.qq.com/s/qFRlp1yAuTwME5M0dC2oFg",
-      "publishedAt": "2026-10-25（收藏；原节目日期以页面为准）",
-      "evidence": "个人访谈／产品观点；非Google或Muse正式披露",
-      "tags": [
-        "调研纪要",
-        "AceCamp",
-        "Muse",
-        "企业Agent",
-        "程序性记忆",
-        "Google"
-      ],
-      "research": {
-        "meetingDate": "原节目日期未核到",
-        "savedAt": "2026-10-25 21:05:00 +08:00",
-        "updatedAt": "2026-10-25",
-        "sample": "单一受访者长访谈的公开整理",
-        "topics": [
-          {
-            "heading": "产品机制",
-            "bullets": [
-              "从历史任务轨迹提炼可复用程序性技能。",
-              "用邮件和日历提示潜在任务，降低用户发现成本。"
-            ]
-          },
-          {
-            "heading": "企业约束",
-            "bullets": [
-              "权限、审计、来源追溯和数据驻留决定可部署性。",
-              "本地与云端组合需在隐私、延迟和能力间取舍。"
-            ]
-          },
-          {
-            "heading": "反证与观察",
-            "bullets": [
-              "个人叙事不能证明大公司必然缺乏创新。",
-              "观察建议任务的采纳率、成功率、人工接管率和跨应用权限失败。"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "research-coreweave-credit-rates-20261025",
-      "category": "调研纪要",
-      "title": "精读｜CoreWeave与高利率下的两道裂缝",
-      "summary": "文章引用Goldman等公开框架追踪AI基础设施信用：称CoreWeave 2031年到期、票息9.75%的债券收益率从5月约8.89%升至一度15.70%，随后约15%附近；5年CDS约1117bp，文中模型对应五年累计违约概率约63%。文章还列举AI相关发行人30年期信用利差差异，说明市场正在按资产负债表与现金流质量重新定价，而不是把全部AI资本开支视为同一风险。",
-      "why": "若需求增速放缓或再融资成本维持高位，数据中心项目的资本开支、抵押融资和上架节奏可能形成负反馈。信用利差是实时风险价格，不是实际违约结论；63%取决于回收率和模型，约140亿美元债务及单一租户结构也属于二手说法。后续应核对债券成交、CDS曲线、客户集中度、租约、资本开支承诺和自由现金流。",
-      "source": "公开信用市场分析／Cubox收藏",
-      "url": "https://mp.weixin.qq.com/s/ylyQquD1Lgc0VFqsoUsQOg",
-      "publishedAt": "2026-10-25（收藏；原文日期以页面为准）",
-      "evidence": "二手市场数据与模型；非公司业绩披露",
-      "tags": [
-        "调研纪要",
-        "AceCamp",
-        "CoreWeave",
-        "AI基础设施",
-        "信用利差",
-        "融资成本"
-      ],
-      "research": {
-        "meetingDate": "不适用",
-        "savedAt": "2026-10-25 20:53:00 +08:00",
-        "updatedAt": "2026-10-25",
-        "sample": "公开债券/CDS报价与二手分析；报价时点和供应商口径未完全披露",
-        "topics": [
-          {
-            "heading": "市场信号",
-            "bullets": [
-              "高收益债与CDS均显示风险溢价显著上升。",
-              "AI发行人利差分化，市场开始区分现金流质量与融资依赖。"
-            ]
-          },
-          {
-            "heading": "传导机制",
-            "bullets": [
-              "融资成本上升可能压缩数据中心项目IRR并延缓供给。",
-              "若供给收缩又推高算力价格，会反过来影响模型公司和应用层毛利。"
+              "Nikesh Arora认为企业采用开放模型的重要原因是可审计、可解释和监管适配；这不等于企业会自建全部算力。",
+              "PHP漏洞事件被用来说明AI同时提高漏洞发现和攻击扩散速度，安全价值从“完全不被攻破”转向更快发现、隔离和恢复。",
+              "当Agent可登录银行或执行交易时，责任可能跨模型提供方、应用、身份层、用户授权和金融机构；节目未给出成熟法律答案。",
+              "跟踪Agent身份、最小权限、行为日志、模型/工具调用溯源、检测到隔离时间，以及AI安全收入是否新增而非替代现有预算。"
             ]
           },
           {
             "heading": "局限",
             "bullets": [
-              "信用价格不等于需求已崩塌或公司必然违约。",
-              "需用公司披露核对债务、租户集中和资本开支，而非沿用二手数字。"
+              "All-In是投资人与企业家观点节目，不是独立测评；支出数据、漏洞影响范围和政策判断应回到Ramp、PHP Foundation、监管或公司材料核验。",
+              "后半段法国与美国政治辩论立场性强，本条只保留与TMT折现率、网络安全和企业采购直接相关部分。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "podcast-daniela-amodei-thrive-20261022",
+      "category": "播客精华",
+      "title": "Daniela Amodei访谈｜Anthropic总裁谈AI、人的能动性与治理",
+      "summary": "Anthropic总裁Daniela Amodei与Arianna Huffington的长访谈讨论“光与影”并存：AI应承担孤立、重复的信息工作，把时间还给人际关系；不应成为伴侣、治疗师或管理者。她把人的递归改进分成基础生活条件、AI释放时间、AI激发好奇心三层，并以OpenEvidence使用Claude辅助医生为正面案例。访谈偏价值观与产品哲学，不是模型能力或商业数据披露。",
+      "why": "用户点名Anthropic总裁访谈；它补充了Anthropic管理层对产品边界、情感依赖、健康场景和治理结构的公开立场。",
+      "source": "Thrive Global",
+      "url": "https://thriveglobal.com/articles/lets-stop-placing-all-our-bets-on-the-machines-my-conversation-with-daniela-amodei",
+      "publishedAt": "2026-10-22",
+      "evidence": "原始访谈与公开逐字稿；本人观点",
+      "tags": [
+        "播客精华",
+        "播客",
+        "Anthropic",
+        "Daniela Amodei",
+        "AI治理"
+      ],
+      "podcast": {
+        "guests": "Daniela Amodei（Anthropic总裁）、Arianna Huffington",
+        "duration": "完整视频与公开文字稿；文字稿经编辑",
+        "recordedAt": "2026-10-22发布",
+        "topics": [
+          {
+            "heading": "光与影：风险沟通不是二选一",
+            "bullets": [
+              "Amodei称Anthropic文化强调同时承认AI的现实风险与潜在收益，反对只讲末日或只讲繁荣。",
+              "她以OpenEvidence调用Claude帮助医生检索医学文献为例，认为价值不只在节省研究时间，也在把医生时间还给患者沟通。",
+              "这是公司管理者举出的案例，未给患者规模、临床结局或对照组，不能当作医疗效果证据。"
+            ]
+          },
+          {
+            "heading": "产品边界与人的能动性",
+            "bullets": [
+              "她反对把AI设计成替代亲密关系的伴侣，认为AI更适合承担孤立、重复、信息密集的任务，减少技术对人与人连接的进一步中介。",
+              "她提出三层递归自我改进：先保证关系、休息、意义与身体活动；再让AI释放时间；最后用AI激发好奇心和创造项目。",
+              "“AI拥有计算智能、人保留智慧”是价值主张；落到产品应观察情感依赖防护、用户控制、任务边界和退出机制。"
+            ]
+          },
+          {
+            "heading": "治理与组织含义",
+            "bullets": [
+              "她明确反对由单一“AI沙皇”治理重大技术，倾向让更多人参与规则形成。",
+              "访谈没有回答Anthropic的收入结构、模型安全指标或监管条文，不能把哲学立场等同于已落实制度。",
+              "后续跟踪Anthropic产品设计、使用政策、健康合作披露、Agent授权机制，以及管理层立场与商业激励是否一致。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "podcast-chipstrat-patel-rasgon-20261024",
+      "category": "播客精华",
+      "title": "SemiAnalysis Dylan Patel × Bernstein Stacy Rasgon｜AI算力融资、瓶颈与定制芯片",
+      "summary": "Chipstrat作者Austin Lyons主持CASPA半导体展望圆桌，Dylan Patel与Bernstein分析师Stacy Rasgon讨论2027—2029年AI建设。两人都把融资列为新增约束，但认为未来一两年供应仍紧；瓶颈从内存、载板、PCB延伸到晶圆厂洁净室和设备零件。对NVIDIA的核心判断不是绝对售价，而是性能/成本能否持续改善。定制芯片威胁正在上升，但企业侧更可能购买token而非自建模型基础设施。",
+      "why": "用户点名的两位半导体分析师同台；原文提供完整视频与逐字稿，覆盖资本成本、供给、定价权、GPU/ASIC和企业采用。",
+      "source": "Chipstrat / CASPA",
+      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel",
+      "publishedAt": "2026-10-24",
+      "evidence": "CASPA完整视频与Chipstrat逐字稿；分析师观点",
+      "tags": [
+        "播客精华",
+        "播客",
+        "SemiAnalysis",
+        "Bernstein",
+        "半导体",
+        "AI基础设施"
+      ],
+      "podcast": {
+        "guests": "Dylan Patel（SemiAnalysis）、Stacy Rasgon（Bernstein）；Austin Lyons主持",
+        "duration": "CASPA Semiconductor Industry Outlook圆桌；完整视频与逐字稿",
+        "recordedAt": "2026-10-23圆桌，10月24日发布文字稿",
+        "topics": [
+          {
+            "heading": "融资约束与建设节奏",
+            "bullets": [
+              "Rasgon认为融资已与电力、供应链并列为约束：超大规模云厂商现金流承压，neocloud无担保债融资成本更高；但他预计未来一两年仍可维持建设。",
+              "约束也可能避免一次性过度建设，把供给释放拉长；反例是若收入增速跟不上资本成本，项目IRR和估值会快速下修。",
+              "跟踪超大厂自由现金流、债券/CDS、项目融资结构、预租/包销合同、算力租金与利用率。"
+            ]
+          },
+          {
+            "heading": "2027—2029供给瓶颈",
+            "bullets": [
+              "Patel把内存之外的载板列为核心瓶颈；Rasgon强调洁净室、WFE、PCB、阀门和流量控制等多层约束，部分新产能到2027—2029才逐步上线。",
+              "圆桌称AI机架约70%—80%的硅面积与内存相关，HBM每GB消耗晶圆约为DDR5的3—4倍；这些为嘉宾估算，需与厂商披露核对。",
+              "紧缺未必让所有环节扩大利润：NVIDIA也要吸收HBM、载板和光学涨价，定价权取决于性能/成本改善能否覆盖客户总成本。"
+            ]
+          },
+          {
+            "heading": "GPU、XPU与企业采用",
+            "bullets": [
+              "Patel称OpenAI首代自研芯片在其开源InferenceX测试中运行开源中国模型的性能优于Blackwell；缺少本条内的完整功耗、精度、批量和软件栈口径，不能泛化。",
+              "Rasgon认为NVIDIA必须持续以性能/成本对冲高售价；一旦创新斜率放缓，客户更有动力转向定制XPU/ASIC。",
+              "企业侧已有编码等杀手级应用和生产率案例，但多数企业更可能购买模型token、叠加自有数据，而不是采购硬件自建模型。"
+            ]
+          },
+          {
+            "heading": "局限与分歧",
+            "bullets": [
+              "两位嘉宾分别来自产业研究与卖方研究，观点不是公司指引；2029需求、芯片性能和收入/每GW估算高度依赖假设。",
+              "“供给紧更久”与“融资约束减速”可同时成立，最终取决于真实推理需求、利用率和客户愿付价格，不能只看订单或缺货。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-overview-20261025",
+      "category": "调研纪要",
+      "title": "AceCamp昨日全部动态｜5篇纪要与原始链接",
+      "summary": "北京时间10月25日共收藏5篇可核验为AceCamp的纪要，均已读取正文并保留AceCamp原始链接：Kimi长程推理与海外收入、头部大厂Agent/MaaS商业化、存储供需与价格、火山云MaaS收入结构，以及Ceres Power/SOFC技术与供应链。其他Cubox收藏已按新规则排除。",
+      "why": "先保证AceCamp收藏全覆盖与可点击，再把信息量更大的四篇放入“文章精读”；Ceres Power条目数据较多但与当前TMT主线相关性相对低，本期仅列入全部动态。",
+      "source": "AceCamp（Cubox收藏）",
+      "url": "https://www.acecamptech.com/article/detail/70568418",
+      "publishedAt": "2026-10-25 00:09—00:10 +08:00（收藏）",
+      "evidence": "用户授权Cubox全文已读；仅AceCamp来源",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "全部动态",
+        "收藏概览"
+      ],
+      "research": {
+        "meetingDate": "原文发布于2026-10-23至10-24",
+        "savedAt": "2026-10-25 00:09:38—00:10:15 +08:00",
+        "updatedAt": "2026-10-25",
+        "sample": "5篇AceCamp纪要；均为专家/渠道调研整理，受访者身份与样本未完整披露",
+        "topics": [
+          {
+            "heading": "AI模型与云商业化",
+            "bullets": [
+              "Kimi调研：长程推理提升与训练范式转移、K4迭代周期及海外收入 https://www.acecamptech.com/article/detail/70568418",
+              "头部大厂AI Agent及云MaaS商业化、生态分润与算力降本 https://www.acecamptech.com/article/detail/70568417",
+              "火山云调研：收入结构、MaaS拆分及SeeDance竞争变化 https://www.acecamptech.com/article/detail/70568284"
+            ]
+          },
+          {
+            "heading": "半导体与存储",
+            "bullets": [
+              "存储方向：NAND/DRAM价格、企业级需求、国产供给与主要企业 https://www.acecamptech.com/article/detail/70568422"
+            ]
+          },
+          {
+            "heading": "能源与数据中心供应链",
+            "bullets": [
+              "Ceres Power与SOFC近况：技术路线、授权模式、合作伙伴与供应链 https://www.acecamptech.com/article/detail/70568426"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-kimi-long-horizon-20261023",
+      "category": "调研纪要",
+      "title": "精读｜Kimi：长程推理、K4迭代与海外收入",
+      "summary": "该匿名专家调研称，Kimi下一阶段瞄准200万token上下文、100步以上Agent闭环和更高并发吞吐；大版本迭代或拉长至约半年，小版本沿用K3预训练底座做后训练。文中另称日均调用约400B token、收入国内/海外约70%/30%，AWS渠道成熟后可能转向60%/40%。这些数字未见Moonshot官方披露，不能作为收入或路线图定论。",
+      "why": "同时给出技术瓶颈、训练范式、调用量、渠道与盈利节奏，是5篇中信息维度最完整的一篇；但核心数字均需官方/渠道交叉验证。",
+      "source": "AceCamp",
+      "url": "https://www.acecamptech.com/article/detail/70568418",
+      "publishedAt": "2026-10-23 18:30 +08:00",
+      "evidence": "匿名专家调研；未获Moonshot官方确认",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "Kimi",
+        "中国模型"
+      ],
+      "research": {
+        "meetingDate": "2026-10-23发布；访谈日期未披露",
+        "savedAt": "2026-10-25 00:09:56 +08:00",
+        "updatedAt": "2026-10-25 17:12:06 +08:00",
+        "sample": "单一匿名专家Q&A；无样本、财务底稿或可复现实测设置",
+        "topics": [
+          {
+            "heading": "技术路线与Agent瓶颈",
+            "bullets": [
+              "受访者称路线图聚焦200万token上下文、金融多表穿透/法律冲突定位、100步以上长程Agent，以及通过参数压缩降低首token延迟和提高吞吐。",
+              "其经验判断是国内模型约100步开始自我锁定、150步以上显著失效，海外模型依靠剪枝/回溯可到150—200步；没有统一任务、成功率或模型版本，不能视作横向测评。",
+              "称KDA、稀疏MoE可把KV Cache显存占用压至原来的20%—30%；另称Kimi架构可减少约75%，两种表述口径未解释。"
+            ]
+          },
+          {
+            "heading": "版本、训练与商业化",
+            "bullets": [
+              "小版本据称继续基于K3预训练底座做post-training；下一大版本仍在早期验证，约半年迭代，训练范式转向自蒸馏、自回归和自博弈。",
+              "文中称日均吞吐约400B token，API为绝大部分收入；当前国内/海外收入约70%/30%，AWS渠道成熟后希望变为60%/40%。",
+              "利润展望称2027年上半年改善、2028年整体盈利；未给ARR绝对值、收入确认方式或成本底稿。"
+            ]
+          },
+          {
+            "heading": "反证与待验证",
+            "bullets": [
+              "“100步/150步”必须用同一harness、任务难度、重试规则和成功率复测；长上下文标称长度也不等于长程任务完成率。",
+              "AWS部署、分成、400B token和收入地域结构需公司/API渠道或审计口径确认；K4命名与发布日期并未正式公布。",
+              "跟踪官方模型卡、API价格、首token延迟、缓存命中率、长程Agent可复现实测及海外云市场排名。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-agent-maas-economics-20261023",
+      "category": "调研纪要",
+      "title": "精读｜头部大厂Agent/MaaS：POC转化、单客成本与生态分润",
+      "summary": "调研将企业Agent从POC到签约的阻力估算为预算/采购/合规约60%、系统与数据边界约30%、价值难量化约10%；战略客户高成本打样可容忍3—6个月，普通客户尽量一个月内完成。单客成本以行业基线1.5倍和连续两月约2倍分级预警。其还称自研模型在同口径下较通用开源方案硬件成本低15%—35%、单卡吞吐高25%—35%，但未给模型、GPU与任务明细。",
+      "why": "把Agent商业化落地拆成预算、交付、算力、场景、渠道五层，并给出多组经营阈值，适合跟踪POC转化与单位经济。",
+      "source": "AceCamp",
+      "url": "https://www.acecamptech.com/article/detail/70568417",
+      "publishedAt": "2026-10-23 17:26 +08:00",
+      "evidence": "匿名专家调研；腾讯/混元相关数字未获公司确认",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "Agent",
+        "MaaS",
+        "企业软件"
+      ],
+      "research": {
+        "meetingDate": "2026-10-23发布；访谈日期未披露",
+        "savedAt": "2026-10-25 00:09:45 +08:00",
+        "updatedAt": "2026-10-25 00:09:51 +08:00",
+        "sample": "单一匿名专家Q&A；以腾讯Workbuddy/混元为主，未披露客户样本量",
+        "topics": [
+          {
+            "heading": "POC转化与FDE",
+            "bullets": [
+              "受访者把阻力估算为预算/采购/安全合规60%、系统与数据边界30%、价值难量化及缺少业务负责人10%；这是经验拆分，不是统计调查。",
+              "战略标杆客户容忍3—6个月高成本打样，普通企业客户争取1个月内完成；行业首单需要FDE沉淀技能包，否则深度定制难以复制。",
+              "制造、财务、政务场景的共同瓶颈不是Demo，而是ERP/CRM/MES接口、权限、审计和责任人。"
+            ]
+          },
+          {
+            "heading": "单客经济与算力调度",
+            "bullets": [
+              "token消耗超过行业基线1.5倍进入任务/模型路由分析；连续两个月约2倍且收入未跟上时，由商务、FDE和模型团队联合评审。",
+              "先排查循环调用、无效长上下文、异常重试和模型选择，再通过缓存、上下文压缩、RAG召回和模型路由降本；真实需求仍超预算则调整合同与资源投入。",
+              "调研称自研方案较通用开源模型推理硬件成本低15%—35%、单卡有效吞吐高25%—35%；缺少模型版本、GPU、并发和质量阈值，不能直接外推。"
+            ]
+          },
+          {
+            "heading": "场景、渠道与观察指标",
+            "bullets": [
+              "任务量经验拆分：会议纪要/行动项27%、知识库问答26%、文档辅助24%、跨系统Agent 12%、职能助手8%、探索应用3%。高价值跨系统Agent占比低且FDE最重。",
+              "渠道包括轻量返佣、联合打单和深度ISV/OEM；关键不是企业覆盖数，而是活跃留存、付费留存、单用户任务深度和交付毛利。",
+              "后续核验POC转正式合同率、FDE人天、任务成功率、人工接管率、单位任务毛利及ISV续约。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-storage-supply-20261023",
+      "category": "调研纪要",
+      "title": "精读｜存储供需：DRAM涨价、企业级迁移与国产颗粒渗透",
+      "summary": "匿名渠道调研称2026Q3 DRAM价格约涨30%，Q4供应商继续报价上涨约10%；企业级出货占比已超过50%，AI大容量产品仍紧。其预计韩系厂商70%—80%的DRAM产能转向HBM，普通DRAM供给偏紧可能持续到2028年；同时称2027年长江存储新增Fab后NAND产能翻倍。文章还给出字节/阿里服务器与资源盘需求，但均未见客户或厂商确认。",
+      "why": "包含价格、产能、客户需求、国产渗透与产品规格多组可跟踪数据，对存储周期判断有直接价值。",
+      "source": "AceCamp",
+      "url": "https://www.acecamptech.com/article/detail/70568422",
+      "publishedAt": "2026-10-23 22:16 +08:00",
+      "evidence": "匿名渠道调研；客户采购与产能数字未获公司确认",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "存储",
+        "DRAM",
+        "NAND"
+      ],
+      "research": {
+        "meetingDate": "2026-10-23发布；访谈日期未披露",
+        "savedAt": "2026-10-25 00:09:40 +08:00",
+        "updatedAt": "2026-10-25 00:09:48 +08:00",
+        "sample": "单一匿名存储渠道/厂商视角；未披露公司身份、订单样本与价格币种口径",
+        "topics": [
+          {
+            "heading": "价格与供需",
+            "bullets": [
+              "调研称2026Q3 DRAM约涨30%，Q4报价意向再涨约10%；NAND和DRAM均涨价，但Q4消费需求回落，NAND大客户接受度弱于DRAM。",
+              "月度合约交付周期未明显延长且渠道仍有库存，说明“涨价意愿”和“真实断供”需分开；大容量AI相关产品相对更紧。",
+              "部分96GB规格降价被解释为客户转向低容量替代，不代表DRAM总需求转弱。"
+            ]
+          },
+          {
+            "heading": "结构迁移与国产供给",
+            "bullets": [
+              "企业级出货占比据称已超过50%；韩系厂商被指70%—80% DRAM产能转向HBM，仅20%—30%留给DRAM/LPDDR，普通DRAM紧张或延续至2028年。",
+              "调研称长江存储2027H2新增Fab后NAND产能翻倍；长鑫/长江在国内大客户渗透率各约十几至二十几，但缺少分母和产品层级。",
+              "SLC成本被称为TLC的3—4倍，主要作缓存；QLC可到16TB、64TB甚至128TB，需区分颗粒、盘级与系统规格。"
+            ]
+          },
+          {
+            "heading": "客户需求与风险",
+            "bullets": [
+              "受访者称字节2026年服务器采购约100万台、2027年增10%—20%，资源盘从1万PB增至3万PB；阿里服务器维持五六十万台、资源盘约50多万片。均未获客户确认。",
+              "若HBM需求、服务器采购或AI利用率低于预期，普通DRAM紧缺和涨价持续时间可能缩短；NAND供给扩张也可能压制价格。",
+              "跟踪原厂合约价、库存天数、交期、晶圆投片/HBM转换比例、大客户资本开支及国产颗粒认证进度。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-volcengine-maas-20261024",
+      "category": "调研纪要",
+      "title": "精读｜火山云：MaaS收入拆分、第三方模型与SeeDance风险",
+      "summary": "调研称火山引擎2026年收入目标约700亿元、2025年约230亿元；2026Q3收入结构中基础云30%、GPU推理7%、MaaS约45%。9月模型收入30多亿元，其中约80%来自第一方模型，而第一方内部SeeDance占70%；第三方主要为Kimi与智谱。文中还称2027年云收入目标可能达1,000亿元，但所有财务与模型占比均为专家估计，且MaaS按分成前流水确认的说法需核对。",
+      "why": "提供了MaaS从GPU租赁转向token销售、第一方/第三方模型、收入与毛利的完整拆分，能直接映射云商业化与模型竞争。",
+      "source": "AceCamp",
+      "url": "https://www.acecamptech.com/article/detail/70568284",
+      "publishedAt": "2026-10-24 07:35 +08:00",
+      "evidence": "匿名专家调研；未获字节跳动/火山引擎官方确认",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "火山引擎",
+        "MaaS",
+        "视频模型"
+      ],
+      "research": {
+        "meetingDate": "2026-10-24发布；访谈日期未披露",
+        "savedAt": "2026-10-25 00:09:38 +08:00",
+        "updatedAt": "2026-10-25 17:06:00 +08:00",
+        "sample": "单一匿名专家Q&A；无公司财务底稿、合同样本或收入确认说明",
+        "topics": [
+          {
+            "heading": "收入结构与口径",
+            "bullets": [
+              "调研称2026年目标约700亿元、2025年约230亿元；2026Q3基础云30%（CPU 10%、存储7%）、GPU推理7%、MaaS约45%，其余为CDN/短信/媒体云等。",
+              "9月模型总收入被称为30多亿元，第一方80%、第三方20%；第一方收入内部SeeDance 70%、文本4%、图像理解15%、图像生成3%、音频生成3%、音频理解3%、其他2%。",
+              "文中称MaaS按分成前流水确认，DeepSeek无需分成；若属实，流水不能与净收入/毛利直接比较，必须核对会计口径。"
+            ]
+          },
+          {
+            "heading": "第三方模型与算力转换",
+            "bullets": [
+              "受访者称第三方主要是Kimi、智谱与DeepSeek，部分模型方因算力不足会回购自己在火山平台销售的token，Kimi回购占比被描述为接近一半。",
+              "GPU租赁收入被称从2025年70多亿元到2026年约七八十亿元但近期环比下降，资源回收内部使用；MaaS相对GPU租赁毛利约高5个百分点。",
+              "模型方回购比例越高、分成越低的合同说法影响收入质量，需要合同或多渠道确认。"
+            ]
+          },
+          {
+            "heading": "竞争、世界模型与风险",
+            "bullets": [
+              "短期增长被指主要依靠SeeDance，MiniMax冲击集中在2.0 Flash；2027年模型收入或翻倍、整体云收入约1,000亿元，均属预测。",
+              "世界模型据称可能在2026年10月底先发版本，初期面向游戏、具身智能和仿真，但B300推理成本高，工程商业化不会同步成熟。",
+              "关键反证是SeeDance在可灵等竞品前失速、模型迭代延迟、算力不足或折扣压低毛利；跟踪官方API调用、价格、第三方占比及收入确认。"
             ]
           }
         ]
@@ -453,11 +603,6 @@
       "name": "仓库配置与历史",
       "status": "完成",
       "note": "读取data/config.json、data/index.json、2026-10-23日报及2026-10-25周报；按周报18:00截点去重。"
-    },
-    {
-      "name": "Cubox／AceCamp",
-      "status": "完成",
-      "note": "只读连接成功；分页检查周末收藏，周日18:00后15条增量均读取正文，0条归档增量，未改变收藏状态。"
     },
     {
       "name": "last30days",
@@ -583,7 +728,38 @@
       "name": "全球市场与资金面",
       "status": "完成",
       "note": "美国财政部、交易所与Reuters公开数据已查；股市用10月23日完整交易日，油价用10月26日早盘，时点未混写。"
+    },
+    {
+      "name": "Cubox／AceCamp",
+      "status": "完成",
+      "note": "持久化只读连接可用；分别检查10月25日普通与归档收藏，按新规则仅保留5篇acecamptech.com纪要，逐篇读取全文并附原始链接；其他收藏未入站。",
+      "url": "https://www.acecamptech.com/"
+    },
+    {
+      "name": "播客发现页／小宇宙",
+      "status": "完成（发现源）",
+      "note": "已将用户提供节目页加入长期发现清单；只筛AI、半导体、云、软件、互联网与TMT投资，文学/社科/艺术/医药/消费不纳入。小宇宙仅作线索，摘要回到原始节目核验。",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f"
+    },
+    {
+      "name": "All-In Podcast",
+      "status": "完成",
+      "note": "核对2026-10-23节目元数据、时长和章节；科技段覆盖AI支出质量、开放模型与Agent网络安全，政治段未扩写。",
+      "url": "https://podcasts.apple.com/ca/podcast/ai-cyber-panic-ken-griffins-bubble-warning-the-fall/id1502871393?i=1000797862912"
+    },
+    {
+      "name": "Daniela Amodei／Thrive Global",
+      "status": "完成",
+      "note": "读取原始访谈页及公开文字稿；区分Anthropic总裁价值观/产品边界观点与公司经营披露。",
+      "url": "https://thriveglobal.com/articles/lets-stop-placing-all-our-bets-on-the-machines-my-conversation-with-daniela-amodei"
+    },
+    {
+      "name": "Chipstrat／CASPA圆桌",
+      "status": "完成",
+      "note": "读取Austin Lyons发布的完整逐字稿并核对嘉宾Dylan Patel与Stacy Rasgon；保留融资、供应瓶颈、GPU/XPU和企业采用的条件与局限。",
+      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel"
     }
   ],
-  "updatedAt": "2026-10-26T00:48:00.000Z"
+  "updatedAt": "2026-10-26T05:15:00Z",
+  "archiveSummary": "三场科技播客补齐AI支出、安全与算力约束；AceCamp仅保留5篇并精选4篇精读。"
 }
