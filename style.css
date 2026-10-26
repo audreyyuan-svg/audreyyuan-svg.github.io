@@ -5,3 +5,22 @@
 
 /* AI Tracker: publication cadence and research detail */
 .brand b{font-size:21px;letter-spacing:-.5px;white-space:nowrap}.brand small{font-size:7px;letter-spacing:1px}.sidebar{overflow-y:auto}.sidebar-section{margin-top:20px;padding-top:20px}.sidebar-note{margin-top:20px}.period-selector{display:flex;align-items:center;gap:5px;margin-bottom:28px}.period-selector button{border:1px solid transparent;background:none;border-radius:7px;padding:8px 19px;font-size:12px;color:#89957e}.period-selector button.active{background:#fff;border-color:#dde5d7;color:#3e6650;font-weight:600}.period-selector>span{margin-left:auto;font-size:10px;color:#99a48e}.collection-status{padding:18px 22px;border:1px solid #e5e1d3;background:#fbf9f2;border-radius:9px;margin:20px 0;color:#8d805c}.collection-status b{font-size:12px;font-weight:550}.collection-status p{font-size:12px;line-height:1.9;margin:9px 0}.collection-status small{font-size:10px}.research-meta{display:flex;gap:12px 28px;flex-wrap:wrap;padding:12px 15px;background:#f8faf5;border-radius:7px;margin:18px 0}.research-meta div{font-size:11px}.research-meta dt{color:#96a18a;margin-bottom:5px}.research-meta dd{margin:0;color:#718264;line-height:1.8}.research-detail{border-top:1px solid #edf0e6;padding-top:2px;margin-top:16px}.research-detail h4{font-size:13px;font-weight:600;color:#4c6650;margin:21px 0 8px}.research-detail p,.research-detail li{font-size:12px;line-height:2;color:#74816c}.research-detail ul{padding-left:20px;margin:6px 0}.research-detail li{padding-left:3px;margin:5px 0}.research-card .summary{color:#667a5f}.coverage-detail{display:block}.coverage-detail summary{cursor:pointer;color:#7c8c70}.coverage-detail p{margin-bottom:0}.card-meta{flex-wrap:wrap}.card-meta .bookmark{flex-shrink:0}.source-heading{flex-wrap:wrap}.primary-sections{max-width:100%}.primary-sections button{white-space:nowrap}.digest-points{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}@media(max-width:800px){.period-selector button{padding:8px 15px}.period-selector>span{font-size:9px;max-width:125px;text-align:right;line-height:1.7}.primary-sections button{gap:6px;padding:11px 8px;font-size:12px}.primary-sections button svg{width:14px}.primary-sections button span{font-size:9px}.digest-points{grid-template-columns:1fr}.research-meta{display:block}.research-meta div+div{margin-top:12px}.card-meta time{max-width:100%;overflow-wrap:anywhere}.sidebar-note{margin-top:auto}}
+
+/* 2026-10-26 archive, research and podcast refinements */
+.archive-week{border:1px solid var(--line);border-radius:10px;background:#fff;margin:14px 0;overflow:hidden}
+.archive-week>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;padding:17px 20px;color:#506a54;background:#fafbf8}
+.archive-week>summary::-webkit-details-marker{display:none}
+.archive-week>summary b{font-size:15px;font-weight:650;letter-spacing:.02em}
+.archive-week>summary span{font-size:10px;color:#97a18d}
+.archive-week[open]>summary{border-bottom:1px solid var(--line)}
+.archive-week-items{padding:5px 14px 10px}
+.archive-week .archive-row{margin:9px 0;border-color:#edf0e8;box-shadow:none}
+.archive-row b{line-height:1.75}
+.podcast-detail{border:1px solid #e5eadf;border-radius:8px;background:#fbfcf9;margin:16px 0;overflow:hidden}
+.podcast-detail>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;padding:13px 15px;font-size:11px;font-weight:600;color:#607957}
+.podcast-detail>summary::-webkit-details-marker{display:none}
+.podcast-detail>summary span{font-size:9px;font-weight:400;color:#9ba692}
+.podcast-detail[open]>summary{border-bottom:1px solid #e9ede5}
+.podcast-detail .research-meta,.podcast-detail .research-detail{margin-left:15px;margin-right:15px}
+.research-detail a{color:#587f58;text-decoration:underline;text-decoration-color:#b8c9ae;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:800px){.archive-week>summary{padding:15px}.archive-week-items{padding:4px 8px 8px}.archive-week .archive-row{padding:16px 13px;gap:12px}.archive-row b{font-size:12px}.podcast-detail>summary{align-items:flex-start}}
