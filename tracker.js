@@ -5,7 +5,7 @@ const periods = { daily: "日报", weekly: "周报", monthly: "月报" };
 const sections = {
   brief: { name: "科技资讯", icon: "layers", description: "模型发布、独立测评、科技产业与投资人观点。", key: "technology" },
   macro: { name: "市场行情", icon: "chart", description: "全球宏观、战争与政治，以及股市资金面。", key: "markets" },
-  research: { name: "调研纪要", icon: "file", description: "AceCamp 收藏精读与久谦周度纪要，保留数据口径、分歧和待验证问题。", key: "research" }
+  research: { name: "调研纪要", icon: "file", description: "日报仅整理 Cubox 内 AceCamp 纪要：先看全部动态，再按需展开文章精读。", key: "research" }
 };
 const marketCategories = ["宏观点评", "市场资金面"];
 const techCategories = ["模型发布", "核心团队", "投资人观点", "独立测评", "产业链新闻", "播客精华"];
@@ -16,6 +16,28 @@ function group(item) {
 }
 function icon(name, size = 18) { return icons[name] ? h(icons[name], { size, "aria-hidden": true }) : null; }
 function link(url) { try { const u = new URL(url, location.href); return ["http:", "https:"].includes(u.protocol) ? u.href : undefined; } catch { return undefined; } }
+function renderRichText(value) {
+  const text = String(value || "");
+  return text.split(/(https?:\/\/[^\s]+)/g).map((part, index) => /^https?:\/\//.test(part) ? h("a", { key: index, href: link(part), target: "_blank", rel: "noreferrer" }, part, " ↗") : part);
+}
+function isResearchOverview(item) {
+  return /overview|collection/i.test(item.id || "") || (item.tags || []).some(tag => /收藏概览|全部动态/.test(tag));
+}
+function archiveSummary(issue) {
+  const value = issue?.archiveSummary || issue?.sectionOverviews?.technology?.summary || issue?.takeaways?.[0] || issue?.intro || "";
+  const clean = String(value).replace(/\s+/g, " ").trim();
+  if (!clean) return "本期精要待读取";
+  const sentence = clean.split(/(?<=[。！？；])/)[0] || clean;
+  return sentence.length > 92 ? sentence.slice(0, 90) + "…" : sentence;
+}
+function isoWeekKey(value) {
+  const d = new Date(`${value}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const year = d.getUTCFullYear();
+  const start = new Date(Date.UTC(year, 0, 1));
+  const week = Math.ceil((((d - start) / 86400000) + 1) / 7);
+  return `${year}-W${week}`;
+}
 function Audit({ checks = [], expanded = false }) {
   return checks.length ? h("details", { className: "source-audit", open: expanded },
     h("summary", null, "本期来源核验记录", h("span", null, `${checks.length} 项 · 查看已查与缺口`)),
@@ -32,7 +54,20 @@ function ResearchDetails({ item }) {
     blocks.length > 0 && h("div", { className: "research-detail" }, blocks.map((block, n) => h("section", { key: n },
       h("h4", null, block.heading || block.title),
       block.text && h("p", null, block.text),
-      block.bullets?.length ? h("ul", null, block.bullets.map((b, j) => h("li", { key: j }, b))) : null))));
+      block.bullets?.length ? h("ul", null, block.bullets.map((b, j) => h("li", { key: j }, renderRichText(b)))) : null))));
+}
+function PodcastDetails({ item }) {
+  const data = item.podcast || {};
+  const blocks = data.topics || item.detailSections || [];
+  if (!blocks.length) return null;
+  const meta = [["嘉宾", data.guests || data.guest], ["节目时长", data.duration], ["录制／首发", data.recordedAt || data.publishedAt]].filter(x => x[1]);
+  return h("details", { className: "podcast-detail" },
+    h("summary", null, `展开详细要点 · ${blocks.length} 组`, h("span", null, "点击展开")),
+    meta.length ? h("dl", { className: "research-meta" }, meta.map(([name, value]) => h("div", { key: name }, h("dt", null, name), h("dd", null, value)))) : null,
+    h("div", { className: "research-detail" }, blocks.map((block, n) => h("section", { key: n },
+      h("h4", null, block.heading || block.title),
+      block.text && h("p", null, block.text),
+      block.bullets?.length ? h("ul", null, block.bullets.map((b, j) => h("li", { key: j }, renderRichText(b)))) : null))));
 }
 function Card({ item, number, saved, onSave }) {
   return h("article", { className: `news-card ${group(item) === "research" ? "research-card" : ""}`, id: item.id },
@@ -42,6 +77,7 @@ function Card({ item, number, saved, onSave }) {
     h("a", { className: "card-title", href: link(item.url), target: "_blank", rel: "noreferrer" }, h("h3", null, item.title), icon("arrow", 19)),
     h("p", { className: "summary" }, item.summary),
     group(item) === "research" && h(ResearchDetails, { item }),
+    (item.category === "播客精华" || (item.tags || []).includes("播客")) && h(PodcastDetails, { item }),
     item.compare?.length > 0 && h("div", { className: "comparison" }, h("div", { className: "chart-heading" }, "同一测评口径对比"), item.compare.map((c, n) => h("div", { className: "bar-row", key: n }, h("span", null, c.label), h("div", null, h("i", { style: { width: `${Math.min(100, c.value / Math.max(...item.compare.map(x => x.value), 1) * 100)}%` } })), h("b", null, c.value, " ", c.unit)))),
     item.why && h("div", { className: "why" }, h("span", null, "关注点"), h("p", null, item.why)),
     item.relatedSources?.length > 0 && h("details", { className: "related-sources" }, h("summary", null, `相关原文与证据 · ${item.relatedSources.length} 个来源`),
@@ -56,6 +92,7 @@ export default function TrackerApp() {
   const [date, setDate] = useState(params.get("date") || "");
   const [issue, setIssue] = useState(null);
   const [archive, setArchive] = useState([]);
+  const [archiveMeta, setArchiveMeta] = useState({});
   const [config, setConfig] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -87,6 +124,20 @@ export default function TrackerApp() {
     })();
     return () => controller.abort();
   }, [period, date, refresh]);
+  useEffect(() => {
+    if (section !== "archive" || !archive.length) return;
+    const controller = new AbortController();
+    const base = period === "daily" ? "./data/" : `./data/${period}/`;
+    Promise.all(archive.map(async entry => {
+      try {
+        const response = await fetch(`${base}${entry.date}.json`, { cache: "no-store", signal: controller.signal });
+        if (!response.ok) return [entry.date, entry.title || "本期精要待读取"];
+        const data = await response.json();
+        return [entry.date, archiveSummary(data)];
+      } catch { return [entry.date, entry.title || "本期精要待读取"]; }
+    })).then(rows => { if (!controller.signal.aborted) setArchiveMeta(Object.fromEntries(rows)); });
+    return () => controller.abort();
+  }, [section, period, archive, refresh]);
   function navigate(next) { setSection(next); setMenu(false); setFilter("全部动态"); setQuery(""); }
   function changePeriod(next) { setPeriod(next); setDate(""); setFilter("全部动态"); setQuery(""); }
   useEffect(() => {
@@ -104,9 +155,15 @@ export default function TrackerApp() {
   const overviewPoints = typeof overview === "object" && overview?.points?.length ? overview.points : bySection[active].slice(0, 3).map(x => x.title);
   const keyOf = item => period === "daily" ? `${issue?.date}:${item.id}` : `${period}:${issue?.date}:${item.id}`;
   function toggleSave(item) { const key = keyOf(item); setSaved(old => { const updated = old.includes(key) ? old.filter(x => x !== key) : [...old, key]; try { localStorage.setItem("ai-saved", JSON.stringify(updated)); } catch {} return updated; }); }
-  const categories = section === "macro" ? marketCategories : section === "research" ? ["调研纪要"] : section === "saved" ? [...techCategories, ...marketCategories, "调研纪要"] : techCategories;
+  const categories = section === "macro" ? marketCategories : section === "research" ? ["文章精读"] : section === "saved" ? [...techCategories, ...marketCategories, "调研纪要"] : techCategories;
   const candidates = section === "saved" ? all.filter(item => saved.includes(keyOf(item))) : bySection[active];
-  const items = candidates.filter(item => (filter === "全部动态" || item.category === filter || (item.tags || []).includes(filter)) && (!query || [item.title, item.summary, item.source, ...(item.tags || [])].join(" ").toLowerCase().includes(query.toLowerCase())));
+  const hasResearchOverview = section === "research" && candidates.some(isResearchOverview);
+  const items = candidates.filter(item => {
+    const matchesFilter = section === "research"
+      ? (filter === "文章精读" ? !isResearchOverview(item) : filter === "全部动态" && hasResearchOverview ? isResearchOverview(item) : filter === "全部动态")
+      : (filter === "全部动态" || item.category === filter || (item.tags || []).includes(filter));
+    return matchesFilter && (!query || [item.title, item.summary, item.source, ...(item.tags || [])].join(" ").toLowerCase().includes(query.toLowerCase()));
+  });
   const researchStatus = config?.researchCollection?.statusText || "纪要来源尚未连接，暂未采集。";
   const schedule = period === "daily" ? "每日 08:30" : period === "weekly" ? "每周日 18:00" : "每月最后一天 18:00";
   const reportState = period === "daily" ? "每日更新" : config?.reportPlans?.[period]?.status === "active" ? "定期更新" : "入口已准备 · 任务待接入";
@@ -118,7 +175,6 @@ export default function TrackerApp() {
       h("nav", null,
         ...Object.entries(sections).map(([key, value]) => h("button", { className: `nav-item ${section === key ? "active" : ""}`, key, onClick: () => navigate(key) }, icon(value.icon), value.name, h("span", { className: "nav-count" }, bySection[key].length))),
         ...[["sources", "users", "关注名单"], ["saved", "bookmark", "本期收藏"], ["archive", "archive", "历史期刊"]].map(([key, glyph, name]) => h("button", { className: `nav-item ${section === key ? "active" : ""}`, key, onClick: () => navigate(key) }, icon(glyph), name))),
-      h("div", { className: "sidebar-section" }, h("label", null, "研究主线"), ["科技产业与模型实测", "宏观政策与市场资金", "调研纪要与判断变化"].map((text, n) => h("div", { className: "topic", key: text }, h("span", { style: { background: ["#b273ed", "#e8a46b", "#73a8a2"][n] } }), text))),
       h("div", { className: "sidebar-note" }, h("div", null, icon("radio", 15), " 更新状态"), h("p", null, reportState), h("small", null, `北京时间 · ${schedule}`)),
       h("div", { className: "profile" }, h("span", null, "AY"), h("div", null, h("b", null, "AI Tracker"), h("small", null, "公开阅读 · 来源可追溯")), icon("check", 15))),
     h("div", { className: "main-wrap" },
@@ -135,15 +191,19 @@ export default function TrackerApp() {
           h(Audit, { checks: issue?.sourceChecks, expanded: true }), h("div", { className: "section-title" }, h("h2", null, "核心信息源"), h("span", null, `${(config?.sources || []).length} 组来源`)),
           h("div", { className: "source-grid" }, (config?.sources || []).map((s, n) => h("section", { className: "source-card", key: s.name }, h("span", { className: `avatar a${n % 6}` }, s.name.slice(0, 2)), h("div", { className: "source-heading" }, h("h3", null, s.name), h("span", null, s.type)), h("p", null, s.focus), h("div", { className: "people" }, (s.people || []).map(p => h("span", { key: p }, p))), h("div", { className: "source-links" }, (s.links || [{ name: "访问来源", url: s.url }]).map((l, j) => h("a", { key: j, href: link(l.url), target: "_blank", rel: "noreferrer" }, l.name, icon("arrow", 12)))))))) :
         section === "archive" ? h(R.Fragment, null, h("div", { className: "section-title" }, h("h2", null, `已归档${edition}`), h("span", null, `${archive.length} 期`)),
-          archive.length ? archive.map(a => h("button", { className: "archive-row", key: a.date, onClick: () => { setDate(a.date); navigate("brief"); } }, icon("file", 20), h("div", null, h("b", null, `${a.date} · AI Tracker ${edition}`), h("small", null, a.title || "点击阅读本期内容与来源核验")), icon("arrow", 20))) : h("div", { className: "empty" }, loading ? "正在读取历史…" : `首期${edition}尚未发布。`)) :
+          archive.length ? (period === "daily" ? Object.entries(archive.reduce((groups, entry) => {
+            const key = isoWeekKey(entry.date); (groups[key] ||= []).push(entry); return groups;
+          }, {})).map(([week, entries], index) => h("details", { className: "archive-week", key: week, open: index === 0 },
+            h("summary", null, h("b", null, week), h("span", null, `${entries.length} 期`)),
+            h("div", { className: "archive-week-items" }, entries.map(a => h("button", { className: "archive-row", key: a.date, onClick: () => { setDate(a.date); navigate("brief"); } }, icon("file", 20), h("div", null, h("b", null, `${a.date} · ${archiveMeta[a.date] || a.title || "本期精要待读取"}`), h("small", null, "点击阅读本期内容与来源核验")), icon("arrow", 20)))))) :
+            archive.map(a => h("button", { className: "archive-row", key: a.date, onClick: () => { setDate(a.date); navigate("brief"); } }, icon("file", 20), h("div", null, h("b", null, `${a.date} · ${archiveMeta[a.date] || a.title || "本期精要待读取"}`), h("small", null, "点击阅读本期内容与来源核验")), icon("arrow", 20)))) : h("div", { className: "empty" }, loading ? "正在读取历史…" : `首期${edition}尚未发布。`)) :
         h(R.Fragment, null,
           section !== "saved" && h(R.Fragment, null,
             h("div", { className: "primary-sections", role: "group", "aria-label": "阅读栏目" }, Object.entries(sections).map(([key, value]) => h("button", { key, className: section === key ? "active" : "", onClick: () => navigate(key) }, icon(value.icon, 17), value.name, h("span", null, bySection[key].length)))),
             h("section", { className: "digest" }, h("div", { className: "digest-label" }, h("span", { className: "signal-icon" }, "✦"), ` ${meta.name} · ${period === "daily" ? "本期导读" : `${edition}概览`}`, h("span", { className: "issue-tag" }, stamp)),
               h("h2", null, overviewText || (issue ? meta.description : loading ? "正在读取…" : `首期${edition}尚未发布`)),
               h("div", { className: "digest-points" }, overviewPoints.length ? overviewPoints.map((text, n) => h("div", { key: n }, h("span", null, String(n + 1).padStart(2, "0")), h("p", null, text))) : h("p", null, section === "research" ? researchStatus : issue ? "本期暂无该栏目内容。" : "已保留阅读入口，发布后会显示各栏概览与重点内容。")),
-              h("div", { className: "digest-footer" }, icon("check", 14), " 保留原始出处 · 区分事实、受访者观点与编辑判断")),
-            h("div", { className: "stats" }, Object.entries(sections).map(([key, value], n) => h("div", { className: "stat", key }, h("span", { className: `stat-symbol s${n}` }, icon(value.icon, 20)), h("div", null, h("small", null, value.name), h("b", null, String(bySection[key].length).padStart(2, "0"))), h("p", null, key === "research" ? "原文精读" : key === "macro" ? "时点与口径" : "合并重复"))))),
+              h("div", { className: "digest-footer" }, icon("check", 14), " 保留原始出处 · 区分事实、受访者观点与编辑判断"))),
           section === "research" && !items.length && h("div", { className: "collection-status" }, h("b", null, "纪要采集状态"), h("p", null, researchStatus), h("small", null, period === "daily" ? "日报范围：北京时间前一天收藏的 AceCamp 纪要。" : "周报/月报：汇总期内纪要，久谦周度更新纳入周报并在月报合并去重。")),
           h("div", { className: "feed-top" }, h("h2", null, section === "saved" ? "本期已收藏" : meta.name, h("small", null, `${items.length} 条`)), h("label", { className: "search" }, icon("search", 16), h("input", { value: query, onChange: e => setQuery(e.target.value), placeholder: "搜索公司、人物、关键词…", "aria-label": "搜索本期内容" }))),
           h("div", { className: "filter-tabs" }, ["全部动态", ...categories].map(c => h("button", { key: c, className: filter === c ? "selected" : "", onClick: () => setFilter(c) }, c))),
