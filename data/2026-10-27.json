@@ -1,0 +1,347 @@
+{
+  "date": "2026-10-27",
+  "title": "AI Tracker 日报｜GPT-6.1 Terra性价比进入前沿，Anthropic S-1把算力承诺推上估值核心",
+  "archiveSummary": "GPT‑6.1 Terra的AA指数48、每任务0.40美元，但仍低Sol 4分且max首token约189秒；Anthropic上半年营收162.9亿美元，算力承诺成IPO核心约束。",
+  "intro": "今天最重要的变化不是单点模型分数，而是AI产业同时进入“推理降价”和“资产负债表扩张”阶段：GPT‑6.1 Terra以较低成本逼近前沿模型，但高推理档延迟仍明显；Anthropic公开申报则把增长、盈利改善与长期算力承诺首次放在同一张表上。产业链方面，Cadence财报确认EDA需求仍强，Meta和SpaceX的大额融资显示AI资本开支开始更多依赖股权与租赁工具。",
+  "coverage": "北京时间2026-10-26 00:00至2026-10-27 08:30；市场数据取各地最近完整交易日。仅纳入可由公司公告、监管文件、公开原始材料或可靠媒体交叉核验的信息。",
+  "takeaways": [
+    "GPT‑6.1 Terra把性价比推到前沿：Artificial Analysis智能指数48、每任务约0.40美元，但仍低GPT‑6.1 Sol 4分；max档首token约189秒，速度与冗长输出是主要代价。",
+    "Anthropic已递交S‑1并拟以ANT登陆纳斯达克；上半年营收约162.9亿美元、经营现金流约39.2亿美元，但长期租赁和采购承诺规模巨大，增长质量将与算力负债一起定价。",
+    "Cadence 2026Q3营收16.33亿美元、调整后EPS 2.11美元，均小幅超预期并上调全年指引；IP与系统设计分析分别同比增长24%和30%，AI芯片设计需求仍有基本面支撑。",
+    "SOX上涨2.82%显著跑赢纳指0.82%，半导体是美股增量买盘主线；亚洲则分化，韩国外资净卖出约6955亿韩元、日本科技股拖累日经。",
+    "Cubox前一日收藏中未核验到AceCamp项目纪要；按规则排除全部其他收藏，不用非AceCamp文章填充调研栏目。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "模型端是“低成本逼近前沿、但延迟仍贵”；产业端是“需求仍强、融资结构更激进”。",
+      "points": [
+        "Terra独立综合分数接近前沿，但coding agent与Sol仍有差距。",
+        "Anthropic S‑1首次把高增长、现金流改善和巨额未来算力承诺并列展示。",
+        "Cadence beat-and-raise验证EDA/先进封装需求；Meta股权融资和SpaceX租赁融资显示资本约束上升。"
+      ]
+    },
+    "markets": {
+      "summary": "油价从高位回落、长端美债近乎持平，风险偏好回到半导体；亚洲科技资产表现弱于美股。",
+      "points": [
+        "美股上涨但由SOX领跑，广度不差却并非全面风险追逐。",
+        "人民币升至四年高位，央行中间价仍弱于市场预期，显示控制升值节奏。",
+        "伊朗相关外交接触压低油价，但航运和沙特设施风险未消失；俄乌防空供应延误与美国中期选举诉讼仍是政治风险点。"
+      ]
+    },
+    "research": {
+      "summary": "前一北京时间自然日没有可核验的AceCamp项目收藏，调研纪要栏目不收录其他Cubox文章。",
+      "points": [
+        "已读取未归档与已归档收藏并按卡片ID去重。",
+        "仅AceCamp项目/acecamptech原始链接符合纳入条件；本期未发现。",
+        "不使用平台AI摘要，不将普通科技文章误标为调研纪要。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "openai-gpt-6-1-terra-aa-20261026",
+      "category": "模型发布",
+      "title": "GPT‑6.1 Terra发布与首日独立测评",
+      "summary": "OpenAI于10月26日发布GPT‑6.1 Terra：API价为输入1美元/百万token、缓存输入0.05美元、输出5美元，支持100万token上下文。Artificial Analysis测得最高智能指数48、约90.9 token/s、每项任务约0.40美元；较GPT‑6.1 Sol低4分，Coding Agent指数48对54。主要限制是max档首token约189秒且输出约1.30亿token，高于同档中位数约8100万。",
+      "why": "价格/性能比明显改善，有利于代理、代码和视觉工作负载放量；但高档推理延迟与冗长输出会侵蚀实时应用体验及实际成本优势。",
+      "source": "OpenAI；Artificial Analysis",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "publishedAt": "2026-10-26",
+      "evidence": "官方披露价格、上下文和自测；Artificial Analysis为独立测评。AA还测得Omniscience猜测率38%，较上一代Terra的88%明显下降，但其任务集合不能代表所有企业工作流。",
+      "tags": [
+        "OpenAI",
+        "GPT-6.1 Terra",
+        "独立测评",
+        "Artificial Analysis",
+        "72小时跟踪"
+      ],
+      "relatedSources": [
+        {
+          "title": "GPT-6.1 Terra pushes the cost efficiency frontier",
+          "url": "https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier",
+          "date": "2026-10-26",
+          "evidence": "独立测评给出智能、速度、成本、首token延迟和输出量口径。"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-s1-ipo-20261026",
+      "category": "核心团队",
+      "title": "Anthropic递交S‑1：增长与算力承诺同时公开",
+      "summary": "Anthropic于10月26日向SEC递交S‑1，拟以ANT在纳斯达克上市，发行股数和价格区间尚未确定。申报材料显示2026年上半年营收约162.9亿美元、经营现金流约39.2亿美元；净亏损约807.5亿美元主要受可转换融资公允价值重估等非现金项目影响。公司披露约3214亿美元尚未开始的租赁付款和约2656亿美元最低采购承诺。",
+      "why": "这是公开市场首次系统看到Anthropic的增长、现金创造与长期算力负担。估值不能只看ARR；合同期限、毛利率、客户集中度和算力利用率将决定自由现金流质量。",
+      "source": "Anthropic；SEC S‑1",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": "2026-10-26",
+      "evidence": "官方公告确认递表、代码ANT及发行条款未定；财务数字来自SEC申报。社区对需求可持续性和开放权重竞争的讨论只作风险线索，不作为公司事实。",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "S-1",
+        "算力",
+        "资本开支"
+      ],
+      "relatedSources": [
+        {
+          "title": "Anthropic S-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+          "date": "2026-10-26",
+          "evidence": "监管原始申报文件。"
+        }
+      ]
+    },
+    {
+      "id": "cadence-2026q3-earnings-20261026",
+      "category": "产业链新闻",
+      "title": "Cadence 2026年Q3财报",
+      "summary": "营收16.33亿美元，同比+22%，高于约16.1亿美元一致预期；调整后EPS 2.11美元，高于约2.04—2.05美元预期。核心EDA、IP、系统设计与分析分别同比+20%、+24%、+30%，积压订单创82亿美元新高。公司把全年营收指引上调至63.87—64.17亿美元，调整后EPS上调至8.37—8.43美元。",
+      "why": "这是温和超预期且上调指引，不是一次性大幅爆发；更重要的是IP、先进封装和系统设计增速，说明AI芯片复杂度仍在向EDA工具链传导。",
+      "source": "Cadence IR；公开一致预期",
+      "url": "https://investor.cadence.com/news/news-details/2026/Cadence-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+      "publishedAt": "2026-10-26",
+      "evidence": "GAAP营业利润率26.2%，同比下降5.6个百分点；调整后营业利润率44.1%，同比下降3.5个百分点。公司同时新增25亿美元回购授权。预期口径来自公开市场汇总。",
+      "tags": [
+        "财报",
+        "Cadence",
+        "EDA",
+        "半导体",
+        "软件"
+      ]
+    },
+    {
+      "id": "meta-95b-equity-ai-capex-20261026",
+      "category": "产业链新闻",
+      "title": "Meta拟以最高950亿美元股权融资支持AI扩张",
+      "summary": "Meta启动约350亿美元普通股及可转优先股发行，并计划在Class C股票预计2027Q1交易后设立最高600亿美元ATM计划。NVIDIA、AMD和Broadcom表达合计最多50亿美元认购兴趣。Meta股价盘中约跌1.4%。",
+      "why": "AI资本开支从内部现金流进一步转向股权市场，稀释风险成为估值变量；芯片供应商参与客户融资也强化了“循环资本”争议。",
+      "source": "Reuters；公司披露",
+      "url": "https://www.reuters.com/legal/transactional/meta-launches-35-billion-stock-offering-fund-ai-expansion-2026-10-26/",
+      "publishedAt": "2026-10-26",
+      "evidence": "350亿美元为已启动发行，600亿美元ATM的时间和条款尚未最终确定，不能把950亿美元全部当作已到账资金。",
+      "tags": [
+        "Meta",
+        "AI基础设施",
+        "融资",
+        "资本开支",
+        "云"
+      ]
+    },
+    {
+      "id": "spacex-apollo-40b-ai-lease-20261026",
+      "category": "产业链新闻",
+      "title": "SpaceX与Apollo达成约400亿美元AI芯片租赁融资",
+      "summary": "Apollo管理的关联方将采购AI芯片及服务器并租给SpaceX，总本金付款约400亿美元；每笔租赁自设备到货起略超5年，预计年底前完成交易、2027年上半年随设备交付起租。SpaceX仍预计2026Q4资本开支350亿—400亿美元。",
+      "why": "租赁把前期GPU采购转成多年固定付款，缓解短期现金压力但增加长期义务；对Apollo是大额资产支持型融资，对芯片需求则提供2027年交付能见度。",
+      "source": "Reuters；监管文件",
+      "url": "https://www.reuters.com/business/media-telecom/spacex-enters-40-billion-deal-with-apollo-ai-chip-financing-2026-10-26/",
+      "publishedAt": "2026-10-26",
+      "evidence": "Elon Musk称融资已“closed”，但监管材料显示交易目标为年底前完成；二者口径不同，本文按监管披露区分签约与交割。",
+      "tags": [
+        "SpaceX",
+        "Apollo",
+        "AI芯片",
+        "融资",
+        "数据中心"
+      ]
+    },
+    {
+      "id": "overseas-macro-rates-oil-20261026",
+      "category": "宏观点评",
+      "title": "海外宏观：长端利率持平，油价从高位回落",
+      "summary": "10月26日美债2Y约4.68%、日变动-1bp，10Y约4.986%、近乎持平；美元指数约102.00、+0.19%。Brent结算115.81美元/桶（-0.8%），WTI结算101.76美元/桶（-1.46%）。外交接触压低风险溢价，但两油仍在六个月高位附近。",
+      "why": "折现率没有继续上行，给久期较长的科技股喘息；油价仍高意味着数据中心电力、物流和通胀预期尚未真正解除。",
+      "source": "Reuters；美国国债公开行情",
+      "url": "https://www.reuters.com/business/energy/oil-prices-down-almost-1-early-trading-2026-10-25/",
+      "publishedAt": "2026-10-26",
+      "evidence": "利率、美元与油价取不同市场各自收盘/报价时点，未混写为同一瞬时截面；油价为当日结算。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "Brent",
+        "WTI"
+      ]
+    },
+    {
+      "id": "china-macro-yuan-liquidity-20261026",
+      "category": "宏观点评",
+      "title": "中国宏观：人民币升至四年高位，央行仍控制升值速度",
+      "summary": "在岸人民币一度升至6.6682，创2022年6月以来新高；央行中间价6.7162，较Reuters估算弱471点，显示政策更像允许渐进升值而非追赶现货。非银机构大额赎回流动性支持工具仍只有此前宣布的系统性风险触发框架，未见新增额度或实际投放。",
+      "why": "人民币走强有利于降低进口芯片和能源成本，但中间价信号意味着单边升值交易不宜外推；流动性工具是债市尾部风险后盾，不等同于股市增量资金。",
+      "source": "Reuters；中国人民银行公开信息",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-yuan-climbs-fresh-4-year-high-ahead-key-policy-meetings-2026-10-26/",
+      "publishedAt": "2026-10-26",
+      "evidence": "区分现货高点与中间价；未发现非银工具的实施细则、额度或投放数据，因此不写成已落地放水。",
+      "tags": [
+        "宏观点评",
+        "人民币",
+        "央行",
+        "流动性"
+      ]
+    },
+    {
+      "id": "wars-politics-20261026",
+      "category": "宏观点评",
+      "title": "战争与政治：伊朗外交接触升温，俄乌防空供应仍卡点",
+      "summary": "美伊方向，卡塔尔斡旋及沙特、土耳其、巴基斯坦与伊朗接触令油价回落，但胡塞袭击主张及航运事件持续，尚非停火。俄乌方向，泽连斯基称Patriot/NASAMS导弹等待美国防长签字近一个月。美国中期选举前，联邦上诉法院拒绝政府立即阻止加州统计争议邮件选票的请求。",
+      "why": "中东仍决定能源和航运风险溢价，俄乌军援节奏影响欧洲能源与防务预算；选举诉讼增加短期制度噪音，但不能把诉讼或民调当作11月3日结果。",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/ukraine-has-waited-nearly-month-us-sign-off-patriot-missiles-zelenskiy-says-2026-10-26/",
+      "publishedAt": "2026-10-26",
+      "evidence": "当事方表态与已核实事实分开；胡塞袭击部分缺少沙特即时确认。加州裁决只是程序性拒绝立即介入，下级法院仍将审理。",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "美伊",
+        "俄乌",
+        "美国中期选举"
+      ],
+      "relatedSources": [
+        {
+          "title": "Trump administration loses push to block California votes",
+          "url": "https://www.reuters.com/world/trump-administration-loses-push-block-california-votes-alleged-noncitizens-2026-10-26/",
+          "date": "2026-10-26",
+          "evidence": "上诉法院裁决及案件状态。"
+        },
+        {
+          "title": "Oil settles lower on peace hopes",
+          "url": "https://www.reuters.com/business/energy/oil-prices-down-almost-1-early-trading-2026-10-25/",
+          "date": "2026-10-26",
+          "evidence": "外交接触、油价与航运风险。"
+        }
+      ]
+    },
+    {
+      "id": "us-market-flow-20261026",
+      "category": "市场资金面",
+      "title": "美国市场：SOX领涨，增量资金集中半导体",
+      "summary": "10月26日标普500涨0.70%至7676.77，纳指涨0.82%至26169.38，道指涨0.28%至52361.58；SOX大涨2.82%至11083.5。约300只标普成分股上涨、11个板块中8个收高，但动量股涨幅约1.6%、等权指数约0.4%，结构仍偏向高beta科技。",
+      "why": "广度不差说明并非纯粹几只巨头拉指数，但SOX远超大盘，新增买盘最明确地回到半导体；财报周若指引不及高预期，集中度也会放大回撤。",
+      "source": "公开市场行情；Investing.com",
+      "url": "https://www.investing.com/indices/phlx-semiconductor-historical-data",
+      "publishedAt": "2026-10-26",
+      "evidence": "SOX收于11083.5、单日+2.82%；成交量相对20日均量和可靠ETF申赎未取得一致公开口径，因此不填。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体",
+        "资金面"
+      ]
+    },
+    {
+      "id": "asia-market-flow-20261026",
+      "category": "市场资金面",
+      "title": "亚洲市场：中港分化，韩国外资净卖出，日本科技拖累指数",
+      "summary": "A股上证+0.19%、沪深300约持平，深成指-1.19%、创业板-1.71%，沪深成交约1.61万亿元；恒指+0.51%，恒科-0.40%，港股成交1757.6亿港元。日经-0.80%而TOPIX+0.18%，科技权重拖累明显；KOSPI -1.46%，外资净卖出约6955亿韩元。台湾因光复节补假休市。",
+      "why": "亚洲资金不是同步risk-on：内地小盘成长、香港科技、日韩科技均弱于各自宽基，美股半导体反弹尚未传导成区域一致买盘。",
+      "source": "RTHK；Reuters；地区市场公开数据",
+      "url": "https://news.rthk.hk/rthk/en/component/k2/1875370-20261026.htm?spTabChangeable=0",
+      "publishedAt": "2026-10-26",
+      "evidence": "日本周度外资数据尚未更新，未伪造日频；A股不使用“主力净流入”供应商估算，也不填已停止披露的北向日频净流入。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ],
+      "relatedSources": [
+        {
+          "title": "Japan's Nikkei falls for a 3rd day",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/",
+          "date": "2026-10-26",
+          "evidence": "日经、TOPIX与行业宽度。"
+        }
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "OpenAI",
+      "status": "已完成",
+      "url": "https://openai.com/news/",
+      "note": "核验GPT‑6.1 Terra官方发布、价格和自测；与Artificial Analysis独立结果分开标注。"
+    },
+    {
+      "name": "Anthropic",
+      "status": "已完成",
+      "url": "https://www.anthropic.com/news",
+      "note": "核验S‑1官方公告和SEC原文；未发现10月26日新模型发布。"
+    },
+    {
+      "name": "中国模型主线",
+      "status": "已完成",
+      "url": "https://api-docs.deepseek.com/news/",
+      "note": "逐一检查DeepSeek、MiniMax、Qwen、Kimi、GLM/Z.ai、StepFun公开官方入口及代码/模型平台；未核验到10月26日正式新模型。社区“即将发布”帖无官方证据，未收录。"
+    },
+    {
+      "name": "独立测评",
+      "status": "已完成",
+      "url": "https://artificialanalysis.ai/",
+      "note": "收录Terra首日AA测评的版本、成本、速度、首token延迟和局限；Epoch、METR未见对应新报告。"
+    },
+    {
+      "name": "核心人物与投资人",
+      "status": "已完成",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "检查Gavin Baker、Brad Gerstner/Altimeter、Sarah Guo、Elad Gil、Coatue及Apollo近24小时与7天回查；未找到足够可核验且未重复的新观点。"
+    },
+    {
+      "name": "美国科技公司财报",
+      "status": "已完成",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "核对Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron等IR/SEC日历；10月26日重要已发布财报为Cadence，其他待后续披露。"
+    },
+    {
+      "name": "CEO访谈与科技播客",
+      "status": "部分完成",
+      "url": "https://www.youtube.com/",
+      "note": "公开网页搜索未核验到Sundar Pichai或Andy Jassy的新长访谈；last30days的YouTube源因yt-dlp不可用而未执行，故不能表述为平台无更新。"
+    },
+    {
+      "name": "The Information",
+      "status": "部分完成",
+      "url": "https://www.theinformation.com/",
+      "note": "仅检查免费公开标题和导语；订阅墙内容未读取，线索未在无交叉核验时写成事实。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已完成",
+      "url": "https://fundaai.substack.com/",
+      "note": "检查公开主页、最新文章日期及可读段落，未发现近24小时需单独收录的新材料。"
+    },
+    {
+      "name": "Elon Musk与SpaceX",
+      "status": "已完成",
+      "url": "https://x.com/SpaceX",
+      "note": "X原帖访问不稳定；SpaceX/Apollo融资由Reuters和监管材料交叉核验，并区分Musk“已完成”说法与监管交割进度。"
+    },
+    {
+      "name": "Ara Kharazian与Ramp AI",
+      "status": "已完成",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "检查Ara公开渠道、Econ Lab、Ramp AI Index及公司公开社媒，未发现近24小时新的可核验研究更新。"
+    },
+    {
+      "name": "last30days",
+      "status": "部分完成",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "实际运行v3.28.1，覆盖Reddit 26条、Hacker News 12条、GitHub 4条；YouTube因yt-dlp未配置为0条并标记缺口。社区内容仅用于发现和反例，不替代原始材料。"
+    },
+    {
+      "name": "Cubox AceCamp",
+      "status": "已完成",
+      "url": "https://cubox.cc/",
+      "note": "只读连接成功；读取2026-10-26未归档及已归档收藏并去重，未核验到AceCamp项目或acecamptech原始链接。其他收藏按用户规则全部排除。"
+    },
+    {
+      "name": "宏观与市场",
+      "status": "已完成",
+      "url": "https://www.reuters.com/markets/",
+      "note": "核验美债、美元、油价、SOX、中日韩台市场及美伊/俄乌/美国中期选举变化；缺乏一致公开资金口径处明确留空。"
+    }
+  ],
+  "updatedAt": "2026-10-27T00:48:00Z"
+}
