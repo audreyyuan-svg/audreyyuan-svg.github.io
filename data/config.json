@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 13,
+  "version": 14,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -574,7 +574,21 @@
         "Broadcom",
         "Micron",
         "Supermicro",
-        "其他重要半导体/云/软件公司"
+        "Corning / 康宁",
+        "Celestica / 天弘科技",
+        "Arista Networks",
+        "Coherent",
+        "Lumentum",
+        "Fabrinet",
+        "Ciena",
+        "Amphenol",
+        "Vertiv",
+        "Jabil",
+        "Flex",
+        "Dell",
+        "HPE",
+        "Cisco",
+        "其他重要AI数据中心光通信/服务器ODM/EMS/网络与电力基础设施公司"
       ],
       "url": "https://www.sec.gov/edgar/search/",
       "focus": "每日逐一查IR/SEC和财报日历，收录当日财报及重大公司公告。标题统一公司名＋报告期＋财报；预告、初步及未经审计数据必须标明，不冒充完整财报。分清实际、预期、指引及GAAP/调整后，关注分部趋势、盈利、现金流/Capex与TMT传导。",
@@ -594,6 +608,14 @@
         {
           "name": "SpaceX IR",
           "url": "https://ir.spacex.com/"
+        },
+        {
+          "name": "Corning IR",
+          "url": "https://investor.corning.com/"
+        },
+        {
+          "name": "Celestica IR",
+          "url": "https://corporate.celestica.com/"
         }
       ]
     },
@@ -724,7 +746,7 @@
     ],
     "weekend": "不更新晨间日报；仅周日18:00周报"
   },
-  "updatedAt": "2026-10-26T13:05:00Z",
+  "updatedAt": "2026-10-28T01:10:16.630Z",
   "projectName": "AI Tracker",
   "sections": [
     {
@@ -944,5 +966,8 @@
       "MiniMax M3.1 Flash发布：AA综合指数43、成本约0.22美元；自动化强于DeepSeek 1017，但综合与终端任务仍落后。",
       "TI 2026Q3营收同比+28%，但缺少可核验一致预期；Lam营收环比+22%、下季继续增长，IBM软件+8%强于咨询。"
     ]
-  }
+  },
+  "rules": [
+    "2026-10-28 AI数据中心供应链财报范围（最高优先级）：除芯片、云和软件外，固定跟踪AI数据中心光通信/光器件/光纤、服务器ODM/EMS、网络交换、电源/散热与连接器公司的财报和指引。核心公司至少包括Corning、Celestica、Arista、Coherent、Lumentum、Fabrinet、Ciena、Amphenol、Vertiv、Jabil、Flex、Dell、HPE、Cisco；财报季逐一查IR/SEC和电话会，标题统一“公司名 YYYY年Qn财报”，正文分列实际值、可靠一致预期、分部增速、利润率、现金流/资本开支与下季/全年指引，并重点判断AI订单、产能、客户集中度和营运资本风险。"
+  ]
 }
