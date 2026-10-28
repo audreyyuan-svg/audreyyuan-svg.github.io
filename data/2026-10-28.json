@@ -1,9 +1,11 @@
 {
   "date": "2026-10-28",
-  "title": "2026-10-28｜Genie 4仍无独立测评，Anthropic锁定630亿美元Broadcom算力；SOX涨3.6%而A股半导体跌5.8%",
-  "intro": "今天的主线不是单点模型跑分，而是世界模型能力、AI算力融资与全球科技资金面的分化。Google把Genie 4推进到可交互、有声世界，但仍无法公开复测；Anthropic借SPV锁定2027年Broadcom XPU，把算力需求转化为信用结构；市场端美国半导体集中修复，中国科技仓位继续去杠杆。AceCamp昨日50篇收藏全量列出，并精读其中4篇数据最密集材料。",
+  "title": "2026-10-28｜康宁与天弘财报验证AI光互联/服务器需求；Genie 4仍无独立测评，SOX涨3.6%",
+  "intro": "今天最重要的基本面结果来自AI数据中心供应链：康宁Q3核心EPS超预期，光通信收入增长44%、企业网络增长84%；Celestica（天弘科技）营收增长83%，并给出2027年收入近翻倍指引，但高速扩张占用营运资本。与此同时，Google Genie 4仍缺独立测评，Anthropic以630亿美元SPV锁定2027年Broadcom XPU；市场端SOX上涨3.6%，而A股半导体下跌5.8%。AceCamp昨日50篇收藏全量列出，并精读其中4篇数据最密集材料。",
   "coverage": "北京时间2026-10-27 08:30至2026-10-28 08:30；公开科技/市场优先近24小时并补查7天，Cubox按2026-10-27自然日收藏时间取数。",
   "takeaways": [
+    "康宁Q3核心EPS 0.91美元，高于公开一致预期0.88美元；光通信收入同比+44%、企业网络+84%、GenAI产品销售额翻倍以上，AI支出正从芯片外溢至光纤与数据中心互联。",
+    "Celestica（天弘科技）Q3营收58.3亿美元、调整后EPS 3.30美元，均超过公司指引上沿；2027年营收指引400亿美元、同比约+90%，但2026年自由现金流指引由6亿美元降至4.6亿美元，增长占用营运资本。",
     "Genie 4的增量是原生音频、实时对话和Gemini代理闭环；但它仍是受限研究预览，官方没有公开API、价格、物理准确率基准或第三方复现，不能把演示等同于稳定可用。",
     "Anthropic算力融资进入结构化信用阶段：630亿美元SPV采购Broadcom XPU并租回，Broadcom为第一顺位金额提供残值支持；2027需求能见度提高，利用率与残值风险也转入资产负债表分析。",
     "美股AI修复高度集中：SOX +3.60%，显著跑赢标普与纳指，成交却低于20日均量约6%；与此同时A股半导体-5.8%，韩国由外资回补，全球科技风险偏好并不同步。",
@@ -11,8 +13,10 @@
   ],
   "sectionOverviews": {
     "technology": {
-      "summary": "世界模型从生成走向交互仿真，但可验证性暂时落后于演示；AI算力则从芯片订单扩展为银行、私募信贷和厂商残值担保共同承接的融资资产。",
+      "summary": "AI数据中心需求已从GPU扩散到光通信、服务器与网络硬件：康宁和Celestica财报同时给出强验证；世界模型仍处于演示强、可复测性弱的阶段，算力融资则进一步资产证券化。",
       "points": [
+        "康宁核心EPS超预期，AI推动光通信+44%、企业网络+84%。",
+        "Celestica营收+83%，2027年营收指引近翻倍；自由现金流因营运资本投入下调。",
         "Genie 4仅受限预览，无公开价格/模型卡/独立评测。",
         "Anthropic/Broadcom 630亿美元SPV把2027 XPU需求和信用风险同时前置。",
         "Apollo认为S&P 493仍未出现AI带来的收入增速或利润率改善，企业ROI是主要反证。"
@@ -91,6 +95,46 @@
         "生命科学",
         "政府采购",
         "商业化"
+      ]
+    },
+    {
+      "id": "corning-2026q3-earnings-20261027",
+      "category": "产业链新闻",
+      "title": "康宁 2026年Q3财报",
+      "summary": "核心销售额50.8亿美元、同比+19%，核心EPS 0.91美元、同比+36%，EPS高于公开一致预期0.88美元；GAAP销售额48.6亿美元、EPS 0.78美元。光通信销售额23.8亿美元、同比+44%，其中企业网络+84%，GenAI相关产品销售额翻倍以上。Q4核心销售额指引52亿—53亿美元，核心EPS 0.96—1.00美元，高于公开一致预期约0.93美元。",
+      "why": "结果验证AI集群从GPU扩张向光纤、连接器和数据中心互联外溢；企业网络增速远高于宽带/运营商传统周期。不过公司仍投入超过5亿美元资本开支，后续要观察新增产能、长单兑现与AI订单集中度。",
+      "source": "Corning Investor Relations；公开一致预期",
+      "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+      "publishedAt": "2026-10-27",
+      "evidence": "公司正式披露：核心毛利率40.5%（同比+150bp）、核心营业利润率22.7%（+310bp）、调整后自由现金流6.61亿美元；官方称结果超过指引。公开市场预期显示核心EPS约0.88美元、Q4约0.93美元。核心口径与GAAP口径已分列。",
+      "tags": [
+        "财报",
+        "康宁",
+        "Corning",
+        "AI数据中心",
+        "光通信",
+        "光纤",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "celestica-2026q3-earnings-20261026",
+      "category": "产业链新闻",
+      "title": "Celestica（天弘科技）2026年Q3财报",
+      "summary": "营收58.3亿美元、同比+83%，调整后EPS 3.30美元、同比+109%，均超过公司指引上沿（52.5亿—55.5亿美元、2.88—3.08美元）。CCS收入48.7亿美元、同比+102%，分部利润率8.9%。公司把2026年营收/EPS指引上调至210亿美元/11.55美元，并首次给出2027年营收400亿美元、调整后EPS 21.50美元，反映超大规模云与前沿模型实验室需求继续加速。",
+      "why": "Celestica是AI服务器、网络与存储硬件平台的重要设计制造商，2027年收入近翻倍的指引是算力供应链需求能见度的强信号；但2026年自由现金流指引由6亿美元下调至4.6亿美元，说明高速增长正占用营运资本，不能只看收入和EPS。",
+      "source": "Celestica Investor Relations",
+      "url": "https://corporate.celestica.com/node/17881",
+      "publishedAt": "2026-10-26",
+      "evidence": "公司正式披露：调整后营业利润率8.5%创公司新高；Q4营收指引62.75亿—65.75亿美元、调整后EPS 3.37—3.57美元；2027年营收400亿美元、调整后营业利润率9.0%、调整后EPS 21.50美元。公司口径非GAAP项目及营运资本风险已保留。",
+      "tags": [
+        "财报",
+        "Celestica",
+        "天弘科技",
+        "AI服务器",
+        "ODM/EMS",
+        "网络设备",
+        "产业链新闻"
       ]
     },
     {
@@ -533,8 +577,8 @@
     {
       "name": "美国主要科技公司与财报",
       "status": "已完成",
-      "url": "https://www.sec.gov/edgar/search/",
-      "note": "核对Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron等IR/SEC日历；10月27日没有新的重大科技财报，Microsoft/Alphabet将在10月28日盘后、Amazon在10月29日披露，未把预告当业绩。"
+      "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+      "note": "补充核验并收录康宁、Celestica（天弘科技）Q3财报：康宁核心EPS超预期，光通信/企业网络由AI需求驱动；Celestica营收与EPS超过公司指引上沿并给出2027年加速展望。同步核对Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron等IR/SEC日历；未把尚未发布的财报预告当业绩。"
     },
     {
       "name": "CEO访谈与科技播客",
@@ -597,5 +641,6 @@
       "note": "只读连接成功；读取2026-10-27未归档和已归档收藏并去重，共85张卡，其中50篇为AceCamp并全部列链接，其他收藏排除；精读4篇全文。"
     }
   ],
-  "updatedAt": "2026-10-28T00:39:12Z"
+  "updatedAt": "2026-10-28T01:10:16.630Z",
+  "archiveSummary": "康宁Q3核心EPS超预期、AI光通信收入+44%；天弘营收+83%并给出2027年近翻倍指引，但营运资本投入压低自由现金流。"
 }
