@@ -1,4 +1,5 @@
 const { React: R, ReactDOM, icons } = window.AITrackerRuntime;
+import MarketDashboard from './market-dashboard.js?v=20261029a';
 const h = R.createElement;
 const { useState, useEffect } = R;
 const periods = { daily: "日报", weekly: "周报", monthly: "月报" };
@@ -205,6 +206,7 @@ export default function TrackerApp() {
               h("h2", null, overviewText || (issue ? meta.description : loading ? "正在读取…" : `首期${edition}尚未发布`)),
               h("div", { className: "digest-points" }, overviewPoints.length ? overviewPoints.map((text, n) => h("div", { key: n }, h("span", null, String(n + 1).padStart(2, "0")), h("p", null, text))) : h("p", null, section === "research" ? researchStatus : issue ? "本期暂无该栏目内容。" : "已保留阅读入口，发布后会显示各栏概览与重点内容。")),
               h("div", { className: "digest-footer" }, icon("check", 14), " 保留原始出处 · 区分事实、受访者观点与编辑判断"))),
+          section === 'macro' && h(MarketDashboard, { data: issue?.marketDashboard }),
           section === "research" && !items.length && h("div", { className: "collection-status" }, h("b", null, "纪要采集状态"), h("p", null, researchStatus), h("small", null, period === "daily" ? "日报范围：北京时间前一天收藏的 AceCamp 纪要。" : "周报/月报：汇总期内纪要，久谦周度更新纳入周报并在月报合并去重。")),
           h("div", { className: "feed-top" }, h("h2", null, section === "saved" ? "本期已收藏" : meta.name, h("small", null, `${items.length} 条`)), h("label", { className: "search" }, icon("search", 16), h("input", { value: query, onChange: e => setQuery(e.target.value), placeholder: "搜索公司、人物、关键词…", "aria-label": "搜索本期内容" }))),
           h("div", { className: "filter-tabs" }, ["全部动态", ...categories].map(c => h("button", { key: c, className: filter === c ? "selected" : "", onClick: () => setFilter(c) }, c))),
@@ -213,3 +215,4 @@ export default function TrackerApp() {
           h("div", { className: "feed" }, items.map((item, n) => h(Card, { item, number: n, key: item.id, saved: saved.includes(keyOf(item)), onSave: () => toggleSave(item) })), !items.length && h("div", { className: "empty" }, loading ? "正在读取期刊…" : query || filter !== "全部动态" ? "没有符合筛选条件的内容。" : section === "saved" ? "点击卡片右上角的书签，收藏本期内容。" : section === "research" ? "暂无已读取并核验的纪要。" : issue ? "本期暂无该栏目内容。" : `暂无已发布${edition}内容。`))),
         h("footer", null, h("span", null, "AI Tracker", h("span", { className: "brand-dot" }, "."), h("small", null, "少一点噪声，多一点判断。")), h("small", null, "摘要请结合原文阅读 · 采集缺口如实记录")))));
 }
+

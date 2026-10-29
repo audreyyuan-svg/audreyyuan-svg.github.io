@@ -104,12 +104,12 @@
       "id": "vertiv-2026q3-earnings-20261028",
       "category": "产业链新闻",
       "title": "Vertiv 2026年Q3财报",
-      "summary": "净销售额43.13亿美元、同比+61%，调整后EPS 2.21美元、同比+78%；公开一致预期约37.5亿美元/1.82美元，分别超出约15%/21%。调整后营业利润率25.2%、同比+290bp，自由现金流6.52亿美元、同比+50%，有机订单同比增逾100%。公司上调全年收入中值至146.5亿美元、调整后EPS至7.15美元。股价反应：财报盘前发布，10月28日常规交易收于242.94美元，上涨16.60%。",
+      "summary": "净销售额43.13亿美元、同比+61%，调整后EPS 2.21美元、同比+78%；公开一致预期约37.5亿美元/1.82美元，分别超出约15%/21%。调整后营业利润率25.2%、同比+290bp，自由现金流6.52亿美元、同比+50%，有机订单同比增逾100%。公司上调全年收入中值至146.5亿美元、调整后EPS至7.15美元。股价反应：财报盘前发布，10月28日常规交易收于242.94美元，上涨16.48%。",
       "why": "结果验证AI数据中心电力与液冷需求从订单转化为收入和利润，且利润率、现金流同时改善；接下来要观察产能、执行和客户集中度，而不是只看订单翻倍。",
       "source": "Vertiv Investor Relations；公开一致预期",
       "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Third-Quarter-2026-with-Net-Sales-Growth-of-61-Organic-Orders-Growth-over-100-and-Diluted-EPS-Growth-of-91-Adjusted-Diluted-EPS-Growth-of-78-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx",
       "publishedAt": "2026-10-28",
-      "evidence": "公司正式披露销售、利润率、EPS、FCF、订单和指引；公开一致预期来自市场汇总。",
+      "evidence": "公司正式披露销售、利润率、EPS、FCF、订单和指引；公开一致预期来自市场汇总。 公开正式收盘242.94美元/+34.38美元对应+16.48%；早先+16.6%为新闻盘中近似值，现统一为收盘口径。",
       "tags": [
         "财报",
         "Vertiv",
@@ -760,7 +760,156 @@
       "status": "已完成",
       "url": "https://www.acecamptech.com/",
       "note": "持久化只读连接实时验证成功；读取2026-10-28普通及已归档收藏共88张，筛出10篇AceCamp并全部列链接，精读4篇全文；未改变收藏/归档/已读状态。"
+    },
+    {
+      "name": "Wind与市场图表",
+      "status": "部分完成",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX",
+      "note": "查找当前工具与插件目录，未找到Wind可调用入口。Yahoo历史接口429；未画历史趋势。行情速览、10市场涨跌图、3家公司异动已按公开材料制作，缺少20日量比，未宣称放量。Vertiv收盘核对为+16.48%。"
     }
   ],
-  "updatedAt": "2026-10-29T08:50:00+08:00"
+  "updatedAt": "2026-10-29T08:50:00+08:00",
+  "marketDashboard": {
+    "tradeDate": "2026-10-28",
+    "snapshot": [
+      {
+        "label": "纳斯达克",
+        "displayValue": "26,549.85",
+        "change": 0.27,
+        "displayChange": "+0.27%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,743.98",
+        "change": 0.28,
+        "displayChange": "+0.28%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "52,475.10",
+        "change": 0.19,
+        "displayChange": "+0.19%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "11,584.57",
+        "change": 0.89,
+        "displayChange": "+0.89%"
+      },
+      {
+        "label": "10年美债",
+        "displayValue": "5.05%",
+        "change": 6,
+        "displayChange": "+6bp",
+        "note": "收益率上行非债券价格上涨"
+      }
+    ],
+    "snapshotNote": "指数及美债沿用本期已核验10月28日收盘口径；SOX采用Nasdaq官方数据。参考图中10Y为5.04%/+5bp，与已核验值不一致，未直接照抄。",
+    "performance": [
+      {
+        "name": "纳斯达克",
+        "changePct": 0.27
+      },
+      {
+        "name": "标普500",
+        "changePct": 0.28
+      },
+      {
+        "name": "道琼斯",
+        "changePct": 0.19
+      },
+      {
+        "name": "SOX",
+        "changePct": 0.89
+      },
+      {
+        "name": "上证",
+        "changePct": 0.91
+      },
+      {
+        "name": "恒生",
+        "changePct": 0.23
+      },
+      {
+        "name": "日经225",
+        "changePct": 1.08
+      },
+      {
+        "name": "TOPIX",
+        "changePct": -0.14
+      },
+      {
+        "name": "KOSPI",
+        "changePct": 6.63
+      },
+      {
+        "name": "台湾加权",
+        "changePct": 2.04
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "VRT",
+        "name": "Vertiv",
+        "session": "常规收盘",
+        "asOf": "10-28 16:00 ET",
+        "changePct": 16.48,
+        "relativeVolume20d": null,
+        "volumeNote": "成交约1935万股；20日均量未核验，不以3月均量替代。",
+        "catalyst": "Q3收入与EPS超预期、订单同比翻倍、上调全年指引。报价242.94美元对应+16.48%；此前+16.6%为盘中近似值。",
+        "url": "https://www.schwab.wallst.com/Research/Public/stocks/summary/?symbol=vrt"
+      },
+      {
+        "symbol": "NOW",
+        "name": "ServiceNow",
+        "session": "盘后快照",
+        "asOf": "10-28 18:09 ET",
+        "changePct": -17.57,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验，不能以全日量认定放量。",
+        "catalyst": "AI ACV目标上调，但Q4 cRPO指引偏弱；该盘后时点快照不是最终盘后收盘。",
+        "url": "https://ca.finance.yahoo.com/quote/NOW/"
+      },
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet",
+        "session": "盘后快照",
+        "asOf": "10-28 17:18 ET",
+        "changePct": -10.42,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验；价格反应不等于资金净流出。",
+        "catalyst": "云收入高增，但集团收入略低预期、投资损失及资本开支压力压制估值。",
+        "url": "https://www.investing.com/equities/google-inc"
+      }
+    ],
+    "selectionNote": "今日精选显著涨跌的AI基础设施与软件/平台公司，不固定微软；常规收盘与盘后快照时点不同，未并作同一收盘排名。未取得可靠20日均量，今日仅称价格异动，不称显著放量。",
+    "trend": {
+      "baseDate": "2025-12-31",
+      "methodology": "SOX、IGV及四大CSP基期等权买入持有指数，拟以2025-12-31=100；10Y用右轴原始收益率。历史缺失不前值填充，不连过缺口。",
+      "series": [],
+      "gap": "本次未发现可调用的Wind MCP，公开Yahoo历史数据接口返回429，未获得SOX、MSFT/AMZN/GOOGL/META、IGV与10Y完整日频历史序列。年内多线图暂未绘制；上方展示已核验10月28日各市场涨跌幅。"
+    },
+    "sources": [
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX"
+      },
+      {
+        "name": "Reuters市场收盘",
+        "url": "https://www.reuters.com/business/wall-street-ends-higher-fed-holds-key-rate-steady-focus-turns-earnings-2026-10-28/"
+      },
+      {
+        "name": "Schwab VRT",
+        "url": "https://www.schwab.wallst.com/Research/Public/stocks/summary/?symbol=vrt"
+      },
+      {
+        "name": "Alphabet盘后",
+        "url": "https://www.investing.com/equities/google-inc"
+      },
+      {
+        "name": "ServiceNow盘后",
+        "url": "https://ca.finance.yahoo.com/quote/NOW/"
+      }
+    ]
+  }
 }

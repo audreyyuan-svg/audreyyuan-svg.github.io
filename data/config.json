@@ -979,5 +979,14 @@
     "2026-10-28 AI数据中心供应链财报范围（最高优先级）：除芯片、云和软件外，固定跟踪AI数据中心光通信/光器件/光纤、服务器ODM/EMS、网络交换、电源/散热与连接器公司的财报和指引。核心公司至少包括Corning、Celestica、Arista、Coherent、Lumentum、Fabrinet、Ciena、Amphenol、Vertiv、Jabil、Flex、Dell、HPE、Cisco；财报季逐一查IR/SEC和电话会，标题统一“公司名 YYYY年Qn财报”，正文分列实际值、可靠一致预期、分部增速、利润率、现金流/资本开支与下季/全年指引，并重点判断AI订单、产能、客户集中度和营运资本风险。",
     "2026-10-28 财报股价反应规则（最高优先级）：每张财报卡的简评末尾必须附股价反应。盘前发布的财报写该公司当日常规交易收盘涨跌幅及收盘价；盘后发布的财报写发布当晚盘后即时涨跌幅、价格与明确报价时点。若盘后流动性不足或不同数据源冲突，标注数据范围/缺口，不用次日常规涨跌幅冒充盘后涨幅；次日收盘可作为后续验证另列。必须区分盘前、盘中、常规收盘和盘后，不混用未复权/复权价格；同时保留指数或行业相对表现（确有可靠数据时）。",
     "2026-10-28 FUNDA每日检查规则（最高优先级）：每天分别检查FUNDA Substack主页、/archive、当年/sitemap/年份及可索引单篇文章，不得只根据主页首屏判断无更新；同时检查X @FundaAI公开原帖。对期内所有TMT相关新文逐篇核对绝对发布日期和公开可读段落，区分Research/Deep/Preview/Review/Weekly/Column。Preview必须在标题写“财报预览”，不得冒充正式业绩；公司披露与FUNDA预测/渠道调查分开，重要数字回到SEC、IR或模型卡交叉核验。付费墙内未读内容不扩写，仅有标题/导语时进入sourceChecks线索。"
-  ]
+  ],
+  "marketDashboard": {
+    "enabled": true,
+    "section": "markets",
+    "schemaVersion": 1,
+    "rule": "【2026-10-29新增：市场行情图表｜长期生效】\n市场行情每天增加marketDashboard，沿用参考图的行情速览、重点趋势和科技异动结构。日常仅更新JSON。snapshot必须包含纳指、标普500、道指、SOX、10年美债收益率及单日bp变动，注明当地最近完整交易日/报价时点；不沿用参考图旧数字。\n科技异动精选每日动态筛选3—5家公司，覆盖半导体、云/互联网、软件、AI硬件供应链；优先绝对涨跌幅>=5%或常规成交量/此前20个完整交易日均量>=1.5倍，兼顾异常下跌与有基本面催化的放量，非硬性凑数，不固定微软。常规、盘前、盘后明确分组与ET时点；盘后涨跌以当天常规收盘为基准，量能不得使用全天成交量冒充盘后量比。无20日量比时relativeVolume20d=null、注明缺口，不写放量；成交量不等于净流入。\n趋势图优先授权可用的Wind MCP（不购买新增服务），否则使用合法公开源：SOX、四大CSP（MSFT/AMZN/GOOGL/META，固定A股类别GOOGL）等权、IGV以此前12月31日或前一完整交易日为100归一；CSP用四只复权价格相对基期的算术均值（基期等额买入持有、不日频再平衡），每年基期重设。股票ETF复权、SOX价格指数口径分别标注；10Y收益率独立右轴，不能做100归一。所有成分同日齐全才计算CSP，禁止前值填充、从参考图片描点、补造历史或连过缺失日期。记录基期、日期、数据源和统计方法。拿不到完整历史则明确缺口并画已核验的当日指数涨跌图，不声称已完成年内多线图。\nIssue.marketDashboard schema: {tradeDate,snapshot:[{label,displayValue,change,displayChange,note?}],snapshotNote,performance:[{name,changePct}],movers:[{symbol,name,session,asOf,changePct,relativeVolume20d,volumeNote,catalyst,url}],selectionNote,trend:{baseDate,methodology,gap?,series:[{name,axis:\"left\"|\"right\",points:[{date,value}]}]},sources:[{name,url}]}。放市场行情专用区域，科技资讯不重复。sourceChecks单列Wind/市场图表真实执行状态。图表必须由真实序列代码绘制，imagegen只可用于明确标注非行情的版式示意。",
+    "windStatus": "本次工具及插件检索无可调用Wind入口；待后续实查",
+    "chartMethod": "code-rendered SVG from verified JSON",
+    "updatedAt": "2026-10-29T10:32:00+08:00"
+  }
 }
