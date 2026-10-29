@@ -1,5 +1,5 @@
 const { React: R, ReactDOM, icons } = window.AITrackerRuntime;
-import MarketDashboard from './market-dashboard.js?v=20261029a';
+import MarketDashboard from './market-dashboard.js?v=20261029b';
 const h = R.createElement;
 const { useState, useEffect } = R;
 const periods = { daily: "日报", weekly: "周报", monthly: "月报" };
