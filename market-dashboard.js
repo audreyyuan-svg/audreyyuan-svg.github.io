@@ -34,7 +34,8 @@ export default function MarketDashboard({ data }) {
     h('h3',null,'03 科技异动精选',h('small',null,'每日筛选 · 不固定公司')),
     h('table',{className:'market-movers'},h('thead',null,h('tr',null,['公司／时段','涨跌幅','量能','催化与分歧'].map((v,i)=>h('th',{key:v,className:i===3?'market-catalyst':''},v)))),h('tbody',null,(data.movers||[]).map(x=>h('tr',{key:x.symbol},h('td',null,h('a',{href:safeUrl(x.url),target:'_blank',rel:'noreferrer'},h('b',null,x.name),` · ${x.symbol}`),h('small',null,`${x.session} · ${x.asOf}`)),h('td',{className:tone(x.changePct)},h('b',null,fmt(x.changePct))),h('td',null,x.relativeVolume20d!=null?`${x.relativeVolume20d.toFixed(2)}×20日均量`:'20日量比未核验',h('small',null,x.volumeNote||'不能据此认定放量')),h('td',{className:'market-catalyst'},x.catalyst))))),
     h('p',{className:'market-sub'},data.selectionNote),
-    h('h3',null,'04 重点趋势',h('small',null,'SOX · 四大CSP等权 · IGV · 10年美债')),
-    h(Trend,{chart:data.trend}),
+    data.trend?.series?.length === 4 && data.trend.series.every(s => s.points?.length > 1 && s.points.length === data.trend.series[0].points.length && s.points.every((p,i) => Number.isFinite(p.value) && p.date === data.trend.series[0].points[i].date)) && h(R.Fragment,null,
+      h('h3',null,'04 重点趋势',h('small',null,'SOX · 四大CSP等权 · IGV · 10年美债')),
+      h(Trend,{chart:data.trend})),
     h('div',{className:'market-source-list'},'数据来源：',(data.sources||[]).map(x=>h('a',{key:x.url,href:safeUrl(x.url),target:'_blank',rel:'noreferrer'},x.name,' ↗'))));
 }
