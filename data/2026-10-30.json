@@ -1,0 +1,558 @@
+{
+  "date": "2026-10-30",
+  "title": "2026-10-30｜Gemini 4 Carbon登顶AA但未开放；AWS高增难抵Amazon现金流压力，Intel指引失速",
+  "archiveSummary": "Gemini 4 Carbon以AA v5 59分登顶但仅限可信网络防御者；Amazon AWS+39%仍因EPS/指引不及预期盘后跌约7%，Intel Q4收入指引低约9%并盘后重挫。",
+  "intro": "今天最重要的变化有两条。模型端，Gemini 4 Carbon在Artificial Analysis Intelligence Index v5得59分、综合排名第一，编码代理仅次于Claude Opus 5.5，但标准价高、输出非常冗长，且尚无公共API，真实开发者任务仍缺样本。产业端，Amazon与Intel再次说明AI景气并不等于股价普涨：AWS增速升至39.3%，但Amazon自由现金流转负、假日季收入中值略低预期；Intel本季超预期却给出明显低于预期的Q4指引，供应约束与PC疲弱压过当季利润。",
+  "coverage": "北京时间2026-10-29 08:30至2026-10-30 08:30；公开科技/市场优先近24小时并回查7天。Cubox仅尝试读取2026-10-29 AceCamp项目，但当前只读接口无法在服务端先限定项目，基于隐私保护未读取无关收藏。",
+  "takeaways": [
+    "Gemini 4 Carbon在AA Intelligence Index v5得59分、居首；Coding Agent Index得59分、落后Claude Opus 5.5三分。标准价4/20美元/百万输入输出token、单任务评测成本7.76美元，且暂未开放公共API。",
+    "Amazon 2026Q3营收2019亿美元、EPS 1.89美元，均略低于一致预期；AWS收入460亿美元、同比+39.3%为近五年最快，但过去12个月自由现金流转为-424亿美元，盘后约跌7%。",
+    "Intel 2026Q3调整后EPS 0.52美元高于0.40美元预期、收入165亿美元基本符合，但Q4收入中值155亿美元低于170.7亿美元预期约9%，盘后跌幅一度18%—23%。",
+    "Reddit收入+53%、EPS超预期但Q4收入指引中值低于一致预期约3%，盘后跌17.8%；Twilio本季双超预期却因有机增速和指引担忧盘后跌约13%，软件估值继续转向前瞻增速。",
+    "10月29日纳指-1.38%、SOX-1.42%，Alphabet常规交易跌12.64%；美债10Y回落约6bp至4.99%，但AI资本开支回报担忧压过折现率利好。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "前沿模型能力再上台阶，但可用性和单位经济性仍限制外推；财报则显示云与AI基础设施需求强劲，市场已开始用自由现金流、指引和事故风险而非单纯收入增速定价。",
+      "points": [
+        "Carbon综合智能第一、编码代理第二，但标准输出价20美元/百万token且极度冗长。",
+        "AWS +39.3%证明需求仍强，Amazon 2200亿美元年度资本开支却使TTM自由现金流转负。",
+        "Intel数据中心需求强，但PC疲弱、制造瓶颈和以色列工厂事故使Q4指引显著不及预期。",
+        "Reddit、Twilio均出现当季好于预期但前瞻指标不够强、盘后两位数下跌。",
+        "中国模型官方渠道未核验到近24小时新发布；DeepSeek V4.1 Flash Cyber仅有第三方tracker，未收录。"
+      ]
+    },
+    "markets": {
+      "summary": "美国科技股由Alphabet的现金流压力和盘后Intel/Amazon指引拖累，长端利率下行未能抵消AI回报焦虑；亚洲除日本外普遍回撤，A股成长风格与港股半导体资金面最弱。",
+      "points": [
+        "纳指-1.38%、SOX-1.42%，而Russell 2000 +1.01%，显示从大型AI受益股向小盘扩散。",
+        "10Y约4.99%、单日下降约6bp；DXY 101.88、-0.30%。",
+        "Brent 12月114.88美元、WTI 12月102.00美元，外交希望令油价回落但供应风险仍高。",
+        "A股创业板-4.45%、港股南向净流出33.6亿港元；韩国外资净买入但三星业绩拖累KOSPI。"
+      ]
+    },
+    "research": {
+      "summary": "本期未公开任何Cubox内容：连接本身正常，但当前列表接口无法在服务端先限定AceCamp项目，继续读取会暴露无关私人收藏，故按最小权限原则停止。",
+      "points": [
+        "未把“无法安全筛选”写成“无AceCamp收藏”。",
+        "未使用平台AI摘要、未读取无关收藏、未改变收藏或归档状态。",
+        "待接口支持项目/文件夹过滤后，恢复“全部动态＋文章精读”。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "gemini-4-carbon-aa-20261028",
+      "category": "模型发布",
+      "title": "Gemini 4 Carbon发布：AA v5综合第一，但公共API尚未开放",
+      "summary": "Google 10月28日发布Gemini 4 Carbon。Artificial Analysis在high推理档评得Intelligence Index v5 59分、52个模型中第一；Coding Agent Index 59分，低于Claude Opus 5.5 max的62分。Carbon在AA-Briefcase为1609 Elo，仍落后Kimi K3.1 Pro等；标准价4/20美元/百万输入输出token，AA综合评测平均每任务7.76美元，且生成2亿token、明显高于中位数6400万。首批仅向少量网络防御者和Fairwind可信伙伴开放，尚无公共API。",
+      "why": "能力领先成立，但“能否用”和“是否经济”尚未验证：受限访问排除了广泛真实任务，极高冗长度放大成本；网络安全分数多为Google自测，需等待可复现实测和失败案例。",
+      "source": "Google；Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/gemini-4-carbon/",
+      "publishedAt": "2026-10-28",
+      "evidence": "AA独立测评明确版本为Gemini 4 Carbon high、Index v5；Google官方提供SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，这些网络安全数字不当作独立结论。",
+      "tags": [
+        "Gemini 4 Carbon",
+        "Google DeepMind",
+        "独立测评",
+        "Artificial Analysis",
+        "72小时测评",
+        "模型发布"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-10-28",
+          "title": "Google官方发布",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "evidence": "受限开放、官方网络安全基准与定价"
+        }
+      ]
+    },
+    {
+      "id": "openai-gpt6-luna-oct28-update-20261029",
+      "category": "模型发布",
+      "title": "GPT-6 Luna（2026-10-28更新）：减少迎合，指令层级鲁棒性99.91%",
+      "summary": "OpenAI发布GPT-6 Luna 10月28日小版本系统卡：目标是更简洁、减少过度认同语言，沿用Luna 10月7日的高网络安全/高生物化学能力分级与防护栈。官方自动化GPT-Red评测显示直接和间接提示注入指令层级鲁棒性99.91%；青少年安全集在性内容、饮食障碍、情感依赖和血腥内容上改善。",
+      "why": "这是行为与安全小版本，不是通用能力升级；99.91%为官方自测，未给开发者真实代理任务、误拒率或外部注入测试，不能外推为生产环境绝对安全。",
+      "source": "OpenAI Deployment Safety Hub",
+      "url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+      "publishedAt": "2026-10-29",
+      "evidence": "官方系统卡；缺少Artificial Analysis、METR或独立红队同版本结果。",
+      "tags": [
+        "OpenAI",
+        "GPT-6 Luna",
+        "模型更新",
+        "系统卡",
+        "提示注入",
+        "官方自测"
+      ]
+    },
+    {
+      "id": "amazon-2026q3-earnings-20261029",
+      "category": "产业链新闻",
+      "title": "Amazon 2026年Q3财报",
+      "summary": "营收2019.4亿美元、同比+12%，低于FactSet一致预期约2022亿美元；EPS 1.89美元低于1.97美元。AWS收入460亿美元、同比+39.3%，略高于约456.8亿美元预期且为近五年最快；集团营业利润281亿美元、营业利润率13.9%创新高。Q4收入指引2400亿—2470亿美元，中值2435亿美元略低于约2442亿—2445亿美元预期；2026年现金资本开支约2200亿美元，过去12个月自由现金流由+148亿美元转为-424亿美元。股价反应：盘后约18:30 ET报227.60美元、较常规收盘跌约6.6%。",
+      "why": "AWS需求与利润验证AI云景气，但现金流和假日季指引显示资本开支回报仍需时间；市场惩罚的是集团单位经济性，而不是AWS需求不足。",
+      "source": "Amazon IR；FactSet/AP",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "publishedAt": "2026-10-29",
+      "evidence": "公司正式披露；一致预期来自AP/FactSet。盘后价格为约18:30 ET公开快照，后续仍可能变化。",
+      "tags": [
+        "财报",
+        "Amazon",
+        "AWS",
+        "云",
+        "资本开支",
+        "自由现金流",
+        "产业链新闻"
+      ],
+      "marketReaction": {
+        "releaseTiming": "盘后",
+        "session": "2026-10-29盘后",
+        "changePct": -6.6,
+        "to": 227.6,
+        "currency": "USD",
+        "note": "约18:30 ET公开快照"
+      }
+    },
+    {
+      "id": "intel-2026q3-earnings-20261029",
+      "category": "产业链新闻",
+      "title": "Intel 2026年Q3财报",
+      "summary": "营收165.1亿美元、同比+21%，基本符合165.0亿美元一致预期；调整后EPS 0.52美元高于0.40美元，调整后毛利率44.1%、同比+410bp。PC收入81亿美元、同比-5%且低于89.8亿美元预期。Q4收入指引150亿—160亿美元，中值155亿美元低于170.7亿美元预期约9%；调整后EPS指引0.25美元低于0.43美元。以色列Kiryat Gat工厂爆炸预计连续两季各拖累约3亿美元收入、Q4毛利率约200bp。股价反应：盘后约17:43 ET报75.64美元、跌约18%；Reuters随后记录跌幅一度扩大至约23%。",
+      "why": "本季数据中心强于预期，但市场更重视Q4供给、PC和现金流；事故还会压缩AI服务器CPU供给，短期执行风险高于当季beat。",
+      "source": "Intel IR；Reuters/LSEG",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm",
+      "publishedAt": "2026-10-29",
+      "evidence": "公司正式披露收入、EPS、利润率和指引；LSEG提供一致预期。盘后不同时间点18%—23%，已明确范围。",
+      "tags": [
+        "财报",
+        "Intel",
+        "半导体",
+        "Xeon",
+        "PC",
+        "晶圆厂",
+        "产业链新闻"
+      ],
+      "marketReaction": {
+        "releaseTiming": "盘后",
+        "session": "2026-10-29盘后",
+        "changePct": -18,
+        "to": 75.64,
+        "currency": "USD",
+        "note": "约17:43 ET；稍后公开报道跌幅扩大至约23%"
+      }
+    },
+    {
+      "id": "reddit-2026q3-earnings-20261029",
+      "category": "产业链新闻",
+      "title": "Reddit 2026年Q3财报",
+      "summary": "营收8.95亿美元、同比+53%，高于约8.75亿美元一致预期；稀释EPS 1.40美元高于约1.33美元。DAUq 1.303亿、同比+12%，广告收入8.47亿美元、同比+54%，自由现金流3.63亿美元。Q4收入指引10.0亿—10.3亿美元，中值10.15亿美元，低于约10.46亿美元预期；公司提示搜索流量增速放缓。股价反应：盘后约17:40 ET报106.50美元，较129.60美元收盘跌17.82%。",
+      "why": "盈利和现金流质量强，但用户增长与搜索分发依赖成为估值约束；市场对高增长互联网公司的门槛已从当季beat转向下一季持续性。",
+      "source": "Reddit IR；公开一致预期",
+      "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publishedAt": "2026-10-29",
+      "evidence": "公司正式披露用户、收入和现金流；一致预期和盘后快照来自公开市场汇总。",
+      "tags": [
+        "财报",
+        "Reddit",
+        "互联网",
+        "广告",
+        "DAU",
+        "产业链新闻"
+      ],
+      "marketReaction": {
+        "releaseTiming": "盘后",
+        "session": "2026-10-29盘后",
+        "changePct": -17.82,
+        "from": 129.6,
+        "to": 106.5,
+        "currency": "USD",
+        "note": "约17:40 ET"
+      }
+    },
+    {
+      "id": "twilio-2026q3-earnings-20261029",
+      "category": "产业链新闻",
+      "title": "Twilio 2026年Q3财报",
+      "summary": "营收15.6亿美元、同比+20%，调整后EPS 1.65美元，分别高于约15.15亿美元/1.47美元一致预期；公司把全年收入增速指引上调至20%、有机增速至15%，全年自由现金流指引提高至11.9亿—12.0亿美元。Q4收入指引15.95亿—16.05亿美元、有机增速11%—12%，市场担忧增速放缓。股价反应：盘后约20:00 ET报210.59美元，跌12.94%。",
+      "why": "AI语音基础设施带动当季增长，但使用量业务的前瞻有机增速仍决定估值；高于预期的本季无法抵消边际放缓。",
+      "source": "Twilio IR；公开一致预期",
+      "url": "https://www.twilio.com/en-us/press/releases/twilio-announces-third-quarter-2026-results",
+      "publishedAt": "2026-10-29",
+      "evidence": "公司正式披露收入、利润、回购和指引；一致预期与盘后快照来自公开市场数据。",
+      "tags": [
+        "财报",
+        "Twilio",
+        "企业软件",
+        "通信API",
+        "AI语音",
+        "产业链新闻"
+      ],
+      "marketReaction": {
+        "releaseTiming": "盘后",
+        "session": "2026-10-29盘后",
+        "changePct": -12.94,
+        "to": 210.59,
+        "currency": "USD",
+        "note": "约20:00 ET公开快照"
+      }
+    },
+    {
+      "id": "funda-gemini4-carbon-20261029",
+      "category": "投资人观点",
+      "title": "FUNDA｜Gemini 4 Carbon：迭代速度提升，但“发布”不等于可购买",
+      "summary": "FUNDA 10月29日文章认为Carbon在Argon广泛开放约两周后迅速登顶AA，反映Google的模型迭代节奏加快；文章引用AA v5 59分及2/10美元介绍价，并强调先向网络防御者开放。核验后需加一层限制：AA按4/20美元标准价计成本，Google尚未给出公共API型号或开放日期，开发者当前无法按介绍价普遍调用。",
+      "why": "投资判断的关键不是榜单第一本身，而是Google能否把短迭代转化为可交付API、成本优势和客户迁移；受限开放期间不应把价格表当已实现收入。",
+      "source": "FUNDA AI Substack",
+      "url": "https://fundaai.substack.com/p/researchllm-gemini-4-carbon-puts",
+      "publishedAt": "2026-10-29",
+      "evidence": "公开文章段落可读；榜单与价格回到Google和AA交叉核验，付费墙内未读部分未扩写。",
+      "tags": [
+        "投资人观点",
+        "FUNDA",
+        "Gemini 4 Carbon",
+        "Google",
+        "Artificial Analysis"
+      ]
+    },
+    {
+      "id": "overseas-macro-20261029",
+      "category": "宏观点评",
+      "title": "海外宏观：强GDP压制降息想象，长端回落但AI风险溢价上升",
+      "summary": "10月29日收盘：美债2Y约4.61%（-6bp）、10Y约4.99%（-6bp），DXY 101.88（-0.30%）。Brent 12月114.88美元/桶（-0.38%）、WTI 12月102.00美元（-0.76%）；美伊重启接触的希望压低油价，但沙特设施遇袭令跌幅收窄。",
+      "why": "利率回落本应改善TMT折现率，但GDP韧性和AI现金流担忧提高股权风险溢价；油价仍在高位，数据中心能源成本与通胀压力未解除。",
+      "source": "US Treasury；Reuters",
+      "url": "https://live.euronext.com/en/financial-news/oil-prices-settles-lower-diplomacy-hopes-offset-some-mideast-supply-concerns",
+      "publishedAt": "2026-10-29",
+      "evidence": "2Y/10Y采用美国财政部10月29日par yield并与10月28日比较；油价为12月合约结算，未混用盘中报价。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "Brent",
+        "WTI",
+        "TMT折现率"
+      ]
+    },
+    {
+      "id": "china-macro-yuan-20261029",
+      "category": "宏观点评",
+      "title": "中国宏观：人民币中间价升至近四年强位，未见新增总量宽松",
+      "summary": "央行10月29日将美元兑人民币中间价设在6.7147，为2023年2月以来最强；人民币在Fed按兵不动后升值。财政部、央行、证监会与金融监管总局公开页面未见当天新的全国性总量政策或非银流动性工具实际投放数据。",
+      "why": "汇率走强有利于进口芯片与能源成本，但也约束出口换算；没有额度和投放数据前，不能把既有流动性工具写成股市增量资金。",
+      "source": "PBOC/Reuters；中国监管部门公开页面",
+      "url": "https://www.brecorder.com/news/amp/40446476",
+      "publishedAt": "2026-10-29",
+      "evidence": "中间价由央行公开数据经Reuters报道；对政策仅陈述“未见新增/未披露投放”，不推断政策转向。",
+      "tags": [
+        "宏观点评",
+        "中国央行",
+        "人民币",
+        "流动性",
+        "汇率"
+      ]
+    },
+    {
+      "id": "war-politics-20261029",
+      "category": "宏观点评",
+      "title": "战争与政治：美伊接触与军事准备并行，美国中期选举风险升温",
+      "summary": "美国副总统Vance据报致信伊朗安全机构推动接触，但特朗普仍称中期选举后可能再次打击；两者均未构成停火。俄乌方面，俄方称击落大批无人机，乌方报告哈尔科夫遇袭，战场主张未获全面独立核验。11月3日美国中期选举民调偏向民主党夺取国会，但窄幅参议院席位与既往误差使结果不确定。",
+      "why": "谈判线索降低油价尾部风险，但军事准备与选举后政策不确定性仍抬高能源、航运和出口管制风险；民调不能当结果。",
+      "source": "Reuters及当事方公开表态",
+      "url": "https://www.reuters.com/markets/econ-world/elections-matter-2026-10-29/",
+      "publishedAt": "2026-10-29",
+      "evidence": "区分外交接触、总统表态、战场主张和民调；未把拟议接触写成协议。",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "美伊",
+        "俄乌",
+        "美国中期选举",
+        "中美"
+      ]
+    },
+    {
+      "id": "us-market-funds-20261029",
+      "category": "市场资金面",
+      "title": "美国市场：大型AI股回撤，SOX与纳指领跌，小盘股逆势走强",
+      "summary": "10月29日标普500 -0.30%至7720.39，纳指-1.38%至26184.72，道指-0.25%至52342.56；SOX -1.42%至11518.20。Alphabet常规交易跌12.64%，而Russell 2000 +1.01%；多数个股上涨但权重科技拖累指数。盘后Intel、Amazon、Reddit和Twilio继续大跌。",
+      "why": "这是权重AI交易的估值压缩而非全面流动性撤退：小盘和市场宽度较强，资金从高资本开支/弱指引公司转向非AI权重资产。",
+      "source": "AP；Nasdaq SOX；Reuters",
+      "url": "https://apnews.com/article/2c26b0b1bbc3bfab9f3f4b902172f458",
+      "publishedAt": "2026-10-29",
+      "evidence": "指数均为10月29日正式收盘；SOX采用Nasdaq 11518.20并以公开历史变动-1.42%交叉核验。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "纳指",
+        "标普500",
+        "科技股"
+      ]
+    },
+    {
+      "id": "asia-market-funds-20261029",
+      "category": "市场资金面",
+      "title": "亚洲市场：日本独强，A股成长与港股半导体遭集中抛售",
+      "summary": "10月29日上证-0.82%、深证-2.92%、创业板-4.45%，两市成交1.557万亿元、较前日少720亿元；恒指-0.59%、恒科约-2.84%，南向净流出33.6亿港元。日经+1.10%、TOPIX +0.29%；KOSPI -1.24%，公开流量口径虽有差异但均指向外资净买入、机构净卖出；台股-1.42%，日频外资净额未获可靠统一来源。",
+      "why": "区域资金不是一致撤退：日本AI股延续强势，韩国外资继续买入但三星业绩拖累指数；中国成长风格和港股芯片最弱，南向对SMIC、阿里出现净卖出。",
+      "source": "公开指数/交易所数据；ET Net；KRX衍生公开流量",
+      "url": "https://etnet.com.hk/www/eng/futures/futures_news_detail.php?newsid=ETE361029508",
+      "publishedAt": "2026-10-29",
+      "evidence": "A股未使用“主力净流入”；韩国不同公开源净买入规模0.12万亿—0.67万亿韩元，因口径冲突只写方向；日本不伪造日频外资。",
+      "tags": [
+        "市场资金面",
+        "亚洲市场",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾",
+        "资金面"
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "OpenAI与Anthropic",
+      "status": "已完成",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "note": "核验OpenAI Model Spec更新和GPT-6 Luna 10月28日系统卡；Anthropic新闻页近24小时无新基础模型。"
+    },
+    {
+      "name": "中国模型与72小时测评",
+      "status": "已完成",
+      "url": "https://artificialanalysis.ai/models/gemini-4-carbon/",
+      "note": "逐一搜索DeepSeek、MiniMax、Qwen、Kimi、GLM/Z.ai、StepFun与MiMo官方/模型卡/GitHub/HF；未核验到10月29日新官方发布。DeepSeek V4.1 Flash Cyber仅第三方tracker线索，无官方原文，排除。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已完成",
+      "url": "https://fundaai.substack.com/p/researchllm-gemini-4-carbon-puts",
+      "note": "检查主页/archive/可索引单篇，收录10月29日Gemini 4 Carbon研究；公开段落与Google/AA交叉核验，未读付费内容未扩写。X原帖访问不稳定。"
+    },
+    {
+      "name": "The Information",
+      "status": "部分完成",
+      "url": "https://www.theinformation.com/",
+      "note": "仅检查公开标题/导语，登录墙后停止；未凭付费线索写入事实。"
+    },
+    {
+      "name": "固定投资人与机构",
+      "status": "已完成",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "检查Gavin Baker、Brad Gerstner/Altimeter、Sarah Guo、Elad Gil、Coatue、Apollo近24小时并回查7天；Gavin 10月27日TBPN观点未作为10月29日新内容重复。"
+    },
+    {
+      "name": "Ara Kharazian与Ramp",
+      "status": "已完成",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "Ara/EconLab、Ramp AI Index、data与公开社媒无10月29日新数据；最新仍为10月14日更新。"
+    },
+    {
+      "name": "美国科技与供应链财报",
+      "status": "已完成",
+      "url": "https://www.nasdaq.com/market-activity/earnings",
+      "note": "核验Amazon、Intel、Reddit、Twilio正式财报及盘后反应；Apple尚未在本期发布，其他固定大科技和AI供应链公司未发现10月29日新增正式财报。"
+    },
+    {
+      "name": "播客与人物访谈",
+      "status": "部分完成",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "note": "检查All-In、BG2、Big Technology、Latent Space与固定人物；All-In 10月29日WHOOP CEO节目偏健康科技，不纳入TMT主线；无可核验Pichai/Jassy新长访谈。"
+    },
+    {
+      "name": "Elon Musk与SpaceX",
+      "status": "部分完成",
+      "url": "https://www.spacex.com/updates/",
+      "note": "官网和公开索引已检查；X原帖全文访问受限，未用搜索摘要冒充原帖。"
+    },
+    {
+      "name": "宏观、战争与政治",
+      "status": "已完成",
+      "url": "https://www.reuters.com/markets/",
+      "note": "核验美债、美元、12月油价结算、美伊接触、俄乌战场表态与美国中期选举；谈判/民调均未写成结果。"
+    },
+    {
+      "name": "市场资金面",
+      "status": "已完成",
+      "url": "https://indexes.nasdaq.com/Index/History/SOX",
+      "note": "核验美国及中港日韩台完整交易日；韩国外资净买入规模来源冲突，降级为方向；台湾日频外资与日本日频外资缺口明确保留。"
+    },
+    {
+      "name": "Cubox AceCamp",
+      "status": "未完成／受限",
+      "url": "https://www.acecamptech.com/",
+      "note": "持久化连接实时验证成功，但当前列表工具只能按日期读取全部收藏、无法先以AceCamp项目/文件夹过滤；风险审查拒绝访问，故未读取任何无关私人收藏，也不能断言昨日无AceCamp纪要。"
+    },
+    {
+      "name": "last30days",
+      "status": "未完成／工具缺失",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "本轮环境实查Python 3.12可用，但固定路径下skill、运行参考和yt-dlp均缺失，未实际运行；继续使用公开搜索，不声称社媒无更新。"
+    },
+    {
+      "name": "Wind与市场图表",
+      "status": "部分完成",
+      "url": "https://indexes.nasdaq.com/Index/History/SOX",
+      "note": "用户已安装Wind，但当前会话未暴露可调用入口。按最高优先级规则省略整个历史趋势栏目，不显示标题/空图/缺口卡；仅发布核验后的行情速览、当日涨跌和动态科技异动。"
+    }
+  ],
+  "updatedAt": "2026-10-30T08:30:00+08:00",
+  "marketDashboard": {
+    "tradeDate": "2026-10-29",
+    "snapshot": [
+      {
+        "label": "纳斯达克",
+        "displayValue": "26,184.72",
+        "change": -1.38,
+        "displayChange": "-1.38%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,720.39",
+        "change": -0.3,
+        "displayChange": "-0.30%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "52,342.56",
+        "change": -0.25,
+        "displayChange": "-0.25%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "11,518.20",
+        "change": -1.42,
+        "displayChange": "-1.42%"
+      },
+      {
+        "label": "10年美债",
+        "displayValue": "4.99%",
+        "change": -6,
+        "displayChange": "-6bp",
+        "note": "收益率下降"
+      }
+    ],
+    "snapshotNote": "指数均为2026-10-29美国常规交易收盘；10Y采用美国财政部par yield约4.98%/公开收盘4.989%，四舍五入为4.99%，较10月28日约下降6bp。",
+    "performance": [
+      {
+        "name": "纳斯达克",
+        "changePct": -1.38
+      },
+      {
+        "name": "标普500",
+        "changePct": -0.3
+      },
+      {
+        "name": "道琼斯",
+        "changePct": -0.25
+      },
+      {
+        "name": "SOX",
+        "changePct": -1.42
+      },
+      {
+        "name": "上证",
+        "changePct": -0.82
+      },
+      {
+        "name": "恒生",
+        "changePct": -0.59
+      },
+      {
+        "name": "日经225",
+        "changePct": 1.1
+      },
+      {
+        "name": "TOPIX",
+        "changePct": 0.29
+      },
+      {
+        "name": "KOSPI",
+        "changePct": -1.24
+      },
+      {
+        "name": "台湾加权",
+        "changePct": -1.42
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet",
+        "session": "常规收盘",
+        "asOf": "10-29 16:00 ET",
+        "changePct": -12.64,
+        "relativeVolume20d": null,
+        "volumeNote": "20日量比未核验；不以价格下跌替代资金净流出。",
+        "catalyst": "Q3总收入略低预期、自由现金流为负及2027年资本开支继续上升。",
+        "url": "https://portfolio-terminal.com/markets/stock-market-close"
+      },
+      {
+        "symbol": "INTC",
+        "name": "Intel",
+        "session": "盘后快照",
+        "asOf": "10-29 17:43 ET",
+        "changePct": -18,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验；稍后报道跌幅一度扩大至约23%。",
+        "catalyst": "Q4收入/EPS指引明显不及预期，PC疲弱与以色列工厂事故压制供给。",
+        "url": "https://www.reuters.com/business/intel-signals-slower-growth-pc-market-remains-under-pressure-2026-10-29/"
+      },
+      {
+        "symbol": "RDDT",
+        "name": "Reddit",
+        "session": "盘后快照",
+        "asOf": "10-29 17:40 ET",
+        "changePct": -17.82,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验。",
+        "catalyst": "Q3超预期，但Q4收入指引低于一致预期且搜索流量增速放缓。",
+        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
+      },
+      {
+        "symbol": "TWLO",
+        "name": "Twilio",
+        "session": "盘后快照",
+        "asOf": "10-29 20:00 ET",
+        "changePct": -12.94,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验。",
+        "catalyst": "当季双超预期，但市场担忧Q4有机增速与使用量业务边际放缓。",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-announces-third-quarter-2026-results"
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon",
+        "session": "盘后快照",
+        "asOf": "10-29 18:30 ET",
+        "changePct": -6.6,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后成交量未核验；不同早期快照约-6%至-9%。",
+        "catalyst": "AWS增速加快，但集团营收/EPS略低预期、Q4中值偏弱且自由现金流转负。",
+        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+      }
+    ],
+    "selectionNote": "动态精选覆盖云/互联网、半导体和软件；常规收盘与盘后快照分开，盘后幅度可能继续变化。未取得可靠20日均量，全部relativeVolume20d留空，不宣称显著放量。",
+    "sources": [
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://indexes.nasdaq.com/Index/History/SOX"
+      },
+      {
+        "name": "AP美国收盘",
+        "url": "https://apnews.com/article/2c26b0b1bbc3bfab9f3f4b902172f458"
+      },
+      {
+        "name": "Amazon IR",
+        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+      },
+      {
+        "name": "Intel IR",
+        "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm"
+      }
+    ]
+  }
+}
