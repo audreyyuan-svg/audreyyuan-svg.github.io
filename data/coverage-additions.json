@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-30T02:10:43.777Z",
+  "earnings": {
+    "companies": [
+      {
+        "name": "Sandisk / 闪迪",
+        "ticker": "SNDK",
+        "focus": "NAND、企业级SSD、数据中心收入、NBM、价格/bit出货、现金流、资本开支与拆股口径",
+        "url": "https://investor.sandisk.com/"
+      },
+      {
+        "name": "AXT",
+        "ticker": "AXTI",
+        "focus": "InP/化合物半导体衬底、大尺寸验证/良率、产能、出口许可、现金流与股权融资稀释",
+        "url": "https://investors.axt.com/"
+      }
+    ],
+    "rules": [
+      "财报日历、公司IR正式公告和电话会三路交叉，不因市值较小漏报。",
+      "统一财报标题；分列实际/可靠一致预期/指引及GAAP/调整后。盘前财报附当日收盘，盘后财报附明确ET时点的盘后反应；不用前一日收盘作当日盘后基准。"
+    ]
+  },
+  "investorEvents": {
+    "person": "Gavin Baker",
+    "discovery": [
+      {
+        "name": "Boston Investment Conference",
+        "url": "https://bostoninvestmentconference.com/agenda"
+      },
+      {
+        "name": "Capital Allocators / Ted Seides",
+        "url": "https://www.capitalallocators.com/"
+      },
+      {
+        "name": "Gavin Baker YouTube",
+        "url": "https://www.youtube.com/@gavinbakerportfoliomanager"
+      }
+    ],
+    "rules": [
+      "按人物、主办方与主持人跨平台查新论坛；日期以原始活动/录制/发布分别注明。",
+      "2026-10-29 Boston场次仅核验到官方议程，未获原始讲话；拿到文字稿或字幕前不编造观点。",
+      "10月27日TBPN及5月Sohn不是10月29日Boston场，不以旧节目替代新讲话。"
+    ]
+  }
+}
