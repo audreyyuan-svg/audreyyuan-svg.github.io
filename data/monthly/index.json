@@ -1,4 +1,11 @@
 {
-  "latest": null,
-  "archive": []
+  "latest": "2026-10-31",
+  "archive": [
+    {
+      "date": "2026-10-31",
+      "updated_at": "2026-10-31T18:12:04+08:00",
+      "title": "AI Tracker月报",
+      "summary": "云业务高增仍受资本开支与现金流约束；MiniMax/Kimi改善任务性价比，光互连与高端材料的交付瓶颈决定利润归属"
+    }
+  ]
 }
