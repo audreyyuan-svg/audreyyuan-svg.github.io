@@ -1,6 +1,11 @@
 {
-  "latest": "2026-10-30",
+  "latest": "2026-11-02",
   "archive": [
+    {
+      "date": "2026-11-02",
+      "updated_at": "2026-11-02T08:46:09.348+08:00",
+      "title": "Mistral Large 4开放权重版AA仅26分、低于预览API；Ramp样本显示Anthropic token支出份额升至60.5%，周五SOX跌7.2%，AceCamp补录25篇并精读4篇。"
+    },
     {
       "date": "2026-10-30",
       "updated_at": "2026-10-30T02:08:43.232Z",
