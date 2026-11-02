@@ -1,21 +1,22 @@
 {
   "date": "2026-11-02",
-  "title": "2026-11-02｜Mistral开放权重评测回落；Ramp显示Anthropic份额升至60.5%，SOX周五跌7.2%",
+  "title": "2026-11-02｜OpenAI确认12月Chat/Codex共享额度、Instant除外；Mistral开放版权重评测低于预览API",
   "reportType": "daily",
-  "archiveSummary": "Mistral Large 4开放权重版AA仅26分、低于预览API；Ramp样本显示Anthropic token支出份额升至60.5%，周五SOX跌7.2%，AceCamp补录25篇并精读4篇。",
-  "intro": "今天最重要的变化是“开放”没有自动复现闭源预览能力：Mistral Large 4开放权重高推理版在Artificial Analysis仅26分，明显低于10月预览API的38分，但两者checkpoint和服务设置不同，不能简单写成同版退步。企业用量端，Ramp样本显示价格下降推动token量增长37.1%，Anthropic金额份额升至60.5%，不过样本只覆盖其Token Spend Management客户。资本市场仍消化AI回报与融资约束：周五SOX跌7.2%、成交高于20日均量；Apollo又提示核心PCE约3%并重新上行。调研端补录周末25篇AceCamp，四篇全文共同指向光模块、存储、SaaS部署和光刻设备都处于“需求不弱、兑现受供给/良率/交付约束”的阶段。",
-  "coverage": "北京时间2026-10-30 08:30至2026-11-02 08:30；周一按周末窗口覆盖。市场行情使用各地最近完整交易日并明确日期；AceCamp补录10月30日上期检索后收藏8篇及11月1日17篇，10月31日无命中。所有发布时间保留原日期，未把周末旧收盘冒充11月2日行情。",
+  "archiveSummary": "OpenAI确认12月ChatGPT/Codex共享额度、Instant除外；Mistral开放版AA26分低于预览API，Ramp样本Anthropic token支出份额升至60.5%。",
+  "intro": "OpenAI确认一项影响订阅单位经济性的重要变化：12月起Plus、Pro、Business的ChatGPT与Codex将共享token额度，但Instant chat除外，具体日期和额度数未公布。另有10月29日已生效的Pro额度调整：Pro 100/500翻倍，Pro 200高额度不削减，Plus未包含在本次翻倍中。这两项不能混写为“现在所有Chat都与Codex共享”。 今天最重要的变化是“开放”没有自动复现闭源预览能力：Mistral Large 4开放权重高推理版在Artificial Analysis仅26分，明显低于10月预览API的38分，但两者checkpoint和服务设置不同，不能简单写成同版退步。企业用量端，Ramp样本显示价格下降推动token量增长37.1%，Anthropic金额份额升至60.5%，不过样本只覆盖其Token Spend Management客户。资本市场仍消化AI回报与融资约束：周五SOX跌7.2%、成交高于20日均量；Apollo又提示核心PCE约3%并重新上行。调研端补录周末25篇AceCamp，四篇全文共同指向光模块、存储、SaaS部署和光刻设备都处于“需求不弱、兑现受供给/良率/交付约束”的阶段。",
+  "coverage": "北京时间2026-10-30 08:30至2026-11-02 08:30；周一按周末窗口覆盖。市场行情使用各地最近完整交易日并明确日期；AceCamp补录10月30日上期检索后收藏8篇及11月1日17篇，10月31日无命中。所有发布时间保留原日期，未把周末旧收盘冒充11月2日行情。 本次更正补入10月29日Pro额度调整及11月2日核验的官方12月共享额度说明；首次发布日期未明的帮助页未强配日期。",
   "takeaways": [
+    "OpenAI官方确认12月起Plus/Pro/Business的ChatGPT与Codex共享token额度，Instant chat除外；具体日期/额度未公布。10月29日Pro额度调整已生效，Plus不在翻倍范围。",
     "Mistral Large 4开放权重High在AA Intelligence Index v5得26分、开放模型中第9；预览API曾得38分，但版本/推理设置不同，差异需等待同口径复测。",
-    "OpenAI GPT‑6 Rosalind Research仅向获批研究客户开放，普通Chat不可用；当前无AA、Epoch或METR同版本公开结果。",
     "Ramp样本截至10月23日：token量较9月25日+37.1%、加权单价-26.8%，Anthropic金额份额升至60.5%、OpenAI降至35.1%。",
     "最近完整美股日纳指-2.86%、SOX-7.20%，总成交约为20日均量1.15倍；10Y美债4.94%、日降4bp，折现率利好未抵消AI现金回报担忧。",
     "AceCamp周末新增25篇链接并精读4篇：1.6T/OCS、DRAM、企业SaaS和EUV/DUV均显示需求与收入兑现之间仍隔着良率、定制或设备产能。"
   ],
   "sectionOverviews": {
     "technology": {
-      "summary": "模型端出现版本分化：Mistral开放权重提高部署可控性，却尚未复现预览API分数；OpenAI Rosalind扩大受控研究访问，但缺独立评测。商业化端，Ramp样本验证价格下降与用量增长并存，Anthropic份额上升；FUNDA与All-In则共同提示AI订单、生产部署和融资成本之间仍有转化摩擦。",
+      "summary": "OpenAI把ChatGPT与Codex的订阅消耗整合纳入12月计划，但Instant除外、额度数未公布；Pro既有额度调整已生效，两者须分开。 模型端出现版本分化：Mistral开放权重提高部署可控性，却尚未复现预览API分数；OpenAI Rosalind扩大受控研究访问，但缺独立评测。商业化端，Ramp样本验证价格下降与用量增长并存，Anthropic份额上升；FUNDA与All-In则共同提示AI订单、生产部署和融资成本之间仍有转化摩擦。",
       "points": [
+        "套餐变化：Pro 100/500 Work/Codex额度翻倍，Pro 200保留高额度；12月另推ChatGPT/Codex共享，Plus包含、Instant除外。",
         "变化：开放权重不等于同能力，Mistral开放版需同口径复测。",
         "分歧：Ramp显示Anthropic抢份额，但只代表特定企业支付样本。",
         "投资人观点：Apollo担心通胀再上行，FUNDA下修ServiceNow部署转化判断。",
@@ -90,6 +91,70 @@
         "模型发布",
         "Research",
         "官方披露"
+      ]
+    },
+    {
+      "id": "openai-chatgpt-codex-shared-limits-dec2026",
+      "category": "核心团队",
+      "title": "OpenAI确认12月起ChatGPT与Codex共享额度，Plus包含在内、Instant chat除外",
+      "summary": "OpenAI官方帮助页确认：从12月起，Plus、Pro、Business的ChatGPT与Codex将共享token用量额度，随Work能力并入主ChatGPT体验推进；Instant chat不消耗这项额度。消耗取决于模型与任务复杂度，剩余额度和重置时间将在Settings → Usage统一展示。目前未公布12月具体生效日和各套餐token数，不能写成11月已全面实施。",
+      "why": "这会把聊天推理与编码的边际使用成本放进同一预算，影响重度Plus用户的使用分配及套餐升级意愿；共享并不自动等于额度削减。“大多数用户不会更频繁等待重置”只是官方预期，不是实测结果。",
+      "source": "OpenAI官方帮助中心；Tibo / @thsottiaux原帖线索",
+      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "publishedAt": "2026-11-02核验；官方页未给首次发布日期，政策自2026年12月起",
+      "evidence": "已实际读取官方帮助页全文。Tibo 10月28日Chat/Work整合回应和Tibor Blaho 10月29日结账页截图仅为早期线索；两者不是同一账号。X原帖直读403，未把索引/镜像冒充已读原帖。正式结论以本次读取的OpenAI帮助页为准。",
+      "tags": [
+        "OpenAI",
+        "Tibo",
+        "Codex",
+        "ChatGPT",
+        "Plus",
+        "额度政策",
+        "未来生效",
+        "官方披露"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-10-28",
+          "title": "Tibo：Chat/Work整合尚未推出（原帖访问受限）",
+          "url": "https://x.com/thsottiaux/status/2115588390414581916",
+          "evidence": "原帖URL已定位但直读403；不据索引扩写原帖，仅保留线索。"
+        },
+        {
+          "date": "2026-10-29",
+          "title": "Tibor Blaho发现12月共享额度结账提示（非Tibo、原帖受限）",
+          "url": "https://x.com/btibor91/status/2115927832069292214",
+          "evidence": "产品发现者截图线索；政策已由上方官方帮助页独立确认。"
+        }
+      ]
+    },
+    {
+      "id": "tibo-codex-pro-usage-20261029",
+      "category": "核心团队",
+      "title": "Tibo公布Codex额度调整：Pro 100/500翻倍，Pro 200保留高额度",
+      "summary": "Tibo 10月29日公布额度调整，OpenAI同日Release Notes确认：Pro 100和Pro 500的Work/Codex额度翻倍；Pro 200取消原计划削减，已在高额度的用户维持不变、较低额度用户从10月29日起翻倍到同一上限。官方更新也包含Business Premium，但没有公布具体倍数；Plus不在这次翻倍范围，不能泛称所有付费套餐都翻倍。",
+      "why": "额度政策是AI订阅真实性价比与推理成本管理的重要变量。Pro 200“维持原有高额度”与低额度用户翻倍要分开；本次已生效的Work/Codex调整也不能和12月ChatGPT共享政策混成一件事。",
+      "source": "Tibo / @thsottiaux；OpenAI Release Notes",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "publishedAt": "2026-10-29T16:56:00Z",
+      "evidence": "原帖URL和时间已定位，X直接读取403；额度细节由10月29日官方Release Notes全文交叉确认。个人帖措辞更宽，正文采用官方分套餐口径；未凭未读原帖扩写dots等细节。",
+      "tags": [
+        "OpenAI",
+        "Tibo",
+        "Codex",
+        "Work",
+        "额度调整",
+        "Pro",
+        "官方披露",
+        "补录"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-10-29",
+          "title": "Tibo Day 25额度原帖（访问受限）",
+          "url": "https://x.com/thsottiaux/status/2115850175868727621",
+          "evidence": "16:56 UTC；原帖直读403，仅以官方Release Notes确认事实。"
+        }
       ]
     },
     {
@@ -814,6 +879,12 @@
       "note": "核验10月30日GPT‑6 Rosalind Research发布与系统卡；受控访问，独立可比评测未出现。"
     },
     {
+      "name": "Tibo @thsottiaux",
+      "status": "部分完成／官方交叉核验已完成",
+      "url": "https://x.com/thsottiaux",
+      "note": "名单原有Tibo但今日未单列检查、未落条，属于漏报。本次检查10月28日至11月2日公开原帖线索，定位10月28日整合回应与10月29日额度帖；X直接访问403，未冒称读过原帖全文。10月29日Pro额度调整由官方Release Notes确认；12月共享额度由官方帮助页确认。每日单列检查与重要事件落条规则已写入配置。"
+    },
+    {
       "name": "Anthropic",
       "status": "已完成",
       "url": "https://www.anthropic.com/news",
@@ -940,5 +1011,5 @@
       "note": "用户已安装Wind，但当前会话仍无可调用入口。SOX/CSP/IGV/10Y完整对齐历史序列未取得，按规则省略整个趋势栏目；保留核验后的速览、当日涨跌图和科技异动，不显示空占位。"
     }
   ],
-  "updatedAt": "2026-11-02T08:46:09.348+08:00"
+  "updatedAt": "2026-11-02T01:03:50.630Z"
 }
