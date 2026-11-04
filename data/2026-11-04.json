@@ -1,0 +1,563 @@
+{
+  "date": "2026-11-04",
+  "title": "2026-11-04｜Anthropic算力承诺逼近9,000亿美元；AMD、Arista、Supermicro业绩与指引齐超预期",
+  "reportType": "daily",
+  "archiveSummary": "Anthropic Q3收入环比增速降至47%、披露约8,954亿美元算力承诺；AMD、Arista、Supermicro财报与指引均超预期，盘后齐涨。",
+  "intro": "今天最重要的变化是，AI需求继续兑现，但资本结构和交付质量的重要性同步上升。Anthropic补充S-1/A显示Q3收入169.56亿美元、环比增长46.7%，却背负约8,954亿美元跨多年算力与基础设施承诺，且计算毛利受高价短期容量拖累；这比单看收入增长更能解释IPO估值约束。硬件链则给出强劲验证：AMD数据中心收入同比近翻倍，Arista收入增长58.5%并再次上调指引，Supermicro销售额接近200亿美元，三家公司盘后分别约涨9%、12.1%和8.3%。不过Supermicro毛利率环比明显下滑，说明服务器交付量不等于现金流与利润质量同步改善。模型侧没有新的正式权重发布；Artificial Analysis v5显示已发布开放权重的DeepSeek/GLM与闭源前沿仍有明显差距，Kimi K3.1 Pro的46分因权重尚未发布不能提前算作开放供给。",
+  "coverage": "北京时间2026-11-03 08:30至2026-11-04 08:30，补查前7天漏项；美国选举按北京时间08:30截点，仅覆盖首批关票与早期计票，不声称最终国会控制权。市场采用2026-11-03各地最近完整交易日；日本休市显式标注。AceCamp只读限定检索11月3日收藏，普通与归档均分页到nextCursor=null，结果为0篇；不以旧纪要填充。所有发布时间保留原日期。",
+  "takeaways": [
+    "Anthropic Q3收入169.56亿美元、环比+46.7%，但约8,954亿美元算力承诺中约698亿美元未来12个月到期；增长、计算毛利和融资依赖必须一起看。",
+    "AMD Q3营收133.77亿美元、数据中心同比+97%，Q4营收指引约170亿美元高于预期，盘后约+9%。",
+    "Arista营收同比+58.5%、Q4指引显著超预期，盘后约+12.1%；Supermicro销售额199亿美元、盘后约+8.3%，但毛利率从上季17.5%降至12.7%。",
+    "AA v5中已发布开放权重的DeepSeek V4.1 Flash 1017 max与GLM‑5.3 max均为32，较Claude Opus 5.5 max低26分；Kimi K3.1 Pro权重尚未发布。",
+    "SOX反弹3.28%但美股宽度偏弱；中韩台科技链下跌，日本休市。美国中期选举和俄乌/美伊谈判截至截点均无最终协议或完整结果。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "财报与申报材料把AI产业的两面同时呈现出来：AMD、Arista、Supermicro验证GPU、网络与服务器需求仍强；Anthropic则显示收入增长放缓、短期高价算力压缩计算毛利，并形成巨额跨年承诺。独立评测提醒，开放权重阵营的部署控制力仍未转化为同等综合分数。",
+      "points": [
+        "Anthropic：Q3收入环比+46.7%，约8,954亿美元算力承诺；承诺额不是已支付资本开支。",
+        "AMD：数据中心收入85亿美元、同比+97%，Q4指引高于预期。",
+        "Arista/SMCI：收入与指引超预期，但SMCI毛利率和经营现金流仍是反证。",
+        "企业用量：Ramp缓存token指标显示Google在代理工作流中偏弱，但只代表其客户样本。",
+        "观察：Anthropic计算毛利与融资、MI450/Helios交付、Arista大客户集中、SMCI现金转换。"
+      ]
+    },
+    "markets": {
+      "summary": "11月3日美股由AI权重股带动反弹，SOX涨3.28%，但多数标普成份股下跌；亚洲科技链在韩国、台湾和A股成长板块同步去风险。美债收益率回升、油价因美伊有限打击和谈判消息剧烈波动。中国上调外汇准备金率针对美元流动性，并非人民币全面紧缩。",
+      "points": [
+        "美股：标普+0.36%、纳指+0.83%、道指-0.38%、SOX+3.28%。",
+        "亚洲：创业板、KOSPI、台湾均显著下跌；港股上涨；日本文化日休市。",
+        "宏观：2Y约4.61%、10Y约4.95%，长端折现率重新上行。",
+        "政策：外汇存款准备金率4%升至6%，作用对象是境内美元流动性。",
+        "政治：美国计票、俄乌会谈和美伊斡旋都尚未产生最终结果。"
+      ]
+    },
+    "research": {
+      "summary": "11月3日AceCamp限定检索普通与归档均完成分页，去重后0篇。由于连接和范围验证成功，本期可确认的是“该限定检索没有命中”，而不是Cubox未连接；同时仍保留搜索索引可能遗漏的边界。没有全文就不生成文章精读，也不拿11月2日旧收藏重复填充。",
+      "points": [
+        "普通收藏：2页检索至nextCursor=null，0篇。",
+        "归档收藏：2页检索至nextCursor=null，0篇。",
+        "范围：只查AceCamp关键词并核验acecamptech.com主机，没有扫描其他私人收藏。",
+        "缺口：完整性受Cubox搜索索引覆盖限制。",
+        "后续：下一工作日继续检查新增收藏；只有新命中ID才授权读取全文。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "anthropic-q3-s1a-20261102",
+      "category": "产业链新闻",
+      "title": "Anthropic 2026年Q3财务更新（S-1/A）",
+      "summary": "Anthropic在11月2日提交的S-1/A显示，Q3收入169.56亿美元，环比+46.7%，明显低于Q2的+144%；季度净亏损232.91亿美元，较Q2的663.09亿美元收窄，但经营利润转为亏损5.67亿美元。九个月收入332.42亿美元、净亏损1,040.39亿美元；现金及短期投资约1,318.45亿美元。公司披露约8,954亿美元算力与基础设施承诺，其中约698亿美元在未来12个月到期，并警告合作伙伴融资恶化可能导致容量延迟、减量或涨价。",
+      "why": "收入仍高速增长，但增速、计算毛利和融资依赖开始成为估值约束。承诺额不是已支付资本开支，现金储备也不能直接与跨多年合同一一抵消。",
+      "source": "Anthropic S-1/A / SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/0001628280-26-068676-index.htm",
+      "publishedAt": "2026-11-02",
+      "evidence": "SEC原始申报与Reuters/AP交叉核验；财务数据为未经审计中期数。约8,954亿美元为跨多年购买承诺与租赁，不是当期费用。",
+      "tags": [
+        "Anthropic",
+        "产业链新闻",
+        "S-1",
+        "财务更新",
+        "算力承诺"
+      ]
+    },
+    {
+      "id": "amd-q3-2026-earnings-20261103",
+      "category": "产业链新闻",
+      "title": "AMD 2026年Q3财报",
+      "summary": "营收133.77亿美元、同比+45%，高于一致预期约131亿美元；调整后EPS 2.09美元，高于约1.95美元。数据中心收入85亿美元、同比+97%，已占总收入约64%；客户端与游戏收入37亿美元、同比-8%，其中游戏收入-40%。调整后毛利率56%。Q4收入指引约170亿美元±3%，中值高于市场约162.3亿美元，调整后毛利率约55%。财报盘后股价约涨9%。",
+      "why": "AMD的收入结构已明显转向数据中心，Q4指引缓解AI资本开支需求放缓担忧；反面是PC/游戏收缩、毛利率未随收入同比例上升，以及OpenAI交易相关会计费用。",
+      "source": "AMD IR",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+      "publishedAt": "2026-11-03",
+      "evidence": "公司业绩稿与LSEG/FactSet一致预期交叉核验；盘后涨幅以11月3日常规收盘为基准、约数。",
+      "tags": [
+        "财报",
+        "AMD",
+        "半导体",
+        "AI GPU",
+        "数据中心",
+        "盘后"
+      ]
+    },
+    {
+      "id": "arista-q3-2026-earnings-20261103",
+      "category": "产业链新闻",
+      "title": "Arista Networks 2026年Q3财报",
+      "summary": "营收36.6亿美元、同比+58.5%、环比+20.5%，比一致预期约33.3亿美元高近10%；调整后EPS 1.20美元，高于约1.08美元。GAAP/调整后经营利润率分别44.9%和49.1%。Q4指引营收39亿—40亿美元、调整后EPS 1.26—1.30美元，均高于市场约36亿美元和1.15美元；公司把全年收入展望提高至约133亿美元。财报盘后股价约涨12.1%。",
+      "why": "AI网络从训练集群向机架内scale-up、跨集群scale-out扩展，Arista同时获得收入和利润率杠杆；风险是大客户集中、以太网与专有互连竞争以及高基数。",
+      "source": "Arista Networks IR",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+      "publishedAt": "2026-11-03",
+      "evidence": "公司业绩稿/SEC与公开一致预期交叉核验；盘后涨幅约数。",
+      "tags": [
+        "财报",
+        "Arista",
+        "网络设备",
+        "AI互连",
+        "软件",
+        "盘后"
+      ]
+    },
+    {
+      "id": "supermicro-fy2027-q1-earnings-20261103",
+      "category": "产业链新闻",
+      "title": "Supermicro FY2027 Q1财报（截至2026-09-30）",
+      "summary": "净销售额约199亿美元，同比由50亿美元大幅增长，并高于一致预期约175.3亿美元；调整后EPS 1.81美元，高于约1.23美元。GAAP毛利率12.7%，虽高于去年同期9.3%，但从上季17.5%明显回落；经营现金流净流出4.34亿美元，资本开支及投资4,700万美元。Q2指引营收195亿—215亿美元、调整后EPS 1.66—1.90美元，全年营收720亿—820亿美元。财报盘后股价约涨8.3%。",
+      "why": "AI服务器交付量兑现，但毛利率与现金转换仍是比收入增速更关键的质量指标；大型项目、营运资金和客户集中可能放大波动。",
+      "source": "Supermicro IR",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "publishedAt": "2026-11-03",
+      "evidence": "公司未经审计业绩稿与公开一致预期交叉核验；盘后涨幅约数。",
+      "tags": [
+        "财报",
+        "Supermicro",
+        "AI服务器",
+        "数据中心",
+        "现金流",
+        "盘后"
+      ]
+    },
+    {
+      "id": "ramp-google-agentic-cache-20261102",
+      "category": "产业链新闻",
+      "title": "Ramp：Google模型的缓存token占比不足同业一半",
+      "summary": "Ramp Economics Lab以客户token管理样本中的“缓存token占全部token比例”作为代理式工作流的近似指标，称Google模型该占比不足同业一半，并据此判断其在coding agent等长链路任务中的使用偏弱。该指标反映的是Ramp特定客户、支付渠道与缓存机制，不能直接等同于Google全市场代理份额，也可能受产品缓存定价和API实现差异影响。",
+      "why": "这是衡量企业AI使用结构的有用新口径，但代理指标不是因果证据。后续应核对样本量、供应商缓存定义和同任务的实际调用分布。",
+      "source": "Ramp Economics Lab",
+      "url": "https://ramp.com/data/googles-models-lag-in-agentic-ai-usage",
+      "publishedAt": "2026-11-02",
+      "evidence": "Ramp自有样本与作者解释；文章未公开完整样本量，结论不外推所有企业。",
+      "tags": [
+        "Ramp",
+        "产业链新闻",
+        "企业AI",
+        "Agent",
+        "缓存token"
+      ]
+    },
+    {
+      "id": "funda-app-unity-preview-20261103",
+      "category": "投资人观点",
+      "title": "FUNDA：AppLovin与Unity数据争议进入财报验证期",
+      "summary": "FUNDA在11月3日公开预览中称，其访谈覆盖多类广告渠道、游戏/电商客户和出版商，重点跟踪AppLovin与Unity竞争、出价、广告主支出及CloudX。公开部分梳理AppLovin指控：Unity的Ad Quality SDK可能抓取广告展示、设备/用户标识和竞价信息，并用于训练Vector；但FUNDA明确指出“用于训练Vector”仍是推测，公开诉状没有直接证据。付费墙后的渠道结论未读取。",
+      "why": "数据访问权可能影响广告算法训练与客户迁移，但诉讼指控不能当作已证实事实；真正验证点是两家公司财报中的收入、客户留存和获客成本。",
+      "source": "FUNDA AI Substack",
+      "url": "https://fundaai.substack.com/p/previewapp-and-u-3q26-data-drama",
+      "publishedAt": "2026-11-03",
+      "evidence": "仅使用免费公开段落；订阅内容未绕过，渠道样本范围未充分披露。",
+      "tags": [
+        "投资人观点",
+        "FUNDA AI",
+        "AppLovin",
+        "Unity",
+        "广告科技"
+      ]
+    },
+    {
+      "id": "apollo-nominal-gdp-20261103",
+      "category": "投资人观点",
+      "title": "Apollo：盈利增速隐含名义GDP偏强，利率或更久维持高位",
+      "summary": "Apollo的Torsten Slok指出，当前名义GDP增长约6%，而标普500盈利同比增速接近40%；其基于历史关系的简单回归认为，现有盈利增速与约10%的名义GDP增长相符，并由此推断就业和利率存在上行风险。这里的10%是模型隐含值，不是官方预测或已经实现的数据。",
+      "why": "若经济与就业继续强，长端利率和融资成本可能维持高位，抵消AI盈利上修对TMT估值的部分支撑。",
+      "source": "Apollo Daily Spark",
+      "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-03",
+      "evidence": "机构观点与简单回归，非官方GDP预测；保留模型归属和局限。",
+      "tags": [
+        "投资人观点",
+        "Apollo",
+        "Torsten Slok",
+        "名义GDP",
+        "利率"
+      ]
+    },
+    {
+      "id": "aa-v5-open-weight-gap-20261027",
+      "category": "独立测评",
+      "title": "Artificial Analysis v5：已发布开放权重模型与前沿闭源差距扩大",
+      "summary": "AA Intelligence Index v5把60%权重放在私有测试集或保留答案上；Claude Opus 5.5 max得58、GPT‑6 Astra max得57。尚未开放权重的Kimi K3.1 Pro得46，不能算已可部署开放模型；已发布权重中，DeepSeek V4.1 Flash 1017 max与GLM‑5.3 max均为32，比榜首低26分。单任务成本差异超过13倍。该榜单混合知识工作、编码、科学与通用能力，版本、推理档和harness不同，不能拿单一总分替代真实任务。",
+      "why": "这项补漏同时给出更抗污染的方法与中国开放模型位置，但也说明“预告开放”不能提前计入可部署供给。",
+      "source": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "publishedAt": "2026-10-27",
+      "evidence": "独立评测；明确区分Kimi K3.1 Pro尚未放权重、DeepSeek/GLM已发布权重，并保留max推理档位。",
+      "tags": [
+        "独立测评",
+        "Artificial Analysis",
+        "DeepSeek",
+        "GLM",
+        "Kimi",
+        "开放权重"
+      ]
+    },
+    {
+      "id": "macro-overseas-20261104",
+      "category": "宏观点评",
+      "title": "海外宏观｜美债收益率回升，油价仍受美伊消息反复驱动",
+      "summary": "11月3日2年美债约4.61%、日升约2—3bp，10年约4.95%、升约4—6bp；DXY约101.87、升约0.1%。Brent 2027年1月近月约103.60美元/桶、跌约1.1%，WTI 2026年12月约96.09美元、跌约0.4%，均为同日近收盘口径。强就业/盈利预期推高折现率，美伊有限打击与谈判消息令油价盘中大幅波动。",
+      "why": "利率上行增加TMT折现率和融资成本；油价未延续前日暴跌，但战争尾部风险仍影响数据中心电力和供应链风险溢价。",
+      "source": "公开市场数据 / WSJ / AP",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-95ac47c160dba546cbbdf72c10010e2c",
+      "publishedAt": "2026-11-03",
+      "evidence": "2Y/10Y采用同日收盘附近报价；Brent明确为2027年1月、WTI为2026年12月合约，未与换月前合约混比。",
+      "tags": [
+        "宏观点评",
+        "利率",
+        "美元",
+        "原油"
+      ]
+    },
+    {
+      "id": "macro-china-fx-rrr-20261103",
+      "category": "宏观点评",
+      "title": "中国政策｜外汇存款准备金率上调至6%，针对美元流动性而非人民币放水",
+      "summary": "央行宣布自11月15日起把金融机构外汇存款准备金率由4%上调至6%，意在收紧境内美元流动性、缓和人民币单边升值预期；按公开数据估算约吸收240亿美元外汇流动性。另披露10月国债买卖净投放人民币1,500亿元。两项工具作用对象不同，不能把外汇准备金上调写成人民币全面紧缩或股市直接资金。",
+      "why": "政策主要改变汇率和美元流动性条件；对TMT的传导在出口换汇、美元融资成本和估值，而非直接股票增量资金。",
+      "source": "中国人民银行 / Reuters",
+      "url": "https://www.pbc.gov.cn/",
+      "publishedAt": "2026-11-03",
+      "evidence": "外汇准备金率为官方宣布；约240亿美元为Reuters按外汇存款估算，非央行公布实际回笼额。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "外汇",
+        "人民币"
+      ]
+    },
+    {
+      "id": "wars-politics-20261104",
+      "category": "宏观点评",
+      "title": "战争与政治｜美伊有限打击后谈判仍远，俄乌会谈定于11月10—11日；美国计票未完",
+      "summary": "美国对伊朗Qeshm岛防空目标实施被官员称为“防御性”的有限打击；卡塔尔继续斡旋，但高浓缩铀等核心条件仍无突破，有限行动不等于全面停火或重启战争。俄罗斯确认俄乌美三方11月10—11日在阿布扎比会谈，议题包括安全保证、能源与黑海安排，战斗仍在继续。美国中期选举在本期截点仅进入首批关票与计票，尚无国会控制权结果；不得把早期个别胜选或民调当最终结果。",
+      "why": "战争谈判和选举会通过油价、出口管制、财政路径与风险偏好影响TMT；本期最重要的是“有日程但无协议、有计票但无最终控制权”。",
+      "source": "Reuters / AP",
+      "url": "https://apnews.com/article/f126e12e05b579a327b98481c0ae2226",
+      "publishedAt": "2026-11-03",
+      "evidence": "区分官员表态、已发生有限打击、计划会谈和最终协议；选举截至北京时间11月4日08:30尚未完成全国计票。",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "美伊",
+        "俄乌",
+        "美国中期选举"
+      ]
+    },
+    {
+      "id": "us-market-20261103",
+      "category": "市场资金面",
+      "title": "美国市场｜SOX反弹3.28%，但指数宽度偏弱",
+      "summary": "11月3日标普500收7,568.92、+0.36%，纳指25,372.01、+0.83%，道指51,786.72、-0.38%，SOX 10,666.82、+3.28%。NVIDIA +2.3%、Broadcom +3.1%推动指数，但多数标普成份股下跌，说明反弹集中于大盘AI/半导体而非全面增量买盘。公开渠道未取得可靠全市场成交量相对20日均量、ETF申赎或期权净流数据，因此不写“放量”或“资金净流入”。",
+      "why": "半导体出现技术性修复，但宽度仍弱；盘后AMD、Arista、Supermicro的强业绩将检验次日是否从少数权重股扩散。",
+      "source": "AP / Nasdaq",
+      "url": "https://indexes.nasdaq.com/Index/Overview/SOX",
+      "publishedAt": "2026-11-03",
+      "evidence": "指数采用最近完整美股收盘；SOX以Nasdaq官方页为准。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体"
+      ]
+    },
+    {
+      "id": "asia-market-20261103",
+      "category": "市场资金面",
+      "title": "亚洲市场｜中韩台科技链急跌，日本休市，港股逆势上涨",
+      "summary": "11月3日：上证3,608.10、-0.82%，创业板2,391.65、-2.73%，沪深成交约1.70万亿元、较前日缩约803亿元；恒指23,525.97、+0.57%，恒科3,867.73、+0.74%，港股成交约2,364亿港元，南向净额未取得可靠一致口径；日本因文化日休市，未用11月2日旧收盘冒充当日行情；KOSPI 5,648.79、-3.59%，外资净卖约2.01万亿韩元；台湾加权43,307.54、-3.59%，外资净卖约1,073亿新台币。",
+      "why": "科技链风险偏好在韩国、台湾和A股成长板块同步收缩；港股上涨但缺可核验南向净额，不能据此判断增量资金来源。",
+      "source": "交易所与公开市场数据",
+      "url": "https://news.rthk.hk/rthk/en/component/k2/1876397-20261103.htm",
+      "publishedAt": "2026-11-03",
+      "evidence": "逐市场使用当地最近完整交易日；日本明确休市，A股未使用“主力净流入”或停止披露的北向净额。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本休市",
+        "韩国",
+        "台湾"
+      ]
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-03",
+    "snapshot": [
+      {
+        "label": "纳斯达克",
+        "displayValue": "25,372.01",
+        "change": 0.83,
+        "displayChange": "+0.83%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,568.92",
+        "change": 0.36,
+        "displayChange": "+0.36%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "51,786.72",
+        "change": -0.38,
+        "displayChange": "-0.38%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "10,666.82",
+        "change": 3.28,
+        "displayChange": "+3.28%"
+      },
+      {
+        "label": "10年美债",
+        "displayValue": "4.95%",
+        "change": 4,
+        "displayChange": "+4bp",
+        "note": "美国财政部par yield/收盘附近口径；市场报价约+5.8bp"
+      }
+    ],
+    "snapshotNote": "美国2026-11-03最近完整交易日。Wind由用户安装，但当前会话仍未暴露可调用工具；无法取得SOX、四大CSP等权、IGV和10Y完整对齐历史序列，因此按规则省略整个历史趋势栏目。",
+    "performance": [
+      {
+        "name": "纳指（11/3）",
+        "changePct": 0.83
+      },
+      {
+        "name": "标普（11/3）",
+        "changePct": 0.36
+      },
+      {
+        "name": "道指（11/3）",
+        "changePct": -0.38
+      },
+      {
+        "name": "SOX（11/3）",
+        "changePct": 3.28
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "ANET",
+        "name": "Arista Networks",
+        "session": "after-hours",
+        "asOf": "2026-11-03 16:45 ET附近",
+        "changePct": 12.1,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "Q3营收/EPS及Q4指引均高于预期",
+        "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx"
+      },
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "session": "after-hours",
+        "asOf": "2026-11-03 17:00 ET附近",
+        "changePct": 9,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "数据中心收入同比+97%，Q4营收指引高于一致预期",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "symbol": "SMCI",
+        "name": "Supermicro",
+        "session": "after-hours",
+        "asOf": "2026-11-03 16:40 ET附近",
+        "changePct": 8.3,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "销售额、EPS及Q2/全年指引高于预期；毛利率环比回落为反证",
+        "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+      }
+    ],
+    "selectionNote": "精选3家盘后绝对涨幅超过5%的AI芯片、网络与服务器公司；盘后涨幅均以当天常规收盘为基准，未用全天常规成交量冒充盘后量比。",
+    "sources": [
+      {
+        "name": "AP美股收盘",
+        "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-95ac47c160dba546cbbdf72c10010e2c"
+      },
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://indexes.nasdaq.com/Index/Overview/SOX"
+      },
+      {
+        "name": "AMD IR",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "name": "Arista IR",
+        "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx"
+      },
+      {
+        "name": "Supermicro IR",
+        "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "OpenAI",
+      "status": "已完成／无新正式发布",
+      "url": "https://openai.com/news/company-announcements/",
+      "note": "检查官方新闻、Release Notes与产品页；11月3日无新基础模型或套餐正式生效公告，未重复11月2日LifeVal/Grid Protectors。"
+    },
+    {
+      "name": "Anthropic及核心成员",
+      "status": "已完成／有重大财务更新",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/0001628280-26-068676-index.htm",
+      "note": "补入11月2日S-1/A的Q3财务、算力承诺与风险；官方新闻页11月3日无新模型。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "已完成／无可核实新重要原帖",
+      "url": "https://x.com/thsottiaux",
+      "note": "独立检查近24小时并回查7天；未发现超越已收录额度共享与Dots计划的新产品事实。X原帖访问受限，未以趋势页摘要冒充全文。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已完成／无新模型",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "最近版本仍为10月17日V4.1 Flash 1017；API价格/开放方式无11月3日新增。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已完成／无新模型",
+      "url": "https://huggingface.co/MiniMaxAI",
+      "note": "检查官方/HF/GitHub/API；最近主要版本仍为M3.1 Flash。"
+    },
+    {
+      "name": "Qwen",
+      "status": "已完成／无新模型",
+      "url": "https://huggingface.co/Qwen",
+      "note": "检查官方/HF/GitHub/API；近24小时无新模型或小版本。"
+    },
+    {
+      "name": "Kimi / Moonshot",
+      "status": "已完成／权重仍待正式确认",
+      "url": "https://huggingface.co/moonshotai",
+      "note": "检查官方HF与公开模型页；Kimi K3.1 Pro在AA v5有分数但权重尚未发布，未提前写成开放模型。搜索结果中的Kimi K3旧模型卡未当作11月4日新发布。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "已完成／无新模型",
+      "url": "https://huggingface.co/zai-org",
+      "note": "检查官方/HF/API；近24小时无新版本。AA v5的GLM-5.3 max 32分作为7日补漏收录。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已完成／无新模型",
+      "url": "https://huggingface.co/stepfun-ai",
+      "note": "检查官方/HF/API；近24小时无新版本。"
+    },
+    {
+      "name": "Artificial Analysis / Epoch / METR",
+      "status": "已完成／AA v5补漏",
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "note": "收录v5方法、推理档与开放权重状态；Epoch页面11月3日更新数据库但最新专题仍为10月1日，METR无近24小时新专题。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "已完成／Boston论坛原始内容仍缺",
+      "url": "https://www.bostoninvestmentconference.com/",
+      "note": "继续查主办方、Ted Seides和本人渠道；未找到10月29日讲话原始音视频/字幕/文字稿，不用旧访谈替代。"
+    },
+    {
+      "name": "Brad Gerstner / Altimeter、Sarah Guo、Elad Gil",
+      "status": "已完成／无可核实新长内容",
+      "url": "https://www.altimeter.com/",
+      "note": "检查公开社媒、播客与YouTube索引并回查7天；没有新的可核实长访谈。"
+    },
+    {
+      "name": "Sundar Pichai / Andy Jassy",
+      "status": "已完成／无新长访谈",
+      "url": "https://www.youtube.com/",
+      "note": "跨公司、主持人、YouTube与播客平台回查；只发现已收录Pichai 10月20日访谈及后续摘要，未重复。"
+    },
+    {
+      "name": "The Information",
+      "status": "已完成／公开部分无确认条目",
+      "url": "https://www.theinformation.com/",
+      "note": "只检查公开标题与导语；登录/订阅墙即止，重要线索未在免费原始材料中完成交叉核验。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已完成／有更新",
+      "url": "https://fundaai.substack.com/p/previewapp-and-u-3q26-data-drama",
+      "note": "读取11月3日APP/U预览的免费公开部分；付费墙内渠道结论未读，诉讼指控与事实分开。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "部分完成／原帖受限",
+      "url": "https://x.com/elonmusk",
+      "note": "检查科技/宏观相关公开索引；无可交叉核验且值得单列的新事实，未把索引摘要当原帖全文。"
+    },
+    {
+      "name": "SpaceX官方X/官网",
+      "status": "已完成／无新财务原始披露",
+      "url": "https://www.spacex.com/updates/",
+      "note": "检查官网更新与公开X索引；无新的季度财务原始材料。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已完成／有公开评论但未单列",
+      "url": "https://ramp.com/authors/ara-kharazian",
+      "note": "公开社媒评论称Anthropic Q3增速46.7%、Ramp样本推算Q4约15%—25%；前者回到S-1/A核验，后者属Ramp推算且未见完整方法更新，未当公司指引。"
+    },
+    {
+      "name": "Ramp AI Index / Economics Lab",
+      "status": "已完成／补入11月2日研究",
+      "url": "https://ramp.com/data/googles-models-lag-in-agentic-ai-usage",
+      "note": "收录缓存token代理指标；明确仅为Ramp样本、样本量未公开，不能外推Google全市场份额。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已完成／无新观点",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "最新可核实Takes仍为10月15日；未把旧图重发。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已完成／有更新",
+      "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark",
+      "note": "收录11月3日名义GDP/盈利回归观点，明确10%为模型隐含值。"
+    },
+    {
+      "name": "美国科技财报/IR",
+      "status": "已完成／有更新",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "逐项检查固定大科技与扩展供应链；收录AMD、Arista、Supermicro。Apple/Palantir/Lumentum已在上期；SNDK/AXTI最近财报已在10月30日，未重复。"
+    },
+    {
+      "name": "市场行情与战争政治",
+      "status": "已完成／有更新",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-95ac47c160dba546cbbdf72c10010e2c",
+      "note": "核验11月3日美股/SOX、亚洲市场、2Y/10Y、美元、Brent/WTI、美伊有限打击、俄乌会谈日程与美国早期计票；未写成最终结果。"
+    },
+    {
+      "name": "Wind / 市场图表",
+      "status": "当前会话未暴露可调用工具／历史趋势省略",
+      "url": "https://www.wind.com.cn/",
+      "note": "用户已安装Wind；当前工具列表无Wind MCP。因四组历史序列不能完整对齐，按最高优先规则省略整个重点趋势栏目。"
+    },
+    {
+      "name": "last30days",
+      "status": "已实际执行／3个平台成功、YouTube超时",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "环境重建后恢复v3.28.1固定提交832d0959并安装免费yt-dlp；窗口2026-11-03至11-04。Reddit 18、HN 15、GitHub 10，结果整体低相关未直接入稿；YouTube等待约180秒超时，不能写无更新。"
+    },
+    {
+      "name": "科技播客",
+      "status": "部分完成／YouTube采集缺口",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "note": "公开网页回查未发现可核实的新长节目；last30days YouTube超时，因此不宣称平台全覆盖。"
+    },
+    {
+      "name": "Cubox · AceCamp",
+      "status": "已完成／限定检索0篇",
+      "url": "https://www.acecamptech.com/",
+      "note": "持久化连接readVerifiedNow=true；11月3日普通/归档各分页2页至nextCursor=null，精确限定AceCamp来源，0篇命中。完整性仍受Cubox搜索索引覆盖限制，未扫描其他私人收藏。"
+    }
+  ],
+  "updatedAt": "2026-11-04T00:45:10.192Z"
+}
