@@ -1,0 +1,1113 @@
+{
+  "date": "2026-11-05",
+  "title": "2026-11-05｜Kimi K3.1-Pro开源权重领跑但速度/成本偏高；AppLovin超预期盘后大涨，Qualcomm与Arm走弱",
+  "reportType": "daily",
+  "archiveSummary": "Kimi K3.1-Pro开放权重后在AA开源榜居首，但首token约146秒、单任务37分钟且部署门槛高；AppLovin收入/EPS超预期盘后涨约15.9%，Qualcomm与Arm虽交出稳健结果仍盘后下跌。",
+  "intro": "今天最重要的结论是“能力与可用性、收入与股价反应继续分化”。Kimi K3.1-Pro完成从API到开放权重，独立统一评测显示开源综合能力领先，但速度、成本和2.8T总参数的部署门槛使其尚非普惠替代；真实数据任务成功率高，却暴露个别任务工具调用失控。财报端，AppLovin的广告增长与现金流显著超预期，盘后大涨；Qualcomm和Arm的总量/指引不弱，但手机下滑、高估值与利润预期压过利好。市场端三大指数上涨、SOX逆势跌3.1%，显示资金从AI硬件集中敞口向更广泛资产轮动。",
+  "coverage": "优先覆盖2026-11-04 08:30至2026-11-05 08:30（Asia/Shanghai）的新增，并回查前7天漏项；市场使用2026-11-04各地最近完整交易日。AceCamp按2026-11-04北京时间自然日收藏窗口限定采集；未覆盖本次截点后内容。",
+  "takeaways": [
+    "Kimi K3.1-Pro开放2.8T/104B激活权重，AA v5开源权重榜第1/25、综合46分；但首token约146秒、单任务约37分钟、3.68美元/任务，能力领先不等于低成本部署。",
+    "真实任务给出更平衡评价：Plotly 43题答对42题、总成本13.47美元，但隐藏模式题用了73次工具调用；官方ProgramBench 31.5也显著落后Opus 5.5的65.0。",
+    "AppLovin Q3收入+55%、EPS超预期、自由现金流约14亿美元，盘后约+15.9%；Qualcomm手机芯片收入-26%、Arm高估值约束，盘后分别约-4.9%与-3.6%。",
+    "美股三大指数上涨1.4%—3.0%，SOX却跌3.13%至六个月低位；利率与油价下行未能抵消AI硬件政策/监管风险。",
+    "AceCamp昨日限定检索32篇，精读存储/HBM、Azure、800V与DeepSeek五篇；渠道数字均保留匿名归属，不当公司披露。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "科技主线呈现三层分化：Kimi K3.1-Pro开放权重并在独立统一评测领先，但长时延、高任务成本和巨量参数压缩可用性；OpenAI同时推进图像模型、Codex基础设施并购和网络安全研究，表明竞争从模型分数扩展到工具链与垂直能力。财报端AppLovin变现质量突出，Qualcomm/Arm/Snap的盘后反应则说明市场更看重增长结构与估值。",
+      "points": [
+        "变化：Kimi从API转为开放权重；OpenAI扩张图像、代码与安全栈。",
+        "分歧：榜单领先与真实任务效率、本地部署资本开支之间存在张力。",
+        "观察：Kimi后续量化/推理服务、Epoch/METR报告、Qualcomm非手机收入和Arm AGI CPU交付。"
+      ]
+    },
+    "markets": {
+      "summary": "11月4日风险资产表面走强，但结构并不一致：三大指数上涨、SOX下跌3.13%，美国选举改变政策预期后利率和油价急降。亚洲方面A股成长板块放量反弹，港股上涨却见南向净卖出，韩台外资仍流出。市场交易的是政策与谈判预期，不能把选举、民调或油价变化写成战争已停或政策已落地。",
+      "points": [
+        "变化：10Y/2Y收益率分别约-5.8/-6.6bp，Brent/WTI跌约8%—9%。",
+        "分歧：折现率改善但SOX走弱，AI硬件估值对政策风险更敏感。",
+        "观察：国会席位认证、出口管制/数据中心政策、SOX相对强弱与亚洲外资流向。"
+      ]
+    },
+    "research": {
+      "summary": "昨日AceCamp限定检索32篇，覆盖存储、HBM、云、供电、国产算力、光通信与物理AI。精读的共同结论是供给约束正在由单一芯片扩散到内存结构、电源架构、调度效率和工程成熟度；共同风险是匿名渠道把中长期规划写得过于确定。所有数字均保留专家归属，并设置公司公告、出货、良率与价格验证点。",
+      "points": [
+        "变化：存储产能更偏企业/HBM，800V预计2027起批量爬坡。",
+        "分歧：Azure收入加速未必带来利润率改善；DeepSeek大参数/国产芯片节奏未获官方确认。",
+        "观察：P4/P5扩产、HBM4良率、Rubin 800V机柜、Azure利用率及DeepSeek官方模型卡。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "kimi-k31-pro-openweights-20261104",
+      "category": "模型发布",
+      "title": "Kimi K3.1-Pro开放权重：2.8T总参数、104B激活、1M上下文",
+      "summary": "Moonshot AI于11月4日开放Kimi K3.1-Pro权重。官方模型卡给出2.8T总参数、104B激活参数、1M上下文、MXFP4权重/MXFP8激活，支持文本与图像；API已于10月23日上线。官方评测中Terminal-Bench 2.0为65.7，接近Claude Opus 5.5的66.4，但ProgramBench仅31.5，明显低于Opus 5.5的65.0与GPT-5.6的50.0，说明“开源综合领先”不能外推到所有编程任务。",
+      "why": "这是中国模型主线最重要的新变化：模型从仅API转为可部署权重，但参数规模意味着本地部署门槛极高；应把开放性、能力和可用成本分开估值。",
+      "source": "Moonshot AI / Hugging Face模型卡",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "publishedAt": "2026-11-04",
+      "evidence": "官方模型卡与Kimi博客；评测设置为各模型可用最高档、temperature=1、top_p=0.95，属于官方横向表，不是独立测评。",
+      "tags": [
+        "Kimi",
+        "中国模型",
+        "模型发布",
+        "开放权重",
+        "官方自测"
+      ]
+    },
+    {
+      "id": "kimi-k31-pro-independent-20261104",
+      "category": "独立测评",
+      "title": "Kimi K3.1-Pro首批独立测评：能力领先，速度、成本与部署门槛构成反证",
+      "summary": "Artificial Analysis v5将其列为开源权重模型第1/25，综合分46；但首token约146.29秒、单任务约37.1分钟、成本约3.68美元/任务，输入/输出定价2/10美元每百万token，速度和成本均不占优。Plotly真实数据分析测试43题答对42题、总成本13.47美元、单题中位2.5分钟；一个隐藏模式题用了73次工具调用，而对照模型仅18次。Hacker News的主要质疑是2.8T总参数需多卡高端节点，以及部分榜单差距未明显超过更小模型。",
+      "why": "独立证据显示它更像“高能力但重型”的开放模型，而非低成本普惠替代。企业采用需要把成功率、时延、推理成本和部署资本开支一起算。",
+      "source": "Artificial Analysis / Plotly / Hacker News",
+      "url": "https://artificialanalysis.ai/models/kimi-k3-1-pro-open-weights",
+      "publishedAt": "2026-11-04",
+      "evidence": "AA为独立统一评测；Plotly为43题真实分析任务、保留成本与工具调用；HN仅作开发者体验/反例线索，不当作基准结论。未发现Epoch或METR在发布后首日的新报告。",
+      "tags": [
+        "Kimi",
+        "独立测评",
+        "Artificial Analysis",
+        "真实任务",
+        "失败案例"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-04",
+          "title": "Plotly真实数据分析评测",
+          "url": "https://plotly.com/blog/kimi-k3-1-pro-real-world-data-analysis/",
+          "evidence": "42/43题；总成本13.47美元；单题中位2.5分钟；隐藏模式题73次工具调用"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Hacker News权重发布讨论",
+          "url": "https://news.ycombinator.com/item?id=50367828",
+          "evidence": "349分、91条评论；部署门槛与榜单外推质疑"
+        }
+      ]
+    },
+    {
+      "id": "openai-images-26-20261104",
+      "category": "产业链新闻",
+      "title": "OpenAI Images 2.6上线：主打速度、GIF与可编辑输出",
+      "summary": "OpenAI称Images 2.6较前代快50%，低时延Flare模式最快约6秒，高质量Sunburst模式面向复杂任务；ChatGPT与Codex各档全球上线，API同步开放，并加入GIF、图像标注、SVG导出和复杂度控制。速度数据来自官方内部测量，尚无独立质量/成本评测。",
+      "why": "图像生成从“单张质量”转向可编辑工作流与延迟分层，直接影响设计软件、广告素材和Agent工具链；独立测评应继续跟踪文字准确率、结构保持与每个有效成品成本。",
+      "source": "OpenAI官方",
+      "url": "https://openai.com/index/images-2-6/",
+      "publishedAt": "2026-11-04",
+      "evidence": "官方产品发布；性能为公司自测，未作为独立结论。",
+      "tags": [
+        "OpenAI",
+        "图像模型",
+        "产业链新闻",
+        "官方发布"
+      ]
+    },
+    {
+      "id": "openai-pierre-acquisition-20261104",
+      "category": "核心团队",
+      "title": "OpenAI拟收购Pierre，将代码存储与diff基础设施并入Codex",
+      "summary": "OpenAI宣布拟收购代码协作基础设施公司Pierre。Pierre的Code Storage、Trees/Diffs已被Codex使用，交易完成后Code Storage将进一步整合；公司承诺现有开源项目继续开源。交易仍待审批，交割前双方独立运营。",
+      "why": "这是Codex从模型能力向代码托管与协作栈纵向整合，可能改善大型仓库操作、diff延迟与持久任务，但也提高与GitHub等开发平台的边界重叠。",
+      "source": "OpenAI / Pierre",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "publishedAt": "2026-11-04",
+      "evidence": "官方交易公告；尚未完成，不写成已并表或已全面迁移。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "核心团队",
+        "并购"
+      ]
+    },
+    {
+      "id": "openai-cyber-lpe-research-20261104",
+      "category": "独立测评",
+      "title": "OpenAI报告自动化发现948个可复现本地提权利用链，API成本约121万美元",
+      "summary": "OpenAI安全研究管线在受控环境中筛出2,308个候选、复现1,724个漏洞并生成948个本地提权利用链，API总成本约121.34万美元，折合每个利用链约1,279美元。结果仍经过人工审核，且公司将更强网络安全模型限定在获批客户与受控部署；这不是外部第三方复现。",
+      "why": "数据说明前沿模型在安全研究上的经济性正在改变，但“可复现利用链”不等于大规模真实攻击能力，治理重点是访问控制、审计和研究者验证。",
+      "source": "OpenAI安全研究",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "publishedAt": "2026-11-04",
+      "evidence": "官方研究报告；成本和成功数为公司实验口径，未独立复核。",
+      "tags": [
+        "OpenAI",
+        "网络安全",
+        "独立测评",
+        "官方研究"
+      ]
+    },
+    {
+      "id": "brad-gerstner-allin-election-20261104",
+      "category": "投资人观点",
+      "title": "Brad Gerstner：AI数据中心需求担忧“过度”，但10—15GW项目可能无法兑现",
+      "summary": "在11月4日All-In选举直播中，Brad Gerstner认为AI基础设施过剩担忧被放大，但同时估计市场预测的约43GW新增项目中或有10—15GW因融资、并网或执行问题无法上线。两句话并不矛盾：他仍看好总需求，却把风险从“是否需要算力”转向项目资本结构和交付。",
+      "why": "这是对AI基建周期最有用的分歧框架：需求强不等于每个项目都可融资、并网并形成收入。需继续跟踪取消项目、长期电力合同与Neocloud融资利差。",
+      "source": "All-In Podcast / Brad Gerstner",
+      "url": "https://www.youtube.com/watch?v=9Asgxtk_kkI",
+      "publishedAt": "2026-11-04",
+      "evidence": "节目约88:45/1:29:23附近；投资人情景判断，不是已建成容量统计。",
+      "tags": [
+        "Brad Gerstner",
+        "Altimeter",
+        "投资人观点",
+        "播客",
+        "数据中心"
+      ]
+    },
+    {
+      "id": "funda-texas-aidc-permitting-20261104",
+      "category": "投资人观点",
+      "title": "FUNDA AI：Texas许可与政治约束上升，2027基准未改但2028项目风险抬升",
+      "summary": "FUNDA AI 11月4日公开文章认为，Texas数据中心许可、用电和政治审查风险上升；作者暂不调整2027预测，但认为2028项目兑现面临更高威胁。该判断与Brad Gerstner的“部分GW无法上线”形成同向风险提示，但属于投资人渠道观点，不是监管决定或独立项目数据库。",
+      "why": "AI基础设施的瓶颈正从GPU扩散到电力、许可和社会接受度，影响项目开工、融资成本与供应链订单确认。",
+      "source": "FUNDA AI Substack",
+      "url": "https://fundaai.substack.com/",
+      "publishedAt": "2026-11-04",
+      "evidence": "读取公开标题与可读段落；未绕过订阅墙，未把未读正文结论写入。",
+      "tags": [
+        "FUNDA AI",
+        "投资人观点",
+        "数据中心",
+        "Texas"
+      ]
+    },
+    {
+      "id": "apollos-slok-iran-inflation-20261104",
+      "category": "投资人观点",
+      "title": "Apollo Daily Spark：伊朗高通胀与油出口收缩强化地缘尾部风险",
+      "summary": "Apollo援引IMF与Macrobond称伊朗通胀接近90%、里亚尔约300万兑1美元，油出口接近零。它是机构宏观框架而非战场事实；对TMT的传导主要经油价波动、风险溢价与数据中心能源成本。",
+      "why": "油价当日大跌不等于地缘风险消失。把金融压力、谈判进展和已落实停火分开，有助避免用单日资产价格替代事实判断。",
+      "source": "Apollo / Torsten Slok团队",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-04",
+      "evidence": "机构研究引用公开宏观数据；属于投资人观点，不作为官方统计替代。",
+      "tags": [
+        "Apollo",
+        "投资人观点",
+        "伊朗",
+        "油价"
+      ]
+    },
+    {
+      "id": "applovin-2026q3-earnings-20261104",
+      "category": "产业链新闻",
+      "title": "AppLovin 2026年Q3财报",
+      "summary": "收入21.85亿美元，同比+55%，高于FactSet约20.7亿美元；净利润14.39亿美元，同比+72%，净利率66%，调整后EBITDA 18.4亿美元、利润率84%，自由现金流约14亿美元。Q4收入指引23.65—23.95亿美元、调整后EBITDA 19.95—20.25亿美元；盘后早段约+15.9%。",
+      "why": "AI广告变现继续兑现，且现金流与回购强化。需要关注增长能否在高利润率下持续，以及平台集中、广告质量和监管风险。",
+      "source": "AppLovin IR / FactSet媒体交叉核验",
+      "url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+      "publishedAt": "2026-11-04",
+      "evidence": "公司财报为实际值；一致预期来自公开媒体。盘后涨幅为发布后早段、以常规收盘为基准。",
+      "tags": [
+        "AppLovin",
+        "财报",
+        "广告",
+        "软件",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "qualcomm-fy2026q4-earnings-20261104",
+      "category": "产业链新闻",
+      "title": "Qualcomm FY2026 Q4财报（截至2026-09-30）",
+      "summary": "非GAAP收入104.42亿美元、调整后EPS 2.17美元，均略高于市场约101—102亿美元与2.16美元；但手机芯片收入同比-26%，汽车业务19.9亿美元、同比+89%。FY2027 Q1收入指引104—112亿美元，中点偏强，EPS 2.15—2.35美元中点略低于预期；公司称FY2027非手机收入将占60%以上、数据中心目标约50亿美元。盘后21:34 UTC约-4.9%。",
+      "why": "结果显示多元化加速但手机下滑与利润指引压过总量超预期；对半导体链而言，汽车/数据中心新增量仍需验证毛利和交付。",
+      "source": "Qualcomm IR / WSJ",
+      "url": "https://investor.qualcomm.com/financial-information",
+      "publishedAt": "2026-11-04",
+      "evidence": "财报实际/指引来自公司；一致预期与21:34 UTC盘后幅度来自WSJ。",
+      "tags": [
+        "Qualcomm",
+        "财报",
+        "半导体",
+        "汽车",
+        "数据中心"
+      ]
+    },
+    {
+      "id": "arm-fy2027q2-earnings-20261104",
+      "category": "产业链新闻",
+      "title": "Arm FY2027 Q2财报（截至2026-09-30）",
+      "summary": "收入14.4亿美元、同比+27%，调整后EPS 0.52美元；许可收入7.73亿美元、同比+50%，版税6.70亿美元、同比+8%，数据中心版税同比翻倍。FY2027 Q3指引收入15.4亿±0.5亿美元、EPS 0.56±0.04美元，整体略高于/接近一致预期。盘后16:20 ET约-3.55%，随后波动收窄。",
+      "why": "AI服务器带动许可与数据中心版税，但盘后下跌说明高估值已要求更强上修；AGI CPU订单要到FY27 Q4开始商业交付，不能提前计入收入。",
+      "source": "Arm IR / 公开行情",
+      "url": "https://newsroom.arm.com/news/arm-q2-fye27-results",
+      "publishedAt": "2026-11-04",
+      "evidence": "实际与指引来自Arm；盘后幅度为16:20 ET附近快照，非最终收盘。",
+      "tags": [
+        "Arm",
+        "财报",
+        "半导体",
+        "数据中心"
+      ]
+    },
+    {
+      "id": "snap-2026q3-earnings-20261104",
+      "category": "产业链新闻",
+      "title": "Snap 2026年Q3财报",
+      "summary": "收入17.22亿美元、同比+14%，但低于市场关注的收入/用户增长预期；净利润5,600万美元、由亏转盈，调整后EBITDA 3.83亿美元，经营现金流2.10亿美元、自由现金流1.64亿美元。公司Q4收入指引大致符合预期，但用户增长不及预期并停用一项关键参与度指标，盘后18:09 ET约-9.8%。",
+      "why": "利润与现金流改善未能抵消用户和收入质量担忧，说明社交广告估值更依赖可持续增长而非单季降本。",
+      "source": "Snap IR / 公开行情",
+      "url": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+      "publishedAt": "2026-11-04",
+      "evidence": "财务数据来自公司；预期与18:09 ET盘后跌幅来自公开市场报道。",
+      "tags": [
+        "Snap",
+        "财报",
+        "互联网",
+        "广告"
+      ]
+    },
+    {
+      "id": "us-macro-20261104",
+      "category": "宏观点评",
+      "title": "海外宏观｜选举改变政策预期，利率与油价同步下行",
+      "summary": "11月4日美国10年/2年期收益率约4.894%/4.546%，分别下降约5.8/6.6bp；美元指数约跌0.5%。Brent 2027年1月合约94.62美元、-8.7%，WTI 2026年12月合约88.12美元、-8.3%。民主党赢得国会两院控制权，但部分席位仍待最终认证；市场交易的是政策与谈判预期，不是停火已发生。",
+      "why": "无风险利率下降利好TMT估值，但SOX逆势下跌说明监管/政策担忧压过折现率改善；油价急跌降低能源成本，同时反映增长与地缘预期快速重定价。",
+      "source": "美国财政部/公开市场数据/AP-Reuters",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "publishedAt": "2026-11-04",
+      "evidence": "均为11月4日收盘或收盘附近口径；合约月份明确，未与换月前价格混比。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "原油",
+        "美国选举"
+      ]
+    },
+    {
+      "id": "china-macro-20261104",
+      "category": "宏观点评",
+      "title": "中国政策｜无新增总量工具，股市反弹不等于新增政策资金",
+      "summary": "11月4日未查到央行、金融监管总局、证监会或财政部新增总量宽松工具；市场仍在消化11月3日外汇存款准备金率上调等美元流动性管理安排。A股放量上涨反映风险偏好修复，不能写成北向净流入或财政/央行直接给股市增量资金。",
+      "why": "对TMT的边际改善来自风险偏好而非已确认的融资成本新一轮下调；需继续看政策利率、信用扩张与实际投放。",
+      "source": "中国人民银行/证监会/财政部",
+      "url": "https://www.pbc.gov.cn/",
+      "publishedAt": "2026-11-04",
+      "evidence": "按官方公告页逐项检查；“无新增”限定于截至本次采集的公开正式公告。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "流动性"
+      ]
+    },
+    {
+      "id": "us-market-20261104",
+      "category": "市场资金面",
+      "title": "美国市场｜大盘上涨但SOX跌3.1%，AI硬件出现明显背离",
+      "summary": "11月4日标普500涨1.58%至7,688.62，纳指涨1.44%至25,736.51，道指涨3.03%至53,356.12；SOX却跌3.13%至10,268.65、创约六个月低位。多数板块上涨，但半导体与部分数据中心股受政策/监管担忧拖累，属于“大盘风险偏好回升、AI硬件相对去风险”，不是全面科技增量买盘。公开资料不足以可靠计算全市场成交量相对20日均量，未补造。",
+      "why": "SOX与大盘背离比指数总涨幅更重要：资金在降低政策敏感的AI资本开支敞口，同时买入更广泛的周期/防御资产。",
+      "source": "AP / Reuters / Nasdaq SOX",
+      "url": "https://indexes.nasdaq.com/Index/Overview/SOX",
+      "publishedAt": "2026-11-04",
+      "evidence": "指数为最近完整交易日收盘；SOX取历史收盘10,268.65对前日10,600.40，约-3.13%。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体"
+      ]
+    },
+    {
+      "id": "asia-market-20261104",
+      "category": "市场资金面",
+      "title": "亚洲市场｜A股放量修复，日韩台资金方向分化",
+      "summary": "11月4日上证+2.16%至3,686.17、创业板+6.40%至2,544.73，两市成交约2.04万亿元、较前日增约19.6%；恒指+1.67%、恒科+1.77%，成交约2,369亿港元，南向净卖出约32.77亿港元。日经-1.42%、TOPIX-0.89%；KOSPI+0.62%，外资净卖出约2.51万亿韩元；台湾加权-0.83%，外资净卖出约1,499亿新台币。",
+      "why": "中国成长股出现量价齐升，但港股南向、韩台外资仍偏谨慎，不能把区域反弹解读为亚洲科技资金全面回流。",
+      "source": "上交所/港交所/JPX/KRX/TWSE及公开行情汇总",
+      "url": "https://www.sse.com.cn/",
+      "publishedAt": "2026-11-04",
+      "evidence": "各市场均为当地11月4日最近完整交易日；日本10月周频外资数据未混作日频；A股未使用供应商“主力净流入”。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ]
+    },
+    {
+      "id": "acecamp-overview-20261104",
+      "category": "调研纪要",
+      "title": "AceCamp昨日全部动态｜32篇纪要与链接",
+      "summary": "按北京时间收藏日期归属，2026-11-04限定AceCamp来源检索返回32篇经原始URL核验的纪要。普通与归档两路均已分页到nextCursor=null；归档0篇。全部标题与链接列于“相关原文与证据”，只有5篇读取全文并入选精读，其余不据标题扩写。",
+      "why": "这是全部动态导航，不代表32篇都已读完。账户无AceCamp命名目录，服务端采用AceCamp关键词定向搜索并核验acecamptech.com原URL；结果完整性仍受Cubox索引覆盖限制。",
+      "source": "Cubox持久化只读连接 · AceCamp",
+      "url": "https://www.acecamptech.com/",
+      "publishedAt": "2026-11-04",
+      "evidence": "普通/归档分别分页到底，即使首屏为空但cursor非空也继续；最终按ID/URL去重，不读取其他Cubox收藏。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "全部动态",
+        "收藏概览"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-04",
+          "title": "物联网芯片产业调研：ESP32产品结构及定价、智能家居与端侧AI需求、存储成本和2027年展望",
+          "url": "https://www.acecamptech.com/article/detail/70568849",
+          "evidence": "收藏 2026-11-04 12:49:50 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "拼团电商调研：主站生态、Temu欧盟税改与多多买菜盈利",
+          "url": "https://www.acecamptech.com/article/detail/70568776",
+          "evidence": "收藏 2026-11-04 14:49:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "某汽车零部件品牌在T链机器人更新：测试、价值量及对手比较",
+          "url": "https://www.acecamptech.com/article/detail/70568823",
+          "evidence": "收藏 2026-11-04 12:50:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "AI算力供电架构演进：800V与垂直供电的技术拐点与市场空间",
+          "url": "https://www.acecamptech.com/article/detail/70568813",
+          "evidence": "收藏 2026-11-04 14:36:26 +08:00；已全文阅读并入选精读"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "内存原厂月产能、2028扩产、DRAM/NAND价格与HBM分配",
+          "url": "https://www.acecamptech.com/article/detail/70568855",
+          "evidence": "收藏 2026-11-04 12:49:45 +08:00；已全文阅读并入选精读"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "具身智能训练数据分析：采集路线、门槛及价值波动",
+          "url": "https://www.acecamptech.com/article/detail/70568859",
+          "evidence": "收藏 2026-11-04 15:00:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "AI短剧调研：全AI自动化生成、Seedance 2.5与投放成本",
+          "url": "https://www.acecamptech.com/article/detail/70568847",
+          "evidence": "收藏 2026-11-04 12:50:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "人形机器人行业调研：2026出货、2027展望与BOM拆解",
+          "url": "https://www.acecamptech.com/article/detail/70568853",
+          "evidence": "收藏 2026-11-04 12:49:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "模拟芯片专家调研：交付、涨价、硅光与海外订单",
+          "url": "https://www.acecamptech.com/article/detail/70568818",
+          "evidence": "收藏 2026-11-04 12:52:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "海外广告市场调研：GPTAds、Google与社交广告迁移",
+          "url": "https://www.acecamptech.com/article/detail/70568833",
+          "evidence": "收藏 2026-11-04 12:52:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "国产PCB龙头与博通合作：高层板良率、产能与ABF",
+          "url": "https://www.acecamptech.com/article/detail/70568825",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "寒武纪690/590/790、字节ASIC与国产算力需求展望",
+          "url": "https://www.acecamptech.com/article/detail/70568797",
+          "evidence": "收藏 2026-11-04 14:48:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "无源光通信：CPO/NPO、FA与MPO竞争格局",
+          "url": "https://www.acecamptech.com/article/detail/70568812",
+          "evidence": "收藏 2026-11-04 14:36:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "大模型训练数据采购：从堆量转向特定方向",
+          "url": "https://www.acecamptech.com/article/detail/70568815",
+          "evidence": "收藏 2026-11-04 12:52:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "保偏光纤：CPO/NPO需求、订单与供应商格局",
+          "url": "https://www.acecamptech.com/article/detail/70568871",
+          "evidence": "收藏 2026-11-04 15:00:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "HBM调研：2027年HBM4占比、份额重构与扩产",
+          "url": "https://www.acecamptech.com/article/detail/70568836",
+          "evidence": "收藏 2026-11-04 12:54:33 +08:00；已全文阅读并入选精读"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Bloom Energy与SOFC用铬：占比与增长潜力",
+          "url": "https://www.acecamptech.com/article/detail/70568799",
+          "evidence": "收藏 2026-11-04 14:48:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "存储4Q26更新：服务器DRAM涨价与2H27供需拐点",
+          "url": "https://www.acecamptech.com/article/detail/70568835",
+          "evidence": "收藏 2026-11-04 12:52:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "物理AI数据需求：Ego预训练、仿真数据与千万小时级需求",
+          "url": "https://www.acecamptech.com/article/detail/70568829",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "OpenAI硬件调研：AI徽章/Open Pin功能、BOM与供应商",
+          "url": "https://www.acecamptech.com/article/detail/70568802",
+          "evidence": "收藏 2026-11-04 14:47:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "OpenAI与Meta硬件路线图：2027-2028多端设备与供应链",
+          "url": "https://www.acecamptech.com/article/detail/70568814",
+          "evidence": "收藏 2026-11-04 12:52:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "AI硬件市场：Apple、Meta、Google与OpenAI规划及出货",
+          "url": "https://www.acecamptech.com/article/detail/70568827",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "国内SOFC独角兽11月更新：新品、示范项目与伙伴",
+          "url": "https://www.acecamptech.com/article/detail/70568807",
+          "evidence": "收藏 2026-11-04 14:37:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "物理AI数据集采：场景局限、需求差异与设备供应商",
+          "url": "https://www.acecamptech.com/article/detail/70568830",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "国内AIoT方案龙头：芯片场景、供需与产品路线",
+          "url": "https://www.acecamptech.com/article/detail/70568850",
+          "evidence": "收藏 2026-11-04 12:50:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "DeepSeek调研：技术演进、国产算力、搜索、推理框架与harness",
+          "url": "https://www.acecamptech.com/article/detail/70568851",
+          "evidence": "收藏 2026-11-04 12:50:29 +08:00；已全文阅读并入选精读"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "全景影像：竞争、CMOS/存储成本与物理AI采集",
+          "url": "https://www.acecamptech.com/article/detail/70568811",
+          "evidence": "收藏 2026-11-04 14:36:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "零信任/WAF与SASE：预算、漏洞、模型压缩与开源",
+          "url": "https://www.acecamptech.com/article/detail/70568810",
+          "evidence": "收藏 2026-11-04 14:36:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "新一代模型对具身智能的影响：训练路径与测评",
+          "url": "https://www.acecamptech.com/article/detail/70568820",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "国产CDU向北美客户交付、验证与海外产能",
+          "url": "https://www.acecamptech.com/article/detail/70568824",
+          "evidence": "收藏 2026-11-04 12:51:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "模拟电源：AI服务器多相电源、产能与涨价机制",
+          "url": "https://www.acecamptech.com/article/detail/70568809",
+          "evidence": "收藏 2026-11-04 14:36:00 +08:00；仅核验标题/来源，未据此作内容判断"
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Azure增长、利润率、Neocloud交付与MAIA 300",
+          "url": "https://www.acecamptech.com/article/detail/70568838",
+          "evidence": "收藏 2026-11-04 12:51:34 +08:00；已全文阅读并入选精读"
+        }
+      ],
+      "research": {
+        "meetingDate": "标题清单不代表会议日期；原文日期可核验时在精读项注明",
+        "savedAt": "2026-11-04 12:49—15:00 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "32篇AceCamp限定检索命中；收藏日而非会议日",
+        "topics": [
+          {
+            "heading": "全部动态",
+            "bullets": [
+              "相关原文与证据列出32篇全部命中标题、链接与收藏时间；仅5篇阅读全文。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-deep-70568855",
+      "category": "调研纪要",
+      "title": "存储供需｜三星2027新增DRAM产能多数投向HBM，NAND靠层数与QLC增bit",
+      "summary": "匿名专家称三星当前DRAM/NAND月产能约60万/43万片；2027年P4或释放约10万片DRAM新增产能，多数优先HBM，至2028年DRAM或达80万片、NAND晶圆产能仍约43万片。NAND增bit主要依赖236层向286层迭代（单次有效增量约15%—20%）及TLC转QLC。其判断中，服务器DRAM+HBM占比或由当前约48%升至2027年底63%，企业级NAND由50%升至60%，意味着消费级供给被挤压。",
+      "why": "入选因为产能、产品结构、价格与长协比例均有量化，可直接影响存储价格和供应商盈利模型；但为单一专家口径。",
+      "source": "AceCamp · 匿名专家/渠道访谈",
+      "url": "https://www.acecamptech.com/article/detail/70568855",
+      "publishedAt": "2026-11-04",
+      "evidence": "经Cubox限定AceCamp列表取得授权全文，自有表述整理；未使用平台AI insight。原文需AceCamp权限；匿名专家数字不是公司披露，未获外部交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "存储",
+        "DRAM",
+        "NAND",
+        "HBM"
+      ],
+      "research": {
+        "meetingDate": "原文标注2026/11/04 11:14:32；实际访谈日未披露",
+        "savedAt": "2026-11-04 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "一篇匿名专家问答；产能与规划未获三星/原厂确认",
+        "topics": [
+          {
+            "heading": "产能与结构",
+            "bullets": [
+              "DRAM 60万片/月、NAND 43万片/月；2027 P4新增约10万片DRAM，多数投向HBM。",
+              "服务器DRAM+HBM占比或从48%升至63%，企业级NAND从50%升至60%。"
+            ]
+          },
+          {
+            "heading": "价格与长协",
+            "bullets": [
+              "Q4服务器DRAM与企业级NAND涨幅或收窄至0—5%、接近长协上限；2027或维持高位，2028取决于需求。",
+              "专家称最终60%—70%产品进入LTA，HBM接近100%、企业级NAND超90%；3—5年框架仍需逐年重谈数量。"
+            ]
+          },
+          {
+            "heading": "反证与待验证",
+            "bullets": [
+              "NAND无晶圆扩产不等于bit供给不增；层数、良率和QLC转换决定有效供给。",
+              "核对三星资本开支、P4/P5洁净室节点、HBM良率与消费级缺货是否兑现。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-deep-70568836",
+      "category": "调研纪要",
+      "title": "HBM｜2027 HBM4占比或升至50%，三家份额与扩产进入再平衡",
+      "summary": "匿名专家称三家均已供货HBM4，预计向HBM4E过渡后份额或为海力士40%、三星35%、美光25%；三星/海力士当前月产能约14万/15万片，2027年各计划增加约4万片。其判断2027年HBM4占比可能升至50%，三星Turnkey和美光美国供应商属性有助份额提升。份额、产能和客户结构均是渠道预测，不是NVIDIA或三家原厂正式指引。",
+      "why": "HBM是AI加速器收入和毛利的核心约束，且这篇同时给出工艺、产能与份额假设，适合做交叉验证清单。",
+      "source": "AceCamp · 匿名专家/渠道访谈",
+      "url": "https://www.acecamptech.com/article/detail/70568836",
+      "publishedAt": "2026-11-04",
+      "evidence": "经Cubox限定AceCamp列表取得授权全文，自有表述整理；未使用平台AI insight。原文需AceCamp权限；匿名专家数字不是公司披露，未获外部交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "HBM",
+        "SK海力士",
+        "三星",
+        "美光"
+      ],
+      "research": {
+        "meetingDate": "原文标注2026/11/03 20:24:52；实际访谈日未披露",
+        "savedAt": "2026-11-04 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "一篇匿名专家问答；三家供货、份额与扩产预测均待公司/供应链验证",
+        "topics": [
+          {
+            "heading": "份额与扩产",
+            "bullets": [
+              "渠道预计HBM4/4E阶段份额约40:35:25；这不是已实现份额。",
+              "三星、海力士分别约14万/15万片月产能，2027各加约4万片，新增产能释放时间决定有效供给。"
+            ]
+          },
+          {
+            "heading": "工艺与竞争",
+            "bullets": [
+              "海力士MR-MUF与三星/美光TCB-NCF各有良率、效率和翘曲权衡，不能用历史份额直接推出技术绝对优劣。",
+              "三星的晶圆代工+HBM+传统DRAM打包能力被视为份额抓手，但先进制程良率仍是反证。"
+            ]
+          },
+          {
+            "heading": "观察指标",
+            "bullets": [
+              "跟踪NVIDIA/AMD/Google认证、2027H2新增产能、HBM4E良率、CoWoS/封装匹配和合同ASP。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-deep-70568838",
+      "category": "调研纪要",
+      "title": "Azure｜增长提速来自利用率与合约优化，利润率承压是更关键反证",
+      "summary": "渠道纪要将Azure FY27 Q1增长拆为GPU满载、闲置CPU变现和token价格，并称Q2 49%—50%增速还依赖工程效率、产品组合和合约优化；其口径包括90%请求使用多模型路由、单位算力承载token环比+30%、Foundry客户12万家。上述数字与模型名称含大量匿名/模糊代称，未获微软披露确认。更可信的研究含义是：收入可通过调度与定价提速，但高价短期容量、折旧和Neocloud交付推迟仍会压利润率与资本效率。",
+      "why": "入选因为它提供了云增长从供给、定价到利润率的完整桥接，也给出“收入加速但利润率未必改善”的反证。",
+      "source": "AceCamp · 匿名专家/渠道访谈",
+      "url": "https://www.acecamptech.com/article/detail/70568838",
+      "publishedAt": "2026-11-04",
+      "evidence": "经Cubox限定AceCamp列表取得授权全文，自有表述整理；未使用平台AI insight。原文需AceCamp权限；匿名专家数字不是公司披露，未获外部交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "Azure",
+        "Microsoft",
+        "云计算",
+        "AI基础设施"
+      ],
+      "research": {
+        "meetingDate": "原文标注2026/11/03 22:32:41；实际访谈日未披露",
+        "savedAt": "2026-11-04 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "一篇匿名专家观点汇总；大量数据/模型代称不能当微软官方口径",
+        "topics": [
+          {
+            "heading": "增长驱动",
+            "bullets": [
+              "GPU利用率、CPU池变现、token定价和多模型路由共同提高同一机柜收入。",
+              "渠道称单位算力token环比提升约30%，但需用Azure官方收入、Capex和毛利率交叉验证。"
+            ]
+          },
+          {
+            "heading": "利润率反证",
+            "bullets": [
+              "第三方GPU交付推迟可能暂时压低Capex，却也延后收入；高价短期容量和折旧继续侵蚀利润。",
+              "Foundry平台化提高粘性和PaaS毛利，但多模型路由也会把部分价值让给第三方模型。"
+            ]
+          },
+          {
+            "heading": "待验证",
+            "bullets": [
+              "观察Azure AI收入占比、MAIA 300上量、Neocloud合同延期、利用率与折旧年限，而非只看收入增速。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-deep-70568813",
+      "category": "调研纪要",
+      "title": "800V供电｜2027可能出现批量拐点，但600kW以上并非强制切换",
+      "summary": "匿名行业专家称NVIDIA 0—800V在2026年主要仍是样机，2027年Rubin或有1,000—2,000个机柜采用；Rubin Ultra、Feynman和下一代渗透率或分别20%—30%、40%—50%、60%—70%。Google已从2026H2小批量部署±400V，V9可能加速。最重要的反证是：600kW以上采用800V在散热、铜耗和重量上更经济，但不是技术上强制，成熟度和客户架构仍决定切换。",
+      "why": "入选因为它把电源架构渗透率、机柜功率和供应商收入节点连接起来，同时明确了“必须800V”叙事的边界。",
+      "source": "AceCamp · 匿名专家/渠道访谈",
+      "url": "https://www.acecamptech.com/article/detail/70568813",
+      "publishedAt": "2026-11-04",
+      "evidence": "经Cubox限定AceCamp列表取得授权全文，自有表述整理；未使用平台AI insight。原文需AceCamp权限；匿名专家数字不是公司披露，未获外部交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "800V",
+        "HVDC",
+        "数据中心",
+        "电源"
+      ],
+      "research": {
+        "meetingDate": "原文标注2026/11/03 11:34:26；实际访谈日未披露",
+        "savedAt": "2026-11-04 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "一篇资深行业专家问答；机柜数量与渗透率为预测",
+        "topics": [
+          {
+            "heading": "时间表",
+            "bullets": [
+              "2026以样机为主，2027 Rubin或1,000—2,000柜；Rubin Ultra 20%—30%只是专家预测。",
+              "Google ±400V兼容现有架构，部署节奏可能快于NVIDIA 0—800V路线。"
+            ]
+          },
+          {
+            "heading": "经济性与路线",
+            "bullets": [
+              "高电压通过降电流减少铜、重量和损耗；路径包括降至54V、12V或6.25V。",
+              "600kW是经济性拐点而非强制标准，客户设计与成熟度可能延后渗透。"
+            ]
+          },
+          {
+            "heading": "后续验证",
+            "bullets": [
+              "核对NVIDIA/Google公开电源规范、Rubin机柜功率、PDB/BUS bar订单、认证和量产良率。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-deep-70568851",
+      "category": "调研纪要",
+      "title": "DeepSeek渠道调研｜长任务成本优化明确，但6—8T参数与国产芯片进度均未获官方确认",
+      "summary": "匿名专家称DeepSeek未来或沿Pro放大规模、Flash降成本两条路线，甚至讨论6—8T总参数模型；同时承认连续交互超过100轮后召回与稳定性下降，harness和开源推理框架尚未达到生产可用，存储、路由、推测解码等工程模块仍不完整。纪要还预测国产AI芯片2027年或达百万量级，但训练生产就绪可能要到2028—2029。由于这些说法未见DeepSeek官方模型卡/GitHub佐证，日报只作为渠道假设与失败案例，不写成路线图事实。",
+      "why": "入选因为它同时给出模型架构、长程失败模式、推理工程和国产算力适配的反证，能避免只追参数规模。",
+      "source": "AceCamp · 匿名专家/渠道访谈",
+      "url": "https://www.acecamptech.com/article/detail/70568851",
+      "publishedAt": "2026-11-04",
+      "evidence": "经Cubox限定AceCamp列表取得授权全文，自有表述整理；未使用平台AI insight。原文需AceCamp权限；匿名专家数字不是公司披露，未获外部交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "文章精读",
+        "DeepSeek",
+        "中国模型",
+        "长程任务",
+        "国产算力"
+      ],
+      "research": {
+        "meetingDate": "原文标注2026/11/04 10:47:04；实际访谈日未披露",
+        "savedAt": "2026-11-04 +08:00",
+        "updatedAt": "2026-11-05T00:44:06Z",
+        "sample": "一篇匿名专家问答；下一代参数、发布时间和芯片量均未获官方确认",
+        "topics": [
+          {
+            "heading": "渠道主张",
+            "bullets": [
+              "Pro继续规模化、Flash压低激活与token成本；6—8T参数仅是匿名说法。",
+              "1,017版本重点被描述为压缩CPU/SSD/HBM占用，不等同官方下一代路线。"
+            ]
+          },
+          {
+            "heading": "失败模式与反证",
+            "bullets": [
+              "连续100轮后召回准确率下降，长时间使用输出不稳定；长任务每一步偏差会累积。",
+              "开源推理框架未覆盖存储、路由、推测解码等生产模块，harness也未成熟。"
+            ]
+          },
+          {
+            "heading": "国产算力与验证",
+            "bullets": [
+              "2027百万芯片、2028—2029训练成熟为渠道预测，不作为出货或收入基准。",
+              "继续核对DeepSeek官方GitHub、模型卡、API价格、真实长任务和国产卡生产集群。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-04",
+    "snapshot": [
+      {
+        "label": "纳斯达克",
+        "displayValue": "25,736.51",
+        "change": 1.44,
+        "displayChange": "+1.44%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,688.62",
+        "change": 1.58,
+        "displayChange": "+1.58%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "53,356.12",
+        "change": 3.03,
+        "displayChange": "+3.03%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "10,268.65",
+        "change": -3.13,
+        "displayChange": "-3.13%",
+        "note": "与三大指数明显背离"
+      },
+      {
+        "label": "10年美债",
+        "displayValue": "4.89%",
+        "change": -6,
+        "displayChange": "-6bp",
+        "note": "收盘附近4.894%，日变动约-5.8bp"
+      }
+    ],
+    "snapshotNote": "美国2026-11-04最近完整交易日。Wind由用户安装，但当前会话未暴露可调用工具；完整对齐历史序列不可得，按规则省略整个重点趋势栏目。",
+    "performance": [
+      {
+        "name": "纳指（11/4）",
+        "changePct": 1.44
+      },
+      {
+        "name": "标普（11/4）",
+        "changePct": 1.58
+      },
+      {
+        "name": "道指（11/4）",
+        "changePct": 3.03
+      },
+      {
+        "name": "SOX（11/4）",
+        "changePct": -3.13
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "APP",
+        "name": "AppLovin",
+        "session": "after-hours",
+        "asOf": "2026-11-04 盘后早段 ET",
+        "changePct": 15.9,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "Q3收入/EPS、现金流与Q4指引强于预期",
+        "url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Third-Quarter-2026-Financial-Results/default.aspx"
+      },
+      {
+        "symbol": "SNAP",
+        "name": "Snap",
+        "session": "after-hours",
+        "asOf": "2026-11-04 18:09 ET",
+        "changePct": -9.8,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "收入/用户增长不及关注点，虽恢复GAAP盈利仍被抛售",
+        "url": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx"
+      },
+      {
+        "symbol": "QCOM",
+        "name": "Qualcomm",
+        "session": "after-hours",
+        "asOf": "2026-11-04 21:34 UTC",
+        "changePct": -4.9,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量",
+        "catalyst": "手机芯片收入-26%，Q1利润指引中点略低于预期",
+        "url": "https://investor.qualcomm.com/financial-information"
+      },
+      {
+        "symbol": "ARM",
+        "name": "Arm",
+        "session": "after-hours",
+        "asOf": "2026-11-04 16:20 ET",
+        "changePct": -3.55,
+        "relativeVolume20d": null,
+        "volumeNote": "盘后缺可比20日量比，未称放量；随后波动收窄",
+        "catalyst": "业绩/指引稳健，但高估值与兑现节奏压制股价",
+        "url": "https://newsroom.arm.com/news/arm-q2-fye27-results"
+      }
+    ],
+    "selectionNote": "动态选择4家盘后绝对涨跌显著的广告、社交与半导体公司；涨跌均以当天常规收盘为基准，时点分别标注，未以全天成交量冒充盘后量比。",
+    "sources": [
+      {
+        "name": "AP美股收盘",
+        "url": "https://apnews.com/hub/financial-markets"
+      },
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://indexes.nasdaq.com/Index/Overview/SOX"
+      },
+      {
+        "name": "美国财政部收益率",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      },
+      {
+        "name": "公司IR",
+        "url": "https://www.sec.gov/edgar/search/"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "OpenAI",
+      "status": "已完成／有更新",
+      "url": "https://openai.com/news/",
+      "note": "检查官方新闻、Release Notes、产品页与核心团队；确认Images 2.6、Pierre拟收购、安全研究及受限GovCloud发布，均按生效/待交割/受限对象区分。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "已完成／无可核实新增产品事实",
+      "url": "https://x.com/thsottiaux",
+      "note": "检查近24小时并回查7天；公开索引仅见11月4日泛谈早期Agent的帖子，X原帖全文读取受限。共享ChatGPT/Codex额度仍以OpenAI帮助文档确认的12月起、Plus/Pro/Business、Instant除外为准，未重复收录。"
+    },
+    {
+      "name": "Anthropic与核心成员",
+      "status": "已完成／无新基础模型",
+      "url": "https://www.anthropic.com/news",
+      "note": "检查官方新闻、Claude产品页与核心成员公开渠道；未发现11月4日后新的基础模型或Claude Duet正式更新。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已完成／官方无新发布；渠道精读",
+      "url": "https://api-docs.deepseek.com/news/news250821",
+      "note": "官方API更新、GitHub/HF无11月4日新模型；AceCamp匿名调研另列，6—8T参数与国产芯片时间表未获官方核验。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已完成／无新发布",
+      "url": "https://www.minimax.io/news",
+      "note": "检查官网、HF、GitHub与API；最新仍为M3.1 Flash 10月19日相关更新，未重复。"
+    },
+    {
+      "name": "Qwen",
+      "status": "已完成／无新发布",
+      "url": "https://huggingface.co/Qwen",
+      "note": "检查官方HF、GitHub与模型页；未发现近24小时新基础模型或定价变更。"
+    },
+    {
+      "name": "Kimi / Moonshot AI",
+      "status": "已完成／有新权重与独立测评",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "note": "确认11月4日开放K3.1-Pro权重；分别核对官方模型卡、Artificial Analysis、Plotly实测与HN反例。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "已完成／无新发布",
+      "url": "https://huggingface.co/zai-org",
+      "note": "检查官网、HF、GitHub、API；未发现近24小时新模型/小版本或价格变化。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已完成／无新发布",
+      "url": "https://www.stepfun.com/",
+      "note": "检查官网与公开模型渠道；未发现近24小时新模型或开放方式变化。"
+    },
+    {
+      "name": "中国其他重要模型",
+      "status": "已完成／无足够可核实新增",
+      "url": "https://huggingface.co/models",
+      "note": "补查百度、字节、腾讯、华为等近24小时/7天官方渠道；未把新闻聚合摘要当正式发布。"
+    },
+    {
+      "name": "Artificial Analysis / Epoch / METR",
+      "status": "部分完成",
+      "url": "https://artificialanalysis.ai/models/kimi-k3-1-pro-open-weights",
+      "note": "AA已出现K3.1-Pro open weights v5测评；Epoch与METR尚未发现发布后首日对应报告。"
+    },
+    {
+      "name": "last30days",
+      "status": "已执行／部分覆盖",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "固定提交832d095、v3.28.1、Python3.12，按plan执行7天窗口，仅reddit/youtube/hackernews/github且no-browser-cookies；HN返回2条（355分/91评），Reddit 403 auth-failed，YouTube no-results，GitHub 0条。未把失败写成无讨论。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "已完成／Boston论坛仍缺原始讲话",
+      "url": "https://bostoninvestmentconference.org/",
+      "note": "检查主办方、Ted Seides与本人公开渠道；仅能核验10月29日14:45—15:30 EDT议程，仍无原始音视频/字幕/文字稿，未用TBPN或Sohn旧内容冒充。"
+    },
+    {
+      "name": "Brad Gerstner / Altimeter",
+      "status": "已完成／有新节目",
+      "url": "https://www.youtube.com/watch?v=9Asgxtk_kkI",
+      "note": "确认11月4日All-In选举直播中的AI基础设施判断；保留10—15GW为个人估计，并附节目时点。"
+    },
+    {
+      "name": "Sarah Guo / Elad Gil",
+      "status": "已完成／无新长访谈",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "note": "检查本人、播客与活动渠道并回查7天；未发现新的可核验长访谈或长帖。"
+    },
+    {
+      "name": "Sundar Pichai / Andy Jassy",
+      "status": "已完成／无新长访谈",
+      "url": "https://www.youtube.com/",
+      "note": "跨平台检查本人、Google/Amazon及主持方；未把旧访谈剪辑或第三方转述当新访谈。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已完成／无新公开Takes",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "官网Public Markets Update、X/LinkedIn/YouTube互链均检查；最新公开Takes仍为10月15日。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已完成／有新Daily Spark",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "检查Torsten Slok及官方研究/播客；收录伊朗宏观压力，标注为机构观点。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已完成／11月4日有更新",
+      "url": "https://fundaai.substack.com/",
+      "note": "逐篇检查最新文章日期与公开段落；收录Texas AIDC许可风险，另见INNIO与PLTR文章线索，未读取付费墙后内容。"
+    },
+    {
+      "name": "The Information",
+      "status": "已完成／公开部分不足以独立成条",
+      "url": "https://www.theinformation.com/",
+      "note": "仅检查免费标题/导语；登录墙即止，未将未读独家当事实。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已完成／无新可核实文章",
+      "url": "https://econlab.substack.com/",
+      "note": "检查Ramp作者页、Substack、X、LinkedIn及视频检索；无足够新材料。"
+    },
+    {
+      "name": "Ramp AI Index / Ramp",
+      "status": "已完成／有常规数据页更新，未单独成条",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "检查AI Index、Top SaaS Vendors、公司社媒；11月4日SaaS榜使用约8.5万家Ramp客户样本，非全美企业，未发现改变AI份额判断的新增口径。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "已完成／无相关正式事实",
+      "url": "https://x.com/elonmusk",
+      "note": "原帖读取受限；公开可核实内容中无与本期TMT/宏观相关且需独立成条的新增。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已完成／无新正式财务披露",
+      "url": "https://x.com/SpaceX",
+      "note": "检查官方X、官网与公开公告；未发现近24小时新的季度业绩或重大TMT披露。"
+    },
+    {
+      "name": "美国科技公司财报/IR",
+      "status": "已完成／4家公司发布",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "逐项检查Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron、Corning、Coherent、Tianhong、Sandisk、AXT等；11月4日确认AppLovin、Qualcomm、Arm、Snap新财报，其余无当日新业绩或已在历史日报。"
+    },
+    {
+      "name": "播客固定池",
+      "status": "已完成／All-In有新内容",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "note": "按科技相关节目筛查小宇宙参考池、All-In、BG2、Big Technology、No Priors、SemiAnalysis等；本期可核验新增为All-In选举直播，文学社科/消费等排除。"
+    },
+    {
+      "name": "Cubox AceCamp",
+      "status": "已完成／32篇元数据、5篇全文",
+      "url": "https://www.acecamptech.com/",
+      "note": "2026-11-04普通/归档分别分页到底；首屏为空但cursor非空继续，最终32篇去重、归档0篇。仅核验acecamptech.com原URL；全文读取5篇，不改收藏/归档/已读状态。"
+    },
+    {
+      "name": "美国政治与战争",
+      "status": "已完成／选举结果重要，战争未见已落实新停火",
+      "url": "https://apnews.com/hub/election-2026",
+      "note": "民主党赢得国会两院控制权，但部分席位仍待认证；美伊/俄乌谈判与中美政治均区分表态、拟议会晤和已落实政策，油价下跌不写成停火。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "已完成／无新增总量工具",
+      "url": "https://www.pbc.gov.cn/",
+      "note": "检查央行、金融监管总局、证监会与财政部；截至采集无11月4日新增总量政策，未把股市反弹当政策投放。"
+    },
+    {
+      "name": "美国SOX与全球资金面",
+      "status": "已完成",
+      "url": "https://indexes.nasdaq.com/Index/Overview/SOX",
+      "note": "核对SOX、美股三大指数、A/港/日/韩/台；交易日与资金口径写入市场卡。"
+    },
+    {
+      "name": "Wind / 市场图表",
+      "status": "未完成／当前会话未暴露可调用工具",
+      "url": "https://www.wind.com.cn/",
+      "note": "尊重用户已安装状态；未声称未安装。因无法取得SOX、CSP等权、IGV、10Y四组完整对齐历史，按规则省略整个重点趋势栏目；保留已核验快照、当日涨跌与异动。"
+    }
+  ],
+  "updatedAt": "2026-11-05T00:44:06Z"
+}
