@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-10-30T02:10:43.777Z",
+  "version": 2,
+  "updatedAt": "2026-11-05T05:29:13Z",
   "earnings": {
     "companies": [
       {
@@ -41,6 +41,64 @@
       "按人物、主办方与主持人跨平台查新论坛；日期以原始活动/录制/发布分别注明。",
       "2026-10-29 Boston场次仅核验到官方议程，未获原始讲话；拿到文字稿或字幕前不编造观点。",
       "10月27日TBPN及5月Sohn不是10月29日Boston场，不以旧节目替代新讲话。"
+    ]
+  },
+  "fixedResearchSources": {
+    "sources": [
+      {
+        "name": "TrendForce · 官方Substack",
+        "type": "产业链新闻",
+        "people": [
+          "TrendForce / 集邦咨询"
+        ],
+        "url": "https://insights.trendforce.com/",
+        "focus": "每日独立检查新文章、Weekly Radar与Ground Truth：半导体、存储、封装、GPU/CPU、MLCC和数据中心供给。机构估算、样本/方法、公司披露分别标注；免费订阅/付费墙不绕过。",
+        "links": [
+          {
+            "name": "Substack",
+            "url": "https://insights.trendforce.com/"
+          },
+          {
+            "name": "Archive",
+            "url": "https://insights.trendforce.com/archive"
+          },
+          {
+            "name": "TrendForce官方主站",
+            "url": "https://www.trendforce.com/"
+          }
+        ]
+      },
+      {
+        "name": "Citrini Research · Substack",
+        "type": "投资人观点",
+        "people": [
+          "Citrini Research",
+          "Citrini Semis"
+        ],
+        "url": "https://www.citriniresearch.com/",
+        "focus": "每日独立检查主题/半导体/宏观文章及公开Notes，优先AI、软件、机器人、基建与融资条件；投资判断、情景和自报收益不当公司事实或独立测评。无关医药/消费不纳入；只用合法公开段落。",
+        "links": [
+          {
+            "name": "Substack",
+            "url": "https://www.citriniresearch.com/"
+          },
+          {
+            "name": "Archive",
+            "url": "https://www.citriniresearch.com/archive"
+          },
+          {
+            "name": "About",
+            "url": "https://www.citriniresearch.com/about"
+          }
+        ]
+      }
+    ],
+    "requiredChecks": [
+      "TrendForce Substack：独立检查archive、Weekly Radar、Ground Truth及新文公开段落，逐篇保留日期与数据方法，单列sourceChecks",
+      "Citrini Research Substack：独立检查archive、State of the Themes、Semis/Market Memos及公开Notes，区分机构观点与事实，单列sourceChecks"
+    ],
+    "rules": [
+      "2026-11-05新增长期固定来源：TrendForce官方Substack https://insights.trendforce.com/（archive、Weekly Radar、Data Center Tracker/Ground Truth及当年sitemap）和Citrini Research https://www.citriniresearch.com/（archive、State of the Themes、Semis Memos、Market Memos、公开Notes）每天分别实查最近24小时、回查7天，单列sourceChecks，不只登记名单或看主页。逐篇核对原始绝对发布日期、实际可读范围，旧文补录按原日标记；重要TMT新观点须形成正文条目，不仅留检查记录。TrendForce为机构产业研究，价格/交期/产能等估算保留样本、统计期、单位与方法，不能当公司披露或独立模型评测；Citrini为投资人观点，情景、组合动作、自报收益与可核事实分开，category=投资人观点，不重复市场栏。仅用合法免费公开段落；免费订阅/登录墙与付费墙均止步，不注册、不购买、不绕过，只有标题/导语不足以支撑结论时仅写sourceChecks。筛选AI、半导体、云、数据中心、软件、机器人与TMT宏观资金条件，排除无关医药/消费；涉及公司/政策关键事实回到IR、SEC或官方原文核验，未核实细节不得写成事实。"
     ]
   }
 }
