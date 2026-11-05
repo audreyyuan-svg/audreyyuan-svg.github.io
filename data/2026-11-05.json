@@ -4,13 +4,13 @@
   "reportType": "daily",
   "archiveSummary": "Kimi K3.1-Pro开放权重后在AA开源榜居首，但首token约146秒、单任务37分钟且部署门槛高；AppLovin收入/EPS超预期盘后涨约15.9%，Qualcomm与Arm虽交出稳健结果仍盘后下跌。",
   "intro": "今天最重要的结论是“能力与可用性、收入与股价反应继续分化”。Kimi K3.1-Pro完成从API到开放权重，独立统一评测显示开源综合能力领先，但速度、成本和2.8T总参数的部署门槛使其尚非普惠替代；真实数据任务成功率高，却暴露个别任务工具调用失控。财报端，AppLovin的广告增长与现金流显著超预期，盘后大涨；Qualcomm和Arm的总量/指引不弱，但手机下滑、高估值与利润预期压过利好。市场端三大指数上涨、SOX逆势跌3.1%，显示资金从AI硬件集中敞口向更广泛资产轮动。",
-  "coverage": "优先覆盖2026-11-04 08:30至2026-11-05 08:30（Asia/Shanghai）的新增，并回查前7天漏项；市场使用2026-11-04各地最近完整交易日。AceCamp按2026-11-04北京时间自然日收藏窗口限定采集；未覆盖本次截点后内容。",
+  "coverage": "优先覆盖2026-11-04 08:30至2026-11-05 08:30（Asia/Shanghai）的新增，并回查前7天漏项；市场使用2026-11-04各地最近完整交易日。AceCamp按2026-11-04北京时间自然日收藏窗口限定采集；未覆盖本次截点后内容。 2026-11-05 13:29（Asia/Shanghai）应用户要求专项补入TrendForce与Citrini近7天原文；此次仅扩展两源，不代表其他来源重新检查至13:29。",
   "takeaways": [
     "Kimi K3.1-Pro开放2.8T/104B激活权重，AA v5开源权重榜第1/25、综合46分；但首token约146秒、单任务约37分钟、3.68美元/任务，能力领先不等于低成本部署。",
     "真实任务给出更平衡评价：Plotly 43题答对42题、总成本13.47美元，但隐藏模式题用了73次工具调用；官方ProgramBench 31.5也显著落后Opus 5.5的65.0。",
     "AppLovin Q3收入+55%、EPS超预期、自由现金流约14亿美元，盘后约+15.9%；Qualcomm手机芯片收入-26%、Arm高估值约束，盘后分别约-4.9%与-3.6%。",
     "美股三大指数上涨1.4%—3.0%，SOX却跌3.13%至六个月低位；利率与油价下行未能抵消AI硬件政策/监管风险。",
-    "AceCamp昨日限定检索32篇，精读存储/HBM、Azure、800V与DeepSeek五篇；渠道数字均保留匿名归属，不当公司披露。"
+    "Citrini 11月4日转向相对价值与配对思路：AI采用仍增长，但融资与交付风险削弱高贝塔基建交易；TrendForce同时显示GPU趋紧、MLCC交期38周，供需紧与投资回报受压可以并存。"
   ],
   "sectionOverviews": {
     "technology": {
@@ -18,7 +18,8 @@
       "points": [
         "变化：Kimi从API转为开放权重；OpenAI扩张图像、代码与安全栈。",
         "分歧：榜单领先与真实任务效率、本地部署资本开支之间存在张力。",
-        "观察：Kimi后续量化/推理服务、Epoch/METR报告、Qualcomm非手机收入和Arm AGI CPU交付。"
+        "观察：Kimi后续量化/推理服务、Epoch/METR报告、Qualcomm非手机收入和Arm AGI CPU交付。",
+        "新增反证：Citrini看好AI采用但质疑基建交易回报；TrendForce显示紧缺按器件和容量分化，不能用单一供需叙事概括。"
       ]
     },
     "markets": {
@@ -260,6 +261,62 @@
         "财报",
         "互联网",
         "广告"
+      ]
+    },
+    {
+      "id": "trendforce-weekly-radar-008-20261102",
+      "category": "产业链新闻",
+      "title": "TrendForce：GPU转趋紧、MLCC交期38周，DRAM紧缺开始分容量",
+      "summary": "TrendForce 11月2日《Weekly Radar 008》公开段落将GPU供给由“平衡”调整为“趋紧”；MLCC交期延长至38周，DRAM交期降至19周但仍属“非常紧”，其中32GB/64GB RDIMM尤其紧张。这是机构供应链跟踪，不是厂商统一交期承诺；完整分项表、样本与方法位于免费订阅墙后，本次未读取。",
+      "why": "补录原发布日期。总交期略降不代表所有容量都缓解；采购与盈利判断应拆分具体容量和器件，而非用“存储全面紧缺/全面松动”概括。",
+      "source": "TrendForce官方Substack · 机构产业研究",
+      "url": "https://insights.trendforce.com/p/weekly-radar-008",
+      "publishedAt": "2026-11-02",
+      "evidence": "直接读取原文公开段落；免费订阅/登录墙即止。仅保留公开数据，样本数量与具体交期定义未披露，不能外推所有供应商。",
+      "tags": [
+        "TrendForce",
+        "产业链新闻",
+        "补录",
+        "存储",
+        "GPU",
+        "MLCC"
+      ]
+    },
+    {
+      "id": "trendforce-bumpless-bonding-20261030",
+      "category": "产业链新闻",
+      "title": "TrendForce：混合键合成本与洁净要求高，bumpless TCB仍有过渡空间",
+      "summary": "TrendForce 10月30日封装文章公开部分认为，微凸点缩小后，混合键合虽能提升互连密度，但成本和洁净要求推动行业探索中间路线。文中列出bumpless flip-chip、bumpless TCB和hybrid bonding，并援引SK海力士路线图，将bumpless TCB放在fluxless TCB与混合键合之间。设备商竞争、成本拆解与量产节奏在付费墙后，未读、不扩写。",
+      "why": "补录原发布日期。先进封装需求上升不等于所有订单直接转向hybrid bonder；需验证客户工艺选择、良率与单位产能成本。",
+      "source": "TrendForce官方Substack · 机构产业研究",
+      "url": "https://insights.trendforce.com/p/bumpless-bonding-technologies-and-suppliers",
+      "publishedAt": "2026-10-30",
+      "evidence": "仅依据付费墙前公开原文；SK海力士路线图为该文引用，本次未独立核对原图，不据此断言正式量产时间。",
+      "tags": [
+        "TrendForce",
+        "产业链新闻",
+        "补录",
+        "先进封装",
+        "混合键合"
+      ]
+    },
+    {
+      "id": "citrini-state-of-the-themes-20261104",
+      "category": "投资人观点",
+      "title": "Citrini：AI用量仍增长，但基建交易转向融资、交付与相对价值",
+      "summary": "Citrini 11月4日《State of the Themes》公开部分认为，AI使用量、支出和采用率仍会增长，但收入与资本开支的缺口、融资供给和项目延误，正在削弱此前高贝塔主题投资的回报不对称性。其所称“资本开支增速见顶”是投资判断，不是绝对资本开支下降的已确认事实；也不是从全面看多切换到全面看空。作者称组合表达将转向反转、配对和相对价值，具体持仓位于付费墙后，未读取。",
+      "why": "这与“算力需求仍强”的观点并不完全冲突：分歧在于增长预期、融资期限与项目兑现能否支持当前估值。观察订单转收入、债务到期与交付延期，而非把采用增长直接等同股票上涨。",
+      "source": "Citrini Research Substack · 投资人观点",
+      "url": "https://www.citriniresearch.com/p/state-of-the-themes-556",
+      "publishedAt": "2026-11-04",
+      "evidence": "直接阅读原文付费墙前公开论述；不是完整付费报告。自报收益、具体政策/桥贷金额等未独立核验，未收录为事实；未获取完整Citrindex持仓。",
+      "tags": [
+        "Citrini",
+        "投资人观点",
+        "AI资本开支",
+        "数据中心",
+        "融资",
+        "相反观点"
       ]
     },
     {
@@ -1107,7 +1164,19 @@
       "status": "未完成／当前会话未暴露可调用工具",
       "url": "https://www.wind.com.cn/",
       "note": "尊重用户已安装状态；未声称未安装。因无法取得SOX、CSP等权、IGV、10Y四组完整对齐历史，按规则省略整个重点趋势栏目；保留已核验快照、当日涨跌与异动。"
+    },
+    {
+      "name": "TrendForce Substack",
+      "status": "已实查／公开段落有增量；全文部分受限",
+      "url": "https://insights.trendforce.com/archive",
+      "note": "2026-11-05补查近24小时与前7天：11/3 Ground Truth #002、11/2 Weekly Radar 008、10/30 bumpless bonding。逐篇打开原文；11/3仅标题与方法导语，Google新增2.3GW未交叉核验，不作已确认建设/上线事实。11/2公开交期与10/30封装公开论述形成补录；免费订阅墙/付费墙即止，未读完整表、设备份额或成本。"
+    },
+    {
+      "name": "Citrini Research Substack",
+      "status": "已实查／11月4日新文已补入",
+      "url": "https://www.citriniresearch.com/p/state-of-the-themes-556",
+      "note": "2026-11-05检查官方archive与11/4 State of the Themes原文公开部分；最新文章已形成投资人观点条目。付费墙后的主题分项与完整持仓未读，未扩写。10/20药物研究文章非本次7天窗口且主题不符，不填充日报。"
     }
   ],
-  "updatedAt": "2026-11-05T00:44:06Z"
+  "updatedAt": "2026-11-05T05:29:13Z"
 }
