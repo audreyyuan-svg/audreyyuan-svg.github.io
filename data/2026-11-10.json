@@ -1,0 +1,719 @@
+{
+  "date": "2026-11-10",
+  "title": "2026-11-10｜Claude 5.2发布且独立测评分化；油价下挫推动美股宽幅反弹",
+  "reportType": "daily",
+  "archiveSummary": "Anthropic发布Claude Fable/Mythos 5.2，独立测评居前但ARC-AGI显示适配器与时限会显著改变成绩；油价下挫推动美股普涨，SOX不同数据源收盘口径存在差异。AceCamp定向返回42条元数据、按原链接去重40篇，全文读6篇。",
+  "intro": "今天的模型主线不是单一榜单冠军，而是能力、成本与评测设置的三角关系：Claude Fable/Mythos 5.2在多项独立榜单领先，但安全适配器、推理档位和最长12小时任务会显著改变结果。市场端，油价大跌缓和通胀担忧，推动美股出现量能略高于20日均值的宽幅反弹；中国与亚洲市场则表现分化。调研纪要继续严格区分匿名专家判断与公司披露。",
+  "coverage": "北京时间2026-11-09 00:00至2026-11-10 08:30，优先近24小时并回查7天漏项；市场采用各地2026-11-09最近完整交易日。所有时间均按原始来源保留并注明时区或收盘口径。",
+  "takeaways": [
+    "Anthropic发布Claude Fable 5.2与受验证组织使用的Mythos 5.2：同一底层模型、1M上下文、128K输出，标准价每百万token输入8美元/输出40美元，fast mode翻倍。",
+    "独立测评显示Fable 5.2在Vals、Epoch与Artificial Analysis居前，但ARC-AGI-3同一模型在标准与官方适配器下相差约18—29个百分点；成绩不能脱离工具适配、推理档位、时限和成本。",
+    "OpenAI上线Control Room，可在最长35秒内停止研究推理工作负载，并将ChatGPT Enterprise引入AWS Marketplace；前者是基础设施安全控制，后者是采购渠道扩展。",
+    "油价近月结算Brent跌5.85%、WTI跌4.38%，美股三大指数涨逾2%、市场宽度明显改善；但SOX官方与延迟行情源存在收盘口径冲突，日报明确降级披露。",
+    "AceCamp 11月9日定向返回42条、按原链接去重40篇，全文读6篇；渠道材料共同指向Agent的CPU/DRAM增量、广告商业化与行业数据壁垒，但关键数字均未获公司确认。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "Claude 5.2把模型竞争推进到“高能力、高成本、强适配”的阶段：官方称速度提升30%，独立榜单领先，但真实任务结果对适配器和运行时长高度敏感。OpenAI同时强化研究工作负载的紧急停止能力，并扩展企业采购渠道。中国模型公司近24小时没有可核验的新版本，未重复旧榜单。",
+      "points": [
+        "变化：Claude 5.2发布；OpenAI Control Room与AWS Marketplace上新。",
+        "分歧/反证：ARC-AGI适配器差异巨大，Vals也显示部分医疗、税务与多模态软件任务并非第一。",
+        "观察：72小时内的可复现实测、实际token/任务成本、长任务超时率及Mythos验证开放范围。"
+      ]
+    },
+    "markets": {
+      "summary": "油价快速回落缓和通胀担忧，推动美国市场出现量价配合的普涨，但利率端并未同步大幅缓和，10Y仍在4.86%附近。亚洲市场中日本与台湾强弹，A股和港股偏弱；中美关税与出口管制暂停延长两个月，属于临时缓和而非结构性逆转。",
+      "points": [
+        "变化：美股三大指数涨2.15%—2.74%，成交量约为20日均值1.01倍；Brent/WTI显著下跌。",
+        "分歧/反证：SOX收盘口径冲突；油价回落和空头回补不等于长期增量资金确认。",
+        "观察：美国CPI、12月加息定价、半导体反弹后续量能及中国公开市场净投放。"
+      ]
+    },
+    "research": {
+      "summary": "AceCamp限定来源返回42条元数据、按原链接去重40篇并全文读6篇。较有价值的交叉结论是：Agent计算增加机柜外CPU与DRAM需求，但效率高度取决于任务串并行和企业数字化底座；广告与垂直行业落地仍受归因、权限和专有数据约束。所有结论均为匿名专家/渠道观点。",
+      "points": [
+        "变化：Agent计算资源讨论从GPU延伸至CPU核秒、DRAM与工具执行环境。",
+        "分歧/反证：专家给出的模型版本、市场份额和单位资源数字缺少官方或样本交叉验证。",
+        "观察：真实任务核秒/token曲线、ChatGPT广告产品披露、AI数据服务收入与具身数据交付规模。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "anthropic-claude-fable-mythos-52-20261109",
+      "category": "模型发布",
+      "title": "Anthropic发布Claude Fable 5.2与Mythos 5.2",
+      "summary": "Anthropic称两者使用同一底层模型：Fable 5.2带完整安全护栏并普遍开放，Mythos 5.2面向完成验证的组织。官方称相对5.1快约30%；标准API价格为每百万token输入8美元、输出40美元，fast mode为16/80美元。模型支持1M上下文、128K输出，adaptive thinking始终开启，并引入effort控制；Fable已覆盖Anthropic平台及AWS、Google Cloud、Azure。",
+      "why": "这是高端闭源模型的新价格/性能基准；Mythos的组织验证和Fable的安全边界也会影响企业采用、合规与可复现性。",
+      "source": "Anthropic官方发布与Claude Platform文档",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "publishedAt": "2026-11-09",
+      "evidence": "官方自测与产品规格；未将官方性能宣称当作独立测评。工具选择、采样参数和数据保留存在迁移注意事项。",
+      "tags": [
+        "模型发布",
+        "Anthropic",
+        "Claude",
+        "API价格",
+        "官方发布"
+      ],
+      "relatedSources": [
+        {
+          "title": "Claude Fable 5.2模型文档",
+          "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+          "date": "2026-11-09",
+          "evidence": "上下文、输出、推理、价格与兼容性规格"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-52-independent-evals-20261109",
+      "category": "独立测评",
+      "title": "Claude Fable 5.2独立测评｜领先榜单，但适配器与时限显著改变结论",
+      "summary": "Artificial Analysis给出Intelligence Index 65、测试任务成本约26.54美元；Epoch ECI为174。Vals在High effort下给出综合71.31%、约17.94美元/测试，金融、Vibe与EMB居前，但HLAB为5%、Tax Agent为32.09%，多模态SWE也落后于Opus 5.5。ARC-AGI-3更揭示设置敏感性：High标准适配器79.3、官方provider adapter 97.7；Max分别65.7与94.9，且多项Max任务跑满12小时。",
+      "why": "同一模型可以因推理档位、工具适配与时间预算得到完全不同的“能力”结论；投资和选型应同时看成功率、成本、时延和失败任务。",
+      "source": "Artificial Analysis、Epoch、Vals AI、ARC Prize",
+      "url": "https://www.vals.ai/models/anthropic_claude-fable-5-2",
+      "publishedAt": "2026-11-09",
+      "evidence": "独立测评；保留版本、High/Max档位、测试成本与时限。METR尚无Fable 5.2专项评估，旧Anthropic研发加速报告未混入。",
+      "tags": [
+        "独立测评",
+        "Claude",
+        "Artificial Analysis",
+        "Epoch",
+        "ARC-AGI",
+        "失败案例"
+      ],
+      "relatedSources": [
+        {
+          "title": "ARC-AGI Results",
+          "url": "https://arcprize.org/results/anthropic-claude-fable-5-2",
+          "date": "2026-11-09",
+          "evidence": "同模型标准与provider adapter、High与Max对照"
+        }
+      ]
+    },
+    {
+      "id": "openai-control-room-20261109",
+      "category": "核心团队",
+      "title": "OpenAI上线Control Room，研究推理任务可在最长35秒内停止",
+      "summary": "OpenAI披露Control Room集中追踪研究推理工作负载，并在推理层强制执行停止指令；从触发到停止的设计上限为35秒。系统采用fail-closed：Control Room不可用时不启动新任务。该能力已用于研究基础设施，其余工作负载将在数日内继续覆盖。",
+      "why": "前沿模型训练与推理的安全边界正从模型政策延伸到基础设施级实时控制，影响高风险研究的运营治理和审计。",
+      "source": "OpenAI官方",
+      "url": "https://openai.com/index/control-room/",
+      "publishedAt": "2026-11-09",
+      "evidence": "公司正式披露；35秒为设计上限，不代表所有任务均需35秒或已覆盖全部生产系统。",
+      "tags": [
+        "核心团队",
+        "OpenAI",
+        "基础设施安全",
+        "推理"
+      ]
+    },
+    {
+      "id": "chatgpt-enterprise-aws-marketplace-20261109",
+      "category": "产业链新闻",
+      "title": "ChatGPT Enterprise进入AWS Marketplace",
+      "summary": "OpenAI宣布ChatGPT Enterprise在AWS Marketplace上架，符合条件的客户可计入既有AWS承诺支出，功能与发布节奏与直接采购一致。该渠道与AWS Bedrock中的模型供给并行，重点是企业采购、账单与供应商管理便利，而非新模型发布。",
+      "why": "把ChatGPT采购纳入云承诺支出可降低企业采用摩擦，并强化AI应用层对云预算的争夺。",
+      "source": "OpenAI官方",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+      "publishedAt": "2026-11-09",
+      "evidence": "公司正式产品与渠道披露；未推断新增ARR或AWS独家关系。",
+      "tags": [
+        "产业链新闻",
+        "OpenAI",
+        "AWS",
+        "企业软件",
+        "商业化"
+      ]
+    },
+    {
+      "id": "spacex-starbase-power-compute-plan-20261109",
+      "category": "产业链新闻",
+      "title": "SpaceX申请Starbase燃气电厂与超算项目税收优惠",
+      "summary": "Reuters依据公开听证通知报道，SpaceX计划在得州Starbase建设自有燃气电厂与超算设施，初期阶段估算资本投入约240亿美元，并申请房产税减免；Starbase市委员会拟于12月9日审议。通知未披露税收优惠规模、期限、电厂容量或计算设施规模，因此这仍是申请与规划，不是已批准、已开工或已并网项目。",
+      "why": "若推进，AI/航天算力将进一步绕开电网排队、直接绑定燃气与本地审批；能源成本和政治阻力会成为TMT资本开支约束。",
+      "source": "公开听证通知；Reuters核验",
+      "url": "https://www.reuters.com/legal/transactional/spacex-plans-24-billion-gas-power-plant-data-center-project-texas-2026-11-09/",
+      "publishedAt": "2026-11-09",
+      "evidence": "公开文件与媒体核验；金额为初期估算，容量、税惠与最终投资均未确定。",
+      "tags": [
+        "产业链新闻",
+        "SpaceX",
+        "数据中心",
+        "电力",
+        "资本开支"
+      ]
+    },
+    {
+      "id": "trendforce-dram-essd-divergence-20261109",
+      "category": "产业链新闻",
+      "title": "TrendForce周报｜美国与中国DRAM/eSSD需求分化",
+      "summary": "TrendForce Weekly Radar 009的公开标题与导语称，美国需求保持强劲，而中国买方缩减DRAM与企业级SSD采购。免费公开部分未提供完整样本、价格序列和买方覆盖，因此本期只将其作为供应链方向线索，不据此推算全行业bit需求或厂商收入。",
+      "why": "若区域需求分化持续，存储景气会从统一涨价转为客户、产品和地区分层，影响Micron、Sandisk及云数据中心供应链的库存与议价。",
+      "source": "TrendForce Substack公开标题与导语",
+      "url": "https://insights.trendforce.com/",
+      "publishedAt": "2026-11-09",
+      "evidence": "只读免费公开部分；付费/登录内容未绕过，样本与完整方法缺失。",
+      "tags": [
+        "产业链新闻",
+        "TrendForce",
+        "DRAM",
+        "企业级SSD",
+        "存储"
+      ]
+    },
+    {
+      "id": "funda-ai-weekly-monetization-20261109",
+      "category": "投资人观点",
+      "title": "FUNDA AI周报｜长期AGI乐观与中期商业化约束并存",
+      "summary": "FUNDA AI 11月9日公开段落认为，长期AGI方向仍强，但2027年商业化会受预算、许可和需求兑现约束；其渠道估计约70%的领先实验室算力支出尚未由付费推理覆盖。该数字未给完整样本与审计口径，属于投资人/渠道判断，不是公司披露或独立行业统计。",
+      "why": "AI资本开支与付费推理收入之间的缺口决定融资需求、云合同可持续性和估值风险。",
+      "source": "FUNDA AI Substack公开文章",
+      "url": "https://fundaai.substack.com/",
+      "publishedAt": "2026-11-09",
+      "evidence": "投资人观点；70%为作者渠道估计，未外推为全行业事实。",
+      "tags": [
+        "投资人观点",
+        "FUNDA AI",
+        "AI商业化",
+        "资本开支"
+      ]
+    },
+    {
+      "id": "overseas-macro-rates-oil-20261109",
+      "category": "宏观点评",
+      "title": "海外宏观｜油价下挫缓和通胀担忧，长端利率仍高",
+      "summary": "11月9日美国收盘附近，2Y约4.56%、较前一完整交易日+5bp，10Y约4.86%、约+0.5bp；DXY收盘口径约101.67、跌0.62%。近月期货结算Brent 92.57美元/桶、跌5.85%，WTI 86.85美元/桶、跌4.38%。美伊谈判加速但尚无协议或停火，不能把总统暂缓新打击写成战争结束。",
+      "why": "油价回落短期改善风险偏好，但10Y维持高位意味着TMT折现率与融资成本并未同步下降。",
+      "source": "Reuters与公开收盘数据",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/",
+      "publishedAt": "2026-11-09T16:00:00-05:00",
+      "evidence": "收益率、美元和原油采用各自收盘/结算口径；原油为近月期货，未混用盘中和结算。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "原油",
+        "美伊"
+      ]
+    },
+    {
+      "id": "china-macro-repo-truce-20261109",
+      "category": "宏观点评",
+      "title": "中国宏观｜公开市场净回笼，中美临时缓和延长两个月",
+      "summary": "人民银行11月9日开展1820亿元隔夜买断式逆回购、利率1.25%，当日到期2260亿元，对应净回笼440亿元。与此同时，中国延长暂停24%对美额外关税、部分稀土管制与港口费用两个月，10%税率仍保留，暂停至2027年1月10日。前者是短期流动性操作，后者是临时缓和，均不等于无条件放水或结构性脱钩逆转。",
+      "why": "短端流动性与贸易摩擦共同影响中国科技资产风险偏好；实际传导取决于后续净投放、出口订单和政策执行。",
+      "source": "人民银行公告；官方政策与Reuters核验",
+      "url": "https://www.pbc.gov.cn/",
+      "publishedAt": "2026-11-09",
+      "evidence": "区分操作、到期和净投放；区分关税暂停、保留税率与永久取消。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "流动性",
+        "中美关系"
+      ]
+    },
+    {
+      "id": "us-market-recap-20261109",
+      "category": "市场资金面",
+      "title": "美国市场｜三大指数涨逾2%，半导体宽度修复但NVIDIA逆跌",
+      "summary": "11月9日完整交易日，道指+2.15%至52,389.75，标普500+2.35%至7,549.94，纳指+2.74%至25,253.14。Reuters称SOX约+6.9%，而Nasdaq官方延迟页为9,975.10、+6.23%，其他历史源为10,033.93、+6.85%，故不硬合并。NYSE/Nasdaq涨跌家数比分别4.06:1和3.34:1；全美成交18.98亿股对20日均值18.72亿股，约1.01倍。AMD+13.3%、Broadcom+8.8%，NVIDIA-4.2%。",
+      "why": "量能略高于均值且宽度改善，反弹质量好于单纯缩量修复；但油价驱动、空头回补和NVIDIA事件风险使持续性仍待验证。",
+      "source": "Reuters；Nasdaq官方与公开历史行情",
+      "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+      "publishedAt": "2026-11-09T16:00:00-05:00",
+      "evidence": "最近完整交易日；SOX冲突数据明确列出来源差异，仪表盘采用Nasdaq官方延迟页。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "市场宽度",
+        "成交量"
+      ]
+    },
+    {
+      "id": "asia-market-recap-20261109",
+      "category": "市场资金面",
+      "title": "亚洲市场｜日本与台湾强弹，A股和港股偏弱",
+      "summary": "11月9日：上证+0.32%至3,660.79、创业板-0.27%、沪深300+0.05%，A股成交约1.48万亿元、较前日减少约1752亿元；恒指-0.13%至24,448.95、恒科-0.92%，港股成交约1737亿港元。日经+2.33%、TOPIX+2.97%，东证Prime涨跌家数1415/123；KOSPI-0.81%至5,018.85；台湾加权+4.94%至41,661.70、成交约8639亿新台币。",
+      "why": "日本和台湾硬件权重市场快速修复，但A股/港股成交缩减、韩国逆跌，显示区域资金并未形成统一回流。",
+      "source": "交易所/指数公司数据与公开市场汇总",
+      "url": "https://kabutowire.com/en/news/tokyo-market-2026-11-09",
+      "publishedAt": "2026-11-09",
+      "evidence": "各市场最近完整交易日；日本外资日频未伪造，A股未使用供应商“主力净流入”替代全市场资金。",
+      "tags": [
+        "市场资金面",
+        "亚洲股市",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ]
+    },
+    {
+      "id": "acecamp-list-20261109",
+      "category": "调研纪要",
+      "title": "AceCamp 11月9日收藏｜40篇去重导航、6篇全文",
+      "summary": "Cubox服务端以AceCamp关键词定向检索并核验原URL精确属于acecamptech.com，普通收藏第二页返回42条元数据、按原URL去重为40篇，归档返回0篇；普通和归档均分页至nextCursor=null。已全文读取6篇，其余只作标题导航，不依据标题扩写。来源搜索受Cubox索引覆盖限制，不能声称穷尽全部私人收藏。",
+      "why": "把发现、全文读取与可验证结论分层，避免把平台标题或匿名渠道说法误当公司披露。",
+      "source": "用户授权Cubox只读服务；AceCamp原文",
+      "url": "https://www.acecamptech.com/",
+      "publishedAt": "2026-11-09",
+      "evidence": "只读普通/归档并分页到底；未改变收藏、归档或已读状态。42条元数据对应40个唯一原链接。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "全部动态"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": "2026-11-09",
+        "updatedAt": "2026-11-09",
+        "sample": "42条元数据、40个唯一原链接；6篇全文，其余仅导航",
+        "topics": [
+          {
+            "heading": "读取边界",
+            "bullets": [
+              "精确AceCamp主机",
+              "普通/归档分页到底",
+              "未读全文不扩写"
+            ]
+          },
+          {
+            "heading": "本期主线",
+            "bullets": [
+              "Agent CPU/DRAM",
+              "AI广告与商业化",
+              "垂直行业数据壁垒"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-openai-cost-deepseek-70569007",
+      "category": "调研纪要",
+      "title": "模型任务成本纪要｜低token价格不等于低完成成本",
+      "summary": "匿名专家认为，海外前沿模型通过审核、动态路由和上下文复用提高复杂任务成功率；DeepSeek类开源模型在已有模板、强编排和自部署场景仍具成本优势，复杂工作流中可能与高端模型形成“规划—执行—复核”分工。其对具体模型版本、SSD/KV cache降幅、OpenAI产品路线及行业份额的描述未获官方或模型卡验证，不能当作产品事实。AI制药和EDA部分的核心反证是：专有数据、实验验证与底层权限仍掌握在药企/EDA厂商手中。",
+      "why": "模型经济性应按任务成功率、编排成本和数据权限衡量，而不是只比较每百万token报价。",
+      "source": "AceCamp匿名专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569007",
+      "publishedAt": "2026-11-09T11:20:25+08:00",
+      "evidence": "已读全文；渠道观点，不是OpenAI、DeepSeek、药企或EDA公司披露。未验证产品名和数字已明确降级。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "OpenAI",
+        "DeepSeek",
+        "单位任务成本"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-09T23:28:46+08:00",
+        "updatedAt": "2026-11-09T23:28:47+08:00",
+        "sample": "单一匿名专家；公司与客户未披露",
+        "topics": [
+          {
+            "heading": "成本口径",
+            "bullets": [
+              "token报价≠任务完成成本",
+              "强编排利好开源模型",
+              "高端模型负责规划与复核"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "具体版本与硬件数字未验证",
+              "制药数据不开放",
+              "EDA权限与流片验证仍受限"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-agent-cpu-dram-70569016",
+      "category": "调研纪要",
+      "title": "Agent算力纪要｜增量CPU主要在工具执行，DRAM受任务形态与解码速度共同影响",
+      "summary": "匿名专家把Agent计算分为机柜内token处理、工具选择和机柜外工具/环境执行，认为代码与深度调研等串行“瘦高”任务的CPU核秒/token比更高，并会带动DRAM；其举例传统token处理约0.2—0.5核秒/千token，复杂任务可达约20核秒/千token。专家同时认为中国企业API与回调更成熟，Agent轮询等待少于北美旧系统。上述数字没有公开样本、测量脚本和硬件配置，且“20核秒接近上限”与其“未来可能更高”的说法存在内在张力。",
+      "why": "Agent基础设施的增量不只在GPU；CPU、DRAM和企业系统接口可能决定真实任务TCO，但投资测算必须先验证任务与硬件口径。",
+      "source": "AceCamp匿名专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569016",
+      "publishedAt": "2026-11-09T13:56:05+08:00",
+      "evidence": "已读全文；单位资源数字为专家经验值，缺少公开基准和样本，未外推为全行业。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Agent",
+        "CPU",
+        "DRAM"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-09",
+        "updatedAt": "2026-11-09",
+        "sample": "单一匿名基础设施专家；无公开测量脚本",
+        "topics": [
+          {
+            "heading": "资源链",
+            "bullets": [
+              "机柜内token处理",
+              "机柜外工具执行",
+              "CPU与DRAM强相关"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "核秒数字缺测量环境",
+              "上限判断前后有张力",
+              "中美效率差异缺企业样本"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-ai-data-services-20261109",
+      "category": "调研纪要",
+      "title": "AI数据服务纪要｜前沿需求转向长时程Agent、RL环境与具身数据",
+      "summary": "一位AI数据服务从业者称，数据工厂约占其所在公司收入60%—70%，前沿需求正从静态标注转向长时程Agent、可验证RL环境、多轮交互与安全红队；具身数据可能需要千万至上亿小时。其给出的每小时20—50美元、5000万小时对应10亿—25亿美元，以及部分供应商收入/年交付小时数，均为单一渠道估计，缺少合同、客户和审计口径。",
+      "why": "模型训练的约束从通用语料转向高质量交互环境与验证体系，可能改变数据服务商的收入结构和壁垒。",
+      "source": "AceCamp匿名专家纪要",
+      "url": "https://www.acecamptech.com/",
+      "publishedAt": "2026-11-09",
+      "evidence": "已读全文；供应商收入、价格与小时数均保留渠道归属，未作为公司披露。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "训练数据",
+        "强化学习",
+        "具身智能"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-09",
+        "updatedAt": "2026-11-09",
+        "sample": "单一数据服务从业者；客户与合同未披露",
+        "topics": [
+          {
+            "heading": "需求变化",
+            "bullets": [
+              "长时程Agent",
+              "RL环境与多轮交互",
+              "具身与安全红队"
+            ]
+          },
+          {
+            "heading": "待验证",
+            "bullets": [
+              "单位小时价格",
+              "供应商收入",
+              "客户交付规模"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "GitHub配置与历史",
+      "status": "已完成",
+      "url": "https://github.com/audreyyuan-svg/audreyyuan-svg.github.io/tree/main/data",
+      "note": "读取config v17、coverage-additions v2、data/index.json与11/9最新日报；本期仅新增11/10日报并更新日报索引，保留历史，不改前端/周月报。"
+    },
+    {
+      "name": "OpenAI官方",
+      "status": "已完成",
+      "url": "https://openai.com/news/",
+      "note": "检查近24小时并回看7天；核验Control Room与ChatGPT Enterprise上架AWS Marketplace。12月共享额度已归档，不重复。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "部分完成",
+      "url": "https://x.com/thsottiaux",
+      "note": "独立检查近24小时与7天回复/线程；X原帖直接读取受限。第三方公开查看器显示11/8有关Pro倍率与取消5小时限制的回复，但未获OpenAI定价/帮助文档完整交叉确认，只记缺口，不写成已全面生效。"
+    },
+    {
+      "name": "Anthropic官方与核心团队",
+      "status": "已完成",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "note": "读取11/9发布页、模型文档、迁移/兼容说明与系统安全材料；官方自测与独立测评分层。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已完成",
+      "url": "https://api-docs.deepseek.com/news/",
+      "note": "检查官网/更新日志、GitHub/Hugging Face、模型卡、API价格与开放方式；最新官方更新仍为10/17，近24小时无新模型/小版本。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已完成",
+      "url": "https://www.minimax.io/news",
+      "note": "检查官方发布、模型卡、GitHub/Hugging Face与API价格；最新正式版本仍为10/19 M3.1 Flash，近24小时无新发布。"
+    },
+    {
+      "name": "Qwen",
+      "status": "已完成",
+      "url": "https://qwenlm.github.io/",
+      "note": "检查官方博客、GitHub/Hugging Face、模型卡与云API；部分仓库两日前有维护活动，但对应模型为旧发布，不冒充新版本。"
+    },
+    {
+      "name": "Kimi/Moonshot",
+      "status": "已完成",
+      "url": "https://platform.moonshot.ai/docs",
+      "note": "检查官方文档、GitHub/Hugging Face与价格；K3.1 Pro已在11/5归档，近24小时无新版本。"
+    },
+    {
+      "name": "GLM/Z.ai",
+      "status": "已完成",
+      "url": "https://docs.z.ai/",
+      "note": "检查官方发布、GitHub/Hugging Face、模型卡与价格；仅见仓库维护，无新模型发布。"
+    },
+    {
+      "name": "StepFun",
+      "status": "部分完成",
+      "url": "https://platform.stepfun.com/docs/overview",
+      "note": "检查官网/文档与公开代码/模型入口；近24小时未检出可核验新版本，部分页面搜索覆盖有限。"
+    },
+    {
+      "name": "独立测评",
+      "status": "已完成",
+      "url": "https://artificialanalysis.ai/",
+      "note": "读取Fable 5.2的Artificial Analysis、Epoch、Vals与ARC Prize结果；记录High/Max、适配器、成本与12小时上限。METR无Fable 5.2专项报告，未以旧报告替代。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "部分完成",
+      "url": "https://bostoninvestmentconference.com/agenda",
+      "note": "检查本人、主办方、Ted Seides及公开播客/视频；10/29论坛仍未找到原始音视频/字幕/文字稿，不用旧TBPN/Sohn内容冒充。"
+    },
+    {
+      "name": "Brad Gerstner/Altimeter",
+      "status": "已完成",
+      "url": "https://www.altimeter.com/",
+      "note": "检查本人/机构与BG2公开渠道，近24小时及7天内未见新的可核验长访谈。"
+    },
+    {
+      "name": "Sarah Guo与Elad Gil",
+      "status": "已完成",
+      "url": "https://www.conviction.com/",
+      "note": "跨本人/机构、播客、YouTube检查近24小时并回看7天；未见新的可核验长访谈/长帖。"
+    },
+    {
+      "name": "Sundar Pichai与Andy Jassy",
+      "status": "已完成",
+      "url": "https://www.youtube.com/",
+      "note": "检查本人/公司、主持方、播客和视频平台；近24小时无新本人长访谈，旧采访转载未重复。"
+    },
+    {
+      "name": "The Information",
+      "status": "部分完成",
+      "url": "https://www.theinformation.com/",
+      "note": "检查公开标题与导语；11/9公开Briefing涉及Claude发布，已回到Anthropic原文核验。订阅墙即止，未读正文未形成结论。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已完成",
+      "url": "https://fundaai.substack.com/",
+      "note": "读取11/9最新文章日期与公开段落并形成投资人观点；渠道估计未当公司披露或独立测评。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "部分完成",
+      "url": "https://x.com/elonmusk",
+      "note": "公开X原帖读取受限；未把索引摘要冒充原帖全文，未收录无关日常帖。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已完成",
+      "url": "https://www.spacex.com/updates/",
+      "note": "公司官方渠道未见同日完整项目披露；Starbase项目依据公开听证通知与Reuters核验，明确为规划/申请。"
+    },
+    {
+      "name": "TrendForce",
+      "status": "部分完成",
+      "url": "https://insights.trendforce.com/",
+      "note": "实查11/9 Weekly Radar 009标题与免费导语；完整方法/样本不可读，未绕过订阅墙，只将美中DRAM/eSSD分化作为线索。"
+    },
+    {
+      "name": "Citrini Research",
+      "status": "已完成",
+      "url": "https://citriniresearch.substack.com/",
+      "note": "实查Substack最新文章仍为11/4 State of the Themes: The End of the Trade，已在历史覆盖；近24小时无新公开长文。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已完成",
+      "url": "https://econlab.substack.com/",
+      "note": "检查作者页、Substack与公开社媒互链；近24小时无新公开研究。"
+    },
+    {
+      "name": "Ramp AI",
+      "status": "已完成",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "AI Index/Economics Lab最新统计期未变化；Ramp客户样本不外推全体美国企业。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已完成",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "检查Takes、Public Markets Update及官方互链；最新公开核心内容仍为10/15，近24小时无新观点。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已完成",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "实查11/9 Daily Spark“Price Discovery Is Still Broken”；其盈利/亏损小盘股对比为机构图表观点，信息增量不足未单列。"
+    },
+    {
+      "name": "美国科技公司IR/SEC与财报",
+      "status": "已完成",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "检查Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron、Sandisk、AXT等；11/9无新固定名单财报，CoreWeave/AMAT/CSCO为后续待发布，不提前写业绩。"
+    },
+    {
+      "name": "战争、政治与选举",
+      "status": "已完成",
+      "url": "https://www.reuters.com/world/",
+      "note": "检查美伊、俄乌、中美与美国中期选举后续。谈判/匿名官员表态不等于协议；中美暂停延长按已落实政策分层。"
+    },
+    {
+      "name": "Cubox AceCamp",
+      "status": "已完成",
+      "url": "https://www.acecamptech.com/",
+      "note": "只读连接实时可用；普通/归档均继续空页后的nextCursor至null。普通返回42条元数据、40个唯一原链接，归档0篇；全文读6篇，未改收藏/归档/已读。来源索引不保证全库穷尽。"
+    },
+    {
+      "name": "last30days",
+      "status": "部分完成",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "按固定提交832d095实际执行--days 1、reddit/youtube/hackernews/github、--no-browser-cookies；Reddit直连403但Arctic Shift补充恢复20条，HN 24条、GitHub 21条、YouTube区间内0条。发现的Fable/Mythos线索已回到原始测评核验。"
+    },
+    {
+      "name": "Wind/市场图表",
+      "status": "部分完成",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "Wind已由用户安装，但本次工具面未暴露可调用Wind工具。用公开收盘数据制作速览、涨跌图与科技异动；20日量比缺失置null。四组完整对齐历史序列不足，按规则省略trend字段。"
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-09",
+    "snapshot": [
+      {
+        "label": "纳斯达克",
+        "displayValue": "25,253.14",
+        "change": 2.74,
+        "displayChange": "+2.74%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,549.94",
+        "change": 2.35,
+        "displayChange": "+2.35%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "52,389.75",
+        "change": 2.15,
+        "displayChange": "+2.15%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "9,975.10",
+        "change": 6.23,
+        "displayChange": "+6.23%",
+        "note": "采用Nasdaq官方延迟页；其他公开源为10,033.93/+6.85%，Reuters约+6.9%，存在收盘口径冲突"
+      },
+      {
+        "label": "10年美债",
+        "displayValue": "4.86%",
+        "change": 0.5,
+        "displayChange": "+0.5bp",
+        "note": "11/9收盘附近4.864%，相对前一完整交易日约+0.5bp"
+      }
+    ],
+    "snapshotNote": "美国2026-11-09完整常规交易日。SOX数据源冲突，仪表盘采用Nasdaq官方延迟页并在注释列出其他口径；不把冲突数字硬合并。",
+    "performance": [
+      {
+        "name": "纳指（11/9）",
+        "changePct": 2.74
+      },
+      {
+        "name": "标普（11/9）",
+        "changePct": 2.35
+      },
+      {
+        "name": "道指（11/9）",
+        "changePct": 2.15
+      },
+      {
+        "name": "SOX（11/9，Nasdaq口径）",
+        "changePct": 6.23
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "session": "regular",
+        "asOf": "2026-11-09 16:00 ET",
+        "changePct": 13.26,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得同口径此前20个完整交易日均量，不称放量",
+        "catalyst": "半导体风险修复、分析师升级与Google Cloud合作催化",
+        "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      },
+      {
+        "symbol": "AVGO",
+        "name": "Broadcom",
+        "session": "regular",
+        "asOf": "2026-11-09 16:00 ET",
+        "changePct": 8.78,
+        "relativeVolume20d": null,
+        "volumeNote": "公开源仅称高于均量，无可复核20日比值",
+        "catalyst": "SOX普涨与前周暴跌后的风险修复；无当日新财报",
+        "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      },
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA",
+        "session": "regular",
+        "asOf": "2026-11-09 16:00 ET",
+        "changePct": -4.27,
+        "relativeVolume20d": null,
+        "volumeNote": "成交量相对三个月均量约3.9倍，但非20日口径，故置null",
+        "catalyst": "公司内部调查外国情报机构可能针对CEO黄仁勋的指控；公司称无理由认为信息已泄露",
+        "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      },
+      {
+        "symbol": "TSLA",
+        "name": "Tesla",
+        "session": "regular",
+        "asOf": "2026-11-09 16:00 ET",
+        "changePct": 5.54,
+        "relativeVolume20d": null,
+        "volumeNote": "20日量比缺失，不称净流入",
+        "catalyst": "大盘风险偏好回升及robotaxi扩展预期",
+        "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      }
+    ],
+    "selectionNote": "精选覆盖半导体、AI硬件与互联网/汽车科技；以绝对涨跌幅和基本面催化筛选。未取得可复核20日量比时一律置null，成交量不等于净流入。",
+    "sources": [
+      {
+        "name": "Reuters美国市场收盘",
+        "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      },
+      {
+        "name": "Nasdaq SOX官方指数页",
+        "url": "https://www.nasdaq.com/market-activity/index/sox"
+      }
+    ]
+  },
+  "updatedAt": "2026-11-10T00:35:00Z"
+}
