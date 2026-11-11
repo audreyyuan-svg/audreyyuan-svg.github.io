@@ -1,6 +1,6 @@
 {
   "title": "AI Tracker · 更新规范",
-  "version": 17,
+  "version": 18,
   "constraints": "零新增付费。只用公开免费网页、现有套餐内搜索及浏览工具。不绕过付费墙、不购买数据、不复制报纸全文或用户截图；公开网页只发布简短事实摘要、编辑判断与链接。",
   "audience": "公开阅读网页；只有站点所有者的已验证连接可以写入。保持用户选择的公开权限，不修改站点分享设置。",
   "sources": [
@@ -678,6 +678,34 @@
           "url": "https://github.com/larksuite/cli"
         }
       ]
+    },
+    {
+      "name": "TrendForce · Citrini Research",
+      "type": "产业链新闻／投资人观点",
+      "people": [
+        "TrendForce",
+        "Citrini Research"
+      ],
+      "url": "https://insights.trendforce.com/",
+      "focus": "每天分别检查TrendForce Substack/公开研究与Citrini Research最新文章及公开段落，回查7天。TrendForce渠道数据保留样本、统计期与供应链口径；Citrini属于投资人/主题研究观点，不当作公司披露或独立模型测评。订阅墙即止，不购买、不绕过。",
+      "links": [
+        {
+          "name": "TrendForce Substack",
+          "url": "https://insights.trendforce.com/"
+        },
+        {
+          "name": "TrendForce公开研究",
+          "url": "https://www.trendforce.com/presscenter/"
+        },
+        {
+          "name": "Citrini Research",
+          "url": "https://www.citriniresearch.com/"
+        },
+        {
+          "name": "Citrini Archive",
+          "url": "https://www.citriniresearch.com/archive"
+        }
+      ]
     }
   ],
   "pendingSources": [],
@@ -700,7 +728,8 @@
     "美伊、俄乌战争/谈判、中美重要政治事件与美国选举：逐向每日实查",
     "Cubox：仅检查前一日AceCamp纪要，普通/归档分别分页，列全标题与原始链接，精选数据密度高者全文精读；其他收藏不入站",
     "周报：飞书久谦文件夹及子文件夹本统计期新增/实质更新纪要，先确认文件夹唯一性和只读授权",
-    "Tibo @thsottiaux：公开X原帖/重要回复与线程每日独立检查；Codex/Work额度、重置、模型与性能变更，官方文档交叉核验，单列sourceChecks并收录重要事件"
+    "Tibo @thsottiaux：公开X原帖/重要回复与线程每日独立检查；Codex/Work额度、重置、模型与性能变更，官方文档交叉核验，单列sourceChecks并收录重要事件",
+    "TrendForce Substack/公开研究与Citrini Research：每天实查最新文章、公开段落及7天查漏；机构渠道数据与投资人观点分开标注，付费墙即止"
   ],
   "procedure": [
     "2026-10-23周末频次调整（优先于此前每天日报）：日报仅北京时间周一至周五08:30；周六和周日晨间不采集、不生成日报、不更新日报索引。任何旧每日触发仍运行时，读取配置后按Asia/Shanghai判断周几，周六/周日立即跳过且不发送日更通知。周日18:00仅生成周报，逐栏综合科技资讯、市场行情、调研纪要。由于周末无日报，周报须通过已验证Cubox持久化只读工具直接采集尚未入库的周末收藏（至少周五00:00至周日18:00，统计期左闭右开），不再仅依赖日报聚合；全量主题概览及逐条链接，精选2—4篇重要材料精读，另加飞书久谦本统计期更新。周一晨报补查周五00:00至周日23:59:59.999收藏，确保周日18:00后内容不漏，已入库者链接历史期、不重复精读；科技与宏观新闻同步回补上次日报以来的重要变化。周报和月报保持独立索引、全部历史保留，月报既有月底18:00计划不变。",
@@ -755,7 +784,7 @@
     ],
     "weekend": "不更新晨间日报；仅周日18:00周报"
   },
-  "updatedAt": "2026-11-02T01:03:50.629Z",
+  "updatedAt": "2026-11-11T08:40:12+08:00",
   "projectName": "AI Tracker",
   "sections": [
     {
