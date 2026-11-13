@@ -1,0 +1,653 @@
+{
+  "date": "2026-11-13",
+  "title": "AI Tracker｜2026年11月13日",
+  "intro": "北京时间11月13日晨报，覆盖11月12日全球完整交易日与近24小时公开发布。主线是NVIDIA管理层突变、两款中国模型的官方预览，以及利率与油价抬高AI资本开支的融资门槛；未把预览模型的厂商指标、AceCamp单一专家访谈或付费墙标题当作独立事实。",
+  "coverage": "时间：Asia/Shanghai。科技资讯含模型、公司、监管、投资人与调研纪要；市场行情含宏观与资金面。中国模型逐一检查DeepSeek、MiniMax、Qwen、Kimi、GLM/Z.ai、StepFun及其他公开发布、模型库与API入口；市场使用11月12日各地最近完整收盘，债券与商品报价严格注明时点。",
+  "takeaways": [
+    "NVIDIA于11月12日正式宣布黄仁勋即刻辞任CEO和董事，CFO Colette Kress任临时CEO；这是AI供应链最重要的公司治理变量，11月17日FY2027 Q3业绩与继任安排将决定订单、产品路线图和估值锚能否稳定。",
+    "Qwen4-Max-Preview和ERNIE 5.5 Flash Preview均在11月11日开放预览：前者仅限Token Plan且11月25日后退役，后者称后续将开源权重。两者目前只有厂商披露，未见Artificial Analysis、Epoch或METR的可比独立测评，不应把宣传基准当能力定论。",
+    "美国10年期国债在11月12日升至约5.10%，油价与地缘不确定性仍高；Apollo提示高利率下软件再融资的2028到期墙压降慢于全市场，AI估值更依赖现金流兑现与资本成本而非叙事。",
+    "AceCamp一线访谈同时给出反证：AI原生SaaS的KA项目可提高单客价值，但购物Agent被描述为仍主要减轻搜索负担，转化闭环受真实评价、实时库存和高价退货审核限制。"
+  ],
+  "items": [
+    {
+      "id": "nvidia-ceo-transition-20261112",
+      "category": "产业链新闻",
+      "title": "NVIDIA宣布CEO交接：黄仁勋辞任，Colette Kress任临时CEO",
+      "summary": "NVIDIA董事会11月12日公告，黄仁勋即刻辞去总裁、CEO及董事职务；现任执行副总裁兼CFO Colette Kress将兼任临时CEO，董事会启动内外部继任人选搜索，并任命Harvey C. Jones为首任董事长。公司称客户承诺和产品路线图将继续推进，但这属于董事会预期而非已验证的执行结果。NVIDIA仍安排11月17日发布FY2027 Q3业绩并召开电话会。",
+      "why": "管理层连续性直接影响Rubin及后续平台交付、云客户GPU采购、生态伙伴预期和估值折现率；需要以11月17日披露的订单、供给、Capex和路线图口径验证。",
+      "source": "NVIDIA Newsroom（公司正式公告）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
+      "publishedAt": "2026-11-12",
+      "evidence": "公司公告确认人事变动与生效日；市场对业务影响仍是预期，未把媒体对原因的报道写成公司已证实事实。",
+      "tags": [
+        "NVIDIA",
+        "AI基础设施",
+        "半导体",
+        "公司治理",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "qwen4-max-preview-official-20261111",
+      "category": "模型发布",
+      "title": "Qwen4-Max-Preview｜多模态旗舰推理模型开放预览，限Token Plan",
+      "summary": "阿里云Model Studio于北京时间11月11日10:00开放qwen4-max-preview。官方将其定义为下一代旗舰多模态推理模型，支持文本、图像、视频输入以及工具调用和结构化输出，并称兼容OpenAI API格式。预览期至11月25日24:00，仅向Token Plan用户开放，期间承诺不变更版本，期满后模型将退役；官方页面没有提供按量付费价目。",
+      "why": "限时、限套餐意味着当前可用性与价格都不代表正式商用形态；真实任务的稳定性、延迟和单位完成任务成本须在正式定价后再比较。",
+      "source": "阿里云Model Studio（官方模型说明）",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "publishedAt": "2026-11-11",
+      "evidence": "仅为厂商能力与开放方式披露；截至采集时未见Artificial Analysis、Epoch、METR或可复现实测的同版本独立结论。",
+      "tags": [
+        "Qwen",
+        "Qwen4-Max-Preview",
+        "中国模型",
+        "多模态",
+        "API",
+        "官方发布",
+        "72小时跟踪"
+      ]
+    },
+    {
+      "id": "ernie-55-flash-preview-official-20261111",
+      "category": "模型发布",
+      "title": "ERNIE 5.5 Flash Preview｜280B总参数、14B激活，称将开源权重",
+      "summary": "百度11月11日发布ERNIE 5.5 Flash Preview，称其为基于ERNIE 5.5 Flash Base完成后训练的模型：总参数280B、激活参数14B、上下文1M，并主张在代码、3D、知识和内容任务上提升。官方称已可在千帆平台API使用，权重将“很快”按Apache 2.0开放；“很快”不是已开源，也未给出确定日期或正式价格表。",
+      "why": "MoE激活规模、1M上下文和拟开源使其有潜在部署与成本意义，但实际吞吐、长上下文退化、推理档位及开放权重版本仍待验证。",
+      "source": "百度ERNIE官方博客",
+      "url": "https://ernie.baidu.com/blog/ernie-5-5-flash-preview/",
+      "publishedAt": "2026-11-11",
+      "evidence": "参数、基准与开放计划均属官方声明；采集窗口内未找到同版本独立测评、METR报告或可重复失败案例。",
+      "tags": [
+        "ERNIE",
+        "ERNIE 5.5 Flash Preview",
+        "中国模型",
+        "MoE",
+        "开源计划",
+        "官方发布",
+        "72小时跟踪"
+      ]
+    },
+    {
+      "id": "frontier-ai-nonprofit-lawsuit-20261112",
+      "category": "产业链新闻",
+      "title": "美国非营利组织起诉多家前沿AI公司，寻求限制开发",
+      "summary": "Reuters报道，一个非营利组织联盟在旧金山提起诉讼，列名OpenAI、Anthropic、SpaceX AI部门、Meta和Google，并寻求阻止其继续开发前沿AI。该报道呈现的是原告主张与诉讼请求，尚非法院裁决或监管已生效规则；截至采集时未以未读诉状细节扩写公司责任。",
+      "why": "即使结果未定，诉讼可能增加模型发布、训练算力和风险治理的不确定性；对商业化的影响取决于受理、禁令门槛和后续法院程序。",
+      "source": "Reuters（诉讼报道）",
+      "url": "https://www.reuters.com/world/us/nonprofit-coalition-sues-openai-anthropic-spacex-ai-meta-google-2026-11-12/",
+      "publishedAt": "2026-11-12",
+      "evidence": "仅收录Reuters可读的程序性信息；诉讼指控未被表述为已被法院认定的事实。",
+      "tags": [
+        "AI监管",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Meta",
+        "SpaceX",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "apollo-software-refinancing-20261112",
+      "category": "投资人观点",
+      "title": "Apollo｜高利率下软件再融资的2028到期墙压降较慢",
+      "summary": "Apollo首席经济学家Torsten Slok在11月12日Daily Spark中称，软件公司在“higher for longer”环境下再融资更困难：其图表显示，软件的2028年到期墙仅缩减10%，而全市场缩减22%。这是一家资产管理机构基于Bloomberg SRCH的研究判断，不是软件行业的官方统计或单一公司的融资指引。",
+      "why": "对高估值软件和AI应用公司，融资滚动不畅会把估值讨论从增长倍数拉回自由现金流、债务期限和利息覆盖；观察利率、信用利差与2028前的主动再融资。",
+      "source": "Apollo Daily Spark（机构观点）",
+      "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-12",
+      "evidence": "引用Apollo公开图表摘要，保留其数据源和机构归属；未将样本结论外推为全体软件公司事实。",
+      "tags": [
+        "Apollo",
+        "Torsten Slok",
+        "投资人观点",
+        "软件",
+        "再融资",
+        "利率"
+      ]
+    },
+    {
+      "id": "elad-gil-max-jaderberg-nopriors-20261112",
+      "category": "播客精华",
+      "title": "No Priors｜Elad Gil与Isomorphic Labs谈AI药物研发：预测能力仍须经实验与临床验证",
+      "summary": "No Priors 11月12日节目由Elad Gil访谈Isomorphic Labs总裁Max Jaderberg。节目讨论把更多药物设计移至计算环节、用刻意生成的数据提高跨项目学习能力；Jaderberg将可检验的五年目标定位为预测生物学的重大进展，但未给出首个临床试验日期，并强调人体安全测试与发现周期仍需多年。节目中的成本和行业判断应视为嘉宾/主持人表述。",
+      "why": "AI在生命科学的价值不只取决于模型指标，关键是实验成功率、候选物进入临床的周期与单位项目成本，短期不宜把计算设计等同于药物收入。",
+      "source": "No Priors（原节目页）",
+      "url": "https://www.bidclub.ai/shows/nopriors",
+      "publishedAt": "2026-11-12",
+      "evidence": "以节目原始页面的公开摘要为基础；无完整公开逐字稿，未补写未可读的访谈细节。",
+      "tags": [
+        "Elad Gil",
+        "No Priors",
+        "AI制药",
+        "播客精华",
+        "商业化"
+      ]
+    },
+    {
+      "id": "acecamp-ai-saas-ka-token-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜AI原生SaaS向KA扩展：项目收入与Token续费须分开看",
+      "summary": "一位产业专家以快消、制造业项目为例称，AI营销、数据分析和CRM正从试点走向集团级部署，客户的中台、定制、订阅和Token消耗共同构成收入。其案例估算AI导入后年费可提高，且未来通过更多场景和Token计费扩大单客价值；但项目制一次性收入占比高、客户ROI与行业知识交付仍是签约前提，传统ERP厂商和大厂亦构成竞争。以上均为单一专家观点，未获公司公告验证。",
+      "why": "企业AI的“收入放量”必须拆成一次性部署、经常性订阅和按量Token，三者的毛利、回款和持续性不同。",
+      "source": "AceCamp（Cubox限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569150",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一产业专家访谈，不是金蝶、用友、第四范式或阿里云的公司披露；金额、客户和渗透率不可外推。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "企业AI",
+        "SaaS",
+        "Token计费",
+        "KA客户"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:11.825+08:00",
+        "updatedAt": "2026-11-12T13:13:18.637+08:00",
+        "sample": "单一产业专家，案例与客户覆盖范围未披露",
+        "topics": [
+          {
+            "heading": "提要",
+            "bullets": [
+              "专家认为营销、销售与数据分析更易形成可量化ROI，KA项目正向更多行业场景延伸。",
+              "收入需拆分平台/定制、订阅和Token消耗；项目上线后的使用量才决定续费质量。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "大厂品牌、ERP既有系统和交付风险会影响采购；“单客价值翻倍”未获公司披露。",
+              "观察合同负债、续费率、Token毛利、部署周期与可验证的客户ROI。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-rubin-server-bom-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜Blackwell与Rubin服务器：功耗与存储成本是BOM敏感项",
+      "summary": "一份服务器产业专家访谈比较GB300与Vera Rubin 200：其估算Rubin单柜运行功耗约180kW、供电配置约220kW，高于GB300；并认为HBM、LPDDR5X、网络芯片、PCB和液冷的价值量上升，且其单柜成本估算未纳入未来HBM涨价。该材料还称大CSP常通过NVIDIA向ODM分配订单，非所有CSP都是ODM直接客户。数值和供货关系均为访谈口径。",
+      "why": "若功耗、存储价格和网络配置如访谈所述，AI机柜单位Capex、并网周期与供应链利润池会同时变化；不能把研究估算当NVIDIA或ODM的正式BOM。",
+      "source": "AceCamp（Cubox限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569151",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一行业访谈；未与NVIDIA、ODM或内存厂商公开规格及报价逐项交叉，数字不作为公司指引。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "NVIDIA",
+        "Rubin",
+        "GB300",
+        "服务器",
+        "液冷",
+        "HBM"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:46.340+08:00",
+        "updatedAt": "2026-11-12T13:13:52.929+08:00",
+        "sample": "单一服务器产业专家，未披露供应商、订单与BOM取样方法",
+        "topics": [
+          {
+            "heading": "提要",
+            "bullets": [
+              "访谈认为Rubin较GB300的功耗、HBM/LPDDR5X、交换与网络部件价值量提升。",
+              "单柜成本对HBM、NAND等存储价格假设敏感，估算本身未含未来涨价。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "平台规格、出货节点和客户分配路径仍应以NVIDIA、OEM/ODM财报和技术文档为准。",
+              "观察机柜功耗、并网时程、HBM报价、交换网络配置与实际交付。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-shopping-agent-frictions-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜购物Agent仍以降低搜索负担为主，转化闭环受真实评价与实时数据制约",
+      "summary": "一位电商产业专家认为，买家仍偏好真实用户评价和跨平台比较，AI购物目前更像复杂商品的参考工具，而非直接下单渠道；其称整体销售渗透率不足1%，但没有披露样本、平台口径或原始数据。访谈也指出，缺少实时库存、促销和退货审核能力会限制外部Agent的成交闭环；高价值退货仍需人工判断。该材料为渠道观察，不等同于Amazon、OpenAI、Shopify或沃尔玛披露。",
+      "why": "购物Agent的商业化应先观察AI搜索占比、活跃度、推荐准确性、退货率和商家接入质量，而不是只看宣传的客单价或转化率。",
+      "source": "AceCamp（Cubox限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569149",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一专家观点；“不足1%”等数字没有可公开复核的样本、地域或平台定义，未作为行业事实。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AI Agent",
+        "电商",
+        "OpenAI",
+        "Shopify",
+        "Amazon"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:04.457+08:00",
+        "updatedAt": "2026-11-12T13:13:10.652+08:00",
+        "sample": "单一电商产业专家，未披露平台数据权限、样本和统计口径",
+        "topics": [
+          {
+            "heading": "提要",
+            "bullets": [
+              "AI可减少搜索和比价负担，但真实评价、复杂比较和高价退货仍是转化摩擦。",
+              "专家把买家侧与卖家侧Agent视作早期能力，实时库存与促销数据是闭环前置条件。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "渗透率和转化率未经公司披露，不能与各平台营销数据直接比较。",
+              "观察AI搜索占比、下单成功率、库存/价格准确率、退货率和广告变现。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "global-macro-rates-oil-geopolitics-20261112",
+      "category": "宏观点评",
+      "title": "海外宏观｜利率再上行、油价波动与美中高层沟通并存",
+      "summary": "11月12日美国10年期国债日终约5.10%、2年期约4.86%；因11月11日美债休市，10年期相对11月10日4.98%的约+12bp为两交易日跨度，不当作单日变动。DXY报103.01、日升0.10%；Libella的近月连续口径Brent（Jan）$93.14、WTI $86.76，均为11月12日时点。Reuters另报晚间能源结算更高，合约/时点不完全一致，未混入同一比较。美中官员通话为下周APEC高层会晤做准备，但关税、稀土和技术限制仍未解决。",
+      "why": "更高无风险利率压缩长期现金流估值，油价和地缘风险抬升数据中心电力与供应链不确定性；观察美债拍卖、油运扰动及APEC是否产出已落实的科技贸易安排。",
+      "source": "美国财政部／Libella Morning Markets／Reuters",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "publishedAt": "2026-11-12",
+      "evidence": "不同油价报道存在合约和报价时点差异，已保留而非硬选；外交沟通不等于达成协议或改变出口管制。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "原油",
+        "美中关系",
+        "地缘政治"
+      ]
+    },
+    {
+      "id": "china-macro-policy-check-20261112",
+      "category": "宏观点评",
+      "title": "中国宏观｜未见当日新增直接流动性或股市增量资金措施",
+      "summary": "财政部11月12日公开的重点内容为政府部门财务报告编制操作指南及地方财政金融协同促内需的落实信息；采集窗口内未见人民银行、金融监管总局或证监会公布新的、可核验的直接流动性投放、资本市场增量资金或非银大额赎回支持工具。此前已公布的国库现金管理和既有贴息政策不重复写成当日新刺激。",
+      "why": "会计与执行指引不等同于货币宽松或股市资金入场。对TMT估值更应跟踪实际社融、资金利率、融资余额、政策实施额度与投放，而非只看口号。",
+      "source": "财政部／中国人民银行／中国证监会公开页面",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
+      "publishedAt": "2026-11-12",
+      "evidence": "“未见”仅限已实查的公开页面与时间窗；不把未披露项目推断为无政策变化。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "财政部",
+        "央行",
+        "证监会",
+        "资金传导"
+      ]
+    },
+    {
+      "id": "us-market-funding-20261112",
+      "category": "市场资金面",
+      "title": "美股资金面｜三大指数与SOX回落，半导体在CEO变动后分化",
+      "summary": "11月12日常规收盘：纳斯达克综合25,466.19（-0.39%）、标普500 7,592.40（-0.35%）、道指52,297.09（-0.36%）、SOX 10,564.11（-0.54%）。NVIDIA正式确认CEO交接后，半导体个股分化而非板块整体加速买入：NVDA收跌，AMD与Broadcom上涨。公开来源未提供统一20日均量、涨跌家数或ETF申赎口径，本期不将成交或价格波动解释为净流入。",
+      "why": "SOX仍是AI资本开支风险偏好的高β指标；观察NVIDIA业绩、利率路径与云厂Capex是否把治理冲击限定为个股，或外溢至设备、存储与网络链条。",
+      "source": "AP/Yahoo市场指数表／NVIDIA公告",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/bc-select-stock-indices-223013394.html",
+      "publishedAt": "2026-11-12",
+      "evidence": "指数为完整常规交易日收盘；量能、宽度和资金申赎因无一致公开口径而明确留空。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "NVIDIA",
+        "半导体"
+      ]
+    },
+    {
+      "id": "asia-market-funding-20261112",
+      "category": "市场资金面",
+      "title": "亚洲资金面｜A股成交放大但多数下跌，港日韩台同步走弱",
+      "summary": "11月12日完整收盘：上证3,655.83（-0.67%）、创业板2,509.43（-2.44%）、沪深300 4,043.93（-0.78%）；沪深成交约1.93万亿元，较前日增加约2,558亿元，但逾4,600股下跌，不能把放量等同净流入。恒生24,008.55（-1.26%）、恒科3,931.93（-2.36%）；日经60,819.36（-0.70%）、TOPIX 3,937.33（+0.20%）；KOSPI 5,342.73（-0.61%）、台湾加权43,091.87（-2.63%）。",
+      "why": "科技硬件的风险偏好并未随成交额同步改善，台湾与港股科技的下跌提示全球AI估值冲击仍在传导；观察外资、南向、ETF与两融等有可比口径的数据。",
+      "source": "新华社/Xinhua Finance汇总／香港交易时段公开数据／日经、KOSPI、TWSE口径汇总",
+      "url": "https://www.chinaday.news/archive/2026-11-12/en",
+      "publishedAt": "2026-11-12",
+      "evidence": "逐市场使用当地完整交易日收盘；未取得一致外资净买卖、南向、ETF或融资数据，未伪造资金流。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾",
+        "半导体"
+      ]
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-12",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合",
+        "displayValue": "25,466.19",
+        "change": -0.393,
+        "displayChange": "-0.39%",
+        "note": "11月12日美国常规收盘"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,592.40",
+        "change": -0.354,
+        "displayChange": "-0.35%",
+        "note": "11月12日美国常规收盘"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "52,297.09",
+        "change": -0.361,
+        "displayChange": "-0.36%",
+        "note": "11月12日美国常规收盘"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "10,564.11",
+        "change": -0.544,
+        "displayChange": "-0.54%",
+        "note": "AP指数表，11月12日常规收盘"
+      },
+      {
+        "label": "美国10年期国债",
+        "displayValue": "5.10%",
+        "change": 12,
+        "displayChange": "+12bp（较11月10日）",
+        "note": "美国财政部11月12日日终；11月11日债市休市，非单日比较"
+      }
+    ],
+    "snapshotNote": "股票为2026-11-12美国常规收盘。10年美债为财政部11月12日日终；因11月11日休市，变动相对11月10日，避免误标为单日。",
+    "performance": [
+      {
+        "name": "纳斯达克综合",
+        "changePct": -0.393
+      },
+      {
+        "name": "标普500",
+        "changePct": -0.354
+      },
+      {
+        "name": "道琼斯",
+        "changePct": -0.361
+      },
+      {
+        "name": "SOX",
+        "changePct": -0.544
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA",
+        "session": "常规",
+        "asOf": "2026-11-12 16:00 ET",
+        "changePct": -4,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得一致20日均量；不据此称放量或资金流出",
+        "catalyst": "公司正式公告CEO即刻交接，市场重估治理与执行连续性",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/"
+      },
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "session": "常规",
+        "asOf": "2026-11-12 16:00 ET",
+        "changePct": 5.86,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得一致20日均量",
+        "catalyst": "半导体个股在NVIDIA治理冲击后分化；未将价格表现归因于单一公司公告",
+        "url": "https://finance.yahoo.com/quote/AMD/history/"
+      },
+      {
+        "symbol": "AVGO",
+        "name": "Broadcom",
+        "session": "常规",
+        "asOf": "2026-11-12 16:00 ET",
+        "changePct": 5.54,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得一致20日均量",
+        "catalyst": "半导体个股分化；无可核验的单一当日基本面催化",
+        "url": "https://finance.yahoo.com/quote/AVGO/history/"
+      }
+    ],
+    "selectionNote": "动态选择CEO交接直接相关的NVDA及当日反向波动的两只半导体股。均缺可比20日量比，未使用成交量或价格变动推断净流入。",
+    "sources": [
+      {
+        "name": "AP/Yahoo全球指数表",
+        "url": "https://finance.yahoo.com/markets/world-indices/articles/bc-select-stock-indices-223013394.html"
+      },
+      {
+        "name": "美国财政部收益率",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      },
+      {
+        "name": "NVIDIA CEO公告",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "OpenAI及核心成员",
+      "status": "已检查",
+      "url": "https://openai.com/products/release-notes/",
+      "note": "检查近24小时与7天官方新闻、Release Notes和开发者变更；最近可核验条目为11月10日，未发现本期新增重大正式发布。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "原帖访问受限",
+      "url": "https://x.com/thsottiaux",
+      "note": "独立检查近24小时、重要回复与7天线索；X原帖未能稳定直读，未把索引或传闻写成Work/Codex额度、重置或套餐已生效事实。"
+    },
+    {
+      "name": "Anthropic及核心成员",
+      "status": "已检查／公开条目有限",
+      "url": "https://www.anthropic.com/news",
+      "note": "官方News页显示11月12日最新入口但可读索引未呈现独立标题；Fable/Mythos 5.2仍在72小时外延跟踪，未将未读内容扩写。"
+    },
+    {
+      "name": "Claude 5.2独立测评",
+      "status": "已检查／本期无新增",
+      "url": "https://epoch.ai/benchmarks",
+      "note": "继续查Artificial Analysis、Epoch、METR和公开开发者材料；未见与11月12日新增模型相关的可比独立测评，METR无专项公开报告。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已检查",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "检查官方更新、Hugging Face与GitHub；本期未见可核验的新模型、权重、API价格或开放方式变化。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已检查",
+      "url": "https://www.minimax.io/blog",
+      "note": "检查官方发布、模型库与开发者入口；H3-Image不再是72小时内新发布，本期未见可核验小版本。"
+    },
+    {
+      "name": "Qwen",
+      "status": "有更新",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "note": "Qwen4-Max-Preview于11月11日开放，已单列官方规格、Token Plan预览期与退役安排；独立测评仍缺。"
+    },
+    {
+      "name": "Kimi",
+      "status": "已检查",
+      "url": "https://huggingface.co/moonshotai",
+      "note": "检查官方模型库、开发者论坛与API公开入口；K2.7 Code为既有版本，本期未见新模型、价格或开放方式变化。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "已检查",
+      "url": "https://huggingface.co/zai-org",
+      "note": "检查官方模型库与公开发布入口；本期未见可核验的新权重、模型卡或API价格变化。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已检查",
+      "url": "https://huggingface.co/stepfun-ai",
+      "note": "检查官方模型库和公开发布入口；本期无可核验新模型或小版本。"
+    },
+    {
+      "name": "MiMo、ERNIE及其他中国模型",
+      "status": "有更新／覆盖有限",
+      "url": "https://ernie.baidu.com/blog/ernie-5-5-flash-preview/",
+      "note": "ERNIE 5.5 Flash Preview已单列；MiMo、Hunyuan等公开入口未发现新版本。部分国内站动态页面检索覆盖有限。"
+    },
+    {
+      "name": "Artificial Analysis / Epoch / METR",
+      "status": "已检查",
+      "url": "https://artificialanalysis.ai/",
+      "note": "Qwen4-Max与ERNIE 5.5的同版本独立评分、任务设置、推理档位和成本复现尚不足；不以官方自测替代。"
+    },
+    {
+      "name": "Gavin Baker / Atreides",
+      "status": "未找到原始讲话",
+      "url": "https://www.bostoninvestmentconference.com/",
+      "note": "继续检查Boston Investment Conference、Ted Seides与本人公开渠道；10月29日场次仍无原始音视频、字幕或文字稿，不以旧节目代替。"
+    },
+    {
+      "name": "Brad Gerstner / Altimeter",
+      "status": "已检查",
+      "url": "https://www.altimeter.com/",
+      "note": "检查近24小时与7天公开访谈、BG2及机构入口；未见可核验的新长访谈或正式观点。"
+    },
+    {
+      "name": "Sarah Guo",
+      "status": "已检查",
+      "url": "https://www.nopriors.com/",
+      "note": "检查No Priors及公开渠道；未见本期可读的新Sarah Guo原文或访谈。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "有更新",
+      "url": "https://www.bidclub.ai/shows/nopriors",
+      "note": "11月12日No Priors与Isomorphic Labs Max Jaderberg节目已收录；公开页无完整逐字稿，未扩写。"
+    },
+    {
+      "name": "Sundar Pichai / Andy Jassy",
+      "status": "已检查",
+      "url": "https://www.youtube.com/results?search_query=Sundar+Pichai+Andy+Jassy",
+      "note": "跨平台检查近24小时并回查7天；未见可核验的新长访谈，旧节目与转述未重复。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已检查",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "检查C:\\\\Takes、官网更新与公开社媒入口；未见11月12日新原文，未将旧图表或观点当日更。"
+    },
+    {
+      "name": "Apollo",
+      "status": "有更新",
+      "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark",
+      "note": "11月12日Daily Spark关于软件再融资已收录；明确为机构研究而非官方行业统计。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已检查／不重复",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "最新公开周报为11月9日，内容属投资人研究与样本判断；本期无新文章，X原帖读取受限。"
+    },
+    {
+      "name": "The Information",
+      "status": "标题导语检查／付费墙",
+      "url": "https://www.theinformation.com/",
+      "note": "只读免费标题和导语；NVIDIA、Anthropic等线索均回到公司公告或其他公开材料核验，未以未读正文形成事实。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已检查／社媒受限",
+      "url": "https://ramp.com/authors/ara-kharazian",
+      "note": "核验官方作者页、Econ Lab公开入口；X与LinkedIn需要登录或未能稳定读取，未见可核验新AI原文。"
+    },
+    {
+      "name": "Ramp AI Index",
+      "status": "已检查",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "检查官方AI Index与数据页；本期未见新统计期或方法更新，不把客户样本外推为全体企业。"
+    },
+    {
+      "name": "Elon Musk",
+      "status": "原帖访问受限",
+      "url": "https://x.com/elonmusk",
+      "note": "独立检查科技/宏观相关公开线索；原帖无法稳定直读，未用搜索摘要形成条目。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已检查／X受限",
+      "url": "https://www.spacex.com/",
+      "note": "官网与官方X分别检查；未见可由官网交叉确认的新季度业绩或重大技术披露。"
+    },
+    {
+      "name": "美国主要科技公司财报",
+      "status": "已检查",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "检查Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron、SNDK与AXTI的IR/SEC日历；本期无新增正式财报，NVIDIA下次报告日为11月17日。"
+    },
+    {
+      "name": "Claude Duet / NVIDIA活动分项 / 产品文档",
+      "status": "已检查",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "note": "检查Claude Duet产品页、官方Release Notes及NVIDIA公开新闻；本期无新的Duet或GTC分项正式公告。"
+    },
+    {
+      "name": "TrendForce Substack",
+      "status": "已检查／无新增收录",
+      "url": "https://insights.trendforce.com/archive",
+      "note": "检查archive和公开段落；未见可在本期以免费材料独立核验的重要新TMT结论。"
+    },
+    {
+      "name": "Citrini Research Substack",
+      "status": "已检查／无新增收录",
+      "url": "https://www.citriniresearch.com/archive",
+      "note": "检查archive与公开Notes；无本期可读新TMT文章。"
+    },
+    {
+      "name": "美伊、俄乌、中美与美国选举",
+      "status": "有更新",
+      "url": "https://www.reuters.com/world/china/chinas-foreign-minister-says-call-with-rubio-was-positive-constructive-2026-11-11/",
+      "note": "美中官员通话为APEC高层会晤做准备，关税、稀土和技术限制仍未解决；油价受伊朗局势扰动。会谈筹备不等于协议或停火。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "已检查／无新增直接投放",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
+      "note": "实查财政部、央行与证监会公开入口；11月12日未见可核验的新增直接流动性、股市增量资金或非银赎回工具。"
+    },
+    {
+      "name": "市场图表 / Wind",
+      "status": "部分完成",
+      "url": "https://www.nasdaq.com/market-activity/index/sox",
+      "note": "Wind已由用户安装，但本会话未暴露可调用工具。已核验行情速览、当日涨跌和异动；缺少SOX、四大CSP等权、IGV与10Y完整对齐历史序列，按规则省略趋势栏目。"
+    },
+    {
+      "name": "last30days",
+      "status": "已执行／未完成有效报告",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "固定提交832d095预检后，以--days 1、reddit/youtube/hackernews/github、--no-browser-cookies和查询计划实际执行。Reddit目标社区403、YouTube零结果、HN为不相关命中、GitHub无令牌降级且未产出完成报告；未把其输出作证据。"
+    },
+    {
+      "name": "Cubox / AceCamp",
+      "status": "已完成限定只读",
+      "url": "https://www.acecamptech.com/",
+      "note": "服务端AceCamp关键词定向并精确核验acecamptech.com；普通与归档均分页到null，普通返回14条、归档0条，全文读取4篇。未扫描其他私人收藏、未读批注/AI摘要、未改状态。"
+    },
+    {
+      "name": "采集缺口",
+      "status": "已说明",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "主要缺口为部分X原帖、Qwen/ERNIE独立评测、METR专项材料、Wind历史序列、市场宽度/ETF申赎及科技股20日量比；未核验内容未收录。"
+    }
+  ],
+  "updatedAt": "2026-11-13T11:32:00+08:00"
+}
