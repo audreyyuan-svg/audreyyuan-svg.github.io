@@ -1,6 +1,12 @@
 {
-  "latest": "2026-11-08",
+  "latest": "2026-11-15",
   "archive": [
+    {
+      "date": "2026-11-15",
+      "updated_at": "2026-11-15T10:15:00Z",
+      "title": "AI Tracker周报",
+      "summary": "NVIDIA交接放大AI融资与执行风险，Cisco网络收入仍强；Claude 5.2领先但成本高，中国模型预览密集，周五SOX再跌3.43%。"
+    },
     {
       "date": "2026-11-08",
       "updated_at": "2026-11-08T10:20:11.012Z",
