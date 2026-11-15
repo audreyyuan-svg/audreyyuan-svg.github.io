@@ -1,0 +1,1863 @@
+{
+  "date": "2026-11-15",
+  "title": "AI Tracker周报",
+  "reportType": "weekly",
+  "periodStart": "2026-11-08T18:00:00+08:00",
+  "periodEnd": "2026-11-15T18:00:00+08:00",
+  "archiveSummary": "NVIDIA交接放大AI融资与执行风险，Cisco网络收入仍强；Claude 5.2领先但成本高，中国模型预览密集，周五SOX再跌3.43%。",
+  "intro": "本周AI需求和模型能力仍向前，但股权回报的约束转向资本成本、交付、治理和真实任务经济性。NVIDIA管理层交接是本周最大新增变量，Cisco与CoreWeave分别呈现网络需求和融资成本的两面。周报不是日报拼接：以公司/主题重排事实、反证及下一步验证。调研仅使用仓库已归档的用户授权资料；飞书CLI实查未配置，久谦未读取。",
+  "coverage": "Asia/Shanghai；[2026-11-08 18:00, 2026-11-15 18:00)，不覆盖18:00后内容。已读上期周报与11月9—13日五期日报，共72条归档条目，去重并做免费公开原文补核；市场补至11月13日最近完整收盘，周末休市。AceCamp仅归档聚合，本轮不访问Cubox：15篇有精确链接的期内摘要逐篇保留，34个可恢复文章链接含19个11月8日跨期背景；非全量收藏。久谦与未入库周末纪要为明确缺口。旧文和统计期早于发布日的研究均按原日期标注。",
+  "takeaways": [
+    "NVIDIA11月12日即刻交接CEO，11月17日业绩将检验客户承诺、产品路线图与融资生态；不能从治理变化直接推断订单取消。",
+    "中国模型主线从新预览扩展到工具与部署：Qwen4/ERNIE 5.5独立证据不足，H3-Image开放权重不等于质量领先；DeepSeek11月13日开放应用API，需核算完整任务成本。",
+    "Claude Fable 5.2的AA Max仍65分，但约26.54美元/任务且时延高；推理档位、运行框架与超时可以改变实际优势。",
+    "Cisco网络收入同比+43%、上调AI预期，CoreWeave强收入仍受利息压制；需求强和可融资回报不是同一件事。",
+    "美股三大指数周涨约2%—2.5%，但周五SOX跌3.43%、全美量比约0.884；10Y升至5.15%，对长久期TMT与高负债基建的约束未缓解。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "判断从“AI是否增长”转向“增长由谁融资、在哪个环节兑现”。Claude 5.2能力提升与高成本并存，中国厂商在预览、多模态和工具栈上推进；Cisco网络需求强，CoreWeave融资负担高。NVIDIA交接增加治理和生态信用变量，不能用替代品股价上涨证明客户已经迁移。",
+      "points": [
+        "重点变化：DeepSeek应用API、Qwen4/ERNIE预览、H3-Image开放权重，以及Cisco正式财报填补原日报遗漏。",
+        "分歧/反证：厂商自测≠独立评测；兼容模板≠能力升级；高收入/积压≠现金回报；FUNDA对CPO交付时点更谨慎。",
+        "观察：NVIDIA11月17日业绩与继任、Anthropic发行落地、模型固定配置成功率/任务成本、Cisco AI收入兑现及Neocloud再融资。"
+      ]
+    },
+    "markets": {
+      "summary": "本周美股修复了部分前期跌幅，但周五科技再弱、量能低于20日均值。财政部10Y周末前达5.15%，油价回落并未解除折现率约束；亚洲日韩台与大中华表现不一。中国资本补充发行计划改善的是金融体系资本缓冲，不能直接等同股市资金。",
+      "points": [
+        "重点变化：标普/纳指/道指全周+2.51%/+2.27%/+2.07%；周五SOX-3.43%，2Y/10Y一周+37/+29bp。",
+        "分歧/反证：SOX历史报价冲突，周涨不从错误序列拼算；股价、成交与资金净买卖是不同指标，南向小额净买未阻止港股下跌。",
+        "观察：美债与信用利差、ETF真实申赎、半导体宽度、亚洲外资与两融，以及国债发行/注资/信贷的逐层传导。"
+      ]
+    },
+    "research": {
+      "summary": "归档纪要共同支持需求未塌陷，但缺口多在可交付供给、融资、认证及客户ROI。云、HBM、光互联、电力与应用按主题综合，并逐篇保留15份精确链接材料的日期、样本和反证。只读取已有自有摘要，不冒充本轮已读AceCamp全文；久谦未读取，缺失标题明细和周末未入库资料不扩写。",
+      "points": [
+        "重点变化：Neocloud/AWS需求与高利息、HBM/封装约束并存；模拟AI电源库存和购物Agent转化摩擦提供反方。",
+        "分歧/反证：高出货预测、目标IRR、份额与BOM来自单一匿名渠道，不相加、不升级为公司确认；11月8日跨期候选不冒充本期新增。",
+        "观察：活跃功率、预付款到账、SLA、库存/良率、CPO认证、Token毛利、续费与真实任务ROI。",
+        "采集缺口：飞书not_configured，未能遍历久谦updated_at；AceCamp只聚合已入库日报，未直接补采周末，不能声称完整周度收藏。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "weekly-nvidia-governance-20261115",
+      "category": "产业链新闻",
+      "title": "NVIDIA宣布CEO交接：黄仁勋辞任，Colette Kress任临时CEO",
+      "summary": "NVIDIA董事会11月12日公告，黄仁勋即刻辞去总裁、CEO及董事职务；现任执行副总裁兼CFO Colette Kress将兼任临时CEO，董事会启动内外部继任人选搜索，并任命Harvey C. Jones为首任董事长。公司称客户承诺和产品路线图将继续推进，但这属于董事会预期而非已验证的执行结果。NVIDIA仍安排11月17日发布FY2027 Q3业绩并召开电话会。 本周新增治理连续性风险；不能从人事变动直接推断订单取消或产品延迟。",
+      "why": "管理层连续性直接影响Rubin及后续平台交付、云客户GPU采购、生态伙伴预期和估值折现率；需要以11月17日披露的订单、供给、Capex和路线图口径验证。",
+      "source": "NVIDIA Newsroom（公司正式公告）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
+      "publishedAt": "2026-11-12",
+      "evidence": "公司公告确认人事变动与生效日；市场对业务影响仍是预期，未把媒体对原因的报道写成公司已证实事实。",
+      "tags": [
+        "NVIDIA",
+        "AI基础设施",
+        "半导体",
+        "公司治理",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "weekly-deepseek-app-apis-20261115",
+      "category": "模型发布",
+      "title": "DeepSeek应用API专题｜从推理报价转向完整工作流成本",
+      "summary": "DeepSeek于11月13日开放搜索、URL读取、文件输入、安全及独立OCR/ASR/TTS接口；deepseek-flash仍对应V4.1-Flash-1017，不是新权重。官方价目：搜索与抓取各0.75美元/千次，解析/OCR为0.225美元/千页，模型Token另计。新增价值在服务端编排，尚无独立端到端成功率、延迟或失败集验证。",
+      "why": "竞争从每Token价格扩展到工具、解析与重试后的每完成任务成本；观察引用准确率、工具失败、延迟及总账单。",
+      "source": "DeepSeek官方更新与价目表",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "publishedAt": "2026-11-13",
+      "evidence": "仅免费读取官方文档，未调用收费API；产品开放不等于质量得到独立验证。",
+      "tags": [
+        "中国模型",
+        "DeepSeek",
+        "应用API",
+        "官方发布",
+        "任务成本"
+      ],
+      "relatedSources": [
+        {
+          "title": "官方价格",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "date": "2026-11-15",
+          "evidence": "工具调用与Token分开计费，价格读取日"
+        }
+      ]
+    },
+    {
+      "id": "weekly-qwen-ernie-preview-20261115",
+      "category": "模型发布",
+      "title": "Qwen4与ERNIE 5.5专题｜预览扩大能力边界，正式经济性未定",
+      "summary": "Qwen4-Max-Preview于11月11日开放，1M上下文、最大393216 Token由思考和答案共享；默认xhigh，仅Token Plan，11月25日24:00后退役，不支持按量。ERNIE 5.5 Flash Preview同日推出，官方称280B总参数、14B激活、1M上下文，拟Apache 2.0开放权重。厂商展示与独立测评分开，正式价格及开源落地日期未定。",
+      "why": "Qwen预算语义改变可能令答案被思考挤占；ERNIE拟开放不等于已开放。观察同版本独立测评、失败案例和每任务成本。",
+      "source": "阿里云Model Studio／百度ERNIE",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "publishedAt": "2026-11-11",
+      "evidence": "本轮复核官方文档；Qwen文档11月13日更新，预览始于11月11日。尚无足够同版本独立证据，不排名。",
+      "tags": [
+        "中国模型",
+        "Qwen",
+        "ERNIE",
+        "官方发布",
+        "72小时跟踪"
+      ],
+      "relatedSources": [
+        {
+          "title": "ERNIE官方发布",
+          "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview",
+          "date": "2026-11-11",
+          "evidence": "后训练中间检查点，开源计划非既成事实"
+        }
+      ]
+    },
+    {
+      "id": "weekly-minimax-h3-image-20261115",
+      "category": "模型发布",
+      "title": "MiniMax H3-Image专题｜开放权重可部署，速度与质量须同配置比较",
+      "summary": "H3-Image于11月11日发布并开放权重，官方称4K生成低于10秒、最多16张参考图，API同步开放。官方价格表述为同类产品的50%—70%，不是“便宜50%—70%”。归档开发者体验显示采样器、分辨率和硬件会显著改变结果；单用户消费卡体验不能与多卡工程稿直接比较，也不是独立质量基准。",
+      "why": "没有盲测、失败集和单位合格图片成本，不能判定质量或经济性领先。观察显存、提示遵循、参考一致性与重试。",
+      "source": "MiniMax官方／期内开发者体验归档",
+      "url": "https://www.minimax.io/blog/minimax-h3-image",
+      "publishedAt": "2026-11-11",
+      "evidence": "本轮重读官方页面；开发者结果只聚合归档，未自行运行模型。",
+      "tags": [
+        "中国模型",
+        "MiniMax",
+        "H3-Image",
+        "开放权重",
+        "开发者体验",
+        "72小时跟踪"
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "weekly-claude-52-economics-20261115",
+      "category": "独立测评",
+      "title": "Claude Fable 5.2｜能力领先，但推理档位与运行框架改变可用性",
+      "summary": "11月9日发布的Fable/Mythos 5.2为同一底层、开放护栏不同。AA当前Max/Default Fallback为65分、每任务26.54美元，首答案Token约262秒、任务约44.5分钟；归档曾为247秒/48分钟，动态快照变化不当作同批复测。归档ARC和SVG案例说明适配器、档位、超时与思考预算影响很大。",
+      "why": "采购须固定任务、成功率、时限和总成本，不能只看最高分。观察档位性价比、长任务无输出率与METR专项报告。",
+      "source": "Anthropic／Artificial Analysis／期内独立测评归档",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "publishedAt": "2026-11-09",
+      "evidence": "AA为11月15日读取的动态快照；非本轮复现实验。不同Harness不可拼成同一排名。",
+      "tags": [
+        "Claude 5.2",
+        "独立测评",
+        "推理档位",
+        "成本",
+        "失败案例"
+      ],
+      "relatedSources": [
+        {
+          "title": "官方发布",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "date": "2026-11-09",
+          "evidence": "正式发布与开放方式"
+        }
+      ]
+    },
+    {
+      "id": "weekly-enterprise-adoption-20261115",
+      "category": "产业链新闻",
+      "title": "企业AI商业化｜采购更便利，Token量增长快于支出",
+      "summary": "本期归档OpenAI将ChatGPT Enterprise带入AWS Marketplace，并发布研究推理Control Room；前者是采购渠道，后者是控制能力，都不是新模型。Ramp样本覆盖8.5万多家美国客户：10月付费AI采用率56.8%；截至11月1日周Token量较四周前增29%，支出增10.5%，OpenAI/Anthropic混合价格降14.8%。不能外推全体美国企业或全市场收入。",
+      "why": "用量增长不等于收入/利润同比例增长；观察付费留存、单位员工支出、模型价格与渠道成交。",
+      "source": "OpenAI期内官方归档／Ramp本轮复核",
+      "url": "https://ramp.com/data/ai-index",
+      "publishedAt": "2026-11-11",
+      "evidence": "采用率来自卡/账单/ACH；Token来自AI Spend Management子样本，历史可修订；数据期早于入库日。",
+      "tags": [
+        "OpenAI",
+        "Ramp",
+        "Ara Kharazian",
+        "商业化"
+      ],
+      "relatedSources": [
+        {
+          "title": "AWS采购官方原文（期内归档）",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+          "date": "2026-11-09",
+          "evidence": "本轮未重新核验全部产品条款"
+        }
+      ]
+    },
+    {
+      "id": "weekly-coreweave-q3-20261115",
+      "category": "产业链新闻",
+      "title": "CoreWeave 2026年Q3财报",
+      "summary": "截至9月30日季度营收36.61亿美元，同比增168%；GAAP经营利润2.07亿美元、经营利润率6%，但净利息费用8.46亿美元令净亏损达7.09亿美元。调整后EBITDA为22.56亿美元、利润率62%，收入积压1325亿美元；活跃功率超过1.7GW、签约功率超过4.6GW。公司将全年营收指引上调至130亿—133亿美元、资本开支收窄至370亿—390亿美元，并预计Q4利息费用10.5亿—11.5亿美元。 缺少可靠一致预期，暂不判断超预期。",
+      "why": "需求与积压仍强，但债务成本增长快于经营利润；AI云扩张的关键约束从订单转向电力交付、资本开支节奏和融资成本。 11月10日盘后发布；当晚可靠盘后报价/时点未核验，不以次日上涨冒充盘后。",
+      "source": "CoreWeave投资者关系",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "publishedAt": "2026-11-10",
+      "evidence": "公司未经审计业绩与非GAAP口径；积压受交付和服务可用性条件约束。电话会与发布同日，市场盘后涨幅在不同报价时点波动较大，正文不固定单一盘后数字。 本轮复核IR；非GAAP利润不能替代现金回报。",
+      "tags": [
+        "财报",
+        "AI云",
+        "数据中心",
+        "CoreWeave",
+        "融资成本",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "weekly-cisco-fy27q1-20261115",
+      "category": "产业链新闻",
+      "title": "Cisco FY2027 Q1财报（截至2026-10-24）",
+      "summary": "11月12日盘后公布营收185亿美元、同比+24%，GAAP/调整后EPS为1.14/1.40美元；网络收入+43%，GAAP毛利率降至63.7%。FY27收入指引748亿—758亿美元、调整后EPS 5.47—5.53美元，超大客户AI基础设施收入预期提高至90亿美元。Q2营收指引180亿—182亿美元。缺少可靠一致预期，暂不判断超预期。",
+      "why": "网络需求仍强，但毛利率下行是反证；观察交付、回款和结构。发布及电话会为11月12日盘后；当晚盘后价/时点未核验，不用次日收盘替代。",
+      "source": "Cisco正式业绩与电话会日历",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-reports-first-quarter-earnings.html",
+      "publishedAt": "2026-11-12",
+      "evidence": "官方未经审计业绩，实际/指引、GAAP/非GAAP分列；资本开支和一致预期未完整展开。",
+      "tags": [
+        "财报",
+        "Cisco",
+        "网络",
+        "AI基础设施"
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "weekly-anthropic-ipo-20261115",
+      "category": "核心团队",
+      "title": "Anthropic启动IPO路演｜每股70—78美元，战略配售与算力承诺同时放大",
+      "summary": "Anthropic于11月10日启动IPO路演，拟发行8.25亿股Class A，其中公司新发约8.0135亿股、老股东出售约2364.9万股；拟70—78美元区间，申请ANT代码。公司明确注册尚未生效，不是已完成融资或最终定价。期内日报的S-1/A财务及采购承诺属归档材料，本轮不扩写未重新读取的申报附件。",
+      "why": "IPO既为前沿模型融资，也把未来算力承诺、资本成本和供应链绑定公开化；估值之外，更应观察承诺转化为利用率和现金流的速度。",
+      "source": "Anthropic官方路演公告／SEC S-1/A2",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "publishedAt": "2026-11-10",
+      "evidence": "本轮重读公司路演公告；确认拟议规模、区间与待生效状态，不将募资当已到账。",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "融资",
+        "算力",
+        "核心团队",
+        "SEC"
+      ]
+    },
+    {
+      "id": "weekly-investor-countercase-20261115",
+      "category": "投资人观点",
+      "title": "Apollo与FUNDA｜需求韧性不排除融资与CPO兑现延后",
+      "summary": "Apollo 11月12日称软件2028到期墙仅压降10%、低于其余市场22%；11月14日警告强需求及供给冲击可能使加息超预期。FUNDA 11月13日公开段落对CPO放量转谨慎，认为键合与测试可能令规模交付推迟至2027年底—2028年；另把NVIDIA交接的风险指向生态融资。这些是机构判断/渠道研究，不是已确认订单或政策。",
+      "why": "反方不是需求归零，而是资本纪律、良率与交付可能先降低股权回报；观察信用利差、融资、认证和验收。",
+      "source": "Apollo Daily Spark／FUNDA公开部分",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-14",
+      "evidence": "付费墙后未读；Citrini11月4日只作前期背景，Coatue可读列表未检出本期新条目。",
+      "tags": [
+        "投资人观点",
+        "Apollo",
+        "FUNDA",
+        "CPO",
+        "融资",
+        "反证"
+      ],
+      "relatedSources": [
+        {
+          "title": "FUNDA CPO",
+          "url": "https://fundaai.substack.com/p/deep-whats-holding-back-co-packaged",
+          "date": "2026-11-13",
+          "evidence": "设备/工艺专家样本，非公司指引"
+        },
+        {
+          "title": "FUNDA NVIDIA",
+          "url": "https://fundaai.substack.com/p/deepnvda-the-ai-supply-chain-in-the",
+          "date": "2026-11-13",
+          "evidence": "可读公开段落的投资判断"
+        }
+      ]
+    },
+    {
+      "id": "weekly-macro-cost-of-capital-20261115",
+      "category": "宏观点评",
+      "title": "宏观周评｜利率再上台阶，中国资本补充不能等同股市放水",
+      "summary": "11月13日财政部日终2Y/10Y为4.88%/5.15%，较前一交易日+2/+5bp，较11月6日+37/+29bp。美元偏强；原油周跌约2%—2.5%，但结算源有分歧，不硬选价格。中国公布1500亿元、7年期金融机构注资特别国债，11月18日招标、19日起息，尚非已注资或信贷投放。中美缓和与俄乌/美伊谈判仍不能等同解除管制或停火。",
+      "why": "油价缓和不足以抵消无风险利率抬升；高负债AI基建与长久期软件估值更敏感。观察融资利差、实际投放、能源运输及政策原文落实。",
+      "source": "美国财政部／中国财政部／期内宏观归档",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
+      "publishedAt": "2026-11-13",
+      "evidence": "2Y/10Y使用同一财政部日终口径，11月11日休市。油价Brent2027年1月/WTI2026年12月存在95.84/88.56与96.13/88.92两组结算，保留冲突。中国通知署11月5日、网页11月11日发布。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "财政政策",
+        "战争与政治",
+        "资金成本"
+      ],
+      "relatedSources": [
+        {
+          "title": "中国注资国债原文",
+          "url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261111_4004456.htm",
+          "date": "2026-11-11",
+          "evidence": "已宣布发行，尚待招标、缴款与后续资金传导"
+        }
+      ]
+    },
+    {
+      "id": "weekly-us-market-20261115",
+      "category": "市场资金面",
+      "title": "美股周复盘｜周线修复，周五芯片与Neocloud再受压",
+      "summary": "11月13日完整收盘：标普7561.67（-0.40%）、纳指25136.27（-0.91%）、道指52347.55（+0.10%）；周涨分别2.51%、2.27%、2.07%。Nasdaq官方SOX收10146.32、日跌3.43%；部分AP表把前收10506.67列作收盘，本期以官方纠正，不据冲突序列算周涨。全美成交163.8亿股/20日均185.2亿股约0.884倍；NYSE/Nasdaq下跌比上涨1.28/1.61倍。",
+      "why": "周线反弹不等于新增资金确认，周五缩量且宽度转弱。观察NVIDIA业绩、IPO资金分流、科技ETF实际申赎和半导体宽度；成交不等于净流入。",
+      "source": "Nasdaq指数官网／Reuters收盘报道",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX",
+      "publishedAt": "2026-11-13",
+      "evidence": "股票均常规收盘；量比由同一Reuters报道的两个成交量计算，非个股量比。SOX历史口径冲突已明确。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体",
+        "市场宽度"
+      ],
+      "relatedSources": [
+        {
+          "title": "Reuters免费转载",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713",
+          "date": "2026-11-13",
+          "evidence": "收盘、周涨、成交与宽度"
+        }
+      ]
+    },
+    {
+      "id": "weekly-asia-market-20261115",
+      "category": "市场资金面",
+      "title": "亚洲周复盘｜日韩台周线修复，大中华科技仍弱",
+      "summary": "11月13日完整收盘：A股上证3634.35（-0.59%）、创业板2426.08（-3.32%）；港股恒指约23638（-1.55%）、恒科3813.19（-3.02%）。日经61142.35（+0.53%），TOPIX不同源冲突，仅确认小涨。韩国KOSPI5290.53（-0.98%）；台湾加权43675.12（+1.35%）。南向当日净买23.33亿港元，不能外推全亚洲资金回流；周末休市。",
+      "why": "亚洲修复不均衡，大中华互联网与AI硬件仍受压。观察韩国/台湾交易所外资、港股南向、A股两融与ETF；日本只有周频外资时须标统计期。",
+      "source": "公开收盘汇总／券商行情／南向成交统计转载",
+      "url": "https://www.stockq.org/stock/history/2026/11/20261113_en.php",
+      "publishedAt": "2026-11-13",
+      "evidence": "恒指有23625—23638点冲突；采用约数。TOPIX只写方向，未混盘中与收盘；未取得统一日本周频外资及各市场ETF申赎。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ],
+      "relatedSources": [
+        {
+          "title": "南向成交明细转载",
+          "url": "https://finance.eastmoney.com/a/202611133931001030.html",
+          "date": "2026-11-13",
+          "evidence": "净买卖是买入成交减卖出成交，不是全市场流入"
+        },
+        {
+          "title": "恒科完整收盘",
+          "url": "https://longbridge.com/zh-CN/quote/HSTECH.HK",
+          "date": "2026-11-13",
+          "evidence": "3813.19，跌3.02%"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-navigation-20261115",
+      "category": "调研纪要",
+      "title": "AceCamp归档导航｜34个可恢复原链接，缺失元数据不补造",
+      "summary": "本轮只读取11月9—13日五期日报，不直接连接Cubox。仓库可恢复34个唯一AceCamp文章链接，但这不等于本期全部收藏：11月9日收藏概览声称40篇却未保存逐条链接，11月13日检查记录称14篇但只留3篇精读链接。11月8日的19个跨期链接保留作背景，其中日期或更新时间精度不足的材料不冒充本期新增；本周逐篇复核15篇有精确原链接、且收藏日落在11月9—12日的归档摘要。",
+      "why": "导航与精读分层，研究范围以可恢复证据为准；不把有总数但缺明细的记录伪装成全量覆盖。",
+      "source": "统计期五期已入库日报",
+      "url": "https://audreyyuan-svg.github.io/data/index.json",
+      "publishedAt": "2026-11-15",
+      "evidence": "本轮未访问Cubox、未读取私人全文；34个链接包括19个11月8日跨期候选。严格左闭右开的新收藏全量无法从缺失明细恢复。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "全部动态",
+        "覆盖缺口"
+      ],
+      "relatedSources": [
+        {
+          "title": "先进封装纪要｜CoWoS-L溢价与国内客户爬坡仍属单一专家口径",
+          "url": "https://www.acecamptech.com/article/detail/70568934",
+          "date": "2026-11-06T10:21:31+08:00",
+          "evidence": "2026-11-09日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "1.6T电芯片纪要｜Driver已量产，TIA认证与锗硅产能仍是瓶颈",
+          "url": "https://www.acecamptech.com/article/detail/70568963",
+          "date": "2026-11-07T05:10:10+08:00",
+          "evidence": "2026-11-09日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "金刚石热沉片激光加工分析—大族/英诺/华工",
+          "url": "https://www.acecamptech.com/article/detail/70568975",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "AI SaaS纪要｜数据底座与FDE交付比基础模型更接近ROI",
+          "url": "https://www.acecamptech.com/article/detail/70568927",
+          "date": "2026-11-08T08:17:02+08:00",
+          "evidence": "2026-11-09日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "平台化防护与币安安全事件产业链观察",
+          "url": "https://www.acecamptech.com/article/detail/70568947",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "硅电容用激光设备分析—村田/三星电机选型差异",
+          "url": "https://www.acecamptech.com/article/detail/70568973",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "SiC龙头供应商交流：83%稼动率叙事与供需验证",
+          "url": "https://www.acecamptech.com/article/detail/70568958",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "电池C公司调研",
+          "url": "https://www.acecamptech.com/article/detail/70568942",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "数采手套龙头近况更新",
+          "url": "https://www.acecamptech.com/article/detail/70568949",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "AI搜索冲击下的广告：高单价与流量分流",
+          "url": "https://www.acecamptech.com/article/detail/70568970",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "北美N厂专家谈具身数据采集模式",
+          "url": "https://www.acecamptech.com/article/detail/70568951",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "液冷机床详解",
+          "url": "https://www.acecamptech.com/article/detail/70568967",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "消费电子龙头采购视角：2026—2027存储与被动元器件",
+          "url": "https://www.acecamptech.com/article/detail/70568948",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "存储价格纪要｜Q4官价仍涨，消费现货已出现分化",
+          "url": "https://www.acecamptech.com/article/detail/70568957",
+          "date": "2026-11-06T16:25:52+08:00",
+          "evidence": "2026-11-09日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "端侧SoC头部厂商：谷歌等海外大厂2027年订单线索",
+          "url": "https://www.acecamptech.com/article/detail/70568910",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "人形机器人之滚珠丝杠产业更新",
+          "url": "https://www.acecamptech.com/article/detail/70568966",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "光芯片厂商调研：200G PD与2.4T轻相干",
+          "url": "https://www.acecamptech.com/article/detail/70568964",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "人形机器人数采大厂专家谈无本体数据",
+          "url": "https://www.acecamptech.com/article/detail/70568952",
+          "date": "2026-11-08",
+          "evidence": "归档日报标题导航；本轮未读取私人原文，不依据标题扩写。"
+        },
+        {
+          "title": "Azure纪要｜AI更像云的获客层，复合计费与RPO兑现仍待验证",
+          "url": "https://www.acecamptech.com/article/detail/70568918",
+          "date": "2026-11-07T21:54:03+08:00",
+          "evidence": "2026-11-09日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "模型任务成本纪要｜低token价格不等于低完成成本",
+          "url": "https://www.acecamptech.com/article/detail/70569007",
+          "date": "2026-11-09T11:20:25+08:00",
+          "evidence": "2026-11-10日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "Agent算力纪要｜增量CPU主要在工具执行，DRAM受任务形态与解码速度共同影响",
+          "url": "https://www.acecamptech.com/article/detail/70569016",
+          "date": "2026-11-09T13:56:05+08:00",
+          "evidence": "2026-11-10日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜AI光互联：政策尾部风险与2027年供需预期",
+          "url": "https://www.acecamptech.com/article/detail/70569042",
+          "date": "2026-11-10",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜Marvell–Lumentum：CPO整合逻辑与时间风险",
+          "url": "https://www.acecamptech.com/article/detail/70569041",
+          "date": "2026-11-10",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜模拟芯片：AI电源库存升高，汽车低值料转紧",
+          "url": "https://www.acecamptech.com/article/detail/70569048",
+          "date": "2026-11-09",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜高功率AI机柜推动BBU与800V HVDC",
+          "url": "https://www.acecamptech.com/article/detail/70569066",
+          "date": "2026-11-10",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜视频号商业化：加载率提升而价格平稳",
+          "url": "https://www.acecamptech.com/article/detail/70569081",
+          "date": "2026-11-10",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜具身智能：工业先行，药房ROI仍苛刻",
+          "url": "https://www.acecamptech.com/article/detail/70569069",
+          "date": "2026-11-10",
+          "evidence": "2026-11-11日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜北美Neocloud：订单强劲，执行与融资决定兑现",
+          "url": "https://www.acecamptech.com/article/detail/70569111",
+          "date": "2026-11-11",
+          "evidence": "2026-11-12日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜腾讯云：算力租赁先兑现，MaaS价格竞争加剧",
+          "url": "https://www.acecamptech.com/article/detail/70569043",
+          "date": "2026-11-11",
+          "evidence": "2026-11-12日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜国产AI芯片：HBM与先进封装仍是硬约束",
+          "url": "https://www.acecamptech.com/article/detail/70569108",
+          "date": "2026-11-11",
+          "evidence": "2026-11-12日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜AWS：推理占比提升，B300租价暂未明显下行",
+          "url": "https://www.acecamptech.com/article/detail/70569092",
+          "date": "2026-11-11",
+          "evidence": "2026-11-12日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜AI原生SaaS向KA扩展：项目收入与Token续费须分开看",
+          "url": "https://www.acecamptech.com/article/detail/70569150",
+          "date": "2026-11-12",
+          "evidence": "2026-11-13日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜Blackwell与Rubin服务器：功耗与存储成本是BOM敏感项",
+          "url": "https://www.acecamptech.com/article/detail/70569151",
+          "date": "2026-11-12",
+          "evidence": "2026-11-13日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        },
+        {
+          "title": "AceCamp｜购物Agent仍以降低搜索负担为主，转化闭环受真实评价与实时数据制约",
+          "url": "https://www.acecamptech.com/article/detail/70569149",
+          "date": "2026-11-12",
+          "evidence": "2026-11-13日报保留的已归档摘要；全文读取状态依原期记录，本轮未重读私人全文。"
+        }
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": null,
+        "updatedAt": null,
+        "sample": "34个可恢复唯一原链接；15篇期内归档摘要，非34篇全文",
+        "topics": [
+          {
+            "heading": "覆盖边界",
+            "bullets": [
+              "11月8日19个链接仅为跨期背景，不认定全部发生在18:00以后。",
+              "仅有AceCamp首页的AI数据服务纪要不作精确原文卡片，主题在综合中保留渠道归属。",
+              "11月13日18:00至15日18:00未入库周末收藏不在本期覆盖，按用户要求不直接访问Cubox。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "weekly-acecamp-openai-cost-deepseek-70569007",
+      "category": "调研纪要",
+      "title": "模型任务成本纪要｜低token价格不等于低完成成本",
+      "summary": "匿名专家认为，海外前沿模型通过审核、动态路由和上下文复用提高复杂任务成功率；DeepSeek类开源模型在已有模板、强编排和自部署场景仍具成本优势，复杂工作流中可能与高端模型形成“规划—执行—复核”分工。其对具体模型版本、SSD/KV cache降幅、OpenAI产品路线及行业份额的描述未获官方或模型卡验证，不能当作产品事实。AI制药和EDA部分的核心反证是：专有数据、实验验证与底层权限仍掌握在药企/EDA厂商手中。",
+      "why": "模型经济性应按任务成功率、编排成本和数据权限衡量，而不是只比较每百万token报价。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569007",
+      "publishedAt": "2026-11-09T11:20:25+08:00",
+      "evidence": "已读全文；渠道观点，不是OpenAI、DeepSeek、药企或EDA公司披露。未验证产品名和数字已明确降级。 本轮仅读取2026-11-10日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "OpenAI",
+        "DeepSeek",
+        "单位任务成本"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-09T23:28:46+08:00",
+        "updatedAt": "2026-11-09T23:28:47+08:00",
+        "sample": "单一匿名专家；公司与客户未披露",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "匿名专家认为，海外前沿模型通过审核、动态路由和上下文复用提高复杂任务成功率；DeepSeek类开源模型在已有模板、强编排和自部署场景仍具成本优势，复杂工作流中可能与高端模型形成“规划—执行—复核”分工。其对具体模型版本、SSD/KV cache降幅、OpenAI产品路线及行业份额的描述未获官方或模型卡验证，不能当作产品事实。AI制药和EDA部分的核心反证是：专有数据、实验验证与底层权限仍掌握在药企/EDA厂商手中。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "成本口径",
+            "bullets": [
+              "token报价≠任务完成成本",
+              "强编排利好开源模型",
+              "高端模型负责规划与复核"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "具体版本与硬件数字未验证",
+              "制药数据不开放",
+              "EDA权限与流片验证仍受限"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-10原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-10.json",
+          "date": "2026-11-10",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-agent-cpu-dram-70569016",
+      "category": "调研纪要",
+      "title": "Agent算力纪要｜增量CPU主要在工具执行，DRAM受任务形态与解码速度共同影响",
+      "summary": "匿名专家把Agent计算分为机柜内token处理、工具选择和机柜外工具/环境执行，认为代码与深度调研等串行“瘦高”任务的CPU核秒/token比更高，并会带动DRAM；其举例传统token处理约0.2—0.5核秒/千token，复杂任务可达约20核秒/千token。专家同时认为中国企业API与回调更成熟，Agent轮询等待少于北美旧系统。上述数字没有公开样本、测量脚本和硬件配置，且“20核秒接近上限”与其“未来可能更高”的说法存在内在张力。",
+      "why": "Agent基础设施的增量不只在GPU；CPU、DRAM和企业系统接口可能决定真实任务TCO，但投资测算必须先验证任务与硬件口径。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569016",
+      "publishedAt": "2026-11-09T13:56:05+08:00",
+      "evidence": "已读全文；单位资源数字为专家经验值，缺少公开基准和样本，未外推为全行业。 本轮仅读取2026-11-10日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Agent",
+        "CPU",
+        "DRAM"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-09",
+        "updatedAt": "2026-11-09",
+        "sample": "单一匿名基础设施专家；无公开测量脚本",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "匿名专家把Agent计算分为机柜内token处理、工具选择和机柜外工具/环境执行，认为代码与深度调研等串行“瘦高”任务的CPU核秒/token比更高，并会带动DRAM；其举例传统token处理约0.2—0.5核秒/千token，复杂任务可达约20核秒/千token。专家同时认为中国企业API与回调更成熟，Agent轮询等待少于北美旧系统。上述数字没有公开样本、测量脚本和硬件配置，且“20核秒接近上限”与其“未来可能更高”的说法存在内在张力。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "资源链",
+            "bullets": [
+              "机柜内token处理",
+              "机柜外工具执行",
+              "CPU与DRAM强相关"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "核秒数字缺测量环境",
+              "上限判断前后有张力",
+              "中美效率差异缺企业样本"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-10原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-10.json",
+          "date": "2026-11-10",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-ai-optical-policy-demand-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜AI光互联：政策尾部风险与2027年供需预期",
+      "summary": "受访专家判断，现有800G/1.6T已通过验证，潜在FCC限制更可能影响未来3.2T；该判断尚无公开规则文本确认。渠道称过去两年未见客户撤单，2026年800G出货预计约2600万只、1.6T约500万—600万只；但新易盛原定800G/1.6T目标或因上半年光芯片短缺未达成。对2027年的1.2亿只800G、6000万—7000万只1.6T预测明显激进，需用厂商指引与终端Capex交叉核验。",
+      "why": "纪要同时给出政策反例和供需数字，适合做情景分析；其最大风险是把未落地政策和单一渠道预测当成确定订单。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569042",
+      "publishedAt": "2026-11-10",
+      "evidence": "专家渠道观点；样本为单一受访者，FCC范围、客户订单和出货预测均未由公司或监管公开材料确认。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "光模块",
+        "FCC",
+        "800G",
+        "1.6T"
+      ],
+      "research": {
+        "meetingDate": "2026-11-10",
+        "savedAt": "2026-11-10T19:54:31+08:00",
+        "updatedAt": "2026-11-10T19:54:35+08:00",
+        "sample": "单一行业专家，未披露公司与样本覆盖",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "受访专家判断，现有800G/1.6T已通过验证，潜在FCC限制更可能影响未来3.2T；该判断尚无公开规则文本确认。渠道称过去两年未见客户撤单，2026年800G出货预计约2600万只、1.6T约500万—600万只；但新易盛原定800G/1.6T目标或因上半年光芯片短缺未达成。对2027年的1.2亿只800G、6000万—7000万只1.6T预测明显激进，需用厂商指引与终端Capex交叉核验。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "成熟800G/1.6T受限概率被判断为较低，3.2T政策风险更靠后",
+              "渠道称2027年需求仍强，但部分2026目标已受供给约束下修"
+            ]
+          },
+          {
+            "heading": "分歧与待验证",
+            "bullets": [
+              "限制范围尚无公开规则文本",
+              "2027出货预测需与DSP、激光器产能和CSP Capex交叉核验"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-marvell-lumentum-cpo-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜Marvell–Lumentum：CPO整合逻辑与时间风险",
+      "summary": "受访专家把并购逻辑概括为Marvell补齐激光器、磷化铟与独立光源能力，形成电芯片+光芯片的一体化方案并追赶Broadcom；传统可插拔模块未来两年仍是主力，CPO规模化被推到2028年后。纪要预测2027年NVIDIA CPO交换机8万—10万台、Marvell仅数千台，并认为交易最快也要到2028年上半年完成，需跨美国、欧盟和中国监管。数字均为渠道预测，不是公司指引。",
+      "why": "并购协同的产业逻辑成立与否，将影响DSP、激光器、InP材料和CPO设备链；监管时间与集成执行是关键反证。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569041",
+      "publishedAt": "2026-11-10",
+      "evidence": "单一专家观点；市场份额、交换机单价与出货预测未由公司公告独立验证。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Marvell",
+        "Lumentum",
+        "CPO",
+        "光通信"
+      ],
+      "research": {
+        "meetingDate": "2026-11-10",
+        "savedAt": "2026-11-10T19:54:41+08:00",
+        "updatedAt": "2026-11-10T19:54:45+08:00",
+        "sample": "单一北美光互联行业专家",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "受访专家把并购逻辑概括为Marvell补齐激光器、磷化铟与独立光源能力，形成电芯片+光芯片的一体化方案并追赶Broadcom；传统可插拔模块未来两年仍是主力，CPO规模化被推到2028年后。纪要预测2027年NVIDIA CPO交换机8万—10万台、Marvell仅数千台，并认为交易最快也要到2028年上半年完成，需跨美国、欧盟和中国监管。数字均为渠道预测，不是公司指引。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "产业逻辑",
+            "bullets": [
+              "Marvell通过Lumentum补光源与InP能力",
+              "可插拔仍主导近两年，CPO放量预期靠后"
+            ]
+          },
+          {
+            "heading": "风险",
+            "bullets": [
+              "监管审批至少跨三地",
+              "CPO出货和价格为渠道预测，可能显著偏离"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-analog-chip-supply-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜模拟芯片：AI电源库存升高，汽车低值料转紧",
+      "summary": "渠道称2026Q3 AI相关业务环比约+20%、同比近翻倍，更多来自积压订单交付与产能释放；7—8月供应恢复后，部分电源客户物料库存可覆盖9—12个月，TPS82130SILR交期由约20周缩至约12周。与此同时，产能向AI迁移使1美元以下汽车LDO、隔离、逻辑与DC/DC料号交期从15—18周拉长至26周。受访者预计2027年AI服务器增速降温，而工业由电网、储能和自动化带动。",
+      "why": "该纪要给出AI链内部的反方：收入高增不必然意味着终端继续加速，库存与交期改善可能先带来去库存。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569048",
+      "publishedAt": "2026-11-09",
+      "evidence": "渠道专家观点，品牌/客户样本未完整披露；库存月数、交期与增速需用模拟芯片公司财报和分销数据交叉核验。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "模拟芯片",
+        "AI服务器",
+        "库存",
+        "汽车电子"
+      ],
+      "research": {
+        "meetingDate": "2026-11-09",
+        "savedAt": "2026-11-10T22:48:45+08:00",
+        "updatedAt": "2026-11-10T22:48:50+08:00",
+        "sample": "单一模拟芯片供应链专家",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "渠道称2026Q3 AI相关业务环比约+20%、同比近翻倍，更多来自积压订单交付与产能释放；7—8月供应恢复后，部分电源客户物料库存可覆盖9—12个月，TPS82130SILR交期由约20周缩至约12周。与此同时，产能向AI迁移使1美元以下汽车LDO、隔离、逻辑与DC/DC料号交期从15—18周拉长至26周。受访者预计2027年AI服务器增速降温，而工业由电网、储能和自动化带动。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "数据口径",
+            "bullets": [
+              "AI客户库存9—12个月为渠道估计",
+              "交期缩短与汽车低值料短缺并存"
+            ]
+          },
+          {
+            "heading": "观察指标",
+            "bullets": [
+              "2027Q1客户拉货",
+              "汽车产能回迁与工业补库"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-ai-rack-bbu-hvdc-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜高功率AI机柜推动BBU与800V HVDC",
+      "summary": "专家预计Rubin Ultra及Google V8/V9等400—600kW机柜从2027年下半年起推动±400V/800V HVDC和全机柜LFP BBU成为标配。以GB300为例，当前BBU仍为选配，满配36组、每组约150—180美元；纪要估算每柜约5400颗电芯。专家还预计全机柜方案单颗价值量较传统高50%—60%。这些属于未来平台与供应链推演，NVIDIA/Google公开BOM、采购份额与量产节奏尚未交叉确认。",
+      "why": "电力架构变化可能重塑电芯、连接器、电源模块与配电价值量，但最敏感假设是机柜功率、BBU标配率和量产时间。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569066",
+      "publishedAt": "2026-11-10",
+      "evidence": "资深行业专家观点；未来平台配置和价值量非公司正式披露。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "BBU",
+        "HVDC",
+        "AI机柜",
+        "电源"
+      ],
+      "research": {
+        "meetingDate": "2026-11-10",
+        "savedAt": "2026-11-10T19:50:57+08:00",
+        "updatedAt": "2026-11-10T19:51:01+08:00",
+        "sample": "单一AI电源/电池行业专家",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "专家预计Rubin Ultra及Google V8/V9等400—600kW机柜从2027年下半年起推动±400V/800V HVDC和全机柜LFP BBU成为标配。以GB300为例，当前BBU仍为选配，满配36组、每组约150—180美元；纪要估算每柜约5400颗电芯。专家还预计全机柜方案单颗价值量较传统高50%—60%。这些属于未来平台与供应链推演，NVIDIA/Google公开BOM、采购份额与量产节奏尚未交叉确认。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "推演",
+            "bullets": [
+              "2027年后高功率机柜提升BBU标配率",
+              "800V架构放大电源链价值量"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "现有GB200/GB300 BBU仍为选配",
+              "公开BOM与真实采购份额缺失"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-wechat-commercialization-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜视频号商业化：加载率提升而价格平稳",
+      "summary": "渠道估计视频号DAU约6.4亿—6.5亿、人均时长76分钟，总流量同比约+20%；公域算法推荐流广告加载率约6%—8%，社交/私域仅2%—3%，主流效果广告eCPM约27—28元。其判断广告增长主要来自流量和加载率而非价格，微信“泛内循环”广告占比约50%，其中微信小店约20%多。专家也承认抖音在用户画像与推荐绝对水平上仍领先，大商家扩量时微信流量上限更明显。",
+      "why": "增长质量取决于加载率提升是否损害体验，以及AI投放工具能否带来ROI而非仅增加库存。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569081",
+      "publishedAt": "2026-11-10",
+      "evidence": "渠道专家估计，未提供腾讯官方口径、样本范围或审计数据；不得外推为公司财报。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "腾讯",
+        "微信",
+        "视频号",
+        "广告"
+      ],
+      "research": {
+        "meetingDate": "2026-11-10",
+        "savedAt": "2026-11-10T19:45:14+08:00",
+        "updatedAt": "2026-11-10T19:45:20+08:00",
+        "sample": "单一微信广告渠道专家",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "渠道估计视频号DAU约6.4亿—6.5亿、人均时长76分钟，总流量同比约+20%；公域算法推荐流广告加载率约6%—8%，社交/私域仅2%—3%，主流效果广告eCPM约27—28元。其判断广告增长主要来自流量和加载率而非价格，微信“泛内循环”广告占比约50%，其中微信小店约20%多。专家也承认抖音在用户画像与推荐绝对水平上仍领先，大商家扩量时微信流量上限更明显。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "商业化",
+            "bullets": [
+              "增量主要来自流量与Ad Load",
+              "效果广告eCPM相对平稳"
+            ]
+          },
+          {
+            "heading": "局限",
+            "bullets": [
+              "DAU、时长和收入均非腾讯公开口径",
+              "微信扩量能力仍弱于抖音"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-embodied-ai-roi-storage-20261110",
+      "category": "调研纪要",
+      "title": "AceCamp｜具身智能：工业先行，药房ROI仍苛刻",
+      "summary": "受访专家称Galbot S1在电池/汽车零部件场景已有100多台运行，头部企业自有训练数据约100万—150万小时，基础模型多为7B—13B；这些均为渠道口径。无人药房机器人整机、模型与服务约40万—60万元，一线城市替代单人时理想回收期2—3年、较差场景4—5年仍难回本。专家称高峰日处理近500单、十余步全流程准确率超过98%，但订单密度、维护成本和政府驱动需求的持续性仍是关键反证。",
+      "why": "具身智能的算力故事必须回到单点ROI、全流程成功率和部署后的数据回流；工业场景比展示型采购更具持续性。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569069",
+      "publishedAt": "2026-11-10",
+      "evidence": "单一专家渠道；部署台数、准确率、参数量和算力需求未由公司公开材料核验。 本轮仅读取2026-11-11日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "具身智能",
+        "机器人",
+        "ROI",
+        "存储"
+      ],
+      "research": {
+        "meetingDate": "2026-11-10",
+        "savedAt": "2026-11-10T19:50:20+08:00",
+        "updatedAt": "2026-11-10T19:50:24+08:00",
+        "sample": "单一具身智能行业专家",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "受访专家称Galbot S1在电池/汽车零部件场景已有100多台运行，头部企业自有训练数据约100万—150万小时，基础模型多为7B—13B；这些均为渠道口径。无人药房机器人整机、模型与服务约40万—60万元，一线城市替代单人时理想回收期2—3年、较差场景4—5年仍难回本。专家称高峰日处理近500单、十余步全流程准确率超过98%，但订单密度、维护成本和政府驱动需求的持续性仍是关键反证。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "商业化",
+            "bullets": [
+              "工业搬运真实需求强于展示型采购",
+              "药房场景回收期高度依赖订单密度"
+            ]
+          },
+          {
+            "heading": "数据与算力",
+            "bullets": [
+              "部署后失败/异常数据回流是关键",
+              "单机端侧约256GB—1TB、边缘NAS可达PB级为渠道口径"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-11原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-11.json",
+          "date": "2026-11-11",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-neocloud-execution-financing-20261111",
+      "category": "调研纪要",
+      "title": "AceCamp｜北美Neocloud：订单强劲，执行与融资决定兑现",
+      "summary": "受访专家称Neocloud项目目标IRR多为20%—25%，AI实验室预付款约5%—10%，CSP及中型客户约20%—25%；新合同多为2—3年，GB200/GB300长约价格约8—9美元/GPU小时，利用率可达90%—95%。渠道判断推理业务毛利更高、需求仍超过供给，但CoreWeave等公司的主要风险转向融资、并网、交付与SLA赔付；订单可见度不等于现金流确定性。",
+      "why": "算力租赁的核心矛盾从需求转向资本结构与执行，适合用来检验上市公司积压订单的质量。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569111",
+      "publishedAt": "2026-11-11",
+      "evidence": "单一专家/渠道观点，合同价格、预付款、利用率和公司风险未由客户或公司公开文件确认。 本轮仅读取2026-11-12日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Neocloud",
+        "CoreWeave",
+        "融资",
+        "推理"
+      ],
+      "research": {
+        "meetingDate": "2026-11-11",
+        "savedAt": "2026-11-11T15:23:55+08:00",
+        "updatedAt": "2026-11-11T15:23:56+08:00",
+        "sample": "单一北美算力基础设施专家，未披露覆盖客户数量",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "受访专家称Neocloud项目目标IRR多为20%—25%，AI实验室预付款约5%—10%，CSP及中型客户约20%—25%；新合同多为2—3年，GB200/GB300长约价格约8—9美元/GPU小时，利用率可达90%—95%。渠道判断推理业务毛利更高、需求仍超过供给，但CoreWeave等公司的主要风险转向融资、并网、交付与SLA赔付；订单可见度不等于现金流确定性。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "订单与利用率仍强，推理成为更偏好的高毛利负载",
+              "预付款、合同期和GPU小时价格因客户类型显著不同"
+            ]
+          },
+          {
+            "heading": "分歧与待验证",
+            "bullets": [
+              "融资、并网、SLA和提前终止条款可能侵蚀订单价值",
+              "需与公司现金流、债务成本和实际交付进度交叉核验"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-12原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-12.json",
+          "date": "2026-11-12",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-tencent-cloud-maas-20261111",
+      "category": "调研纪要",
+      "title": "AceCamp｜腾讯云：算力租赁先兑现，MaaS价格竞争加剧",
+      "summary": "渠道称腾讯云2026年AI增量约80%来自GPU租赁；MaaS自4月上线、7—9月快速增长后10月趋平。第三方模型中DeepSeek份额最大，GLM约三成，MiniMax居第三，Kimi较小，前两者合计约八成；混元当前收入贡献很低，受访者预计2027年才明显商业化。其同时预计2027年Token量增长约50%，但价格竞争可能令利润持平。以上均非腾讯正式披露。",
+      "why": "数据反映国内云AI收入首先来自算力而非自研模型，Token增长和利润增长可能脱钩。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569043",
+      "publishedAt": "2026-11-11",
+      "evidence": "单一专家/渠道口径；模型份额、投资额与商业化时间表未由腾讯核实。 本轮仅读取2026-11-12日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "腾讯云",
+        "MaaS",
+        "DeepSeek",
+        "GLM",
+        "混元"
+      ],
+      "research": {
+        "meetingDate": "2026-11-11",
+        "savedAt": "2026-11-11T09:57:48+08:00",
+        "updatedAt": "2026-11-11T09:57:58+08:00",
+        "sample": "单一腾讯云相关专家，未披露客户样本与财务口径",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "渠道称腾讯云2026年AI增量约80%来自GPU租赁；MaaS自4月上线、7—9月快速增长后10月趋平。第三方模型中DeepSeek份额最大，GLM约三成，MiniMax居第三，Kimi较小，前两者合计约八成；混元当前收入贡献很低，受访者预计2027年才明显商业化。其同时预计2027年Token量增长约50%，但价格竞争可能令利润持平。以上均非腾讯正式披露。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "AI收入增量以GPU租赁为主，MaaS增速在10月趋平",
+              "第三方模型调用集中，混元商业化仍早"
+            ]
+          },
+          {
+            "heading": "分歧与待验证",
+            "bullets": [
+              "Token量增长可能被降价抵消",
+              "需对照腾讯财报的云收入、Capex及自研模型计费"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-12原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-12.json",
+          "date": "2026-11-12",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-domestic-gpu-hbm-bottleneck-20261111",
+      "category": "调研纪要",
+      "title": "AceCamp｜国产AI芯片：HBM与先进封装仍是硬约束",
+      "summary": "受访专家称HBM约占国产GPU物料成本40%，价格上涨和低库存使部分厂商主动放缓出货；其预计国产HBM3E最快2028年，长鑫HBM3或于2027年三季度形成约2万—3万片/月产能。按其每片约350GB、单GPU 128GB假设，月供约5万颗GPU，仅覆盖预测需求约15%；L型封装月产能约7000片、良率理想时年供约120万颗。所有测算依赖单一渠道和高良率假设。",
+      "why": "国产算力兑现不只看晶圆，HBM、封装良率和价格传导共同决定出货与毛利。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569108",
+      "publishedAt": "2026-11-11",
+      "evidence": "专家推演而非厂商披露；产能、良率、单片GB与需求预测均需供应商和财报交叉核验。 本轮仅读取2026-11-12日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "国产GPU",
+        "HBM",
+        "先进封装",
+        "供应链"
+      ],
+      "research": {
+        "meetingDate": "2026-11-11",
+        "savedAt": "2026-11-11T15:24:31+08:00",
+        "updatedAt": "2026-11-11T15:24:40+08:00",
+        "sample": "单一国产GPU/HBM产业专家，未披露具体公司访谈数量",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "受访专家称HBM约占国产GPU物料成本40%，价格上涨和低库存使部分厂商主动放缓出货；其预计国产HBM3E最快2028年，长鑫HBM3或于2027年三季度形成约2万—3万片/月产能。按其每片约350GB、单GPU 128GB假设，月供约5万颗GPU，仅覆盖预测需求约15%；L型封装月产能约7000片、良率理想时年供约120万颗。所有测算依赖单一渠道和高良率假设。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "HBM涨价与库存限制短期出货",
+              "国产HBM与封装产能难以覆盖全部需求"
+            ]
+          },
+          {
+            "heading": "分歧与待验证",
+            "bullets": [
+              "15%覆盖率高度依赖需求、良率和单GPU容量假设",
+              "需跟踪长鑫量产、封装扩产和厂商毛利率"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-12原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-12.json",
+          "date": "2026-11-12",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-aws-inference-capex-20261111",
+      "category": "调研纪要",
+      "title": "AceCamp｜AWS：推理占比提升，B300租价暂未明显下行",
+      "summary": "渠道认为AWS未来两年高增长判断主要由现有订单与算力交付支撑，Anthropic相关负载正从训练向推理倾斜；B300租赁价格暂未明显下降，GB300交付未见普遍性重大延误。第三方模型调用与收入占比提升，但开放模型约占5%的说法仅为受访者估计；内存交付改善也尚未见AWS公开量化。该纪要更适合作为需求方向线索，而非收入或产能事实。",
+      "why": "训练转推理影响GPU利用率、网络与存储配置，也决定AWS的毛利与客户锁定方式。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569092",
+      "publishedAt": "2026-11-11",
+      "evidence": "单一专家观点；增长、租价、交付和模型占比均未由AWS或Anthropic公开确认。 本轮仅读取2026-11-12日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AWS",
+        "Anthropic",
+        "推理",
+        "GB300",
+        "云计算"
+      ],
+      "research": {
+        "meetingDate": "2026-11-11",
+        "savedAt": "2026-11-11T09:57:37+08:00",
+        "updatedAt": "2026-11-11T09:57:49+08:00",
+        "sample": "单一AWS生态专家，未披露订单与客户覆盖",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "渠道认为AWS未来两年高增长判断主要由现有订单与算力交付支撑，Anthropic相关负载正从训练向推理倾斜；B300租赁价格暂未明显下降，GB300交付未见普遍性重大延误。第三方模型调用与收入占比提升，但开放模型约占5%的说法仅为受访者估计；内存交付改善也尚未见AWS公开量化。该纪要更适合作为需求方向线索，而非收入或产能事实。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "Anthropic算力结构向推理倾斜",
+              "B300租价和GB300交付暂未出现普遍恶化"
+            ]
+          },
+          {
+            "heading": "分歧与待验证",
+            "bullets": [
+              "开放模型份额与内存改善缺少公开量化",
+              "需跟踪AWS财报、Capex、积压订单与推理价格"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-12原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-12.json",
+          "date": "2026-11-12",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-ai-saas-ka-token-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜AI原生SaaS向KA扩展：项目收入与Token续费须分开看",
+      "summary": "一位产业专家以快消、制造业项目为例称，AI营销、数据分析和CRM正从试点走向集团级部署，客户的中台、定制、订阅和Token消耗共同构成收入。其案例估算AI导入后年费可提高，且未来通过更多场景和Token计费扩大单客价值；但项目制一次性收入占比高、客户ROI与行业知识交付仍是签约前提，传统ERP厂商和大厂亦构成竞争。以上均为单一专家观点，未获公司公告验证。",
+      "why": "企业AI的“收入放量”必须拆成一次性部署、经常性订阅和按量Token，三者的毛利、回款和持续性不同。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569150",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一产业专家访谈，不是金蝶、用友、第四范式或阿里云的公司披露；金额、客户和渗透率不可外推。 本轮仅读取2026-11-13日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "企业AI",
+        "SaaS",
+        "Token计费",
+        "KA客户"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:11.825+08:00",
+        "updatedAt": "2026-11-12T13:13:18.637+08:00",
+        "sample": "单一产业专家，案例与客户覆盖范围未披露",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "一位产业专家以快消、制造业项目为例称，AI营销、数据分析和CRM正从试点走向集团级部署，客户的中台、定制、订阅和Token消耗共同构成收入。其案例估算AI导入后年费可提高，且未来通过更多场景和Token计费扩大单客价值；但项目制一次性收入占比高、客户ROI与行业知识交付仍是签约前提，传统ERP厂商和大厂亦构成竞争。以上均为单一专家观点，未获公司公告验证。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "提要",
+            "bullets": [
+              "专家认为营销、销售与数据分析更易形成可量化ROI，KA项目正向更多行业场景延伸。",
+              "收入需拆分平台/定制、订阅和Token消耗；项目上线后的使用量才决定续费质量。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "大厂品牌、ERP既有系统和交付风险会影响采购；“单客价值翻倍”未获公司披露。",
+              "观察合同负债、续费率、Token毛利、部署周期与可验证的客户ROI。"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-13原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-13.json",
+          "date": "2026-11-13",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-rubin-server-bom-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜Blackwell与Rubin服务器：功耗与存储成本是BOM敏感项",
+      "summary": "一份服务器产业专家访谈比较GB300与Vera Rubin 200：其估算Rubin单柜运行功耗约180kW、供电配置约220kW，高于GB300；并认为HBM、LPDDR5X、网络芯片、PCB和液冷的价值量上升，且其单柜成本估算未纳入未来HBM涨价。该材料还称大CSP常通过NVIDIA向ODM分配订单，非所有CSP都是ODM直接客户。数值和供货关系均为访谈口径。",
+      "why": "若功耗、存储价格和网络配置如访谈所述，AI机柜单位Capex、并网周期与供应链利润池会同时变化；不能把研究估算当NVIDIA或ODM的正式BOM。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569151",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一行业访谈；未与NVIDIA、ODM或内存厂商公开规格及报价逐项交叉，数字不作为公司指引。 本轮仅读取2026-11-13日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "NVIDIA",
+        "Rubin",
+        "GB300",
+        "服务器",
+        "液冷",
+        "HBM"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:46.340+08:00",
+        "updatedAt": "2026-11-12T13:13:52.929+08:00",
+        "sample": "单一服务器产业专家，未披露供应商、订单与BOM取样方法",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "一份服务器产业专家访谈比较GB300与Vera Rubin 200：其估算Rubin单柜运行功耗约180kW、供电配置约220kW，高于GB300；并认为HBM、LPDDR5X、网络芯片、PCB和液冷的价值量上升，且其单柜成本估算未纳入未来HBM涨价。该材料还称大CSP常通过NVIDIA向ODM分配订单，非所有CSP都是ODM直接客户。数值和供货关系均为访谈口径。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "提要",
+            "bullets": [
+              "访谈认为Rubin较GB300的功耗、HBM/LPDDR5X、交换与网络部件价值量提升。",
+              "单柜成本对HBM、NAND等存储价格假设敏感，估算本身未含未来涨价。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "平台规格、出货节点和客户分配路径仍应以NVIDIA、OEM/ODM财报和技术文档为准。",
+              "观察机柜功耗、并网时程、HBM报价、交换网络配置与实际交付。"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-13原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-13.json",
+          "date": "2026-11-13",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-acecamp-shopping-agent-frictions-20261112",
+      "category": "调研纪要",
+      "title": "AceCamp｜购物Agent仍以降低搜索负担为主，转化闭环受真实评价与实时数据制约",
+      "summary": "一位电商产业专家认为，买家仍偏好真实用户评价和跨平台比较，AI购物目前更像复杂商品的参考工具，而非直接下单渠道；其称整体销售渗透率不足1%，但没有披露样本、平台口径或原始数据。访谈也指出，缺少实时库存、促销和退货审核能力会限制外部Agent的成交闭环；高价值退货仍需人工判断。该材料为渠道观察，不等同于Amazon、OpenAI、Shopify或沃尔玛披露。",
+      "why": "购物Agent的商业化应先观察AI搜索占比、活跃度、推荐准确性、退货率和商家接入质量，而不是只看宣传的客单价或转化率。",
+      "source": "AceCamp原文的已归档日报摘要（本轮未重读私人全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569149",
+      "publishedAt": "2026-11-12",
+      "evidence": "单一专家观点；“不足1%”等数字没有可公开复核的样本、地域或平台定义，未作为行业事实。 本轮仅读取2026-11-13日报已入库自有摘要，非重新阅读全文；不扩写归档未保存的细节。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AI Agent",
+        "电商",
+        "OpenAI",
+        "Shopify",
+        "Amazon"
+      ],
+      "research": {
+        "meetingDate": "2026-11-12",
+        "savedAt": "2026-11-12T13:13:04.457+08:00",
+        "updatedAt": "2026-11-12T13:13:10.652+08:00",
+        "sample": "单一电商产业专家，未披露平台数据权限、样本和统计口径",
+        "topics": [
+          {
+            "heading": "提要与本期归属",
+            "bullets": [
+              "一位电商产业专家认为，买家仍偏好真实用户评价和跨平台比较，AI购物目前更像复杂商品的参考工具，而非直接下单渠道；其称整体销售渗透率不足1%，但没有披露样本、平台口径或原始数据。访谈也指出，缺少实时库存、促销和退货审核能力会限制外部Agent的成交闭环；高价值退货仍需人工判断。该材料为渠道观察，不等同于Amazon、OpenAI、Shopify或沃尔玛披露。",
+              "纪要日期、首次收藏及更新时间沿用原期记录；本轮只综合已入库内容，不冒充新增原文访问。"
+            ]
+          },
+          {
+            "heading": "提要",
+            "bullets": [
+              "AI可减少搜索和比价负担，但真实评价、复杂比较和高价退货仍是转化摩擦。",
+              "专家把买家侧与卖家侧Agent视作早期能力，实时库存与促销数据是闭环前置条件。"
+            ]
+          },
+          {
+            "heading": "分歧、反证与观察",
+            "bullets": [
+              "渗透率和转化率未经公司披露，不能与各平台营销数据直接比较。",
+              "观察AI搜索占比、下单成功率、库存/价格准确率、退货率和广告变现。"
+            ]
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "title": "2026-11-13原日报",
+          "url": "https://audreyyuan-svg.github.io/data/2026-11-13.json",
+          "date": "2026-11-13",
+          "evidence": "本轮可读取的归档证据"
+        }
+      ]
+    },
+    {
+      "id": "weekly-research-synthesis-20261115",
+      "category": "调研纪要",
+      "title": "跨纪要综合｜把需求、可交付供给与可融资回报分成三本账",
+      "summary": "本周归档材料没有推翻AI需求增长，却更清楚地揭示兑现链条：Neocloud与AWS渠道仍称订单、租价和推理负载坚挺，但收入兑现取决于电力、交付与融资；国产GPU受到HBM和封装约束，光通信又面临认证与CPO良率。应用侧，腾讯云、AI SaaS和购物Agent显示调用量、项目收入与经常性利润不是同一个指标。判断从单纯看扩张转向核对资金、物料和客户ROI；这些是归档渠道信息的编辑综合，不是公司共同确认。",
+      "why": "对TMT研究最有用的变化不是统一上调远期需求，而是逐公司识别哪一环承担Capex、库存、信用及交付风险。",
+      "source": "期内15篇AceCamp归档摘要的自有综合",
+      "url": "https://audreyyuan-svg.github.io/?period=weekly&date=2026-11-15",
+      "publishedAt": "2026-11-15",
+      "evidence": "本轮未读私人原文。不同专家、时期和产品的数字不能直接相加；相似说法可能来自同一供应链，不视为独立交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "跨纪要综合",
+        "分歧",
+        "观察指标"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": null,
+        "updatedAt": "2026-11-15T18:00:00+08:00",
+        "sample": "15篇精确原链接归档摘要；无新增久谦原文",
+        "topics": [
+          {
+            "heading": "云与算力：订单不是回款，需求不是可用容量",
+            "bullets": [
+              "Neocloud渠道对利用率、租价与客户预付款的乐观，和AWS渠道对推理负载的判断，共同支持需求尚未塌陷；但两者均未给出可审计合同样本。",
+              "CoreWeave财报显示强收入与高利息并存。编辑判断：把合同积压转成有效容量、再转成收款，需穿过融资、并网、验收与SLA。不要以目标IRR替代已实现资本回报。",
+              "跟踪：活跃/签约功率比、预付款实际到账、资本开支支付、利息覆盖、提前终止与SLA赔偿、下一代GPU切换的残值。"
+            ]
+          },
+          {
+            "heading": "硬件：短缺在不同环节轮换，不能对所有产品同步涨价",
+            "bullets": [
+              "国产GPU纪要将HBM与封装列为瓶颈；光互联纪要强调DSP/TIA认证和上游芯片约束。模拟芯片渠道却报部分AI电源库存达9—12个月，给出收入高增未必等于终端加速的反例。",
+              "供给预测必须拆晶圆投入、良率、GB有效容量和单卡内存；将理想良率产能直接换算全年GPU供给会高估。光模块的2027远期量也要和激光器、DSP与客户Capex匹配。",
+              "跟踪：厂商库存周转与回款、分产品ASP、认证完成、量产良率、光器件产能，以及合同价与现货分叉。"
+            ]
+          },
+          {
+            "heading": "CPO与电力：路线图影响价值量，不能提前确认收入",
+            "bullets": [
+              "Marvell–Lumentum渠道偏向长期整合逻辑，BBU/HVDC和Rubin机柜渠道看高功耗价值量；但前者受监管与集成影响，后两者依赖平台BOM、标配率和并网时间。",
+              "FUNDA公开部分另提供CPO键合/测试拖慢放量的反方。它与AceCamp的晚量产判断方向接近，但来源可能重叠，不能据此提高为公司确认。",
+              "跟踪：正式技术文档、设备采购/验收、实际机柜功率、BBU选配率、客户交付，而不是只看理论单柜价值。"
+            ]
+          },
+          {
+            "heading": "应用：用量、项目合同与可持续毛利分开",
+            "bullets": [
+              "腾讯云与AI SaaS渠道支持租赁、项目及Token消耗增长，但价格竞争和一次性交付可能压低经常性利润；购物Agent则受真实评价、实时库存及退货流程限制。视频号增长渠道更多归因于流量/加载率，而非广告单价。",
+              "企业Agent资源纪要把CPU/DRAM需求与任务串并行、工具调用和企业系统接口相连；它提示单位Token配置不能套用所有工作负载。具身场景亦须核对订单密度、维护与替代人工的真实回收期。",
+              "跟踪：续费、Token毛利、交付人天、任务成功率/重试、客户ROI、广告归因和机器人全流程可用率。由演示转收入的判断需客户或公司数据才能升级。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "配置、索引与统计边界",
+      "status": "已完成",
+      "url": "https://audreyyuan-svg.github.io/data/weekly/index.json",
+      "note": "已读取config v18、coverage-additions、日报索引、周报索引、上期周报及11月9—13日五期日报。上期periodEnd为11月8日18:00；本期至11月15日18:00，Asia/Shanghai左闭右开，不覆盖此后内容。当前用户限制优先：AceCamp不直连Cubox。"
+    },
+    {
+      "name": "飞书CLI／久谦",
+      "status": "未完成／not_configured",
+      "url": "https://github.com/larksuite/cli",
+      "note": "显式加入/root/.local/bin并检查已知路径后未找到CLI；完整读取官方共享、身份/权限、JSON契约、Drive搜索/列表及Doc读取文档，经官方npm入口恢复v1.0.98。auth status --json --verify退出3，error.type=config、subtype=not_configured。未能核验用户身份、权限、唯一目录、子目录或updated_at，未读取任何久谦正文；不发起非交互授权、不搬运凭据、不标无更新。"
+    },
+    {
+      "name": "AceCamp归档／周末缺口",
+      "status": "部分完成／仅归档聚合",
+      "url": "https://audreyyuan-svg.github.io/data/index.json",
+      "note": "本轮不访问Cubox。五期日报共有21篇实质纪要摘要，筛选15篇有精确原链接且收藏日为11月9—12日的材料逐篇保留；11月8日5篇跨期/实质更新时间不清，保留导航背景；1篇仅首页URL不作精确原文卡。共可恢复34个唯一文章链接。11月9日40篇与11月12日14篇的部分明细未保存，无法恢复全量。未入库的周末收藏未覆盖。"
+    },
+    {
+      "name": "研究摘要长度与原文边界",
+      "status": "受限／未扩写",
+      "url": "https://audreyyuan-svg.github.io/?period=weekly",
+      "note": "本轮读取仓库自有归档摘要，不是重新读取AceCamp原文。逐篇保留提要、日期、样本、已存要点与反证；原期正文不足800—1500字时不补造细节，也不以平台AI摘要扩写。综合判断明确为编辑分析。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "官方原文复核／有新增",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "实读11月13日应用API更新及现价表；模型映射仍V4.1-Flash-1017，不是新权重。搜索/抓取/OCR等另计费；未调用收费API。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "官方原文复核",
+      "url": "https://www.minimax.io/blog/minimax-h3-image",
+      "note": "11月11日官方H3-Image与公开模型链接已复核；价格是同类的50%—70%，纠正原日报“低50%—70%”的歧义。开发者数据只用归档，不当独立基准。"
+    },
+    {
+      "name": "Qwen",
+      "status": "官方文档复核",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "note": "文档11月13日更新；11月11日—25日Token Plan限时预览、默认xhigh、思考/答案共用输出预算。无足够同版本独立评测。"
+    },
+    {
+      "name": "ERNIE",
+      "status": "官方原文复核",
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview",
+      "note": "官方研究索引确认11月11日发布，阅读预览页。它是后训练中间检查点；拟开源不是已开源。"
+    },
+    {
+      "name": "Kimi",
+      "status": "模型库实查／归档结合",
+      "url": "https://huggingface.co/moonshotai",
+      "note": "当前可读活动最新K3.1-Pro约10天前；未在此模型库看到本期新权重。但不能据单入口宣称全部API/产品无更新。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "模型库实查／兼容性变化",
+      "url": "https://huggingface.co/zai-org",
+      "note": "11月11日模板兼容与response template可核验；另见约2日前删除一个权重分片的活动。未读取完整commit确认替换/完整性，不能称新模型或断言权重损坏；部署前校验模型库。"
+    },
+    {
+      "name": "StepFun",
+      "status": "模型库实查",
+      "url": "https://huggingface.co/stepfun-ai",
+      "note": "可读活动包含约6日前蒸馏论文，模型列表仍Step-5-Preview。未据此推断所有API价格无变化。"
+    },
+    {
+      "name": "MiMo/Hunyuan及其他中国模型",
+      "status": "归档检查／本轮未全量直读",
+      "url": "https://audreyyuan-svg.github.io/data/2026-11-13.json",
+      "note": "复核期内日报相应检查记录；本轮未完成其他公司全部模型卡、GitHub和API价目直读，不标无更新。"
+    },
+    {
+      "name": "Anthropic／独立测评",
+      "status": "官方与AA实读",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "note": "复核11月9日发布及AA当前Max快照；动态时延/任务时长已变，保留读取日。ARC/Simon结果来自期内归档；Epoch/METR本轮未独立完整复查，不冒充新报告。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "原帖受限",
+      "url": "https://x.com/thsottiaux",
+      "note": "本轮直接请求原页返回403，另进行7天公开检索未获得可读原帖。期内日报也记录访问限制；不把摘要、镜像或旧额度讨论写成当期生效事实。"
+    },
+    {
+      "name": "NVIDIA治理与财报日历",
+      "status": "官方原文实读",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "note": "确认11月12日即刻交接及11月17日约13:20PT业绩、14:00PT电话会。未将未来财报当已发布。"
+    },
+    {
+      "name": "Cisco",
+      "status": "官方财报及日历实读／日报遗漏纠正",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-reports-first-quarter-earnings.html",
+      "note": "11月12日盘后FY27Q1已发布，期内日报概括“无新增财报”遗漏了Cisco，周报单列。公司实际/指引可核验；可靠一致预期及当晚盘后时点缺失。"
+    },
+    {
+      "name": "CoreWeave",
+      "status": "IR原文复核",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/",
+      "note": "11月10日正式业绩已复核；GAAP与调整后不同，利息约束保留；未补造预期比较和盘后反应。"
+    },
+    {
+      "name": "Coatue",
+      "status": "公开列表实查",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "可读列表最新10月15日，未见本期新条目；不代表所有社媒无更新，X/LinkedIn/视频未全量重读。"
+    },
+    {
+      "name": "Apollo",
+      "status": "公开当期原文实读",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "阅读11月9—14日公开列表/正文，选11月12日软件再融资与14日通胀风险；预测不是官方政策。"
+    },
+    {
+      "name": "FUNDA",
+      "status": "archive及单篇公开部分实读",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "实读11月13日NVDA、CPO及PANW FY27Q1财报预览公开部分；未越付费墙。PANW为6位渠道的预览，非正式业绩。CPO与NVIDIA判断保留研究归属；X未读取。"
+    },
+    {
+      "name": "Ramp AI",
+      "status": "官方数据与方法实读",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "复核10月采用率和截至11月1日周Token指标。采用样本8.5万+，Token为子样本；直接供应商和部分云/路由渠道覆盖，历史可修订。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "官方身份复核／社媒未全读",
+      "url": "https://ramp.com/authors/ara-kharazian",
+      "note": "Ramp数据页明确作者与Lead Economist身份；本人X/LinkedIn/Econ Lab本轮未逐一完整读取，沿用归档访问缺口，不声称无更新。"
+    },
+    {
+      "name": "TrendForce",
+      "status": "archive与两篇公开导语实读",
+      "url": "https://insights.trendforce.com/archive",
+      "note": "11月11日数据中心政策风险、13日SpaceX/Qualcomm文章公开导语已读取，付费后止步。未把竞选立场当生效禁令、未将二手合作报道当公司确认；正文只作风险背景。"
+    },
+    {
+      "name": "Citrini Research",
+      "status": "archive实查／旧文背景",
+      "url": "https://www.citriniresearch.com/archive",
+      "note": "可读列表最新State of the Themes为11月4日；期内日报旧文补录不算本周新发表。"
+    },
+    {
+      "name": "The Information",
+      "status": "免费入口检查／不扩写",
+      "url": "https://www.theinformation.com/",
+      "note": "仅公开免费标题入口；未阅读全文，不据标题形成独家结论。"
+    },
+    {
+      "name": "中国财政政策",
+      "status": "官方原文复核",
+      "url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261111_4004456.htm",
+      "note": "1500亿元注资特别国债网页发布11月11日、文件署11月5日，尚待18日招标；不是同额股市新增资金。"
+    },
+    {
+      "name": "市场收盘与资金面",
+      "status": "公开复核／存在冲突",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX",
+      "note": "Nasdaq官方SOX11月13日10146.32、跌3.43%，与AP部分表列10506.67冲突，采用官方；周涨不从冲突历史算。亚洲恒指/日经/TOPIX冲突降级约数或方向。周五成交163.8/185.2亿约0.884倍。"
+    },
+    {
+      "name": "油价与美元",
+      "status": "部分完成／结算冲突",
+      "url": "https://au.investing.com/news/commodities-news/oil-prices-hold-gains-as-trump-sidelines-vance-from-iran-diplomacy-4767327",
+      "note": "11月13日Brent2027年1月、WTI2026年12月两组结算源冲突；仅写约2%—2.5%周跌方向，不混换月或盘中。美元确认偏强，未补造同一时点DXY精确变化。"
+    },
+    {
+      "name": "Wind／市场历史图",
+      "status": "未暴露可调用工具／省略趋势",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "用户已安装Wind，但本会话未有可调用入口。四组完整对齐历史不足，整个趋势字段省略，不显示空栏目；行情速览与当日涨跌用核验值。"
+    },
+    {
+      "name": "last30days",
+      "status": "本周报未执行",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "仅阅读期内日报执行记录，不冒充本轮运行；日报曾有Reddit403/YouTube零结果/未完成报告等缺口。本轮不据未核验社媒扩写。"
+    },
+    {
+      "name": "OpenAI／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://openai.com/news/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。OpenAI 官方、OpenAI Developers、Sam Altman、Greg Brockman、Jakub Pachocki、Mark Chen、Tibo / @thsottiaux、Dean W. Ball、@marcus_J_W；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "Anthropic／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.anthropic.com/news",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Anthropic 官方、Dario Amodei、Jack Clark、Amanda Askell、Boris Cherny、Cat Wu；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "Meta · NVIDIA · 其他模型公司／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://about.fb.com/news/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Meta 官方、Mark Zuckerberg、Alexandr Wang、Jensen Huang / 黄仁勋、Google DeepMind、Demis Hassabis、Jeff Dean、Qwen、Kimi；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "投资人原文／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.altimeter.com/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Gavin Baker / Atreides、Brad Gerstner / Altimeter、Freda Duan / Altimeter、FUNDA / FundaAI、Sarah Guo / Conviction、Elad Gil；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "研究、测评与开发者／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://artificialanalysis.ai/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Artificial Analysis、Epoch AI、METR、Simon Willison、Andrej Karpathy、Lilian Weng / Lil’Log；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "产业链与商业新闻／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.reuters.com/technology/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Reuters、Financial Times、ZDNet Korea、SemiAnalysis、公司公告与投资者关系、The Information；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "播客精华／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。All-In Podcast、BG2、No Priors、Dwarkesh Podcast、Lex Fridman Podcast、Latent Space、The Cognitive Revolution、Big Technology Podcast、AI Engineer Podcast、SemiAnalysis / Chipstrat、Thrive / 重要CEO访谈；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "Elon Musk · SpaceX／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.spacex.com/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Elon Musk 本人、SpaceX 官方；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "科技公司CEO访谈 · 跨平台／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.bigtechnology.com/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Sundar Pichai / Google / Alphabet、Andy Jassy / Amazon / AWS；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "美股主要科技公司与财报／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。Apple、Microsoft、Alphabet / Google、Amazon / AWS、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、Texas Instruments / TI、Lam Research、AMD、Intel、Broadcom、Micron、Supermicro、Corning / 康宁、Celestica / 天弘科技、Arista Networks、Coherent、Lumentum、Fabrinet、Ciena、Amphenol、Vertiv、Jabil、Flex、Dell、HPE、Cisco、其他重要AI数据中心光通信/服务器ODM/EMS/网络与电力基础设施公司；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    },
+    {
+      "name": "美伊、俄乌、中美与美国选举／归档层",
+      "status": "已查期内归档／非本轮全量直读",
+      "url": "https://www.reuters.com/world/",
+      "note": "已读取11月9—13日五期日报该组条目与sourceChecks，保留原访问限制。美伊战争与谈判、俄乌战争与谈判、中美重要政治事件、美国大选/中期选举；本轮未逐个原帖/节目/IR全量复查，未检查部分不得理解为无更新。"
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-13",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合",
+        "displayValue": "25,136.27",
+        "change": -0.91,
+        "displayChange": "-0.91%",
+        "note": "11月13日常规收盘；全周+2.27%"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,561.67",
+        "change": -0.4,
+        "displayChange": "-0.40%",
+        "note": "全周+2.51%"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "52,347.55",
+        "change": 0.1,
+        "displayChange": "+0.10%",
+        "note": "全周+2.07%"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "10,146.32",
+        "change": -3.43,
+        "displayChange": "-3.43%",
+        "note": "Nasdaq官方；部分AP表与历史归档存在前收/收盘错位"
+      },
+      {
+        "label": "美国10年期国债",
+        "displayValue": "5.15%",
+        "change": 5,
+        "displayChange": "+5bp",
+        "note": "财政部11月13日日终相对11月12日；全周+29bp"
+      }
+    ],
+    "snapshotNote": "股票为11月13日美国常规收盘，收益率为财政部同日日终；周末休市。SOX取官方，不将冲突序列拼成周涨。",
+    "performance": [
+      {
+        "name": "纳斯达克综合",
+        "changePct": -0.91
+      },
+      {
+        "name": "标普500",
+        "changePct": -0.4
+      },
+      {
+        "name": "道琼斯",
+        "changePct": 0.1
+      },
+      {
+        "name": "SOX",
+        "changePct": -3.43
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "session": "常规",
+        "asOf": "2026-11-13 16:00 ET",
+        "changePct": -8.75,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得个股20日可比量比，不称放量",
+        "catalyst": "NVIDIA交接不确定性下的芯片板块波动；非公司新指引",
+        "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713"
+      },
+      {
+        "symbol": "NBIS",
+        "name": "Nebius",
+        "session": "常规",
+        "asOf": "2026-11-13 16:00 ET",
+        "changePct": -9.92,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得20日可比量比",
+        "catalyst": "Neocloud融资与AI风险偏好重定价；不将股价跌幅写成资金净流出",
+        "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713"
+      },
+      {
+        "symbol": "IREN",
+        "name": "IREN",
+        "session": "常规",
+        "asOf": "2026-11-13 16:00 ET",
+        "changePct": -6.72,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得20日可比量比",
+        "catalyst": "数据中心链条同步回落，未归因于未核验单一公告",
+        "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713"
+      }
+    ],
+    "selectionNote": "周报以最近完整交易日动态选择波动较大的芯片、Neocloud和数据中心个股，不代表全周涨跌或净资金流；未补造个股量比。",
+    "sources": [
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX"
+      },
+      {
+        "name": "美国财政部",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+      },
+      {
+        "name": "Reuters公开转载",
+        "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713"
+      }
+    ]
+  },
+  "updatedAt": "2026-11-15T10:15:00Z"
+}
