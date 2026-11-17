@@ -1,0 +1,900 @@
+{
+  "date": "2026-11-17",
+  "title": "AI Tracker｜2026年11月17日",
+  "intro": "北京时间11月17日晨报。两条主线同时升温：阿里正式发布Qwen4-Max，但Artificial Analysis显示其能力处于同价位中上、单位任务速度显著偏慢且输出偏长；美国BIS发布第三国数据中心远程算力访问新规，直接抬高中国及其他D:5主体获取境外算力的合规门槛。腾讯另发布Hy4 flash，以低激活参数和低价切入高频办公任务。市场端，11月16日美股科技与半导体大幅回撤，SOX跌约5.3%，而成交量仅略低于20日均量，已不是单纯缩量波动。",
+  "coverage": "时间均为Asia/Shanghai，优先2026-11-16 08:31至2026-11-17 08:31，并回查7天。科技资讯、市场行情、调研纪要三栏独立展示；美股与美债采用11月16日最近完整交易日，亚洲市场采用各地11月16日收盘。AceCamp仅通过持久化只读服务定向检索前一北京时间自然日：普通与归档均从空首屏继续翻页至游标为空，核验18条精确acecamptech.com元数据并逐份读取正文；公开站仅收录与TMT主线最相关的6篇，其余已在sourceChecks列明。当前运行无本地执行器，last30days脚本、Wind和本地CLI未声称执行成功。",
+  "archiveSummary": "Qwen4-Max正式版与AA独立测量形成“能力中上、成本可控但慢且冗长”的完整画像；Hy4 flash以低价和低激活参数切入办公；BIS把出口管制延伸到第三国远程算力访问。AceCamp渠道材料集中提示Agent长程稳定性、模型路由毛利、电力并网与AI硬件交付仍是商业化约束。",
+  "takeaways": [
+    "美国BIS 11月16日公布临时最终规则：当海外数据中心向澳门或D:5总部/母公司主体提供显著规模远程算力时，相关先进计算物项可能触发许可；印尼、马来西亚、新加坡、泰国和巴西也新增目的地许可要求。规则拟于11月19日刊登《联邦公报》时生效，既有服务有90天许可窗口，公告日不等于生效日。",
+    "阿里11月16日正式发布Qwen4-Max：2.4T总参数、71B激活、原生视觉、1M上下文，API默认high推理；官方Work360称较Qwen3.8-Max少35% token、单任务成本低约60%，但这是官方自测。",
+    "Artificial Analysis v5.0.1给Qwen4-Max 43分、同类第38/81；首token约159秒、每项约32分钟、评测总输出127M token，明显慢且冗长。开发者还报告预览版在特定Hermes/A2A工具链中布尔值被字符串化，属于单一环境失败案例，不能外推正式版。",
+    "腾讯Hy4 flash以224B总参数、12B激活、1M上下文和约0.070/0.281美元每百万输入/输出token切入高频任务；150 tok/s、成本降幅及接近Claude Haiku 5.5的满意度均来自腾讯内部测试，尚无AA、Epoch或METR专项独立结果。",
+    "11月16日SOX跌约5.3%、纳指跌2.49%，纽约证交所跌涨家数3.45:1；美股总量约为20日均量0.96倍。高估值AI硬件与Neocloud同步下挫，风险偏好收缩已扩散到半导体、服务器和算力租赁。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "中国模型进入新一轮“旗舰能力—单位任务经济性”竞争：Qwen4-Max正式版给出大上下文与长期Agent能力，但独立测量显示延迟和冗长仍是主要反证；Hy4 flash则用更低激活参数和价格抢占高频办公。与此同时，美国把出口管制从芯片实物进一步延伸到第三国远程算力访问。",
+      "points": [
+        "变化：Qwen4-Max与Hy4 flash同日正式上线；OpenAI另开放免费CSAM图像分类器给获批机构。",
+        "分歧/反证：Qwen官方Work360、腾讯WorkIndex均属官方自测；AA显示Qwen4-Max慢且冗长，Hy4 flash尚无独立专项结果。",
+        "观察：Qwen4小型开放权重版本、Hy4 flash真实任务成本与失败率、BIS规则刊登后的许可细则及云厂客户尽调。"
+      ]
+    },
+    "markets": {
+      "summary": "风险偏好快速转弱：半导体、Neocloud与服务器股同步下挫，长端利率仍在5%以上；油价因供应恢复预期回落。中国监管侧新增的是衍生品统一监管制度正式施行，并非无条件流动性投放。",
+      "points": [
+        "变化：SOX约-5.3%、纳指-2.49%；10年美债5.12%、较前一交易日约-3bp；Brent近月结算92.44美元。",
+        "分歧/反证：成交量约0.96倍20日均量，低于均量但并非极端缩量；成交量不等于净流出，油价回落也未消除航运与地缘风险。",
+        "观察：NVIDIA 11月17日盘后财报、BIS远程算力规则对云/芯片订单的传导、FOMC纪要及亚洲芯片链能否止跌。"
+      ]
+    },
+    "research": {
+      "summary": "11月16日AceCamp渠道材料把模型、应用与基础设施约束连在一起：长程Agent稳定性和跨应用成功率仍低，多模型路由的毛利改善受能力边界约束；算力侧电力并网、SOFC系统整合、Rubin交付良率、DSP/EML供应是2027扩张的共同瓶颈。全部为专家或渠道口径，未替代公司披露。",
+      "points": [
+        "变化：渠道称办公Agent功能已趋同，但模型执行质量、组织生态与存量客户迁移成本成为主要差异。",
+        "分歧/反证：关于Qwen4参数、发布日期与成本的渠道说法已被11月16日官方发布部分推翻，显示访谈时点与匿名信息可能失真。",
+        "观察：办公Agent跨应用任务成功率、模型路由的单位成功任务毛利、PJM容量成本、Rubin良率与1.6T光模块实际交付。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "bis-remote-compute-access-ifr-20261116",
+      "category": "产业链新闻",
+      "title": "美国BIS将先进计算管制延伸至第三国远程算力访问",
+      "summary": "美国商务部BIS 11月16日公布《Addressing Remote Access to Advanced Semiconductors》临时最终规则。新规针对海外数据中心向总部或最终母公司位于澳门、Country Group D:5的主体提供显著规模远程算力的情形，要求相关先进计算物项取得许可并强化客户所有权、控制关系与用途尽调；商业推荐系统获排除。规则还对印尼、马来西亚、新加坡、泰国和巴西新增目的地许可要求，但美国总部/最终母公司主体在履行报告要求后可适用例外。文件拟于11月19日刊登《联邦公报》并届时生效，既有相关服务有90天申请窗口。",
+      "why": "这把管制从“芯片能否运到中国”扩展到“受限主体能否在第三国租用足量算力”，直接影响GPU出口商、海外数据中心、Neocloud和中国模型公司的算力获取路径与合规成本。",
+      "source": "美国BIS与Federal Register公开检查稿（官方监管原文）",
+      "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+      "publishedAt": "2026-11-16",
+      "evidence": "官方检查稿明确生效日为正式刊登日，当前排期为11月19日；未把11月16日公告写成规则已经生效。显著规模阈值与ECCN适用仍需逐项看监管文本。",
+      "tags": [
+        "美国监管",
+        "出口管制",
+        "AI芯片",
+        "云计算",
+        "产业链新闻",
+        "重大科技监管"
+      ]
+    },
+    {
+      "id": "qwen4-max-official-release-20261116",
+      "category": "模型发布",
+      "title": "Qwen4-Max正式发布｜2.4T总参数、71B激活与1M上下文",
+      "summary": "阿里11月16日正式发布Qwen4-Max，模型ID为qwen4-max，具备原生视觉、1M上下文、工具调用和长程Agent能力；总参数2.4T、每token激活71B。QwenCloud文档显示默认开启thinking，默认reasoning_effort=high、thinking budget 131,072，思考加答案上限262,144 token；非思考输出上限131,072。模型已通过Token Plan和按量API开放，支持新加坡、北京及Global区域，暂不支持微调或私有部署。官方称自有Work360上较Qwen3.8-Max少35% token、平均任务成本低约60%，该结论仅按官方自测标注。",
+      "why": "旗舰模型的关键不再只是token单价，而是单位成功任务的延迟、输出长度和工具稳定性；Qwen4-Max的开放方式与默认高推理档位会直接影响企业工作流成本。",
+      "source": "Alibaba Cloud发布稿与QwenCloud文档（官方）",
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "publishedAt": "2026-11-16",
+      "evidence": "官方规格与官方自测；较旧模型的35% token和60%成本降幅来自专有Work360，未与独立结果混写。较小开放权重版本仅称“即将发布”，尚未开放。",
+      "tags": [
+        "Qwen",
+        "Qwen4-Max",
+        "中国模型",
+        "模型发布",
+        "官方自测",
+        "API",
+        "72小时跟踪"
+      ],
+      "relatedSources": [
+        {
+          "label": "QwenCloud模型规格",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+        },
+        {
+          "label": "QwenCloud定价",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing"
+        }
+      ]
+    },
+    {
+      "id": "qwen4-max-aa-independent-20261116",
+      "category": "独立测评",
+      "title": "Qwen4-Max 72小时跟踪｜AA 43分，但首token约159秒且输出偏长",
+      "summary": "Artificial Analysis以Intelligence Index v5.0.1测得Qwen4-Max 43分，在其同类比较中列第38/81；首个答案token约159.36秒、输出速度约54 token/秒，完成一项综合评测平均约32.1分钟。按新加坡API价1.50美元输入、4.50美元输出计算，平均每项成本约3.27美元。模型在整套评测中生成127M输出token，明显高于同类中位数78.6M，AA据此评价其“显著偏慢且很冗长”。这些结果与阿里“较上一代更省token”的官方相对比较并不矛盾，但说明跨模型单位任务效率仍非领先。",
+      "why": "独立质量—成本—速度联合指标能检验官方自测是否转化为企业可用性；慢启动和长输出会推高Agent并发、用户等待与总成本。",
+      "source": "Artificial Analysis（独立评测）",
+      "url": "https://artificialanalysis.ai/models/qwen4-max",
+      "publishedAt": "2026-11-16",
+      "evidence": "独立平台自有9项综合指标；测试经Alibaba Cloud API，默认/实际推理设置以AA页面为准。结果会随平台重跑变化，不能外推全部中文办公或多模态任务。",
+      "tags": [
+        "Qwen4-Max",
+        "独立测评",
+        "Artificial Analysis",
+        "成本",
+        "延迟",
+        "72小时跟踪",
+        "反证"
+      ],
+      "relatedSources": [
+        {
+          "label": "开发者失败案例：预览版工具布尔值字符串化",
+          "url": "https://www.reddit.com/r/Qwen_AI/comments/1xul1hu/qwen4maxpreview_has_a_tool_calling_problem/"
+        }
+      ]
+    },
+    {
+      "id": "tencent-hy4-flash-release-20261116",
+      "category": "模型发布",
+      "title": "腾讯混元Hy4 flash发布｜12B激活参数、1M上下文与低价办公定位",
+      "summary": "腾讯11月16日发布Hy4 flash：224B总参数（含64B Engram参数）、每token激活12B，支持多模态和1M上下文。官方API价格约为每百万token 0.070美元输入、0.281美元输出、0.003美元缓存输入；TokenHub模型ID为hy4-flash，最大输入960k、最大输出64k。腾讯称其KV cache为Hy3的1/24、Hy4的1/6，RL把端到端输出token削减50%，解码速度超过150 token/秒。WorkIndex成本比较及85名内部用户、259项任务的盲测满意度均为腾讯内部评测，尚无独立专项结果。",
+      "why": "Hy4 flash用低激活参数和价格争夺客服、文档、表格等高频任务，可能加速中国模型的价格竞争；真正商业价值取决于单位成功任务成本、工具稳定性和复杂任务退化。",
+      "source": "Tencent官方发布与腾讯云TokenHub文档",
+      "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "publishedAt": "2026-11-16",
+      "evidence": "参数、价格和速度均来自官方；WorkIndex、1/13至1/20成本比及接近Claude Haiku 5.5的满意度属于官方自测，AA/Epoch/METR未见对应公开专项。",
+      "tags": [
+        "腾讯混元",
+        "Hy4 flash",
+        "中国模型",
+        "模型发布",
+        "官方自测",
+        "API价格",
+        "72小时跟踪"
+      ]
+    },
+    {
+      "id": "openai-csam-image-classifier-20261116",
+      "category": "产业链新闻",
+      "title": "OpenAI向获批机构免费开放CSAM图像分类器",
+      "summary": "OpenAI 11月16日Release Notes显示，获批机构可免费使用CSAM Image Classifier，对图像分别返回“潜在儿童性虐待材料”和“潜在AI生成CSAM”的信号，用于人工审核优先级排序。官方表述是辅助分流而非自动裁决；适用资格、误报漏报、申诉与审计细节需按产品文档执行。",
+      "why": "生成式AI平台正把安全能力产品化并向生态开放，可能影响内容平台的审核成本与合规流程；但分类器信号不能替代人工与法定报告程序。",
+      "source": "OpenAI Release Notes（官方产品说明）",
+      "url": "https://openai.com/products/release-notes/",
+      "publishedAt": "2026-11-16",
+      "evidence": "仅采用官方Release Notes可核验范围；未测试模型，也未获得准确率、阈值或地区适用数据。",
+      "tags": [
+        "OpenAI",
+        "安全",
+        "内容治理",
+        "产业链新闻",
+        "免费工具"
+      ]
+    },
+    {
+      "id": "apollo-rates-fiscal-side-20261116",
+      "category": "投资人观点",
+      "title": "Apollo｜高利率冲击先落在财政端，私人部门传导被低息锁定削弱",
+      "summary": "Apollo首席经济学家Torsten Slok 11月16日指出，美国企业和家庭在疫情期锁定了低息债务与按揭，而联邦政府利息支出从2020年夏季约5,000亿美元升至约1.25万亿美元；因此本轮高利率对经济的敏感性更多通过财政而非私人部门体现。页面引用BEA、FRB与Bloomberg/Macrobond图表。这是机构对公开数据的解释，并不意味着企业再融资压力消失，尤其软件和高杠杆公司仍受“higher for longer”影响。",
+      "why": "财政利息负担抬升会约束赤字与政策空间，并通过长端供给和期限溢价影响TMT折现率；私人部门平均锁息不代表边际融资成本低。",
+      "source": "Apollo Daily Spark（机构观点）",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-16",
+      "evidence": "保留机构归属与数据来源；联邦利息账单为Apollo口径，未外推为所有企业不受高利率影响。",
+      "tags": [
+        "Apollo",
+        "Torsten Slok",
+        "投资人观点",
+        "利率",
+        "财政",
+        "融资成本"
+      ]
+    },
+    {
+      "id": "acecamp-agent-longhorizon-office-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜办公与个人Agent：功能趋同，长程稳定性仍是商业化瓶颈",
+      "summary": "渠道专家称，千问办公、WorkBuddy等在文档、PPT、表格和协作空间功能上趋同，但执行质量仍受底层模型、组织数据和生态绑定影响；其估计WorkBuddy MAU约3,000万—3,500万、千问办公不足900万，均未获公司披露验证。更重要的反证来自跨应用长程任务：在票务、导航、餐饮等连续步骤中，模型容易耗尽额度、循环或撞墙，单一应用2—3步尚可，复杂跨应用成功率被专家估计仅10%—15%。",
+      "why": "Agent商业化取决于任务完成率而非功能清单；生态分发可以降低获客成本，但失败重试和长链token会吞噬毛利与信任。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569171",
+      "publishedAt": "2026-11-16",
+      "evidence": "单一专家观点；MAU、企业数、成功率和模型效果未获公司披露或独立复现，不作为事实外推。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Agent",
+        "Qwen",
+        "WorkBuddy",
+        "失败案例"
+      ],
+      "research": {
+        "meetingDate": "2026-11-16T07:21:34+08:00",
+        "savedAt": "2026-11-16T09:19:41+08:00",
+        "updatedAt": "2026-11-16T09:19:49+08:00",
+        "sample": "单一产业专家；未披露受访者身份、企业样本和任务日志",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "办公Agent功能快速趋同，生态绑定、模型执行质量和迁移成本成为主要差异。",
+              "跨应用长程任务失败、循环和额度消耗仍限制个人助手落地。"
+            ]
+          },
+          {
+            "heading": "分歧与反证",
+            "bullets": [
+              "MAU与企业转化数字均为渠道估计。",
+              "功能上线不等于成功任务率提升，需同任务、同额度、同推理档位比较。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "跨应用任务成功率、重试次数、单位成功任务成本。",
+              "存量组织客户转化、留存与外部模型路由是否开放。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-qwen4-channel-vs-official-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜Qwen4渠道口径与正式发布冲突，匿名信息时点风险暴露",
+      "summary": "11月16日保存的专家访谈将Qwen4描述为4T总参数、100B激活，并预计12月中下旬正式发布；同日阿里官方实际发布的Qwen4-Max为2.4T总参数、71B激活。这一直接冲突说明匿名渠道在版本、时点或命名上可能混杂。访谈中关于长文本稳定性改善、任务仍慢且昂贵、跨应用Computer Use成功率约10%—15%等判断，可作为待验证假设；但“外部蒸馏数据污染”“自研芯片承载一半推理流量”等说法没有公开证据，不能当公司披露。",
+      "why": "渠道调研的价值在于提出验证问题，而非替代模型卡；官方发布与渠道冲突本身是重要反证，有助于避免将预测写成事实。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569170",
+      "publishedAt": "2026-11-16",
+      "evidence": "单一专家；参数与发布日期已被官方同日信息否定，其他成本、训练数据和芯片占比也未独立核实。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Qwen4-Max",
+        "中国模型",
+        "反证",
+        "渠道核验"
+      ],
+      "research": {
+        "meetingDate": "2026-11-16T07:21:24+08:00",
+        "savedAt": "2026-11-16T09:19:23+08:00",
+        "updatedAt": "2026-11-16T09:19:30+08:00",
+        "sample": "单一模型产业专家；未披露访问版本、任务集和内部权限",
+        "topics": [
+          {
+            "heading": "冲突核验",
+            "bullets": [
+              "渠道称4T/100B、12月发布；官方为2.4T/71B、11月16日发布。",
+              "其余训练与芯片说法不升级为事实。"
+            ]
+          },
+          {
+            "heading": "可验证假设",
+            "bullets": [
+              "长文本中断减少但输出仍冗长、单位任务成本偏高。",
+              "简单Computer Use可用，跨应用长链成功率低。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "正式API相同任务成本、工具调用失败率、输出长度。",
+              "开放权重小模型发布及不同推理档位差异。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-model-routing-margin-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜多模型路由的毛利改善受能力边界约束",
+      "summary": "两篇渠道访谈讨论微软自研MAI、OpenAI、Claude与开源模型在Agent场景中的路由和毛利。核心逻辑是：自研或开源模型没有外部token采购成本，标准化高吞吐任务的边际毛利可能更高；Claude在长文档与较少重试场景可能具备成本优势；复杂推理仍需更强的第三方模型。材料给出的每千美元收入成本拆分和22%—60%毛利率未经财务披露验证，且不同段落存在口径不一致，不能作为微软或模型厂真实毛利。",
+      "why": "企业Agent平台的经济性取决于“能力匹配后的单位成功任务成本”，不是简单把流量切到最便宜模型；路由错误会以重试、SLA和客户流失抵消推理节省。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569201",
+      "publishedAt": "2026-11-16",
+      "evidence": "匿名专家与估算模型；成本、价格和毛利未获微软、OpenAI或Anthropic披露，且未给出利用率与会计口径。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Microsoft AI",
+        "OpenAI",
+        "Anthropic",
+        "模型路由",
+        "毛利"
+      ],
+      "research": {
+        "meetingDate": "2026-11-16T00:09:16+08:00",
+        "savedAt": "2026-11-16T09:19:15+08:00",
+        "updatedAt": "2026-11-16T09:19:22+08:00",
+        "sample": "两篇匿名专家汇总；无合同、财务或调用日志",
+        "topics": [
+          {
+            "heading": "核心框架",
+            "bullets": [
+              "标准化任务优先自研/开源，复杂任务继续依赖强闭源模型。",
+              "真正比较应包含重试、编排、记忆、安全与SLA成本。"
+            ]
+          },
+          {
+            "heading": "口径限制",
+            "bullets": [
+              "成本拆分和毛利率为专家估算，部分数字内部不一致。",
+              "边际毛利与全成本毛利不可混写。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "1P/3P实际调用占比、每成功任务成本、客户SLA。",
+              "自研模型能力提升是否减少第三方采购而不伤留存。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-datacenter-power-sofc-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜北美AI数据中心电力：PJM容量与SOFC并非无风险替代",
+      "summary": "渠道专家称，北美新增数据中心更担心并网时点而非仅电价；PJM区域新项目可能面对显著容量成本抬升，存量长期能源协议受影响较小。SOFC微电网可缓解并网瓶颈并支持孤岛运行，但并非“摆脱外部依赖”：高温电堆衰减、天然气管网、孤岛切换与GPU冲击负载联调均是风险。材料列举宾州、新泽西等项目容量和2027容量价格估计，但未给出公司名称、合同或公用事业文件。",
+      "why": "电力从后台成本变成AI算力交付的关键约束；SOFC能缩短时间表，却把电网风险转化为燃气、设备寿命与系统控制风险。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569258",
+      "publishedAt": "2026-11-16",
+      "evidence": "单一项目专家；项目容量、客户、价格与市场规模均为渠道口径，未与PJM、客户或设备商公告交叉。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "数据中心",
+        "电力",
+        "SOFC",
+        "Bloom Energy",
+        "AI基础设施"
+      ],
+      "research": {
+        "meetingDate": "2026-11-16T10:22:51+08:00",
+        "savedAt": "2026-11-16T13:22:54+08:00",
+        "updatedAt": "2026-11-16T13:23:02+08:00",
+        "sample": "单一北美数据中心项目专家；项目身份与合同未披露",
+        "topics": [
+          {
+            "heading": "供电选择",
+            "bullets": [
+              "存量ESA相对抗价格波动，新项目更受并网时点与容量拍卖影响。",
+              "微电网适合弹性负载，关键训练负载仍偏好高优先级电网。"
+            ]
+          },
+          {
+            "heading": "失败风险",
+            "bullets": [
+              "电堆衰减、燃气单点、孤岛切换和控制抖动。",
+              "百兆瓦级GPU负载的长期实战案例仍少。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "PJM容量拍卖、天然气合同、SOFC可用率与维护。",
+              "客户SLA、保险与实际并网/投产时间。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-ai-server-rubin-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜Rubin订单强叙事仍受良率、审批与交付节奏约束",
+      "summary": "两篇AI服务器/ODM访谈预计2027年CSP需求继续增长，并给出Rubin约7.4万柜、GB300价格上行等渠道估算；但客户拆分尚未最终确定，非CSP终端仍受审查，品牌服务器交期约8—10个月。更关键的反证是工厂端整柜测试良率低，一台机柜可能多次返修重测；渠道还称NVL72起量与更大机型时间表存在延后风险。所有柜数、价格和时间表均未获NVIDIA、CSP或ODM正式确认。",
+      "why": "订单并不等于收入：芯片、机柜、电力、出口审批和系统良率共同决定交付；任何一环延迟都会推迟供应链现金流。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569251",
+      "publishedAt": "2026-11-15",
+      "evidence": "匿名供应链专家；柜数、客户份额、价格和交付时间缺少公司指引与订单文件。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "NVIDIA",
+        "Rubin",
+        "GB300",
+        "AI服务器",
+        "ODM"
+      ],
+      "research": {
+        "meetingDate": "2026-11-15T22:06:29+08:00",
+        "savedAt": "2026-11-16T09:18:32+08:00",
+        "updatedAt": "2026-11-16T09:56:30+08:00",
+        "sample": "两篇供应链专家访谈；客户和订单样本未披露",
+        "topics": [
+          {
+            "heading": "需求线索",
+            "bullets": [
+              "CSP 2027需求被描述为继续增长，Q2—Q3交付更集中。",
+              "品牌服务器与芯片采购前置约8—10个月。"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "整柜测试良率和重复返修推高成本。",
+              "出口审批、客户清单与下一代机型延期会影响确认节奏。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "NVIDIA正式路线图与ODM财报中的订单、库存和预付款。",
+              "实际机柜出货、良率、价格及数据中心上电。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-optical-16t-supply-20261116",
+      "category": "调研纪要",
+      "title": "AceCamp｜1.6T光模块：需求强，但DSP/EML与价格口径需验证",
+      "summary": "光模块渠道专家预计2026年1.6T出货约950万—1,050万只、800G约1,500万—1,600万只，并称二三季度DSP良率问题把部分交付推迟到四季度。其判断DSP、200G EML仍是核心瓶颈，硅光占比因供给与功耗优势提升；同时给出800G约300—380美元、行业高毛利可延续等估算。数字来自单一专家且部分段落口径重复或矛盾，Marvell/Lumentum并购等表述也需回到公司公告核验。",
+      "why": "高速光模块是AI集群扩张的高弹性环节，但订单、实际交付、良率和年降必须分开；上游瓶颈可能支撑价格，也可能把收入推迟。",
+      "source": "AceCamp（限定只读全文）",
+      "url": "https://www.acecamptech.com/article/detail/70569259",
+      "publishedAt": "2026-11-16",
+      "evidence": "单一供应链专家；出货、ASP、毛利和客户份额未与供应商财报或客户订单交叉，未作为行业事实。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "光模块",
+        "800G",
+        "1.6T",
+        "DSP",
+        "EML",
+        "硅光"
+      ],
+      "research": {
+        "meetingDate": "2026-11-16T10:17:32+08:00",
+        "savedAt": "2026-11-16T13:22:48+08:00",
+        "updatedAt": "2026-11-16T13:22:55+08:00",
+        "sample": "单一光模块产业专家；公司、客户和订单样本未披露",
+        "topics": [
+          {
+            "heading": "供需",
+            "bullets": [
+              "渠道称1.6T增长快于800G，Q4补交前期延误。",
+              "DSP和EML比硅光供给更紧。"
+            ]
+          },
+          {
+            "heading": "分歧",
+            "bullets": [
+              "出货、价格和毛利未经财报验证，部分数字内部不一致。",
+              "长期高毛利可能被年降、良率和新增供应商削弱。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "供应商收入、库存、预付款与实际1.6T出货。",
+              "DSP先进制程、EML产能、硅光良率与客户认证。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "macro-overseas-rates-oil-20261116",
+      "category": "宏观点评",
+      "title": "海外宏观｜长端仍高、油价回落，风险偏好未获利率端明显缓冲",
+      "summary": "11月16日美债2Y约4.83%、较前一交易日-5bp，10Y约5.12%、-3bp；美元指数约103.58、日内+0.16%。Brent近月结算92.44美元/桶（-3.6%），WTI近月85.72美元/桶（-3.2%），市场交易供应恢复与过剩预期，但油轮与中东风险未消失。俄乌谈判仍在推进，但俄方否认已同意欧洲参与下一轮会谈，谈判不等于停火。传导：长端仍在5%以上，TMT折现率与数据中心融资成本维持高位，油价回落仅提供有限成本缓冲。",
+      "why": "利率与能源成本共同决定AI基础设施的资本成本和利润率；地缘表态与已落实停火必须严格区分。",
+      "source": "美国财政部、Reuters公开报道与ICE/CME结算数据",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "publishedAt": "2026-11-16",
+      "evidence": "收益率采用11月16日收盘附近官方衍生口径；油价为当日近月结算，未与不同合约或盘中报价混比。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "原油",
+        "战争与政治",
+        "融资成本"
+      ]
+    },
+    {
+      "id": "china-derivatives-rules-effective-20261116",
+      "category": "宏观点评",
+      "title": "中国宏观｜衍生品统一监管办法正式施行，属于风险制度建设而非放水",
+      "summary": "证监会《衍生品交易监督管理办法（试行）》自11月16日起施行，覆盖互换、远期和非标准化期权等期货以外衍生品，要求实名账户、适当性、内部控制和风险管理；证券、期货公司申请相关业务须最近6个月净资本持续不低于5亿元。不符合规定者不得新增业务，存量到期了结，行政许可实施安排另行明确。点评：该措施强化交易与机构风险约束，不是央行投放流动性，也不应解读为股市直接增量资金。",
+      "why": "统一监管会影响券商、期货公司和企业风险管理业务的准入与资本占用，短期偏合规成本，长期有利于降低衍生品链条不透明风险。",
+      "source": "中国证监会（官方）",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7632835/content.shtml",
+      "publishedAt": "2026-11-16",
+      "evidence": "办法于5月15日发布、11月16日施行；已区分发布、实施、许可细则和实际业务变化。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "证监会",
+        "衍生品",
+        "金融监管"
+      ]
+    },
+    {
+      "id": "us-market-flows-20261116",
+      "category": "市场资金面",
+      "title": "美国市场｜SOX跌约5.3%，AI硬件与Neocloud共振下挫",
+      "summary": "11月16日标普500收7416.59（-1.92%）、纳指24509.76（-2.49%）、道指51608.17（-1.41%），SOX约9610.65（-5.28%）。美股总成交17.91亿股？更正为179.1亿股，低于20日均量186.6亿股，约0.96倍；NYSE跌涨家数3.45:1，Nasdaq为3.27:1。NVIDIA跌4.1%，Micron与Intel跌逾7%，Dell跌7.0%、CoreWeave跌6.1%、Nebius跌7.6%。这不是“资金净流出”统计，但宽度恶化显示风险偏好从芯片扩散至服务器与算力租赁。",
+      "why": "半导体和Neocloud同时下跌说明市场正在重估AI资本开支回报、融资与监管风险；NVIDIA财报将成为下一验证点。",
+      "source": "Reuters公开转载、Nasdaq与交易所数据",
+      "url": "https://www.straitstimes.com/business/companies-markets/us-stocks-wall-street-ends-sharply-lower-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo",
+      "publishedAt": "2026-11-16",
+      "evidence": "成交量为179.1亿股，不是17.91亿；约0.96倍20日均量。成交量与跌涨家数均不等同ETF申赎或全市场净流入。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "半导体",
+        "Neocloud",
+        "成交量"
+      ]
+    },
+    {
+      "id": "asia-market-flows-20261116",
+      "category": "市场资金面",
+      "title": "亚洲市场｜台股跌6.03%、韩国跌3.59%，中国成长风格明显承压",
+      "summary": "11月16日：中国上证3602.57（-0.87%）、CSI300约-1.0%，创业板约2320（-4.37%）；港股恒生23753.84（+0.49%），恒科约-0.3%，成交约1741.1亿港元。日本日经59662.02（-2.42%）、TOPIX 3901.37（-1.02%）；韩国KOSPI 5100.50（-3.59%）；台湾加权41040.08（-6.03%），交易所总成交值约9031亿元新台币。科技链跌幅显著大于大盘，未使用A股“主力净流入”或已停止披露的北向日频净流入。",
+      "why": "日韩台与中国成长板块的同步回撤显示AI硬件风险偏好具有跨市场传导，港股相对抗跌但科技指数未同步走强。",
+      "source": "TWSE、JPX/KRX及公开交易所行情",
+      "url": "https://www.twse.com.tw/en/exchangeReport/FMTQIK?response=html",
+      "publishedAt": "2026-11-16",
+      "evidence": "均为当地11月16日最近完整交易日；日本外资周频数据未伪造成日频，南向及ETF申赎无一致公开值时不填。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾",
+        "科技链"
+      ]
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-16",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合",
+        "displayValue": "24,509.76",
+        "change": -2.49,
+        "displayChange": "-2.49%",
+        "note": "11月16日16:00 ET收盘"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,416.59",
+        "change": -1.92,
+        "displayChange": "-1.92%",
+        "note": "11月16日16:00 ET收盘"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "51,608.17",
+        "change": -1.41,
+        "displayChange": "-1.41%",
+        "note": "11月16日16:00 ET收盘"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "9,610.65",
+        "change": -5.28,
+        "displayChange": "-5.28%",
+        "note": "11月16日收盘，公开行情口径"
+      },
+      {
+        "label": "美国10年期国债",
+        "displayValue": "5.12%",
+        "change": -3,
+        "displayChange": "-3bp",
+        "note": "11月16日收盘附近，较11月13日"
+      }
+    ],
+    "snapshotNote": "股票指数为美国11月16日常规时段收盘；10Y为同日收盘附近。美股总成交约为20日均量0.96倍，宽度显著转弱。",
+    "performance": [
+      {
+        "name": "纳斯达克综合",
+        "changePct": -2.49
+      },
+      {
+        "name": "标普500",
+        "changePct": -1.92
+      },
+      {
+        "name": "道琼斯",
+        "changePct": -1.41
+      },
+      {
+        "name": "SOX",
+        "changePct": -5.28
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "MU",
+        "name": "Micron",
+        "session": "常规",
+        "asOf": "2026-11-16 16:00 ET",
+        "changePct": -7.62,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得可比20日量比；不据此称放量或净流出",
+        "catalyst": "半导体风险偏好回落，市场等待NVIDIA财报",
+        "url": "https://finance.yahoo.com/quote/MU/history/"
+      },
+      {
+        "symbol": "DELL",
+        "name": "Dell Technologies",
+        "session": "常规",
+        "asOf": "2026-11-16 16:00 ET",
+        "changePct": -7,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得可比20日量比",
+        "catalyst": "AI服务器与资本开支回报担忧扩散",
+        "url": "https://finance.yahoo.com/quote/DELL/history/"
+      },
+      {
+        "symbol": "NBIS",
+        "name": "Nebius",
+        "session": "常规",
+        "asOf": "2026-11-16 16:00 ET",
+        "changePct": -7.6,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得可比20日量比",
+        "catalyst": "Neocloud融资与AI基础设施高贝塔板块下跌",
+        "url": "https://finance.yahoo.com/quote/NBIS/history/"
+      },
+      {
+        "symbol": "CRWV",
+        "name": "CoreWeave",
+        "session": "常规",
+        "asOf": "2026-11-16 16:00 ET",
+        "changePct": -6.1,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得可比20日量比",
+        "catalyst": "Neocloud与算力租赁风险偏好回落",
+        "url": "https://finance.yahoo.com/quote/CRWV/history/"
+      }
+    ],
+    "selectionNote": "按11月16日常规时段绝对跌幅和AI产业链代表性，覆盖存储、服务器与Neocloud。均缺可比20日量比，未把全天成交量冒充个股量比或净流入。",
+    "sources": [
+      {
+        "name": "Reuters市场数据公开转载",
+        "url": "https://www.straitstimes.com/business/companies-markets/us-stocks-wall-street-ends-sharply-lower-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo"
+      },
+      {
+        "name": "Nasdaq SOX",
+        "url": "https://www.nasdaq.com/market-activity/index/sox"
+      },
+      {
+        "name": "美国财政部收益率",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "配置与历史去重",
+      "status": "已完成",
+      "url": "https://github.com/audreyyuan-svg/audreyyuan-svg.github.io/tree/main/data",
+      "note": "读取/api/config、仓库config.json v18、coverage-additions.json、data/index.json与11月16日日报；DeepSeek禁购既有条目及历史模型/财报不重复。"
+    },
+    {
+      "name": "OpenAI及核心成员",
+      "status": "有官方更新",
+      "url": "https://openai.com/products/release-notes/",
+      "note": "11月16日CSAM Image Classifier已按官方适用范围收录；未见新基础模型或API价格变化。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "原帖访问受限",
+      "url": "https://x.com/thsottiaux",
+      "note": "独立检查近24小时与7天公开索引；检索到与Adobe/Atlassian/Box工作流相关片段，但未稳定读取X原帖全文，未写成ChatGPT Work或Codex套餐事实。"
+    },
+    {
+      "name": "Anthropic及核心成员",
+      "status": "已检查／无新增正式发布",
+      "url": "https://www.anthropic.com/news",
+      "note": "官方News最新仍为11月9日Claude Fable/Mythos 5.2；产品页未见11月16日新模型或价格。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已检查",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "官方更新、GitHub与Hugging Face未见近24小时新模型、模型卡、权重或价格；V4.1-Flash-1017为既有版本。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已检查／仓库活动未升级",
+      "url": "https://huggingface.co/MiniMaxAI/models",
+      "note": "Hugging Face显示H3-Image仓库近12小时有活动，但未找到对应11月16日正式发布稿或新开放方式，未把更新时间当新模型发布。"
+    },
+    {
+      "name": "Qwen",
+      "status": "有正式发布",
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "note": "Qwen4-Max官方规格、API与开放方式已收录；较小开放权重版本仍为未来计划。"
+    },
+    {
+      "name": "Kimi",
+      "status": "已检查",
+      "url": "https://huggingface.co/moonshotai/models",
+      "note": "官方模型库最新Kimi-K3.1-Pro为11天前既有版本；未见近24小时新权重、模型卡或价格。"
+    },
+    {
+      "name": "GLM / Z.ai",
+      "status": "已检查",
+      "url": "https://huggingface.co/zai-org/models",
+      "note": "公开模型库最新主线仍为GLM-5.3系列，未见近24小时新版本或价格。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已检查",
+      "url": "https://huggingface.co/stepfun-ai/models",
+      "note": "官方模型库未见近24小时新模型或小版本；Step-5-Preview为既有版本。"
+    },
+    {
+      "name": "腾讯混元",
+      "status": "有正式发布",
+      "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "note": "Hy4 flash官方发布、TokenHub model ID、上下文与价格已核验；独立测评尚缺。"
+    },
+    {
+      "name": "其他中国模型",
+      "status": "已检查／字节页面日期冲突",
+      "url": "https://seed.bytedance.com/en/",
+      "note": "字节主页把Seedance 2.5与Seed Audio 1.0列为11月16日，但各自文章原始日期为7月31日和7月20日，未当作新发布；MiMo、ERNIE等未见近24小时新正式版本。"
+    },
+    {
+      "name": "Artificial Analysis / Epoch / METR",
+      "status": "有Qwen独立更新／其余无专项",
+      "url": "https://artificialanalysis.ai/models/qwen4-max",
+      "note": "AA已收录Qwen4-Max v5.0.1质量、成本、延迟和输出量；Epoch、METR未见Qwen4-Max或Hy4 flash专项公开结果，继续72小时跟踪。"
+    },
+    {
+      "name": "Qwen开发者体验",
+      "status": "发现单一失败案例",
+      "url": "https://www.reddit.com/r/Qwen_AI/comments/1xul1hu/qwen4maxpreview_has_a_tool_calling_problem/",
+      "note": "特定Hermes/A2A环境报告预览版工具参数布尔值被字符串化，23次/7会话均失败；仅作单一开发者反证，版本为preview且未复现正式版。"
+    },
+    {
+      "name": "Gavin Baker / Atreides",
+      "status": "未找到新原始讲话",
+      "url": "https://www.bostoninvestmentconference.com/",
+      "note": "继续检查10月29日Boston Investment Conference、Ted Seides及本人渠道；无新原始音视频/字幕/文字稿，未用旧节目代替。"
+    },
+    {
+      "name": "Brad Gerstner / Altimeter",
+      "status": "已检查",
+      "url": "https://www.altimeter.com/",
+      "note": "BG2与机构公开渠道近24小时及7天无可核验新长访谈。"
+    },
+    {
+      "name": "Sarah Guo",
+      "status": "已检查",
+      "url": "https://www.nopriors.com/",
+      "note": "No Priors及公开渠道未见近24小时新本人长访谈或长帖。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "已检查",
+      "url": "https://www.nopriors.com/",
+      "note": "公开渠道未见近24小时新本人长访谈；旧内容未重发。"
+    },
+    {
+      "name": "Sundar Pichai / Andy Jassy",
+      "status": "已检查／无新长访谈",
+      "url": "https://www.youtube.com/results?search_query=Sundar+Pichai+Andy+Jassy",
+      "note": "跨平台回查7天，结果仍为10月既有采访；未把转述或旧节目重发冒充新访谈。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已检查",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "官网Takes、Public Markets Update与公开入口未见11月16日新原文。"
+    },
+    {
+      "name": "Apollo",
+      "status": "有更新",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "11月16日Higher Rates Hit the Fiscal Side已收录，并区分公开数据与机构解释。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已检查",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "archive最新公开长文为11月13日，X原帖直读受限；未见11月16日新可核验文章。"
+    },
+    {
+      "name": "The Information",
+      "status": "标题导语检查／付费墙",
+      "url": "https://www.theinformation.com/features/ai-agenda",
+      "note": "11月16日AI Agenda公开标题涉及可解释性研究与OpenAI/Goodfire线索，但正文付费墙且无公司原始材料交叉，未作为已确认事实收录。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已检查／无新原文",
+      "url": "https://ramp.com/authors/ara-kharazian",
+      "note": "官方作者页、Econ Lab与公开检索未见11月16日新文章；社媒直读受限。"
+    },
+    {
+      "name": "Ramp AI Index",
+      "status": "已检查／不重复",
+      "url": "https://ramp.com/data/ai-index-nov-2026",
+      "note": "11月11日统计期更新已在历史周报覆盖；未见11月16日新统计期或方法修订，未把Ramp客户样本外推全市场。"
+    },
+    {
+      "name": "Elon Musk",
+      "status": "公开原帖未稳定直读",
+      "url": "https://x.com/elonmusk",
+      "note": "检索到Starship V4约70米、9台发动机等本人表态的公开引用，但未稳定读取X原帖全文，且SpaceX未正式确认，未升级为公司事实。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已检查",
+      "url": "https://www.spacex.com/",
+      "note": "官网最新主要内容仍为Starship Flight 15及后续任务；未见11月16日季度业绩或V4正式规格公告，本人观点与公司披露分开。"
+    },
+    {
+      "name": "美国BIS重大科技监管",
+      "status": "有新规则",
+      "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+      "note": "官方检查稿已读；规则拟11月19日刊登并生效，既有服务90天窗口，公告/生效/实施已区分。"
+    },
+    {
+      "name": "美国主要科技公司财报",
+      "status": "已检查／当日无已发布新财报",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron、SNDK、AXTI逐组核对；NVIDIA定于11月17日美股盘后，当前时点尚未发布。"
+    },
+    {
+      "name": "NVIDIA活动与产品文档",
+      "status": "已检查",
+      "url": "https://www.nvidia.com/en-us/events/",
+      "note": "未见11月16日新的GTC分项或产品文档；即将发布的财报不预写结果。"
+    },
+    {
+      "name": "Claude Duet",
+      "status": "已检查",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "note": "产品页与Release Notes未见近24小时新正式公告。"
+    },
+    {
+      "name": "美伊、俄乌、中美与美国选举",
+      "status": "部分完成／仅收录可核验变化",
+      "url": "https://www.reuters.com/",
+      "note": "俄乌下一轮谈判参与方仍有公开分歧，未写成停火；美伊与选举未见足以形成独立卡片的已落实重大变化。中美科技政策的主要新增为BIS规则。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "有正式实施",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7632835/content.shtml",
+      "note": "证监会衍生品办法11月16日施行；另查央行、金融监管总局和财政部，未见窗口内新增直接流动性投放。"
+    },
+    {
+      "name": "市场数据",
+      "status": "已完成最近完整交易日",
+      "url": "https://www.straitstimes.com/business/companies-markets/us-stocks-wall-street-ends-sharply-lower-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo",
+      "note": "美股、SOX、美债、原油与中日韩台港均使用11月16日完整交易日；量能、宽度、合约和数据时点已标注。"
+    },
+    {
+      "name": "市场图表 / Wind",
+      "status": "部分完成",
+      "url": "https://www.nasdaq.com/market-activity/index/sox",
+      "note": "Wind已由用户安装，但当前运行未暴露可调用工具；已核验行情速览、当日涨跌与异动。缺SOX、四大CSP等权、IGV、10Y完整对齐历史序列，按规则省略整个趋势栏目。"
+    },
+    {
+      "name": "last30days",
+      "status": "未执行／执行器不可用",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "当前自动化运行无本地执行器，无法核验固定提交、Python3.12、yt-dlp或生成--plan文件，因此没有声称实际运行；已用公开网页、Reddit、GitHub和YouTube检索补位。"
+    },
+    {
+      "name": "Cubox / AceCamp",
+      "status": "已完成限定只读",
+      "url": "https://www.acecamptech.com/",
+      "note": "2026-11-16普通与归档分别从空首屏继续nextCursor到null；普通18条、归档0条，按ID/URL去重18条，全部逐份读取正文。未读批注/平台AI摘要，未改收藏、归档或已读。搜索受索引覆盖限制。"
+    },
+    {
+      "name": "AceCamp元数据清单",
+      "status": "18篇全文已读／6篇入选",
+      "url": "https://www.acecamptech.com/",
+      "note": "AI数据中心电力、线上招聘、PCB RCC、AI应用Agent、汽车经销商、PCB厂商、MAI模型竞争、淘宝闪购、IP版权、交换机、光模块、CSP模型路由、Qwen4渠道、AI服务器、啤酒即时零售、AI服务器ODM、端侧模组、电池公司。公开日报仅选TMT主线6篇，其余不扩写。"
+    },
+    {
+      "name": "采集缺口",
+      "status": "已说明",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "主要缺口：部分X/LinkedIn原帖、The Information付费正文、Hy4 flash独立测评、Epoch/METR专项、Wind对齐历史序列、个股20日量比与部分官方市场资金流。未核验内容未收录。"
+    }
+  ],
+  "updatedAt": "2026-11-17T08:41:57.047+08:00"
+}
