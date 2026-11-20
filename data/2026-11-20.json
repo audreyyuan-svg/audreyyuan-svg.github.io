@@ -1,0 +1,857 @@
+{
+  "date": "2026-11-20",
+  "title": "AI Tracker日报｜2026年11月20日",
+  "intro": "Anthropic上市首日高开回落，给AI模型公司的收入质量、算力负债与估值提供首个实时样本；GPT‑6.2发布后72小时的独立测评显示，综合能力和成本改善与编码代理、真实任务体验之间仍有明显落差。市场端风险偏好显著收缩，美股与SOX普跌、亚洲科技链分化，而中俄美深圳会晤形成原则性和平声明，尚未等同于具体停火安排。调研纪要继续把供给约束指向GPU、HBM、CPO工艺和NAND价格。",
+  "coverage": "优先覆盖北京时间2026年11月19日08:30至11月20日08:30，补查此前7天漏项；市场数据采用各地11月19日最近完整交易日。AceCamp仅对11月19日服务端限定检索的14篇普通收藏（归档0篇）逐篇只读全文，精选4篇；未扫描其他私人收藏。",
+  "takeaways": [
+    "Anthropic（ANT）以111.50美元开盘、97.17美元收盘，较83美元发行价上涨17.07%；首日约1.77万亿美元完全摊薄估值把增长、算力承诺与现金消耗直接纳入公开市场定价。",
+    "GPT‑6.2 Astra在Artificial Analysis综合指数约62、成本约4美元/任务，但编码代理指数未较GPT‑6 Astra改善；OpenAI系统卡还显示缺失要求/损坏工具场景约23%任务失败，早期开发者反馈分化。",
+    "美股风险偏好全面收缩：标普500跌2.02%、纳指跌2.25%、道指跌2.19%、SOX跌2.41%，下跌家数约占四分之三；ANT的个股强势未带动AI链普涨。",
+    "中俄美深圳会晤发布原则性和平声明，包含核风险、能源供应与继续外交对话，但未给出俄乌或美伊停火时间表；油价近乎持平，地缘风险溢价仍在。",
+    "AceCamp渠道纪要的共同主线是供给而非需求：AWS GPU交付、国产算力HBM与先进制程、CPO玻璃基板/耦合精度、NAND价格均存在约束；全部属于单一专家或渠道口径，不能替代公司披露。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "公开市场开始实时检验模型公司的增长质量：Anthropic首日交易强但明显低于开盘，GPT‑6.2则呈现“综合能力/成本提升、代理完成度与沟通体验未同步”的分化；企业软件与测试设备财报显示AI需求仍在，但产品组合与资本回报更受关注。",
+      "points": [
+        "变化：ANT首日收涨17.07%；Keysight FY2026 Q4收入同比增40%，Intuit Q1收入增12%并拟出售Mailchimp。",
+        "分歧/反证：GPT‑6.2 Astra的AA综合指数居前，但编码代理指数持平、LiveBench agentic回落，且官方系统卡披露约23%受阻场景失败率。",
+        "观察：ANT二级市场换手与估值消化；GPT‑6.2不同推理档位的真实任务成本/时延；中国模型官方模型卡、API版本和定价是否出现新变化。"
+      ]
+    },
+    "markets": {
+      "summary": "11月19日全球风险资产表现为“IPO个股热、科技链整体弱”：美股四大科技指数齐跌、市场广度恶化；亚洲韩国与日本相对韧性，台湾和港股科技承压。长端美债回落、美元续强，油价因霍尔木兹扰动与供给过剩预期相互抵消。",
+      "points": [
+        "变化：10年美债收益率降约1.4bp至5.052%，2年期降4bp至4.76%；DXY升0.07%至103.93，Brent/WTI近月结算91.98/83.21美元。",
+        "分歧/反证：利率回落并未带来股市修复，SOX盘中一度上涨后收跌2.41%，说明AI融资与兑现担忧压过折现率的边际改善。",
+        "观察：ANT上市后的资金再配置、AI债务与数据中心融资、WTI换月后的可比口径，以及深圳三方声明能否转化为俄乌/美伊具体安排。"
+      ]
+    },
+    "research": {
+      "summary": "11月19日AceCamp定向检索返回14篇普通收藏、归档0篇，逐篇全文读取后精选AWS、CPO/NPO、NAND和国产算力芯片4篇。四篇均指向供给约束与交付节奏，但样本、受访者身份和合同口径未公开，数字只能作为待验证线索。",
+      "points": [
+        "变化：渠道认为AWS GPU资源紧张可能延续至2028年下半年；CPO 2027量产预期下修、NPO成为过渡；4Q26 NAND合约价或再涨约10%。",
+        "分歧/反证：AWS backlog、国产芯片份额、CPO出货和NAND价格均为单一专家估计，与公司披露或可复现供应链数据尚未完成交叉核验。",
+        "观察：AWS订单交付/资本开支、NVIDIA/Marvell/博通CPO样机与量产、SNDK/三星/铠侠合约价、国产HBM和先进制程实际良率。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "anthropic-ipo-first-day-20261119",
+      "category": "产业链新闻",
+      "title": "Anthropic上市首日收涨17.07%，高开后估值回落",
+      "summary": "Anthropic（ANT）11月19日在纳斯达克开始交易，开盘111.50美元，较83美元发行价高34.3%；收盘97.17美元，较发行价上涨17.07%，完全摊薄估值约1.77万亿美元。公司此次发行9.80亿股，募资约810亿美元；开盘一度对应约2万亿美元估值，但首日回吐大部分涨幅。",
+      "why": "这是前沿模型公司首次被公开市场逐日定价，定价锚将影响OpenAI、云厂商、芯片及AI软件的融资成本与估值框架。",
+      "source": "Nasdaq、Anthropic官方与Reuters",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "publishedAt": "2026-11-19",
+      "evidence": "开盘价来自Nasdaq官方；发行价和股数来自Anthropic公告；收盘价与完全摊薄估值由Reuters交叉核验。未把盘中约2万亿美元估值当作收盘估值。",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "产业链新闻",
+        "资本市场",
+        "AI商业化"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-18",
+          "title": "Anthropic IPO定价公告",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+          "evidence": "核验83美元发行价、9.80亿股与超额配售权。"
+        },
+        {
+          "date": "2026-11-19",
+          "title": "Reuters首日交易",
+          "url": "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
+          "evidence": "核验97.17美元收盘与约1.77万亿美元完全摊薄估值。"
+        }
+      ]
+    },
+    {
+      "id": "gpt-62-72h-independent-evals-20261119",
+      "category": "模型测评",
+      "title": "GPT‑6.2发布后72小时：综合指数改善，但代理完成度与体验分化",
+      "summary": "独立测评显示，GPT‑6.2 Astra在Artificial Analysis Intelligence Index v5.0.1约62.1，低于Claude Fable 5.2约64.6；AA编码代理指数与GPT‑6 Astra持平，Sol较6.1 Sol下降约3点。Astra在AA任务的Max档成本约4.00美元、约11.5分钟/任务；LiveBench长代理任务读数约70.8%，较前代低约4.8点。OpenAI系统卡另披露，在缺失要求和损坏工具场景中Astra任务失败率约23%，说明高能力不等于稳定完成。",
+      "why": "对TMT应用层而言，单位成本、代理成功率、受阻披露和用户沟通共同决定可替代工时，不能用单一综合榜单推导商业价值。",
+      "source": "Artificial Analysis、OpenAI系统卡与公开开发者反馈",
+      "url": "https://artificialanalysis.ai/models/gpt-6-2-astra",
+      "publishedAt": "2026-11-19",
+      "evidence": "AA读数保留模型版本和Max档；系统卡属于官方自测，开发者反馈仅作体验样本，三类证据分开。Reddit/X样本自选择偏差大，不外推总体用户。",
+      "tags": [
+        "OpenAI",
+        "GPT-6.2",
+        "模型测评",
+        "独立测评",
+        "开发者体验",
+        "72小时"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-17",
+          "title": "OpenAI GPT‑6.2系统卡",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/internal-deployment-of-gpt-6.2-astra-and-gpt-6.2-sol",
+          "evidence": "核验受阻任务失败率与Codex开发者提示的缓解作用。"
+        },
+        {
+          "date": "2026-11-19",
+          "title": "GPT‑6.2不同推理档位汇总",
+          "url": "https://unifybench.ai/efforts?model=gpt-6-2-astra",
+          "evidence": "核验Low/Medium/High/Xhigh/Max档位差异；汇总站仍需回到AA原页面。"
+        }
+      ]
+    },
+    {
+      "id": "brad-gerstner-anthropic-ipo-20261119",
+      "category": "投资人观点",
+      "title": "Brad Gerstner：Altimeter将Anthropic视为基石投资",
+      "summary": "Brad Gerstner在11月19日CNBC Squawk Box采访中称，Altimeter计划对Anthropic IPO投入50亿美元，订单规模为其过往最大IPO订单的五倍以上，并把其定位为“基石投资”。采访围绕Anthropic增长、毛利率、计算效率与未来估值展开；其判断来自投资人立场，且Altimeter是潜在大额买方，并非独立估值结论。",
+      "why": "大额机构订单解释了IPO需求强度，也暴露集中持仓、估值与AI算力周期之间的联动。",
+      "source": "CNBC公开视频/文字稿",
+      "url": "https://www.youtube.com/watch?v=sWxp_oRtwZU",
+      "publishedAt": "2026-11-19",
+      "evidence": "嘉宾身份、首发日期与8分钟原始视频经CNBC互链页面核验；投资规模和观点按本人表述记录，未当作公司业绩披露。",
+      "tags": [
+        "Brad Gerstner",
+        "Altimeter",
+        "Anthropic",
+        "投资人观点",
+        "访谈"
+      ]
+    },
+    {
+      "id": "apollo-ai-gdp-growth-20261119",
+      "category": "投资人观点",
+      "title": "Apollo：AI投资贡献近三季度约65%的实际GDP增长",
+      "summary": "Apollo首席经济学家Torsten Slok的11月19日Daily Spark估算，软件和计算机等AI投资在最近三个季度累计为美国实际GDP增长贡献约1.3个百分点，占约2%累计增长的65%。Apollo明确说明这是未扣除进口的毛贡献，净增长拉动应更低。",
+      "why": "AI资本开支已成为宏观增长和信用市场的共同变量；若建设节奏放缓，影响不仅限于科技股盈利，也会传导到GDP、信用利差和财政收入。",
+      "source": "Apollo Daily Spark",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/ai-spending-powers-65-percent-of-gdp-growth",
+      "publishedAt": "2026-11-19",
+      "evidence": "来源为Apollo使用BEA/Haver数据的机构估算，不是BEA官方因果分解；保留“毛贡献未扣进口”的限制。",
+      "tags": [
+        "Apollo",
+        "Torsten Slok",
+        "投资人观点",
+        "AI资本开支",
+        "GDP"
+      ]
+    },
+    {
+      "id": "keysight-fy2026-q4-20261119",
+      "category": "产业链新闻",
+      "title": "Keysight FY2026 Q4财报（截至2026-10-31）",
+      "summary": "Keysight FY2026 Q4收入19.9亿美元，同比增40%；GAAP净利润4.86亿美元、稀释EPS 2.82美元，非GAAP EPS 3.61美元。经营现金流5.07亿美元、自由现金流4.65亿美元。通信解决方案收入14.96亿美元，同比增51%，其中商业通信增73%；电子工业解决方案收入4.98亿美元，增16%。公司指引FY2027 Q1收入20.40亿—20.60亿美元、非GAAP EPS 3.63—3.69美元。",
+      "why": "测试测量是AI互联、半导体和高速通信投入的上游读数，商业通信大幅增长显示网络与验证需求仍强。",
+      "source": "Keysight官方IR",
+      "url": "https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+      "publishedAt": "2026-11-19",
+      "evidence": "实际业绩、GAAP/非GAAP和公司指引均来自官方财报；电话会于同日13:30 PT举行，未把管理层前瞻当作已实现收入。",
+      "tags": [
+        "Keysight",
+        "财报",
+        "产业链新闻",
+        "半导体",
+        "测试测量"
+      ]
+    },
+    {
+      "id": "intuit-fy2027-q1-mailchimp-sale-20261119",
+      "category": "产业链新闻",
+      "title": "Intuit FY2027 Q1财报（截至2026-10-31）",
+      "summary": "Intuit FY2027 Q1收入44亿美元，同比增12%；Global Business Solutions收入31亿美元、增15%，在线生态收入24亿美元、增20%；GAAP EPS 2.59美元，非GAAP EPS 2.91美元。Mailchimp收入3.13亿美元、同比降1%，公司同日同意以约36.8亿美元向Bending Spoons出售Mailchimp，预计2027年初完成；FY2027收入指引为230.81亿—233.65亿美元、增8%—9%。",
+      "why": "AI原生财务软件增长与Mailchimp剥离并存，显示软件公司正把资本和产品重心从广泛套件转向高数据密度、可量化回报的核心工作流。",
+      "source": "Intuit官方IR/8-K",
+      "url": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000896878-26-000043/fy27q1earningspressrelease.htm",
+      "publishedAt": "2026-11-19",
+      "evidence": "实际、指引和出售条款来自官方8-K附件；出售尚待监管批准，未视为已完成或当期现金流。",
+      "tags": [
+        "Intuit",
+        "财报",
+        "软件",
+        "产业链新闻",
+        "Mailchimp",
+        "AI商业化"
+      ]
+    },
+    {
+      "id": "global-macro-rates-oil-20261119",
+      "category": "宏观点评",
+      "title": "海外宏观｜收益率回落、美元续强，油价近乎持平",
+      "summary": "11月19日美国2年期、10年期国债收益率分别收于4.76%和5.052%，较前日约降4bp和1.4bp；DXY收103.93、升0.07%。1月Brent结算91.98美元/桶、升0.03%，12月WTI结算83.21美元、跌0.06%，后者11月20日到期，换月不可直接续比。",
+      "why": "长端小幅回落不足以抵消美元偏强和风险溢价；对TMT而言，融资成本仍高，油价持稳减轻通胀压力但未触发估值修复。",
+      "source": "美国国债市场、Reuters与公开行情",
+      "url": "https://portfolio-terminal.com/markets/10-year-treasury-yield",
+      "publishedAt": "2026-11-19",
+      "evidence": "收益率、美元和油价均采用11月19日收盘/结算；明确WTI近月到期，不与下月合约混比。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "Brent",
+        "WTI",
+        "资金成本"
+      ]
+    },
+    {
+      "id": "china-macro-policy-20261119",
+      "category": "宏观点评",
+      "title": "中国宏观｜主要金融部门未见新增全国性增量工具",
+      "summary": "11月19日人行公开栏目以招聘、地方金融统计和账户许可为主；证监会主要新增地方监管措施，财政部政策发布页无新的全国性资金工具。市场关注11月20日LPR，但11月19日仍属于预期阶段，不能写作已降息或已实施。",
+      "why": "政策传导应以正式文件、额度和实际投放为准；缺少新增工具意味着当天TMT估值更多受外部风险偏好和产业消息驱动。",
+      "source": "中国人民银行、证监会、财政部官方",
+      "url": "https://www.pbc.gov.cn/",
+      "publishedAt": "2026-11-19",
+      "evidence": "逐一核查三部门官方公开栏目；“无新增全国性工具”仅限核查时点和公开页面，不排除地方执行或稍后发布。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "央行",
+        "证监会",
+        "财政部"
+      ]
+    },
+    {
+      "id": "china-russia-us-shenzhen-declaration-20261119",
+      "category": "宏观点评",
+      "title": "战争与政治｜中俄美深圳会晤发布原则性和平声明",
+      "summary": "中俄美元首11月19日在深圳举行会晤并发布声明，涉及核风险对话、能源稳定供应、联合国改革和继续以政治外交方式处理冲突。官方文本未给出俄乌或美伊停火时间表、监督机制或已落实制裁调整；因此这是原则性框架，不等同停火。",
+      "why": "若后续形成可执行安排，可降低能源与供应链风险溢价；当前对TMT的直接影响主要是风险偏好与油价尾部风险，而非已确认的成本下降。",
+      "source": "中国外交部官方与AP",
+      "url": "https://www.fmprc.gov.cn/gjhdq_676201/gjhdqzz_681964/zgzyjz_148218/xgxw_688964/202611/t20261119_12063191.shtml",
+      "publishedAt": "2026-11-19",
+      "evidence": "声明和会晤事实来自外交部；AP用于交叉核验议题范围。未将领导人表态写成战场事实或停火结果。",
+      "tags": [
+        "宏观点评",
+        "战争与政治",
+        "中美关系",
+        "俄乌",
+        "美伊",
+        "APEC"
+      ]
+    },
+    {
+      "id": "us-market-flow-20261119",
+      "category": "市场资金面",
+      "title": "美国股市资金面｜普跌与广度恶化压过ANT首日强势",
+      "summary": "11月19日标普500收7,175.83（-2.02%）、纳指23,879.20（-2.25%）、道指49,097.06（-2.19%）、SOX 9,419.72（-2.41%）。全市场约1,193只上涨、3,780只下跌、114只平盘，约74%个股下跌；SOX盘中一度涨约4.7%后转跌，显示早盘AI买盘未能维持。",
+      "why": "这更像增量资金撤出高估值科技和半导体，而非ANT上市带来的板块重估；成交量相对20日均量未获得一致公开口径，因此不写“放量”。",
+      "source": "指数收盘、公开市场广度与Reuters",
+      "url": "https://portfolio-terminal.com/markets/stock-market-close",
+      "publishedAt": "2026-11-19",
+      "evidence": "指数为4pm ET常规收盘；广度为覆盖美股普通股的供应商口径，非交易所全市场官方净流入；成交量不等于资金净流入。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "市场广度",
+        "科技股"
+      ]
+    },
+    {
+      "id": "asia-market-flow-20261119",
+      "category": "市场资金面",
+      "title": "亚洲股市资金面｜台湾与港股科技承压，日韩分化",
+      "summary": "11月19日上证综指跌0.28%至3,577.62、CSI300微涨0.03%，创业板跌0.79%；恒指跌1.95%、恒科跌2.33%。日经225涨0.71%，TOPIX跌0.04%；KOSPI涨1.39%；台湾加权指数跌4.40%至38,426.89。未获得各市场一致可比的外资净买卖，故只报告指数与成交方向。",
+      "why": "台湾的急跌与港股科技走弱显示AI硬件链风险偏好收缩；日韩分化说明本地产业结构与资金回补节奏不同，不能用单一“亚洲科技反弹”概括。",
+      "source": "RTHK、区域交易数据汇总",
+      "url": "https://news.rthk.hk/rthk/en/component/k2/1878452-20261119.htm?archive_date=2026-11-19",
+      "publishedAt": "2026-11-19",
+      "evidence": "逐市场采用当地完整交易日收盘；未编造已停止披露的北向日频净流入，也未把供应商“主力净流入”当全市场数据。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ]
+    },
+    {
+      "id": "acecamp-aws-iaas-backlog-20261119",
+      "category": "调研纪要",
+      "title": "AceCamp｜AWS AI收入结构与GPU交付积压",
+      "summary": "单一专家纪要称，AWS上中国模型直接MaaS收入仍为数千万美元级，但客户自租GPU运行开源模型的IaaS收入更大；Anthropic仍占token业务多数。受访者称AWS backlog由4,960亿美元升至5,780亿美元、已签GPU订单交付不足30%，资源紧张或持续至2028年下半年。上述backlog拆分、GPU占比及供给时点未获AWS正式披露交叉核验。",
+      "why": "纪要提示云厂商AI增长不能只看模型API收入，IaaS和自研芯片成本优化更关键；但数字口径和样本需谨慎。",
+      "source": "AceCamp用户授权收藏",
+      "url": "https://www.acecamptech.com/article/detail/70569402",
+      "publishedAt": "2026-11-19",
+      "evidence": "已读取全文；单一AWS相关专家Q&A，受访者身份、合同样本和财务口径未公开。中国模型价格、分成与交付说法需回到AWS/模型公司公告核验。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AWS",
+        "IaaS",
+        "中国模型",
+        "GPU"
+      ],
+      "research": {
+        "meetingDate": "2026-11-19T10:27:00+08:00",
+        "savedAt": "2026-11-19T13:43:02+08:00",
+        "updatedAt": "2026-11-19T13:43:08+08:00",
+        "sample": "单一AWS相关专家Q&A；客户、合同和内部财务样本未公开。",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "渠道称开源模型更多通过IaaS而非Bedrock贡献云收入。",
+              "推理成本优化包括排队、虚拟化切分与自研芯片，需在时延和利润率间权衡。"
+            ]
+          },
+          {
+            "heading": "分歧与反证",
+            "bullets": [
+              "backlog中GPU占比和交付比例未获AWS财报拆分。",
+              "中国模型定价、许可分成与资源紧张至2028年下半年均为受访者判断。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "AWS capex、RPO/backlog兑现和Trainium利用率。",
+              "Bedrock中国模型版本、API定价和可用区更新。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-cpo-npo-delay-20261119",
+      "category": "调研纪要",
+      "title": "AceCamp｜CPO量产节奏下修与NPO过渡窗口",
+      "summary": "单一专家纪要判断，102.4T代CPO从有机基板转向玻璃基板后，脆性加工、波导和亚微米级耦合精度成为主要瓶颈，可能使2027年CPO量产和出货预期下修；NPO被视为2027—2029年的过渡方案。Marvell收购Lumentum可能补齐光芯片与CW光源能力，但供应链优先级变化属于推演。",
+      "why": "若CPO推迟，交换机、光模块、CW光源和封装链的收入确认节奏都会后移，NPO/LPO替代路径的价值上升。",
+      "source": "AceCamp用户授权收藏",
+      "url": "https://www.acecamptech.com/article/detail/70569361",
+      "publishedAt": "2026-11-19",
+      "evidence": "已读取全文；单一光通信专家Q&A，未见NVIDIA、Marvell、博通或Meta官方量产计划交叉确认。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "CPO",
+        "NPO",
+        "光通信",
+        "AI互联"
+      ],
+      "research": {
+        "meetingDate": "2026-11-19T08:00:39+08:00",
+        "savedAt": "2026-11-19T13:43:17+08:00",
+        "updatedAt": "2026-11-19T13:43:24+08:00",
+        "sample": "单一光通信产业专家Q&A；客户订单和良率样本未披露。",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "玻璃基板加工与光耦合精度可能推迟102.4T CPO量产。",
+              "NPO在工艺成熟前可能承担2027—2029年过渡需求。"
+            ]
+          },
+          {
+            "heading": "分歧与反证",
+            "bullets": [
+              "2027出货下修幅度没有官方指引或可复现样本。",
+              "Marvell/Lumentum对博通CW光源的影响取决于既有订单和替代验证。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "NVIDIA/Marvell/博通样机、客户认证和量产日期。",
+              "玻璃基板良率、耦合公差和CW光源供应。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-nand-pricing-20261119",
+      "category": "调研纪要",
+      "title": "AceCamp｜NAND合约价续涨与2027年消费端回调风险",
+      "summary": "单一渠道纪要称，UFS 4.0 TLC长协价自2025年二季度以来持续上涨，预计4Q26手机UFS和企业级SSD合约价再涨约10%，1Q27企业级涨幅或收窄至约5%；消费级SSD已出现“有价无市”，可能在2027年中后期回调。纪要称企业级TLC价格较手机用存储高30%—40%，但厂商身份、合同样本与币种/容量口径并未完整公开。",
+      "why": "NAND价格决定手机BOM、云存储成本和SNDK等供应商利润弹性；涨价持续性取决于真实订单、库存和认证。",
+      "source": "AceCamp用户授权收藏",
+      "url": "https://www.acecamptech.com/article/detail/70569405",
+      "publishedAt": "2026-11-19",
+      "evidence": "已读取全文；单一NAND产业专家Q&A。价格为渠道长协/现货口径，未与SNDK、三星、铠侠等公司公告交叉验证。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "NAND",
+        "企业级SSD",
+        "SNDK",
+        "存储"
+      ],
+      "research": {
+        "meetingDate": "2026-11-19T10:49:05+08:00",
+        "savedAt": "2026-11-19T13:41:20+08:00",
+        "updatedAt": "2026-11-19T13:41:25+08:00",
+        "sample": "单一NAND产业专家Q&A；合同客户和厂商身份未公开。",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "4Q26 UFS与企业级SSD合约价或继续上涨约10%。",
+              "消费SSD需求疲弱可能在2027年中后期触发价格回调。"
+            ]
+          },
+          {
+            "heading": "分歧与反证",
+            "bullets": [
+              "渠道称价格上涨，但消费端已“有价无市”，供需信号相互矛盾。",
+              "厂商价格比较和产品等级未获得公司披露验证。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "SNDK、三星、铠侠合约价、库存与企业级SSD出货。",
+              "手机OEM订单、QLC企业级渗透和2027年新增产能。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-china-ai-chip-supply-20261119",
+      "category": "调研纪要",
+      "title": "AceCamp｜2027年国产AI芯片交付与供应链瓶颈",
+      "summary": "单一行业专家纪要判断，2027年国产算力卡需求未见明显下调，但HBM和先进制程是主要瓶颈；国产卡可在部分推理场景替代H200级产品，大规模预训练对B200的替代仍受超节点、互联和软件栈限制。纪要给出华为约44%—47%、平头哥约22%—23%的交付份额预测，并称国内大厂自研芯片或占其需求近半；这些均未获公司或采购文件确认。",
+      "why": "供给可得性而非峰值算力决定中国模型训练/推理的商业化速度，也影响芯片、HBM、交换和IDC资本开支。",
+      "source": "AceCamp用户授权收藏",
+      "url": "https://www.acecamptech.com/article/detail/70569398",
+      "publishedAt": "2026-11-19",
+      "evidence": "已读取全文；单一专家Q&A，份额、采购量、良率和政策执行均为预测或渠道判断。BIS规则的正式文本与实施细则仍需独立核验。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "国产算力",
+        "HBM",
+        "先进制程",
+        "AI芯片"
+      ],
+      "research": {
+        "meetingDate": "2026-11-19T08:44:45+08:00",
+        "savedAt": "2026-11-19T13:44:16+08:00",
+        "updatedAt": "2026-11-19T13:44:22+08:00",
+        "sample": "单一资深行业专家Q&A；厂商采购、交付和良率样本未公开。",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "2027年供给缺口主要来自HBM与先进制程，而非需求下调。",
+              "训练替代需要芯片、互联协议、通讯库与运维平台共同成熟。"
+            ]
+          },
+          {
+            "heading": "分歧与反证",
+            "bullets": [
+              "厂商份额和互联网自研芯片占比为预测，未获采购数据验证。",
+              "国内封装“无瓶颈”判断可能忽略高端产品良率与客户认证。"
+            ]
+          },
+          {
+            "heading": "后续观察",
+            "bullets": [
+              "HBM3E采购、国产HBM上量和N+2良率。",
+              "华为、平头哥、沐曦等超节点实际交付与可复现实测。"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-19",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合",
+        "displayValue": "23,879.20",
+        "change": -2.25,
+        "displayChange": "-2.25%",
+        "note": "11月19日4pm ET常规收盘"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,175.83",
+        "change": -2.02,
+        "displayChange": "-2.02%",
+        "note": "11月19日4pm ET常规收盘"
+      },
+      {
+        "label": "道琼斯",
+        "displayValue": "49,097.06",
+        "change": -2.19,
+        "displayChange": "-2.19%",
+        "note": "11月19日4pm ET常规收盘"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "9,419.72",
+        "change": -2.41,
+        "displayChange": "-2.41%",
+        "note": "费城半导体指数，11月19日收盘"
+      },
+      {
+        "label": "美国10年期国债",
+        "displayValue": "5.052%",
+        "change": -1.4,
+        "displayChange": "-1.4bp",
+        "note": "11月19日收盘"
+      }
+    ],
+    "snapshotNote": "股票指数为2026年11月19日美国常规交易时段收盘；10年期收益率为同日收盘。未把ANT开盘价、盘中高点或盘后行情混入收盘快照。",
+    "performance": [
+      {
+        "name": "纳斯达克综合",
+        "changePct": -2.25
+      },
+      {
+        "name": "标普500",
+        "changePct": -2.02
+      },
+      {
+        "name": "道琼斯",
+        "changePct": -2.19
+      },
+      {
+        "name": "SOX",
+        "changePct": -2.41
+      },
+      {
+        "name": "上证综指",
+        "changePct": -0.28
+      },
+      {
+        "name": "恒生指数",
+        "changePct": -1.95
+      },
+      {
+        "name": "日经225",
+        "changePct": 0.71
+      },
+      {
+        "name": "KOSPI",
+        "changePct": 1.39
+      },
+      {
+        "name": "台湾加权",
+        "changePct": -4.4
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "ANT",
+        "name": "Anthropic",
+        "session": "常规",
+        "asOf": "2026-11-19 16:00 ET",
+        "changePct": 17.07,
+        "relativeVolume20d": null,
+        "volumeNote": "上市首日无20日均量，量比不可计算。",
+        "catalyst": "IPO首日交易；收盘较83美元发行价上涨17.07%。",
+        "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      },
+      {
+        "symbol": "PANW",
+        "name": "Palo Alto Networks",
+        "session": "常规",
+        "asOf": "2026-11-19 16:00 ET",
+        "changePct": 6.42,
+        "relativeVolume20d": null,
+        "volumeNote": "未获得可一致核验的20日量比。",
+        "catalyst": "市场继续消化财报与平台化安全需求。",
+        "url": "https://portfolio-terminal.com/markets/stock-market-close"
+      },
+      {
+        "symbol": "AMD",
+        "name": "AMD",
+        "session": "常规",
+        "asOf": "2026-11-19 16:00 ET",
+        "changePct": -7.72,
+        "relativeVolume20d": null,
+        "volumeNote": "未获得可一致核验的20日量比。",
+        "catalyst": "AI芯片融资与需求可持续性担忧加剧。",
+        "url": "https://nexqual.com/discover/movers"
+      },
+      {
+        "symbol": "CRWV",
+        "name": "CoreWeave",
+        "session": "常规",
+        "asOf": "2026-11-19 16:00 ET",
+        "changePct": -6.1,
+        "relativeVolume20d": null,
+        "volumeNote": "未获得可一致核验的20日量比。",
+        "catalyst": "Neocloud融资、客户集中和资本开支担忧延续。",
+        "url": "https://nexqual.com/discover/movers"
+      }
+    ],
+    "selectionNote": "按绝对涨跌幅、基本面催化与AI产业链代表性筛选；所有20日量比缺失均明确为null。Wind工具当前会话未暴露，且未取得SOX、四大CSP等权、IGV和10Y日期对齐的完整真实序列，因此按最高优先规则省略整个重点趋势栏目。",
+    "sources": [
+      {
+        "name": "美国指数收盘",
+        "url": "https://portfolio-terminal.com/markets/stock-market-close"
+      },
+      {
+        "name": "SOX收盘",
+        "url": "https://www.tallacoptions.com/Indices/SOX"
+      },
+      {
+        "name": "ANT首日交易",
+        "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      },
+      {
+        "name": "亚洲收盘",
+        "url": "https://news.rthk.hk/rthk/en/component/k2/1878452-20261119.htm?archive_date=2026-11-19"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "站点配置与历史",
+      "status": "已检查",
+      "url": "https://audreyyuan-svg.github.io/data/config.json",
+      "note": "已读取/api/config、仓库data/config.json、coverage-additions.json、data/index.json和11月19日日报；历史日期和三栏目规则保留。"
+    },
+    {
+      "name": "OpenAI官方",
+      "status": "已检查",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "note": "检查近24小时与7天；11月19日无新模型版本，继续追踪11月17日GPT‑6.2 Astra/Sol及定价、系统卡。"
+    },
+    {
+      "name": "Anthropic官方与核心成员",
+      "status": "已检查",
+      "url": "https://www.anthropic.com/news",
+      "note": "核验IPO首日；未发现11月19日新的Claude模型发布。核心成员公开渠道未发现可核验的新长访谈。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "部分受限",
+      "url": "https://x.com/thsottiaux",
+      "note": "检查近24小时及7天；公开索引可见11月19日对GPT‑6.2 Astra能力与沟通风格的回应，但X原帖全文读取受限，未把镜像摘要当官方产品事实，未单独成条。"
+    },
+    {
+      "name": "中国模型｜DeepSeek",
+      "status": "已检查",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "检查官网更新、GitHub/Hugging Face、API开放与价格；近24小时未见可核验的新模型或小版本。"
+    },
+    {
+      "name": "中国模型｜MiniMax",
+      "status": "已检查",
+      "url": "https://huggingface.co/MiniMaxAI/models",
+      "note": "官方HF多项旧模型约11小时内更新版本指针/元数据，未见新权重、模型卡能力变化或API价格公告，因此不作为新模型发布。"
+    },
+    {
+      "name": "中国模型｜Qwen",
+      "status": "已检查",
+      "url": "https://github.com/QwenLM",
+      "note": "检查官网、GitHub、Hugging Face与模型卡；近24小时未见可核验的新模型/小版本。"
+    },
+    {
+      "name": "中国模型｜Kimi/Moonshot",
+      "status": "已检查",
+      "url": "https://huggingface.co/moonshotai/models",
+      "note": "检查官方GitHub/HF与公开产品页；近24小时未见新模型、权重或API价格变化。"
+    },
+    {
+      "name": "中国模型｜GLM/Z.ai",
+      "status": "已检查",
+      "url": "https://huggingface.co/zai-org/models",
+      "note": "检查官方模型列表、GitHub和开放方式；近24小时未见新模型或小版本。"
+    },
+    {
+      "name": "中国模型｜StepFun",
+      "status": "已检查",
+      "url": "https://huggingface.co/stepfun-ai/models",
+      "note": "检查官方GitHub/HF与模型列表；近24小时未见新模型或小版本。"
+    },
+    {
+      "name": "中国模型｜其他重要公司",
+      "status": "已检查",
+      "url": "https://huggingface.co/models",
+      "note": "补查腾讯、百度、字节等公开发布线索；近24小时未形成可由官方模型卡/代码/价格交叉核验的新条目。"
+    },
+    {
+      "name": "独立测评｜Artificial Analysis",
+      "status": "已检查",
+      "url": "https://artificialanalysis.ai/models/gpt-6-2-astra",
+      "note": "继续72小时跟踪GPT‑6.2 Astra/Sol，记录综合指数、编码代理、成本和推理档位。"
+    },
+    {
+      "name": "独立测评｜Epoch AI",
+      "status": "已检查",
+      "url": "https://epoch.ai/",
+      "note": "补查GPT‑6.2相关公开评测；未发现11月19日新增且可独立核验的完整方法/版本结果，沿用历史已收录读数不重复灌入。"
+    },
+    {
+      "name": "独立测评｜METR",
+      "status": "已检查",
+      "url": "https://metr.org/",
+      "note": "检查近24小时和7天公开更新；未见GPT‑6.2新增完整评测。Anthropic对独立评估者访问安排仅作官方声明线索。"
+    },
+    {
+      "name": "开发者体验与反例",
+      "status": "已检查",
+      "url": "https://www.reddit.com/r/OpenAI/",
+      "note": "检查Reddit/Hacker News与公开开发者讨论；反馈从“不可用/权限过度请求”到“更快、逐渐适应”分化，样本自选择偏差大，仅作反例线索。"
+    },
+    {
+      "name": "Gavin Baker/Atreides",
+      "status": "已检查",
+      "url": "https://www.atreidesmgmt.com/",
+      "note": "检查本人、机构、Boston Investment Conference主办方与主持人公开渠道；仍未找到10月29日论坛原始完整音视频/字幕/文字稿，未用旧采访冒充。"
+    },
+    {
+      "name": "Brad Gerstner/Altimeter",
+      "status": "已检查",
+      "url": "https://www.youtube.com/watch?v=sWxp_oRtwZU",
+      "note": "核验11月19日CNBC新采访的嘉宾、首发日期和原始视频，已形成投资人观点条目。"
+    },
+    {
+      "name": "Sarah Guo",
+      "status": "已检查",
+      "url": "https://www.nopriors.com/",
+      "note": "检查近24小时及7天公开节目/社媒，未发现新的可核验长访谈或实质长帖。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "已检查",
+      "url": "https://eladgil.com/",
+      "note": "检查近24小时及7天公开节目/社媒，未发现新的可核验长访谈或实质长帖。"
+    },
+    {
+      "name": "Sundar Pichai",
+      "status": "已检查",
+      "url": "https://blog.google/inside-google/message-ceo/",
+      "note": "跨平台检查本人、Google、主持人、YouTube与播客；未发现新的本人长访谈，未重复10月20日已收录内容。"
+    },
+    {
+      "name": "Andy Jassy",
+      "status": "已检查",
+      "url": "https://www.aboutamazon.com/about-us/leadership/andy-jassy",
+      "note": "跨平台检查本人、AWS、主持人、YouTube与播客；未发现11月19日新长访谈，未重复11月17日已收录采访。"
+    },
+    {
+      "name": "The Information",
+      "status": "受限",
+      "url": "https://www.theinformation.com/topics/ai?page=1",
+      "note": "检查最新标题、日期与免费导语；11月19日Nvidia潜在收购线索受订阅墙限制，未读取正文、未作为确认事实，仅留线索。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已检查",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "检查主页、archive与公开段落；最新公开可读实质文章仍为11月16日周报，未发现11月19日新文章。投资人观点未当作独立测评。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "部分受限",
+      "url": "https://x.com/elonmusk",
+      "note": "检查近24小时科技/宏观相关公开索引；本人谈Starship回收与轨道算力，但X原帖全文受限，未以索引摘要扩写或当公司正式披露。"
+    },
+    {
+      "name": "SpaceX官方X/官网",
+      "status": "已检查",
+      "url": "https://x.com/SpaceX",
+      "note": "与Elon本人分开检查；官网近24小时未见新的季度业绩或正式技术公告，Flight 15已属此前事件，未重复。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已检查",
+      "url": "https://ramp.com/authors/ara-kharazian",
+      "note": "检查作者页、Econ Lab、公开X/LinkedIn与访谈线索；近24小时未见新文章，最新仍为11月11日Ramp AI Index更新。"
+    },
+    {
+      "name": "Ramp AI Index/Economics Lab",
+      "status": "已检查",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "检查最新公开数据；截至11月15日周，Ramp客户样本中Anthropic占AI token支出58.7%。因属特定支付样本且已在近期更新中覆盖，本期仅记检查，不外推全市场。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已检查",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "检查Takes、Public Markets Update、官网互链社媒；最新Takes仍为10月15日，近24小时无新实质内容。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已检查",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "核验11月19日Daily Spark原文、日期、数据来源和未扣进口限制，已形成投资人观点条目。"
+    },
+    {
+      "name": "美国主要科技公司IR/SEC",
+      "status": "已检查",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "逐项检查Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron及重要软件/设备公司；11月19日新增纳入Keysight与Intuit财报。Micron仅公告12月17日财报日期。"
+    },
+    {
+      "name": "SNDK/Sandisk与NAND",
+      "status": "已检查",
+      "url": "https://investor.sandisk.com/",
+      "note": "检查IR/SEC和存储产业线索；近24小时无新财报，AceCamp NAND纪要已按渠道材料单独标注。"
+    },
+    {
+      "name": "AXT/AXTI与化合物半导体",
+      "status": "已检查",
+      "url": "https://investors.axt.com/",
+      "note": "检查IR/SEC；近24小时无新财报或重大公告。"
+    },
+    {
+      "name": "Microsoft Ignite/开发者文档",
+      "status": "已检查",
+      "url": "https://news.microsoft.com/events/ignite/2026/",
+      "note": "检查11月19日活动页、Live News、模型和产品文档；未发现相对11月17—18日已收录公告的实质新增，避免重复。"
+    },
+    {
+      "name": "NVIDIA/GTC重大活动",
+      "status": "已检查",
+      "url": "https://www.nvidia.com/gtc/",
+      "note": "检查官方新闻、技术文档和分项公告；近24小时无新的欧洲GTC分项技术公告，未把媒体传闻当官方事实。"
+    },
+    {
+      "name": "Claude Duet产品页",
+      "status": "已检查",
+      "url": "https://www.anthropic.com/",
+      "note": "检查产品页而非仅新闻页；近24小时无新的Duet产品发布或定价变化。"
+    },
+    {
+      "name": "宏观政策｜中国",
+      "status": "已检查",
+      "url": "https://www.pbc.gov.cn/",
+      "note": "逐一检查人行、金融监管、证监会与财政部公开原文；未发现11月19日新的全国性增量工具，LPR仅为11月20日预期。"
+    },
+    {
+      "name": "战争与政治",
+      "status": "已检查",
+      "url": "https://www.fmprc.gov.cn/gjhdq_676201/gjhdqzz_681964/zgzyjz_148218/xgxw_688964/202611/t20261119_12063191.shtml",
+      "note": "检查美伊、俄乌、中美/选举与APEC；核验深圳三方会晤声明，明确原则性框架不等同停火或已落实政策。"
+    },
+    {
+      "name": "市场图表/Wind",
+      "status": "部分完成",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "行情快照、当日涨跌图和科技异动已用公开收盘数据核验。Wind已由用户安装但本会话未暴露可调用工具；缺少四组完整对齐历史序列，按规则完全省略重点趋势栏目。"
+    },
+    {
+      "name": "AceCamp/Cubox只读",
+      "status": "已检查",
+      "url": "https://www.acecamptech.com/",
+      "note": "服务端无AceCamp同名目录，采用AceCamp关键词定向搜索并核验精确acecamptech.com主机；普通与归档首屏虽为空但nextCursor非空，均继续到null。最终普通14篇、归档0篇，14篇全部只读全文，精选4篇；未改收藏、归档、已读或批注。"
+    },
+    {
+      "name": "last30days",
+      "status": "未完成",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "实查Python 3.12.14可用，但固定源码、入口SKILL.md及/root/.local/bin/yt-dlp均缺失，故未运行；未把预检失败写成无更新，改用免费公开搜索补查Reddit、YouTube、Hacker News与GitHub。"
+    },
+    {
+      "name": "采集缺口",
+      "status": "已记录",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "X原帖、LinkedIn与The Information部分页面受登录/订阅墙限制；未绕过、未购买。市场成交量相对20日均量及部分交易所资金流缺乏一致公开口径，均未编造。"
+    }
+  ],
+  "updatedAt": "2026-11-20T08:26:00+08:00"
+}
