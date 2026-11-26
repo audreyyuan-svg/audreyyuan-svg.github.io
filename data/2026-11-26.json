@@ -1,0 +1,881 @@
+{
+  "date": "2026-11-26",
+  "title": "AI Tracker日报｜2026-11-26",
+  "intro": "Dell的AI服务器订单与积压大增，Workday的AI产品开始形成可量化合同额，但两者都暴露利润/积压质量分化。中国模型线没有经官方确认的新版本：GLM-5.4发布后72小时仍缺Artificial Analysis、Epoch与METR公开结果，Kimi-K3.1-Pro仓库更新也不足以视为新发布。市场上，美股从盘中急跌修复但半导体仍弱，亚洲主要市场普跌；AceCamp核验14篇并精读4篇。",
+  "coverage": "统计截至2026-11-26 08:40（Asia/Shanghai），重点覆盖过去24小时并回查7天；美股及亚洲行情采用各地11月25日最近完整交易日。仅使用免费公开网页、官方资料、公开社媒可读部分和已授权只读收藏；不购买服务、不调用付费API、不读取浏览器Cookie。",
+  "takeaways": [
+    "Dell FY2027 Q3营收549亿美元，AI服务器收入220亿美元、订单602亿美元、积压1323亿美元；增长高度集中于AI基础设施，CSG营业利润同比下降6%，交付与利润兑现仍是约束。",
+    "Workday订阅收入同比增长12.8%，AI产品新ACV约1.5亿美元、同比逾3倍；但总订阅积压仅增6.1%，AI增量尚未完全抵消成熟订阅业务放缓。",
+    "11月25日纳指跌0.62%、SOX跌0.65%，道指涨0.33%；盘中深跌后市场广度仍偏正，卖压集中于大型科技与半导体。",
+    "GLM-5.4的72小时跟踪仍未见AA、Epoch或METR结果；Kimi-K3.1-Pro仓库显示更新但无新版本公告、价格变化或可复现实测，不能当作新发布。",
+    "央行实际开展8000亿元MLF和5000亿元逆回购；当日有1万亿元MLF到期，MLF单项净回笼2000亿元，不能把操作总量写成股市直接增量资金。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "科技基本面由AI服务器订单、企业软件变现与模型验证三条线构成。Dell显示算力需求仍强，Workday显示AI新产品开始形成合同额，但利润和积压质量分化；中国模型独立测评覆盖仍明显落后于发布节奏。",
+      "points": [
+        "变化：Dell AI服务器收入、订单与积压大幅增长；Workday披露AI产品新ACV约1.5亿美元；SpaceX以新发行A类股向符合条件的Trump Accounts赠股。",
+        "分歧/反证：Dell的AI增长伴随客户端利润下滑；Workday AI ACV增长未阻止总订阅积压增速放缓；GLM-5.4与Kimi仓库变化均缺独立可复现实测。",
+        "观察：Vera Rubin交付与机房验收、Dell毛利和营运资本、Workday AI ACV转收入、GLM-5.4权重/API、Kimi提交说明与第三方基准。"
+      ]
+    },
+    "markets": {
+      "summary": "美国大盘从盘中急跌修复，道指上涨而纳指和SOX仍跌，市场宽度优于市值加权指数；亚洲同步风险收缩。长端收益率下行缓冲折现率，但油价因供应中断声称跳升。",
+      "points": [
+        "变化：标普-0.25%、纳指-0.62%、道指+0.33%、SOX-0.65%；2年/10年美债4.61%/4.85%，日变动-2bp/-6bp；Brent近月+3.5%、WTI近月+2.0%。",
+        "分歧/反证：NYSE和Nasdaq上涨家数仍多于下跌；胡塞对Ras Tanura的袭击声称未获独立确认；中国MLF为净回笼而非无条件放水。",
+        "观察：感恩节后缩短交易日量价、SOX与存储链去杠杆、油价供应风险、亚洲外资卖压，以及中国公开市场到期与实际净投放。"
+      ]
+    },
+    "research": {
+      "summary": "11月25日AceCamp定向检索返回普通收藏14篇、归档0篇，全部核验为acecamptech.com原链接。4篇全文集中在光互联DSP/CPO、AI数据中心、推理经济学及国内云算力；共同线索是需求仍强，但良率、供电、集群稳定性、迁移成本与付费意愿共同决定兑现。",
+      "points": [
+        "变化：光互联讨论从1.6T DSP供给转向NPO/CPO良率；数据中心从算卡数量转向电力、交付与政策；推理降本被更长思维链和企业销售周期部分抵消。",
+        "分歧/反证：大量份额、出货、功耗、资本开支和模型部署数字来自匿名专家；国内卡在推理可用性与大规模预训练稳定性之间仍有差距。",
+        "观察：1.6T DSP交付、CPO良率、B300与国内算力验收、推理单任务成本、国产集群MFU/故障率、云厂商正式资本开支与MaaS收入。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "dell-fy2027-q3-20261124",
+      "category": "产业链新闻",
+      "title": "Dell FY2027 Q3财报（截至2026-10-30）",
+      "summary": "Dell第三财季营收549亿美元；ISG营收420亿美元、同比增长198%，AI服务器收入220亿美元、增长291%。AI服务器订单602亿美元，积压1323亿美元；CSG营收129亿美元、增长3%，但营业利润7.04亿美元、下降6%。前三季经营现金流108亿美元。公司把FY2027营收指引从1920亿上调至2020亿美元、AI服务器收入指引从740亿上调至780亿美元，并给出Q4营收563亿美元。11月25日常规交易约涨0.6%。",
+      "why": "订单到收入仍需经过电力、网络、冷却、供应链和客户验收；高积压不等于同额利润，CSG利润下滑与营运资本是反向约束。",
+      "source": "Dell官方财报与电话会",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+      "publishedAt": "2026-11-24",
+      "evidence": "财务与指引来自公司公告；电话会称多数新订单转向Vera Rubin、企业需求仍多在POC阶段。收盘反应来自公开行情，缺统一20日量比。",
+      "tags": [
+        "Dell",
+        "DELL",
+        "财报",
+        "AI服务器",
+        "Vera Rubin",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "workday-fy2027-q3-20261124",
+      "category": "产业链新闻",
+      "title": "Workday FY2027 Q3财报（截至2026-10-31）",
+      "summary": "Workday营收27.05亿美元、同比增长11.2%，订阅收入25.32亿美元、增长12.8%；GAAP/非GAAP营业利润率12.1%/31.4%，非GAAP EPS 2.82美元，自由现金流6.91亿美元。未来12个月订阅积压92.16亿美元、增长12.3%，总订阅积压275.48亿美元、仅增6.1%。约2200家核心客户购买AI产品，季度AI产品新ACV约1.5亿美元、同比逾3倍。全年订阅收入指引上调至99.58亿美元；11月25日常规收盘约涨0.7%。",
+      "why": "AI产品已形成可量化合同额，但核心订阅与总积压增速更决定中期收入；AI ACV若不能转化为续费、扩席和现金流，仍不足以解除成熟软件估值约束。",
+      "source": "Workday官方财报",
+      "url": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Announces-Fiscal-2027-Third-Quarter-Financial-Results/default.aspx",
+      "publishedAt": "2026-11-24",
+      "evidence": "财务、积压、AI客户和指引来自公司公告；常规收盘与盘前报价分开，未把盘前跌幅冒充收盘。",
+      "tags": [
+        "Workday",
+        "WDAY",
+        "财报",
+        "企业软件",
+        "AI商业化",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "apollo-china-power-buildout-20261125",
+      "category": "投资人观点",
+      "title": "Apollo：中国电力扩张速度继续拉开与美国差距",
+      "summary": "Apollo首席经济学家Torsten Slok称，按其汇总的CEC、NEA与EIA数据，中国2025年新增发电能力约550GW，接近2020年速度的3倍、约为美国的10倍。该图表强调供电建设对AI与制造业扩张的战略含义，但新增装机不等同于可立即接入数据中心的稳定电力，能源结构、并网、输电和利用小时仍影响有效供给。",
+      "why": "电力是AI数据中心资本开支兑现的硬约束；中美建设速度差会影响算力落地和边际成本，但机构汇总的年度新增装机不能直接外推数据中心可用容量。",
+      "source": "Apollo Daily Spark",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "publishedAt": "2026-11-25",
+      "evidence": "数量来自Apollo对CEC、NEA、EIA的汇总；属于机构研究与情景判断，不是独立电网审计。",
+      "tags": [
+        "Apollo",
+        "Torsten Slok",
+        "电力",
+        "数据中心",
+        "投资人观点"
+      ]
+    },
+    {
+      "id": "spacex-trump-accounts-share-gift-20261125",
+      "category": "产业链新闻",
+      "title": "SpaceX将以新发行A类股支持Trump Accounts",
+      "summary": "SpaceX 11月25日公告，拟向每个当前活跃的Trump Account贡献一股新发行A类普通股；总裁兼COO Gwynne Shotwell另宣布个人赠与超过200万股SpaceX股份。免费页面未披露总稀释比例、估值、归属和处置细则，因此不能据赠股数量推导对既有股东或公司现金流的精确影响。",
+      "why": "这是公司正式资本与社会项目安排，可能影响股本结构和品牌，但不是季度经营业绩，也不能与Elon Musk个人承诺混写。",
+      "source": "SpaceX投资者关系公告",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
+      "publishedAt": "2026-11-25",
+      "evidence": "公告确认新发行A类股和Shotwell个人赠股；未给出总股本、稀释率和税务执行细节。",
+      "tags": [
+        "SpaceX",
+        "Gwynne Shotwell",
+        "股本",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "china-model-72h-check-20261126",
+      "category": "独立测评",
+      "title": "中国模型72小时跟踪｜GLM-5.4仍缺独立结果，Kimi仓库更新不等于新发布",
+      "summary": "截至11月26日08:40，Artificial Analysis、Epoch与METR均未出现可核验的GLM-5.4公开评测；Hugging Face也未见GLM-5.4官方开放权重，Z.ai最新可见权重仍为GLM-5.3。Kimi-K3.1-Pro官方仓库显示近期更新，仍为既有模型卡与权重，未找到新版本公告、API价格变更或新的可复现实测。last30days只返回一条低质量单源YouTube视频，字幕含模型名和版本错误，未采纳。",
+      "why": "72小时窗口最容易把官方演示、仓库元数据变化与社区热度混成独立测评；当前证据只能确认‘仍待验证’，不能给出能力排名。",
+      "source": "Z.ai、Moonshot AI Hugging Face与独立测评机构公开页",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "publishedAt": "2026-11-26",
+      "evidence": "官方模型卡可读但未见新版本说明；AA/Epoch/METR无对应结果。社区视频因单源、无测试设置且字幕错配而剔除。",
+      "tags": [
+        "GLM-5.4",
+        "Kimi-K3.1-Pro",
+        "Artificial Analysis",
+        "Epoch",
+        "METR",
+        "独立测评"
+      ]
+    },
+    {
+      "id": "global-macro-rates-oil-20261125",
+      "category": "宏观点评",
+      "title": "海外宏观短评｜长端回落，油价因供应风险跳升",
+      "summary": "11月25日2年/10年美债收益率4.61%/4.85%，较前日-2bp/-6bp；美元指数103.71、跌0.10%。1月Brent结算94.61美元、涨3.5%，1月WTI 83.68美元、涨2.0%。胡塞声称袭击沙特Ras Tanura设施但未获独立确认。长端回落缓解TMT折现率，油价反弹则抬升通胀与能源成本风险。",
+      "why": "利率下行与油价上行对成长股形成相反传导；供应中断仍是声称，不能把风险溢价写成实际产量损失。",
+      "source": "公开国债/美元报价与Reuters",
+      "url": "https://www.reuters.com/business/energy/oil-prices-fall-supply-glut-concerns-offset-middle-east-disruption-fears-2026-11-25/",
+      "publishedAt": "2026-11-25",
+      "evidence": "收益率、美元和原油均为11月25日收盘/结算；Brent与WTI均为1月近月合约，未混用换月数据。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "Brent",
+        "WTI",
+        "战争与政治"
+      ]
+    },
+    {
+      "id": "china-liquidity-operations-20261125",
+      "category": "宏观点评",
+      "title": "中国流动性短评｜8000亿元MLF落地，MLF口径净回笼2000亿元",
+      "summary": "央行11月25日实际开展8000亿元1年期MLF和5000亿元7天逆回购；当日有1万亿元MLF到期，因此MLF单项净回笼2000亿元，逆回购净额仍需结合到期量判断。操作有助平滑银行体系资金，但不是无条件放水，也不等同股市直接新增资金；对TMT融资成本的传导仍取决于信用需求与风险偏好。",
+      "why": "区分公告、实施、到期和净额，避免把操作总量误读为净投放；债市流动性后盾与权益增量资金不是同一概念。",
+      "source": "中国人民银行与新华社",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026112416390750568/index.html",
+      "publishedAt": "2026-11-25",
+      "evidence": "额度来自央行公告和实施报道；MLF净额按1万亿元到期量计算，逆回购未在缺明细时补造净额。",
+      "tags": [
+        "宏观点评",
+        "中国央行",
+        "MLF",
+        "逆回购",
+        "资金面"
+      ]
+    },
+    {
+      "id": "us-market-funds-20261125",
+      "category": "市场资金面",
+      "title": "美国市场资金面｜盘中急跌后修复，科技仍弱于市场宽度",
+      "summary": "11月25日标普500收7,182.78、跌0.25%，纳指23,585.80、跌0.62%，道指50,182.95、涨0.33%，SOX 8,774.86、跌0.65%。NYSE上涨1,941家、下跌762家；Nasdaq上涨2,944家、下跌2,015家，标普约371只成分股上涨。指数从盘中深跌修复，科技和半导体仍是主要拖累。未取得一致可核验的全市场成交量/20日均量及ETF申赎，故不写量比或净流入。",
+      "why": "正广度与市值加权科技下跌并存，说明卖压更集中在高权重AI资产；感恩节前后成交和缩短交易时段会降低后续量价信号可比性。",
+      "source": "Reuters、公开指数与市场宽度",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "publishedAt": "2026-11-25",
+      "evidence": "指数和广度均采用11月25日常规收盘；成交量不等于资金净流入，缺口明确保留。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "SOX",
+        "纳斯达克",
+        "市场宽度"
+      ]
+    },
+    {
+      "id": "asia-market-funds-20261125",
+      "category": "市场资金面",
+      "title": "亚洲市场资金面｜中日韩台同步回撤，韩国跌幅最大",
+      "summary": "11月25日，上证-2.03%、沪深300 -1.65%、创业板-4.19%，A股上涨约550家、下跌约4,888家；恒指-1.14%、恒科-2.56%。日经225 -2.78%；KOSPI -6.16%，公开交易所口径显示外资净卖出约1.90万亿韩元；台湾加权-4.80%。各地均为最近完整交易日。日本日频外资和台湾机构净额未获一致公开口径，未用周频或旧值替代。",
+      "why": "亚洲AI硬件与成长资产同步去风险，韩国、台湾和创业板的高贝塔特征突出；持续性需由外资、融资余额和成交额验证。",
+      "source": "各交易所公开行情与市场汇总",
+      "url": "https://global.krx.co.kr/",
+      "publishedAt": "2026-11-25",
+      "evidence": "未使用A股供应商‘主力净流入’或已停止披露的北向日频净额；日本和台湾缺口保留。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ]
+    },
+    {
+      "id": "acecamp-collection-overview-20261125",
+      "category": "调研纪要",
+      "title": "AceCamp收藏总览｜14篇覆盖算力、光互联、云与端侧AI",
+      "summary": "对11月25日AceCamp来源定向检索：普通收藏14篇、归档0篇。题目覆盖光互联DSP/CPO、智能车电池、AI数据中心、电力预测、人形机器人、先进封装、跨境物流、FSD V15、燃气轮机、创新药、端侧AI、AI推理、SOFC材料和国内云算力。全部核验为acecamptech.com原链接；仅对光互联、AI数据中心、AI推理和国内云厂商4篇读取全文，其余只保留题名和链接。",
+      "why": "完整列出元数据并把未读题名与已读正文分开，避免把平台摘要或匿名渠道数字冒充公司披露。",
+      "source": "AceCamp用户授权收藏元数据",
+      "url": "https://www.acecamptech.com/",
+      "publishedAt": "2026-11-25",
+      "evidence": "普通与归档均分页至nextCursor=null；首个分页为空但nextCursor非空时继续，最终按ID/URL去重。检索依赖Cubox索引，不宣称穷尽全部私人收藏。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "收藏总览",
+        "AI基础设施",
+        "国产算力"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-25",
+          "title": "光互联电芯片龙头调研：DSP、份额与CPO",
+          "url": "https://www.acecamptech.com/article/detail/70569631",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "头部智能造车电池供应链",
+          "url": "https://www.acecamptech.com/article/detail/70569657",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "AI数据中心政策、建设与算力租赁",
+          "url": "https://www.acecamptech.com/article/detail/70569603",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "电力功率预测",
+          "url": "https://www.acecamptech.com/article/detail/70569650",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "人形机器人大脑",
+          "url": "https://www.acecamptech.com/article/detail/70569651",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "封装大厂调研：AMD与CoWoS-L",
+          "url": "https://www.acecamptech.com/article/detail/70569609",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "跨境电商物流",
+          "url": "https://www.acecamptech.com/article/detail/70569636",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "FSD V15调研",
+          "url": "https://www.acecamptech.com/article/detail/70569653",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "燃气轮机与数据中心电力",
+          "url": "https://www.acecamptech.com/article/detail/70569658",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "创新药行业调研",
+          "url": "https://www.acecamptech.com/article/detail/70569642",
+          "evidence": "仅核验题名与来源；非TMT，不扩写。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "端侧AI芯片、RISC-V与IoT",
+          "url": "https://www.acecamptech.com/article/detail/70569639",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "AI推理市场调研",
+          "url": "https://www.acecamptech.com/article/detail/70569637",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "Bloom、SOFC与氧化钪",
+          "url": "https://www.acecamptech.com/article/detail/70569632",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "国内头部云厂商、制裁与自研芯片",
+          "url": "https://www.acecamptech.com/article/detail/70569652",
+          "evidence": "已读全文并精读。"
+        }
+      ]
+    },
+    {
+      "id": "acecamp-optical-dsp-cpo-20261125",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜光互联DSP供给与CPO良率约束",
+      "summary": "匿名产业专家判断，2027年800G DSP总出货可能达1.2亿—1.5亿颗，其中Marvell约6000万—7000万颗；2026年1.6T产品曾受高温漏电和串扰问题拖累，9—10月后才逐步修复。纪要把NPO放在2027年、CPO放在2028—2029年，并称当前CPO良率约20%。这些均属渠道预测，尚未由Marvell、Broadcom或客户正式文件确认。相反证据是CPO良率、FCC规则和客户部署节奏仍可能推迟，不能据此断言可插拔模块在2029年后必然快速被替代。",
+      "why": "精读原因：同时涉及DSP供给、制程、良率和架构迁移，对光模块、交换芯片和封装链条有直接盈利含义。",
+      "source": "AceCamp匿名产业专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569631",
+      "publishedAt": "2026-11-25",
+      "evidence": "全文来自用户授权只读收藏；出货、份额、功耗和良率为受访者估算，不是公司披露。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "光互联",
+        "DSP",
+        "CPO",
+        "Marvell"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": "2026-11-25",
+        "updatedAt": "2026-11-25",
+        "sample": "匿名光通信产业专家；单一访谈样本",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "1.6T DSP问题据称在9—10月后改善",
+              "NPO/CPO迁移取决于良率与系统成本"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "约20%良率和2028—2029时间表未获官方确认",
+              "FCC 3.2T规则仍不确定"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "1.6T实际交期与客户认证",
+              "CPO良率、封装产能与客户部署"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-ai-datacenter-build-20261125",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜AI数据中心从算卡采购转向电力与验收",
+      "summary": "纪要称，国内客户在政策和供应不确定性下同时测试国产芯片、预留电力，并把部分项目交付排到2027—2028年；东南亚等海外项目也受设备、网络和验收条件影响。增量信息不在某张卡的理论算力，而在机房电力、冷却、网络、租赁合同和客户验收能否同时到位。受访者对B300和算力租赁的订单、价格与交付数字缺少公司合同或公告支撑；项目排期也可能只是渠道预期，不能证明需求已锁定或收入可确认。",
+      "why": "精读原因：材料覆盖政策、建设、供电、租赁与交付多个环节，能把GPU需求转化为可验证里程碑。",
+      "source": "AceCamp渠道调研纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569603",
+      "publishedAt": "2026-11-25",
+      "evidence": "全文来自授权收藏；项目、价格和交付量为匿名渠道说法，未按公司官方订单处理。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AI数据中心",
+        "B300",
+        "电力",
+        "算力租赁"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": "2026-11-25",
+        "updatedAt": "2026-11-25",
+        "sample": "数据中心产业链渠道访谈；样本规模未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "兑现由供电、冷却、网络和验收共同决定",
+              "国产芯片测试与海外设备限制并行"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "远期排期不等于收入确认",
+              "B300和租赁价格缺合同佐证"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "机房送电与客户验收",
+              "设备到货、租赁回款和政策细则"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-ai-inference-economics-20261125",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜推理降本未自动转化为企业需求",
+      "summary": "受访专家认为，推理成本优化正从软件层转向硬件、内存与系统协同，并预计Vera Rubin可能显著降低单位计算成本；但模型价格下降未带来同比例短期调用增长，更长思维链还可能抬高单任务总成本。企业采用在编码之外仍受数据治理、流程改造、销售周期和ROI限制。纪要中的成本降幅、平台结构和客户行为属于单一专家估计，缺少账单样本与厂商披露；更可靠的观察对象是每个完成任务的总token、延迟和人工替代，而非标价/百万token。",
+      "why": "精读原因：把单token降价与单任务经济性分开，有助检验AI应用收入和算力需求是否真正形成弹性。",
+      "source": "AceCamp匿名AI基础设施专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569637",
+      "publishedAt": "2026-11-25",
+      "evidence": "全文来自授权收藏；硬件降本幅度、平台份额和客户转化为专家观点，未作公司事实。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "AI推理",
+        "Vera Rubin",
+        "企业AI"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": "2026-11-25",
+        "updatedAt": "2026-11-25",
+        "sample": "匿名AI基础设施/推理市场专家；单一样本",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "单token降价不等于单任务成本下降",
+              "编码之外仍受ROI与治理约束"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "更长思维链可能抵消降本",
+              "成本预测缺可复现账单"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "每任务总token、延迟与成功率",
+              "企业续费、扩席和推理毛利"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-domestic-cloud-ai-20261125",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜国产云算力的可用性差距仍在系统层",
+      "summary": "纪要认为，国内云厂商AI算力和MaaS需求仍增长，但国产卡在推理部署上的可用性通常高于大规模预训练，MFU、集群稳定性、软件迁移和故障恢复仍是主要差距。受访者还提到Qwen、Kimi、DeepSeek等模型部署及制裁下资本开支调整，但多项份额、收入、芯片性能和模型时间缺少公司公告，且口径存在冲突。尤其不能把海外项目受限简单等同资本开支会一比一回流国内，因为本地供电、设备、良率和客户需求同样约束。",
+      "why": "精读原因：材料连接云收入、国产芯片、模型服务和制裁传导，可验证国产替代是否从采购量转化为稳定可售算力。",
+      "source": "AceCamp匿名云计算产业专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569652",
+      "publishedAt": "2026-11-25",
+      "evidence": "全文来自授权收藏；公司份额、芯片性能、模型延迟和资本开支均属渠道判断。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "国产算力",
+        "云计算",
+        "MaaS"
+      ],
+      "research": {
+        "meetingDate": null,
+        "savedAt": "2026-11-25",
+        "updatedAt": "2026-11-25",
+        "sample": "匿名国内云计算产业专家；样本规模未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "推理可用性通常领先大规模预训练稳定性",
+              "MaaS增长受集群效率和迁移成本约束"
+            ]
+          },
+          {
+            "heading": "反证",
+            "bullets": [
+              "海外受限资本开支不会自动一比一回流",
+              "模型与份额数字缺官方来源"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "集群MFU、故障率和预训练成功率",
+              "MaaS收入、毛利和正式资本开支"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "marketDashboard": {
+    "tradeDate": "2026-11-25",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合指数",
+        "displayValue": "23,585.80",
+        "change": -0.62,
+        "displayChange": "-0.62%",
+        "note": "11月25日16:00 ET常规收盘"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,182.78",
+        "change": -0.25,
+        "displayChange": "-0.25%",
+        "note": "11月25日16:00 ET常规收盘"
+      },
+      {
+        "label": "道琼斯工业指数",
+        "displayValue": "50,182.95",
+        "change": 0.33,
+        "displayChange": "+0.33%",
+        "note": "11月25日16:00 ET常规收盘"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "8,774.86",
+        "change": -0.65,
+        "displayChange": "-0.65%",
+        "note": "11月25日指数日终"
+      },
+      {
+        "label": "美国10年期国债收益率",
+        "displayValue": "4.85%",
+        "change": -6,
+        "displayChange": "-6 bp",
+        "note": "11月25日收盘，较前日4.91%"
+      }
+    ],
+    "snapshotNote": "股票采用11月25日美国常规收盘；国债采用同日收盘。未混写盘前、盘后与收盘。",
+    "performance": [
+      {
+        "name": "纳斯达克",
+        "changePct": -0.62
+      },
+      {
+        "name": "标普500",
+        "changePct": -0.25
+      },
+      {
+        "name": "道指",
+        "changePct": 0.33
+      },
+      {
+        "name": "SOX",
+        "changePct": -0.65
+      },
+      {
+        "name": "沪深300",
+        "changePct": -1.65
+      },
+      {
+        "name": "恒生科技",
+        "changePct": -2.56
+      },
+      {
+        "name": "日经225",
+        "changePct": -2.78
+      },
+      {
+        "name": "KOSPI",
+        "changePct": -6.16
+      },
+      {
+        "name": "台湾加权",
+        "changePct": -4.8
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "AMBA",
+        "name": "Ambarella",
+        "session": "常规",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": -19.77,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得统一可核验20日量比",
+        "catalyst": "内存紧缺压低客户订单与下一季收入指引。",
+        "url": "https://ng.investing.com/news/stock-market-news/earnings-call-transcript-ambarella-q3-2027-profit-beats-but-stock-plunges-93CH-2827759"
+      },
+      {
+        "symbol": "NTNX",
+        "name": "Nutanix",
+        "session": "常规",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": -15.19,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得统一可核验20日量比",
+        "catalyst": "财报后叠加CEO意外离任。",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nutanix-reports-first-quarter-fiscal-210100989.html"
+      },
+      {
+        "symbol": "HPQ",
+        "name": "HP Inc.",
+        "session": "常规",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": 11.49,
+        "relativeVolume20d": null,
+        "volumeNote": "供应商受拆股/复权影响有冲突；不写量比",
+        "catalyst": "财报收入与EPS高于预期，AI PC渗透提升。",
+        "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase/default.aspx"
+      },
+      {
+        "symbol": "SNDK",
+        "name": "Sandisk",
+        "session": "常规",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": -5.6,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得统一可核验20日量比",
+        "catalyst": "存储链延续去风险，客户成本压力升温。",
+        "url": "https://www.barrons.com/articles/stock-movers-07929503"
+      },
+      {
+        "symbol": "META",
+        "name": "Meta Platforms",
+        "session": "常规",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": 3.4,
+        "relativeVolume20d": null,
+        "volumeNote": "未取得统一可核验20日量比",
+        "catalyst": "大型科技普遍承压时逆势上涨。",
+        "url": "https://portfolio-terminal.com/markets/stock-market-close/november-25-2026"
+      }
+    ],
+    "selectionNote": "选择半导体、存储、软件/云基础设施、PC硬件与互联网平台中绝对涨跌显著或有财报/管理层催化的5家公司。20日量比均无统一可核验来源，relativeVolume20d设为null；成交量不等于资金净流入。当前会话未暴露可调用Wind工具，且未取得SOX、四大CSP等权、IGV与10年期收益率完整对齐历史序列，故整体省略重点趋势栏目。",
+    "sources": [
+      {
+        "name": "Reuters美国市场收盘",
+        "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+      },
+      {
+        "name": "SOX日终行情",
+        "url": "https://finance.yahoo.com/quote/%5ESOX/history/?frequency=1d"
+      },
+      {
+        "name": "美国市场汇总",
+        "url": "https://portfolio-terminal.com/markets/stock-market-close/november-25-2026"
+      },
+      {
+        "name": "亚洲交易所行情",
+        "url": "https://global.krx.co.kr/"
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "name": "OpenAI与核心团队",
+      "status": "已检查／有线索未成条目",
+      "url": "https://openai.com/business/private-intelligence/",
+      "note": "Private Intelligence官方页确认ZDR、Private Inference和Agent权限控制，但页面无明确发布日期、Release Notes未同步，未当作11月25日新发布。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "已检查／原帖读取受限",
+      "url": "https://x.com/thsottiaux",
+      "note": "近24小时并回查7天；X原帖未稳定展开，官方Release Notes和定价页未见可交叉确认的新套餐额度事实。"
+    },
+    {
+      "name": "Anthropic与核心团队",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.anthropic.com/news",
+      "note": "检查新闻、产品页、Claude Duet与核心团队线索；最新公司新闻仍为11月20日IPO收官。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已检查／无可核实新增",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "官网、API、GitHub/HF均查；最新公开变更仍为11月13日App更新。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.minimax.io/news",
+      "note": "官网、API、GitHub/HF均查；近24小时无新模型或小版本。"
+    },
+    {
+      "name": "Qwen",
+      "status": "已检查／无可核实新增",
+      "url": "https://qwen.ai/",
+      "note": "官网、博客、GitHub/HF均查；最新周报11月19日、Qwen4-Max 11月16日。"
+    },
+    {
+      "name": "Kimi／Moonshot AI",
+      "status": "已检查／仓库元数据更新",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "note": "仓库近期更新但仍为既有版本；未见新公告、价格变化或版本化评测。"
+    },
+    {
+      "name": "GLM／Z.ai",
+      "status": "已检查／72小时验证缺口",
+      "url": "https://huggingface.co/zai-org",
+      "note": "GLM-5.4发布后继续查官网/HF/API；开放权重最新仍为GLM-5.3，缺完整模型卡和标准API价。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.stepfun.com/",
+      "note": "官网、开发者入口、GitHub/HF均查；最新仍为10月15日Step5 Preview。"
+    },
+    {
+      "name": "其他中国模型公司",
+      "status": "已检查／无成条目新增",
+      "url": "https://huggingface.co/models",
+      "note": "补查百度、腾讯、字节、商汤、百川、零一；无官方交叉确认的近24小时重大发布。"
+    },
+    {
+      "name": "Artificial Analysis／Epoch／METR",
+      "status": "已检查／目标模型结果缺失",
+      "url": "https://artificialanalysis.ai/",
+      "note": "未见GLM-5.4的AA、Epoch或METR结果；METR 11月20日更新不是GLM专项测试。"
+    },
+    {
+      "name": "last30days补充检索",
+      "status": "已执行／4来源完成、噪声较高",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "v3.28.1固定提交执行，日期窗11月25—26，plan/free sources/no cookies；Reddit 12、YouTube 1、HN 17、GitHub 11。Reddit直接访问403后用公开替代索引；低质量视频未采纳。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "已检查／Boston原始讲话仍缺",
+      "url": "https://bostoninvestmentconference.com/agenda",
+      "note": "检查本人、主办方、Ted Seides；10月29日Boston场仍无原始音视频/字幕/文字稿。"
+    },
+    {
+      "name": "Brad Gerstner／Altimeter",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.altimeter.com/",
+      "note": "官网、X线索及节目索引未见新长文或访谈。"
+    },
+    {
+      "name": "Sarah Guo",
+      "status": "已检查／线索不足",
+      "url": "https://x.com/saranormous",
+      "note": "检索到11月24日第三方推荐线索，但未获得本人原帖全文，未扩写。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "已检查／无可核实新增",
+      "url": "https://eladgil.com/",
+      "note": "博客、公开X与访谈索引未见新增。"
+    },
+    {
+      "name": "Sundar Pichai／Andy Jassy",
+      "status": "已检查／旧访谈排除",
+      "url": "https://www.youtube.com/results?search_query=Sundar+Pichai+Andy+Jassy",
+      "note": "跨平台回查7天；仅见旧访谈或转载，未冒充新长访谈。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已检查／无可核实新增",
+      "url": "https://econlab.substack.com/",
+      "note": "作者页、Substack、社媒与YouTube均查；无新研究，登录墙未绕过。"
+    },
+    {
+      "name": "Ramp AI Index",
+      "status": "已检查／无可核实新增",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "AI Index、Data和社媒均查；最新研究早于窗口，未外推Ramp客户样本。"
+    },
+    {
+      "name": "The Information",
+      "status": "已检查／仅免费线索",
+      "url": "https://www.theinformation.com/",
+      "note": "11月25日公开标题/导语已查；Anthropic相关独家受订阅墙限制且未充分交叉，未当确认事实。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已检查／无可核实新增",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "主页、archive、公开段落和X线索已查；最新可读周报11月23日。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "已检查／原帖读取受限",
+      "url": "https://x.com/elonmusk",
+      "note": "独立检查科技/宏观帖；页面未稳定展开，索引摘要未当全文。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已检查／有更新",
+      "url": "https://ir.spacex.com/updates/",
+      "note": "11月25日IR发布赠股安排；与Elon个人观点分开，稀释率和执行细节缺口保留。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "Takes、Public Markets Update和社媒互链均查；窗口内无新观点。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已检查／有更新",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "确认11月25日电力新增装机图；按机构研究收录，未等同数据中心可用电力。"
+    },
+    {
+      "name": "TrendForce官方Substack",
+      "status": "已检查／无成条目新增",
+      "url": "https://insights.trendforce.com/archive",
+      "note": "archive、Weekly Radar、Ground Truth与公开段落均查；无满足原文/方法核验的新条目。"
+    },
+    {
+      "name": "Citrini Research",
+      "status": "已检查／无成条目新增",
+      "url": "https://www.citriniresearch.com/archive",
+      "note": "archive、公开Notes和Semis/Market Memo线索均查；无免费完整核验的新TMT观点。"
+    },
+    {
+      "name": "美国科技公司IR与财报",
+      "status": "已检查／补录Dell与Workday",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "逐一检查主要科技/半导体/AI数据中心供应链IR；确认11月24日晚Dell、Workday财报。"
+    },
+    {
+      "name": "Sandisk／AXT",
+      "status": "已检查／无新财报",
+      "url": "https://investor.sandisk.com/",
+      "note": "SNDK、AXTI IR和日历已查；既有财报历史收录，SNDK跌幅仅作市场异动。"
+    },
+    {
+      "name": "Claude Duet／NVIDIA GTC／产品文档",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.anthropic.com/",
+      "note": "产品入口、活动/技术文档和开发者变更均查；无新专题。"
+    },
+    {
+      "name": "战争、政治与科技监管",
+      "status": "已检查／有风险线索",
+      "url": "https://www.reuters.com/business/energy/oil-prices-fall-supply-glut-concerns-offset-middle-east-disruption-fears-2026-11-25/",
+      "note": "美伊/中东、俄乌、中美关税与美国选举均查；Ras Tanura为当事方声称、未独立确认。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "已检查／操作已实施",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026112416390750568/index.html",
+      "note": "核验8000亿元MLF和5000亿元逆回购；MLF单项净回笼2000亿元。"
+    },
+    {
+      "name": "美国与亚洲市场",
+      "status": "已检查／11月25日完整收盘",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "note": "核对美国四大指数/广度及中港日韩台；缺失外资/ETF/融资数据不补造。"
+    },
+    {
+      "name": "Wind／市场图表",
+      "status": "已检查／当前会话无可调用入口",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "用户已安装Wind但当前会话无入口；缺四组完整对齐历史，按规则省略trend。"
+    },
+    {
+      "name": "AceCamp／Cubox",
+      "status": "已完成／只读",
+      "url": "https://www.acecamptech.com/",
+      "note": "查询11月25日北京时间自然日；普通14、归档0，分页至null并去重，全文读4篇；未改收藏/归档/已读。"
+    },
+    {
+      "name": "科技播客与小宇宙",
+      "status": "已检查／无可核实新长访谈",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/670f3da40d2f24f28978736f",
+      "note": "核心节目与发现页近24小时/7天均查；无满足身份、日期和原始字幕核验的新节目。"
+    },
+    {
+      "name": "发布前自检",
+      "status": "已完成",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "已检查重大监管/宏观政策/SOX/中日韩台资金面/新增信源/财报/中国模型与72小时测评；分类无跨栏重复。"
+    }
+  ],
+  "updatedAt": "2026-11-26T08:40:35+08:00"
+}
