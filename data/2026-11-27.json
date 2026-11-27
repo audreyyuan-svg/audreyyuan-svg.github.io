@@ -1,0 +1,860 @@
+{
+  "date": "2026-11-27",
+  "title": "AI Tracker日报｜2026-11-27",
+  "intro": "美国BIS远程算力规则开始从芯片物流约束延伸至云端访问与模型训练节奏，Reuters称Z.ai与Moonshot下一代模型排期承压，但公司未确认具体延期。中国发布新一代通信网实施方案，明确6G、万兆光网、低轨卫星互联网与算网协同方向。Anthropic披露Claude代理参与将Messages API从Python迁移至Rust，验证成本而非代码生成速度成为核心瓶颈。美股感恩节休市，亚洲风险资产反弹；AceCamp核验11篇并精读4篇。",
+  "coverage": "统计截至2026-11-27 08:42（Asia/Shanghai），重点覆盖过去24小时并回查7天；美国股票与国债采用11月25日最近完整交易日，亚洲采用11月26日完整收盘。仅使用免费公开网页、官方材料、公开社媒可读部分、现有套餐内工具与已授权只读收藏；未购买服务、未调用付费API、未读取浏览器Cookie。",
+  "takeaways": [
+    "美国BIS远程访问规则11月19日生效，Reuters称其与反蒸馏措施正拖慢中国下一代模型节奏；具体GLM-5.5、Kimi K4排期来自匿名信源，Z.ai未评论，不能视为公司确认。",
+    "中国三部门印发新一代通信网方案：到2030年推进5G-A、适时建设6G、重点部署万兆光网并基本建成低轨卫星互联网，算网协同与光通信设备进入中长期资本开支主线。",
+    "Anthropic称API流量自2024年初至2026年秋增长约1800倍；Claude一周写出Rust核心路径，但真正耗时的是生产影子流量、隐私保护与非确定性输出下的等价验证。",
+    "Qwen4-Max Preview已于11月25日退役并自动路由至qwen4-max，标准价替代预览折扣；这是真实API生命周期变化，不是新旗舰发布。",
+    "11月26日美国感恩节休市；亚洲反弹但A股内部宽度仍弱，恒生科技+1.16%、日经+0.86%、KOSPI+0.29%、台湾加权+2.50%。"
+  ],
+  "sectionOverviews": {
+    "technology": {
+      "summary": "科技主线由算力监管、网络基础设施、模型服务生命周期与工程验证组成。政策端同时收紧跨境高端算力访问、推动国内6G与算网建设；产品端没有经官方确认的新中国旗舰模型，真正可核验的变化是Qwen API退役迁移与Anthropic生产工程披露。",
+      "points": [
+        "变化：BIS远程访问规则生效并影响训练资源获取；中国发布2030通信网建设路线；Anthropic核心API完成Rust迁移；Qwen4-Max Preview退役。",
+        "分歧/反证：Reuters的模型延期细节来自匿名人士；AceCamp多项ARR、GPU价格和客户份额是匿名渠道口径；GLM-5.4仍无AA、Epoch或METR公开结果。",
+        "观察：GLM-5.5与Kimi K4官方排期、BIS许可与云服务执行口径、6G/万兆光网试点预算、Qwen自动路由后的成本与兼容性、Anthropic迁移后的CPU和可靠性指标。"
+      ]
+    },
+    "markets": {
+      "summary": "美股感恩节休市使价格发现暂停，最近完整交易日仍是11月25日；亚洲11月26日普遍反弹，但A股指数横盘而下跌家数明显占优。Brent继续计入中东供应风险，WTI当日无正式结算，不能与Brent结算价并列比较。",
+      "points": [
+        "变化：美国现金股市与国债休市；Brent 1月合约结算96.57美元，WTI仅有13:21 ET电子报价84.84美元；恒指+1.19%、台湾加权+2.50%。",
+        "分歧/反证：A股上证+0.01%、沪深300+0.06%，但沪深约1766家上涨、3642家下跌；油价风险溢价包含尚未完全独立核验的袭击与水雷声称。",
+        "观察：感恩节后缩短交易日的量价、SOX与存储链是否止跌、Brent/WTI重新同步结算后的价差、亚洲外资与成交额持续性。"
+      ]
+    },
+    "research": {
+      "summary": "11月26日AceCamp定向检索返回普通收藏11篇、归档0篇，全部核验为acecamptech.com。4篇全文围绕云模型商业化、光模块供给、北美模型竞争与算力租赁；共同指向需求增长，但最关键数字均来自匿名专家，必须与官方财报、BIS文本和可复现实测分开。",
+      "points": [
+        "变化：渠道称企业模型调用、800G/1.6T交付和国内算力租赁仍强；多模型路由与按量付费降低单一模型锁定。",
+        "分歧/反证：北美模型厂商纪要中的ARR、NRR和模型份额与公开S-1口径存在待核对项；GPU现货与合规解释缺成交凭证；光模块出货与客户认证未经客户确认。",
+        "观察：公开云模型收入、1.6T DSP交付与NPO认证、BIS逐案许可、GPU真实成交价、Anthropic公开客户集中度与多模型路由比例。"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "us-remote-compute-rule-china-models-20261126",
+      "category": "产业链新闻",
+      "title": "远程算力管制开始传导至中国模型迭代节奏",
+      "summary": "BIS 11月16日发布临时最终规则，11月19日生效，把特定先进算力的远程访问、聚合TPP及穿透式客户识别纳入管制。Reuters 11月26日引述匿名人士称，Z.ai下一代GLM-5.5可能延至2027年一季度或以后，Moonshot若失去海外算力，Kimi大版本间隔可能由约半年拉长至一年以上；报道还称OpenAI、Anthropic的反蒸馏措施提高了追赶难度。Z.ai未评论，Moonshot排期亦未由公司公开确认。",
+      "why": "监管从物理芯片流向云端使用权延伸，可能改变中国模型公司的训练规模、发布频率和资本效率；但匿名排期不能当公司指引。",
+      "source": "BIS官方规则与Reuters",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "publishedAt": "2026-11-26",
+      "evidence": "BIS官方确认规则及11月19日生效；模型延期、训练资源和反蒸馏影响来自Reuters匿名信源，Z.ai未评论。",
+      "tags": [
+        "中国模型",
+        "科技监管",
+        "BIS",
+        "GLM",
+        "Kimi",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "qwen4-max-preview-retired-20261125",
+      "category": "产业链新闻",
+      "title": "Qwen4-Max Preview退役并自动路由至正式版",
+      "summary": "Qwen Cloud官方变更日志显示，qwen4-max-preview已于11月25日10:00（UTC+8）退役。原模型ID暂可调用，但请求会自动路由至qwen4-max，计费与用量统计按正式版执行；预览折扣结束，成本可能上升。官方建议开发者更新模型ID。11月23日另上线qwen-audio-3.1-live，但并非11月26日新发布。",
+      "why": "模型ID兼容不等于价格兼容；自动路由会影响成本归因、回归测试和生产可复现性，开发者应固定版本并重新核对账单。",
+      "source": "Qwen Cloud官方模型变更日志",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "publishedAt": "2026-11-25",
+      "evidence": "发布日期、退役时间、自动路由和计费变化均来自官方日志；未找到相应独立效果评测。",
+      "tags": [
+        "Qwen",
+        "Qwen4-Max",
+        "API",
+        "价格",
+        "中国模型",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "anthropic-messages-api-rust-20261125",
+      "category": "产业链新闻",
+      "title": "Anthropic用Claude代理迁移Messages API至Rust",
+      "summary": "Anthropic披露，Messages API流量自2024年初至2026年秋增长约1800倍。Claude在约一周内写出Rust核心请求路径，但生产迁移的难点是验证：Python版本持续变化、模型输出非确定、团队又不能读取客户请求。工程团队用影子流量生成差异指纹，让代理在隔离环境复现并修复，再经人工评审进入外层验证。早期只把解析器改写为Rust约降低8%至10% CPU，但跨语言复杂度不划算，最终转向完整迁移。",
+      "why": "案例显示代理编码速度已不是大型生产系统的主要约束；可观测性、隐私、等价验证和人工审查决定AI工程的真实ROI。",
+      "source": "Anthropic工程博客",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "publishedAt": "2026-11-25",
+      "evidence": "流量、CPU下降、迁移时间与验证流程均为公司自述，尚缺独立性能审计；文章明确指出代理只能看到差异指纹而非客户内容。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Rust",
+        "AI工程",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "china-nextgen-network-plan-20261126",
+      "category": "产业链新闻",
+      "title": "中国发布新一代通信网建设实施方案",
+      "summary": "工信部、网信办、发改委印发实施方案，目标到2030年建成覆盖完善、性能领先的新一代通信网：推进5G-A规模覆盖、适时开展6G建设、重点部署万兆光网，基本建成低轨卫星互联网系统，并建设全国统一算力监测调度平台和高质量算力传输通道。方案还提出400Gbps及以上骨干光传输、算网协同、智能体互联网络等试点方向。",
+      "why": "政策把6G、光通信、卫星互联网和算力网络纳入统一基建框架，影响运营商资本开支、光模块/交换设备需求与数据中心跨区域调度。",
+      "source": "中央网信办转载官方方案",
+      "url": "https://www.cac.gov.cn/2026-11/26/c_1797453575920530.htm",
+      "publishedAt": "2026-11-26",
+      "evidence": "目标和任务来自工信部联通信〔2026〕267号；方案为规划与实施要求，不等于项目已招标、额度已落实或收入已确认。",
+      "tags": [
+        "6G",
+        "万兆光网",
+        "算力网络",
+        "卫星互联网",
+        "产业链新闻"
+      ]
+    },
+    {
+      "id": "elad-gil-sourcery-exit-window-20261126",
+      "category": "投资人观点",
+      "title": "Elad Gil：AI创业公司应把出售讨论变成董事会常规议题",
+      "summary": "Elad Gil在Sourcery 11月26日访谈中称，多数AI创业公司应至少每六个月审视一次出售选项，未来12至18个月可能是部分公司的估值高点，但并非所有公司都应卖。他建议把买方成长性、独立增长路径、竞争冲击、创始人状态和留任条款一起比较；同时认为AI仍会扩展至芯片设计、固件、内核和生物领域，广泛渗透可能需要约十年。",
+      "why": "观点把AI估值波动转化为资本配置与董事会流程：高融资估值并不替代对独立现金流和退出条件的持续检验。",
+      "source": "Sourcery with Molly O'Shea原始YouTube节目",
+      "url": "https://youtu.be/pvcKnPGCvSg",
+      "publishedAt": "2026-11-26",
+      "evidence": "核验嘉宾、节目首发日期与1小时13分钟原始视频；可读机器字幕显示关键段落约53:43、56:19、1:03:44和1:10:51。last30days抓到视频但字幕接口429，故摘要以公开字幕页与原视频交叉。",
+      "tags": [
+        "Elad Gil",
+        "投资人观点",
+        "AI创业",
+        "并购",
+        "估值"
+      ]
+    },
+    {
+      "id": "china-model-72h-check-20261127",
+      "category": "独立测评",
+      "title": "中国模型72小时跟踪｜无新旗舰，GLM-5.4仍缺独立结果",
+      "summary": "截至11月27日08:42，DeepSeek、MiniMax、Qwen、Kimi、GLM/Z.ai与StepFun均未见11月26日经官方确认的新旗舰或小版本。Qwen仅有API生命周期变化；GLM-5.4发布后仍未见Artificial Analysis、Epoch或METR的公开结果，也未见开放权重与标准API价格。last30days在Reddit、YouTube、HN、GitHub返回40条候选，但高分内容主要是聚合摘要或无复现设置的讨论，未采纳为能力证据。",
+      "why": "没有独立可复现实测时，官方自测、媒体匿名信源、社区热度与真实任务体验不能互相替代；当前结论只能是待验证。",
+      "source": "中国模型官方页与独立测评机构公开页",
+      "url": "https://artificialanalysis.ai/",
+      "publishedAt": "2026-11-27",
+      "evidence": "逐一检查官网、模型卡、GitHub/HF、API与价格；AA/Epoch/METR未见GLM-5.4条目。未用低质量聚合排名补造测评分数。",
+      "tags": [
+        "独立测评",
+        "GLM-5.4",
+        "DeepSeek",
+        "MiniMax",
+        "Qwen",
+        "Kimi",
+        "StepFun"
+      ]
+    },
+    {
+      "id": "global-macro-holiday-oil-20261126",
+      "category": "宏观点评",
+      "title": "海外宏观短评｜美市休市，Brent继续计入中东风险",
+      "summary": "11月26日美国股票与现金国债市场因感恩节休市；最近完整日2年/10年美债仍为11月25日4.61%/4.85%，日变动-2bp/-6bp。DXY 11月26日约103.80、+0.13%。1月Brent结算96.57美元、+1.2%；WTI当日无正式结算，13:21 ET电子报价84.84美元、+1.39%。长端回落利好TMT折现率，但油价风险溢价抬升通胀与能源成本。",
+      "why": "休市日不能制造新的美债或美股收盘；Brent结算与WTI盘中电子报价必须分开。",
+      "source": "公开市场报价与Reuters",
+      "url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-iran-claims-mine-strikes-ships-2026-11-26/",
+      "publishedAt": "2026-11-26",
+      "evidence": "美债采用11月25日收盘；Brent为11月26日结算，WTI明确无结算且标注报价时点。袭击与水雷部分为当事方声称。",
+      "tags": [
+        "宏观点评",
+        "美债",
+        "美元",
+        "Brent",
+        "WTI",
+        "战争与政治"
+      ]
+    },
+    {
+      "id": "china-green-power-market-20261126",
+      "category": "宏观点评",
+      "title": "中国政策短评｜跨省与省内绿电交易首次统一出清",
+      "summary": "国家电网披露，全国统一规则下首笔跨省与省内绿电交易11月26日完成，1615个市场主体成交62亿千瓦时，并同步转移绿证。此举从制度上合并两级申报与出清，改善跨区价格信号，但成交量不等于数据中心新增供电，也不代表财政补贴或股市直接增量资金。对TMT的传导主要在绿电采购便利度、能源合规与长期电力成本。",
+      "why": "实施与成交已经发生，但额度、并网能力和稳定供电仍需分开；不能把绿电成交外推为算力项目立刻可用容量。",
+      "source": "中国政府网/新华社",
+      "url": "https://english.www.gov.cn/news/202611/26/content_WS6b07f4ccc6d00ca5f9a0e9fe.html",
+      "publishedAt": "2026-11-26",
+      "evidence": "参与主体、成交电量和机制来自国家电网口径；未把减排估算当作审计结果。",
+      "tags": [
+        "宏观点评",
+        "中国政策",
+        "绿电",
+        "统一电力市场",
+        "数据中心"
+      ]
+    },
+    {
+      "id": "us-market-holiday-20261126",
+      "category": "市场资金面",
+      "title": "美国市场资金面｜感恩节休市，价格发现停留在11月25日",
+      "summary": "11月26日美国现金股市休市，未产生新的标普500、纳指、道指或SOX收盘。最近完整交易日仍为11月25日：标普500 -0.25%、纳指-0.62%、道指+0.33%、SOX-0.65%。当日NYSE和Nasdaq上涨家数仍多于下跌，卖压集中在大型科技与半导体。成交量/20日均量与ETF申赎仍缺统一公开口径，不写量比或净流入。",
+      "why": "节假日降低跨市场价格可比性；真正的新信号要等11月27日缩短交易日量价，且缩短时段也需谨慎比较。",
+      "source": "美国交易日历与11月25日公开收盘",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "publishedAt": "2026-11-26",
+      "evidence": "明确标记休市并沿用最近完整交易日，未把旧收盘冒充11月26日行情。",
+      "tags": [
+        "市场资金面",
+        "美股",
+        "感恩节",
+        "SOX",
+        "休市"
+      ]
+    },
+    {
+      "id": "asia-market-funds-20261126",
+      "category": "市场资金面",
+      "title": "亚洲市场资金面｜科技反弹，但A股内部宽度仍偏弱",
+      "summary": "11月26日，上证+0.01%、沪深300 +0.06%、创业板+0.29%，沪深约1766家上涨、3642家下跌，成交约1.33万亿元、较前日缩量4.77%；恒指+1.19%、恒科+1.16%，港股成交约2124.5亿港元。日经225 +0.86%、TOPIX +0.11%；KOSPI +0.29%；台湾加权+2.50%。各地均为当地完整交易日，未用A股“主力净流入”或停止披露的北向日频净额。",
+      "why": "区域科技资产在美股休市时反弹，但A股指数与市场宽度背离，说明修复仍集中；后续需外资、融资余额与成交额确认。",
+      "source": "HKEX、RTHK与各市场公开行情",
+      "url": "https://www.hkex.com.hk/?sc_lang=en",
+      "publishedAt": "2026-11-26",
+      "evidence": "港股与A股指数来自HKEX/RTHK，日日韩台收盘交叉公开行情；日本日频外资与台湾机构净额缺口保留。",
+      "tags": [
+        "市场资金面",
+        "A股",
+        "港股",
+        "日本",
+        "韩国",
+        "台湾"
+      ]
+    },
+    {
+      "id": "acecamp-collection-overview-20261126",
+      "category": "调研纪要",
+      "title": "AceCamp收藏总览｜11篇覆盖云模型、光模块、算力与端侧AI",
+      "summary": "对11月26日AceCamp来源定向检索：普通收藏11篇、归档0篇。题目覆盖云模型商业化、800G/1.6T光模块、XP人形机器人、北美SOTA模型、AI眼镜、整柜服务器、逆变器、压电陶瓷、先进封装、北美光模块需求与AI算力租赁。全部核验为acecamptech.com原链接；仅读取云模型、光模块、北美SOTA模型和算力租赁4篇全文，其余仅保留题名与链接。",
+      "why": "把元数据总览与全文精读分开，避免将未读正文、平台AI摘要或匿名渠道数字冒充公司披露。",
+      "source": "AceCamp用户授权收藏元数据",
+      "url": "https://www.acecamptech.com/",
+      "publishedAt": "2026-11-26",
+      "evidence": "普通与归档均分页至nextCursor=null；首个空页nextCursor非空时继续，最终按ID/URL去重。关键词定向检索受Cubox索引覆盖限制，不宣称穷尽全库。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "收藏总览",
+        "AI基础设施"
+      ],
+      "relatedSources": [
+        {
+          "date": "2026-11-26",
+          "title": "头部云厂商调研：大模型商业化收入十倍增长与算力成本分层博弈",
+          "url": "https://www.acecamptech.com/article/detail/70569678",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "光模块二线厂商调研：800G/1.6T与NPO",
+          "url": "https://www.acecamptech.com/article/detail/70569661",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "XP人形机器人Iron更新",
+          "url": "https://www.acecamptech.com/article/detail/70569677",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "北美SOTA模型厂商调研",
+          "url": "https://www.acecamptech.com/article/detail/70569672",
+          "evidence": "已读全文并精读。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "韩系厂商AI眼镜",
+          "url": "https://www.acecamptech.com/article/detail/70569681",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "服务器行业整柜化",
+          "url": "https://www.acecamptech.com/article/detail/70569673",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "逆变器Q4调研",
+          "url": "https://www.acecamptech.com/article/detail/70569659",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "MFC/压电陶瓷调研",
+          "url": "https://www.acecamptech.com/article/detail/70569671",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "封测/HBM/先进封装设备调研",
+          "url": "https://www.acecamptech.com/article/detail/70569610",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "北美光模块需求：1.6T认证与LPO",
+          "url": "https://www.acecamptech.com/article/detail/70569663",
+          "evidence": "仅核验题名与来源。"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "AI算力租赁与BIS新规",
+          "url": "https://www.acecamptech.com/article/detail/70569624",
+          "evidence": "已读全文并精读。"
+        }
+      ]
+    },
+    {
+      "id": "acecamp-cloud-model-commercialization-20261126",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜企业模型用量加速，但价格与多模型路由削弱锁定",
+      "summary": "匿名云厂商专家称，月度付费客户、日均token与模型收入今年显著增长，公有云客户的验收回款快于央国企和金融私有化项目。客户普遍偏好按量付费，并在能力接近时比较价格、并发和延迟；不再依赖微调后，切换模型可通过提示词、知识库和校验策略完成。材料还声称文本、图像、视频和音频推理成本均明显下降，但未给审计账单、统一任务或样本分母。",
+      "why": "精读原因：材料同时覆盖AI商业化、成本下降、渠道折扣与多模型迁移，可检验调用增长能否转化为可持续毛利。",
+      "source": "AceCamp匿名头部云厂商专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569678",
+      "publishedAt": "2026-11-26",
+      "evidence": "全文来自授权收藏；客户数、token、收入和成本降幅均为匿名渠道口径，不是公司披露。涉及合规边界的获取渠道未采纳为事实或操作建议。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "云计算",
+        "MaaS",
+        "AI商业化"
+      ],
+      "research": {
+        "meetingDate": "2026-11-26",
+        "savedAt": "2026-11-26T16:06:17+08:00",
+        "updatedAt": "2026-11-26T16:06:22+08:00",
+        "sample": "匿名头部云厂商专家；样本规模与公司身份未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "企业调用与付费意愿上升",
+              "按量付费和多模型路由压低锁定"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "增长与降本数字缺公开账单",
+              "公有云与私有化回款差异未量化"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "公开MaaS收入与毛利",
+              "单任务总成本、并发、续费与扩席"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-optical-modules-20261126",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜1.6T交付瓶颈从需求转向3nm DSP与认证",
+      "summary": "匿名二线光模块厂商专家称，Cisco、Meta、Microsoft与Oracle的800G需求仍在增长，1.6T处于互联互通、可靠性和功耗验证阶段。材料把3nm DSP列为1.6T主要瓶颈，称Marvell和Broadcom占绝大部分供给，台积电3nm产能竞争限制交付；CW与PIC国产替代更多用于降BOM。NPO项目仍以共同开发和测试为主，订单预计在2027年后段逐步落地。",
+      "why": "精读原因：把光模块需求、上游DSP供给、客户认证和NPO时点放在同一链条，能区分订单意向与可交付收入。",
+      "source": "AceCamp匿名光模块产业专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569661",
+      "publishedAt": "2026-11-25",
+      "evidence": "全文来自授权收藏；客户出货、份额、库存与订单时点未经Cisco、Meta、Microsoft、Oracle、Marvell或Broadcom确认。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "光模块",
+        "1.6T",
+        "DSP",
+        "NPO"
+      ],
+      "research": {
+        "meetingDate": "2026-11-25",
+        "savedAt": "2026-11-26T10:05:02+08:00",
+        "updatedAt": "2026-11-26T10:05:12+08:00",
+        "sample": "匿名二线光模块厂商专家；公司未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "800G需求仍强，1.6T受DSP与认证约束",
+              "NPO仍处共同开发阶段"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "出货与客户份额缺客户确认",
+              "2027订单时点取决于测试与机房部署"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "3nm DSP交付与价格",
+              "1.6T认证、NPO高低温可靠性与实际订单"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-north-america-sota-models-20261126",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜多模型路由正在切分高低价值推理任务",
+      "summary": "匿名北美模型厂商渠道称，企业把简单、高吞吐任务路由至更便宜的中国开源模型，把复杂或强合规任务留给闭源前沿模型；云市场额度、客户集中度和模型组合决定收入质量。材料进一步给出Anthropic ARR、NRR、客户集中度、模型收入占比和2027增长目标等大量数字，但多项与公开S-1口径仍需逐一核对，不能作为公司指引。其最有用的方向性结论是：多模型采用不等于完全流失，而是预算按任务风险重新分配。",
+      "why": "精读原因：材料直接讨论中国开源模型对北美闭源模型的价格冲击，以及企业路由、合规与切换成本的竞争边界。",
+      "source": "AceCamp匿名北美模型厂商专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569672",
+      "publishedAt": "2026-11-26",
+      "evidence": "全文来自授权收藏；ARR、NRR、模型份额、基准分数和产品路线均属匿名渠道说法，未获Anthropic确认。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "Anthropic",
+        "多模型路由",
+        "中国开源模型"
+      ],
+      "research": {
+        "meetingDate": "2026-11-26",
+        "savedAt": "2026-11-26T13:08:50+08:00",
+        "updatedAt": "2026-11-26T13:08:58+08:00",
+        "sample": "匿名北美SOTA模型厂商相关专家；身份与样本规模未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "低风险任务向低价模型迁移",
+              "高风险与合规任务仍偏闭源前沿模型"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "大量财务数据与路线缺官方确认",
+              "自称基准分数缺测试设置与版本"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "公开客户集中度与云渠道收入",
+              "企业路由比例、每任务成本与留存"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "acecamp-ai-compute-rental-20261126",
+      "category": "调研纪要",
+      "title": "AceCamp精读｜BIS新规扰动GPU现货，但价格与回流判断仍是渠道口径",
+      "summary": "匿名算力租赁专家认为，BIS远程访问规则使海外新增租赁合同和第三国数据中心面临更严格KYC与许可审查，并引发国内B300、H200和RTX 5090现货价格先跌后升。材料称高价B300出现货主间流转而非终端部署，海外未通电资产可能重新寻找买家。方向上与BIS规则的跨数据中心聚合和远程访问管制一致，但具体成交价、库存可支撑月数、合同叫停与预算回流均未获交易凭证或公司确认。",
+      "why": "精读原因：材料连接监管文本、GPU二级市场、租赁经济性与国产替代；可帮助识别政策冲击的真实传导链。",
+      "source": "AceCamp匿名AI算力租赁专家纪要",
+      "url": "https://www.acecamptech.com/article/detail/70569624",
+      "publishedAt": "2026-11-26",
+      "evidence": "BIS规则以官方文本交叉；现货价格、库存、合同和客户预算均为匿名渠道。未收录规避出口管制或报关审查的操作性描述。",
+      "tags": [
+        "调研纪要",
+        "AceCamp",
+        "算力租赁",
+        "BIS",
+        "GPU",
+        "国产替代"
+      ],
+      "research": {
+        "meetingDate": "2026-11-26",
+        "savedAt": "2026-11-26T13:09:06+08:00",
+        "updatedAt": "2026-11-26T13:09:11+08:00",
+        "sample": "匿名AI算力租赁产业专家；样本规模未披露",
+        "topics": [
+          {
+            "heading": "核心结论",
+            "bullets": [
+              "远程访问规则收紧海外新增算力",
+              "现货价格与终端租赁经济性可能分离"
+            ]
+          },
+          {
+            "heading": "分歧/反证",
+            "bullets": [
+              "价格与库存缺成交凭证",
+              "海外资产与预算回流并非自动发生"
+            ]
+          },
+          {
+            "heading": "观察",
+            "bullets": [
+              "BIS许可案例与云商KYC",
+              "GPU成交价、上架率、租金与国产集群利用率"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "OpenAI与核心团队",
+      "status": "已检查／产品状态无明确新发布日期",
+      "url": "https://openai.com/business/private-intelligence/",
+      "note": "官网、Release Notes、模型页和核心团队线索均查；Private Inference现标Alpha，但官方页无本窗口明确发布日期，未冒充11月26日新发布。"
+    },
+    {
+      "name": "Tibo @thsottiaux",
+      "status": "已检查／原帖读取受限",
+      "url": "https://x.com/thsottiaux/with_replies",
+      "note": "独立检查近24小时并回查7天；X页面未稳定展开，搜索仅返回旧帖与索引摘要，官方Release Notes未出现可交叉确认的新额度事实。"
+    },
+    {
+      "name": "Anthropic与核心团队",
+      "status": "已检查／有工程更新",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "note": "11月25日工程文章已阅读全文并收录；新闻页无11月26日新模型。Claude Duet产品页亦检查。"
+    },
+    {
+      "name": "DeepSeek",
+      "status": "已检查／无可核实新增",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "官网、API更新、GitHub/HF均查；近24小时无新模型、小版本、价格或开放方式变化。"
+    },
+    {
+      "name": "MiniMax",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.minimax.io/news",
+      "note": "官网、API、GitHub/HF均查；近24小时无新模型或小版本。"
+    },
+    {
+      "name": "Qwen",
+      "status": "已检查／API生命周期变化",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "note": "qwen4-max-preview 11月25日退役并路由至正式版，价格可能上升；qwen-audio-3.1-live为11月23日发布，未冒充当日新品。"
+    },
+    {
+      "name": "Kimi／Moonshot AI",
+      "status": "已检查／匿名延期线索未获确认",
+      "url": "https://huggingface.co/moonshotai",
+      "note": "官网、模型卡、GitHub/HF与API价格均查；Reuters称下一大版本间隔或拉长，但公司未确认具体排期。"
+    },
+    {
+      "name": "GLM／Z.ai",
+      "status": "已检查／72小时验证缺口",
+      "url": "https://huggingface.co/zai-org",
+      "note": "GLM-5.4后续继续查官网/HF/API；AA/Epoch/METR无结果，权重和标准API价仍缺。Reuters称GLM-5.5延期，Z.ai未评论。"
+    },
+    {
+      "name": "StepFun",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.stepfun.com/",
+      "note": "官网、开发者入口、GitHub/HF均查；近24小时无新模型、小版本或价格变化。"
+    },
+    {
+      "name": "其他中国模型公司",
+      "status": "已检查／无成条目新旗舰",
+      "url": "https://huggingface.co/models",
+      "note": "补查百度、腾讯、字节、商汤、百川、零一与蚂蚁；未找到经官方交叉确认的11月26日新旗舰。"
+    },
+    {
+      "name": "Artificial Analysis／Epoch／METR",
+      "status": "已检查／目标模型结果缺失",
+      "url": "https://artificialanalysis.ai/",
+      "note": "未见GLM-5.4或本窗口中国新模型的可核验公开结果；未把第三方聚合排名当机构测评。"
+    },
+    {
+      "name": "last30days补充检索",
+      "status": "已执行／4来源完成，YouTube降级",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "note": "v3.28.1固定提交832d095执行；Python 3.12.14，yt-dlp 2026.11.23；窗口11月26—27，免费Reddit/YouTube/HN/GitHub、plan、no-browser-cookies。返回Reddit 15、YouTube 1、HN 12、GitHub 12；Reddit直连403后由公开Arctic Shift补充，YouTube字幕429且评论超时，未声称完整。"
+    },
+    {
+      "name": "Gavin Baker",
+      "status": "已检查／Boston原始讲话仍缺",
+      "url": "https://bostoninvestmentconference.com/agenda",
+      "note": "本人、主办方、Ted Seides、节目与YouTube均查；10月29日Boston场仍无原始音视频、字幕或文字稿。"
+    },
+    {
+      "name": "Brad Gerstner／Altimeter",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.altimeter.com/",
+      "note": "官网、公开社媒、BG2及节目索引回查7天；未见11月26日新长文或访谈。"
+    },
+    {
+      "name": "Sarah Guo",
+      "status": "已检查／无可核实新增",
+      "url": "https://x.com/saranormous",
+      "note": "本人公开渠道、Conviction与播客索引均查；无新原始长文或访谈。"
+    },
+    {
+      "name": "Elad Gil",
+      "status": "已检查／有原始访谈",
+      "url": "https://youtu.be/pvcKnPGCvSg",
+      "note": "核验11月26日Sourcery原始节目、嘉宾身份和日期；last30days抓到视频但字幕接口429，另用公开机器字幕页交叉并保留时间戳。"
+    },
+    {
+      "name": "Sundar Pichai／Andy Jassy",
+      "status": "已检查／旧访谈排除",
+      "url": "https://www.youtube.com/results?search_query=Sundar+Pichai+Andy+Jassy",
+      "note": "跨平台检查近24小时并回查7天；仅见旧访谈或转载，未冒充新长访谈。"
+    },
+    {
+      "name": "Ara Kharazian",
+      "status": "已检查／无可核实新增",
+      "url": "https://econlab.substack.com/",
+      "note": "作者页、Substack、社媒与视频均查；无本窗口新研究，登录墙未绕过。"
+    },
+    {
+      "name": "Ramp AI Index",
+      "status": "已检查／最新仍为2026-10样本",
+      "url": "https://ramp.com/data/ai-index",
+      "note": "现有套餐内Ramp Data实际读取；最新月为2026-10，AI采用率56.8%，仅代表Ramp客户支付样本，不作当日条目或全市场外推。"
+    },
+    {
+      "name": "The Information",
+      "status": "已检查／仅免费线索",
+      "url": "https://www.theinformation.com/features/ai-agenda",
+      "note": "检查最新文章日期、免费标题和导语；11月25日AI Agenda可见，订阅墙未绕过，未把未读正文当事实。"
+    },
+    {
+      "name": "FUNDA AI",
+      "status": "已检查／最新公开更新早于窗口",
+      "url": "https://fundaai.substack.com/archive",
+      "note": "主页、archive、具体文章公开段落和X线索均查；最新可核验文章为11月25日OKTA/SAIL预览，投资人原文未当独立测评。"
+    },
+    {
+      "name": "Elon Musk本人X",
+      "status": "已检查／原帖读取受限",
+      "url": "https://x.com/elonmusk",
+      "note": "独立检查科技与宏观相关原帖；页面未稳定展开，索引摘要未冒充全文。"
+    },
+    {
+      "name": "SpaceX官方",
+      "status": "已检查／无新经营披露",
+      "url": "https://www.spacex.com/updates/",
+      "note": "官网、IR、官方X线索均查；未找到11月26日新的季度业绩或正式经营披露。FCC一百万颗卫星仅确认2月受理申请，未确认已批准，相关二手说法未收录。"
+    },
+    {
+      "name": "Coatue",
+      "status": "已检查／无可核实新增",
+      "url": "https://www.coatue.com/c/takes",
+      "note": "Takes、Public Markets Update与官网互链社媒均查；窗口内无新观点。"
+    },
+    {
+      "name": "Apollo",
+      "status": "已检查／有更新但不具TMT增量",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+      "note": "11月26日Daily Spark为401(k)缴费比例，属机构研究但与本期TMT主线关联弱，未凑数收录。"
+    },
+    {
+      "name": "TrendForce官方Substack",
+      "status": "已检查／无成条目新增",
+      "url": "https://insights.trendforce.com/archive",
+      "note": "archive、Weekly Radar与公开段落均查；无满足原文和方法核验的新TMT条目。"
+    },
+    {
+      "name": "Citrini Research",
+      "status": "已检查／无成条目新增",
+      "url": "https://www.citriniresearch.com/archive",
+      "note": "archive与公开Notes均查；无免费完整核验的新观点。"
+    },
+    {
+      "name": "美国科技公司IR与财报",
+      "status": "已检查／感恩节无新财报",
+      "url": "https://www.sec.gov/edgar/search/",
+      "note": "逐一检查Apple、Microsoft、Alphabet、Amazon、Meta、NVIDIA、Tesla、IBM、Oracle、Netflix、TI、Lam、AMD、Intel、Broadcom、Micron及重要软件/云；11月26日感恩节无新主要财报。"
+    },
+    {
+      "name": "Sandisk／AXT",
+      "status": "已检查／无新财报",
+      "url": "https://investor.sandisk.com/",
+      "note": "SNDK与AXTI的IR、日历和公告均查；既有财报历史已收录，窗口内无新发布。"
+    },
+    {
+      "name": "Claude Duet／NVIDIA GTC／产品文档",
+      "status": "已检查／Anthropic工程更新入选",
+      "url": "https://www.anthropic.com/",
+      "note": "Claude Duet产品页、Anthropic开发者文档、NVIDIA活动和技术文档及重大分项公告均查；仅Messages API迁移文章满足新增标准。"
+    },
+    {
+      "name": "战争、政治与科技监管",
+      "status": "已检查／有规则与油价传导",
+      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+      "note": "美伊与中东、俄乌、中美关税及美国中期选举均查；BIS规则已生效，油市袭击和水雷为当事方声称；停火与选举表态未当结果。"
+    },
+    {
+      "name": "中国宏观政策",
+      "status": "已检查／绿电交易已实施",
+      "url": "https://english.www.gov.cn/news/202611/26/content_WS6b07f4ccc6d00ca5f9a0e9fe.html",
+      "note": "确认统一规则下首笔62亿千瓦时绿电交易；同日通信网方案另列科技条目。未发现新的总量货币工具实施。"
+    },
+    {
+      "name": "美国与亚洲市场",
+      "status": "已检查／美市休市、亚洲11月26日收盘",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "note": "美国感恩节休市，沿用11月25日最近完整日并明示；中港日韩台使用11月26日收盘，缺失资金流不补造。"
+    },
+    {
+      "name": "Wind／市场图表",
+      "status": "已检查／当前会话无可调用入口",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "用户已安装Wind，但本会话未暴露工具；四组完整对齐历史序列不足，按规则省略trend与重点趋势栏目。"
+    },
+    {
+      "name": "AceCamp／Cubox",
+      "status": "已完成／只读",
+      "url": "https://www.acecamptech.com/",
+      "note": "查询11月26日北京时间自然日；普通11、归档0，普通与归档均分页至null并去重，全文读4篇；未改收藏、归档或已读状态。"
+    },
+    {
+      "name": "科技播客与小宇宙",
+      "status": "已检查／Elad节目入选",
+      "url": "https://www.youtube.com/",
+      "note": "跨平台搜索近24小时并回查7天；核验Sourcery原始节目，其他转载、短剪与旧访谈排除。"
+    },
+    {
+      "name": "发布前自检",
+      "status": "已完成",
+      "url": "https://audreyyuan-svg.github.io/",
+      "note": "已检查重大科技监管、宏观政策、美国SOX、中日韩台资金面、新增信源、财报、中国模型与72小时测评；科技、市场、调研纪要分类无跨栏重复。"
+    }
+  ],
+  "updatedAt": "2026-11-27T08:42:00+08:00",
+  "marketDashboard": {
+    "tradeDate": "2026-11-25",
+    "snapshot": [
+      {
+        "label": "纳斯达克综合指数",
+        "displayValue": "23,585.80",
+        "change": -0.62,
+        "displayChange": "-0.62%",
+        "note": "11月25日16:00 ET最近完整收盘；11月26日休市"
+      },
+      {
+        "label": "标普500",
+        "displayValue": "7,182.78",
+        "change": -0.25,
+        "displayChange": "-0.25%",
+        "note": "11月25日16:00 ET最近完整收盘；11月26日休市"
+      },
+      {
+        "label": "道琼斯工业指数",
+        "displayValue": "50,182.95",
+        "change": 0.33,
+        "displayChange": "+0.33%",
+        "note": "11月25日16:00 ET最近完整收盘；11月26日休市"
+      },
+      {
+        "label": "SOX",
+        "displayValue": "8,774.86",
+        "change": -0.65,
+        "displayChange": "-0.65%",
+        "note": "11月25日指数日终；11月26日休市"
+      },
+      {
+        "label": "美国10年期国债收益率",
+        "displayValue": "4.85%",
+        "change": -6,
+        "displayChange": "-6 bp",
+        "note": "11月25日收盘；11月26日现金国债市场休市"
+      }
+    ],
+    "snapshotNote": "11月26日美国感恩节休市，全部美国股票与国债快照明确采用11月25日最近完整交易日，不作为11月26日新行情；亚洲performance采用11月26日当地完整交易日。",
+    "performance": [
+      {
+        "name": "纳斯达克（11/25）",
+        "changePct": -0.62
+      },
+      {
+        "name": "标普500（11/25）",
+        "changePct": -0.25
+      },
+      {
+        "name": "道指（11/25）",
+        "changePct": 0.33
+      },
+      {
+        "name": "SOX（11/25）",
+        "changePct": -0.65
+      },
+      {
+        "name": "沪深300（11/26）",
+        "changePct": 0.06
+      },
+      {
+        "name": "恒生科技（11/26）",
+        "changePct": 1.16
+      },
+      {
+        "name": "日经225（11/26）",
+        "changePct": 0.86
+      },
+      {
+        "name": "KOSPI（11/26）",
+        "changePct": 0.29
+      },
+      {
+        "name": "台湾加权（11/26）",
+        "changePct": 2.5
+      }
+    ],
+    "movers": [
+      {
+        "symbol": "AMBA",
+        "name": "Ambarella",
+        "session": "最近完整常规交易",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": -19.77,
+        "relativeVolume20d": null,
+        "volumeNote": "11月26日休市；未取得统一可核验20日量比",
+        "catalyst": "内存紧缺压低客户订单与下一季收入指引。",
+        "url": "https://ng.investing.com/news/stock-market-news/earnings-call-transcript-ambarella-q3-2027-profit-beats-but-stock-plunges-93CH-2827759"
+      },
+      {
+        "symbol": "NTNX",
+        "name": "Nutanix",
+        "session": "最近完整常规交易",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": -15.19,
+        "relativeVolume20d": null,
+        "volumeNote": "11月26日休市；未取得统一可核验20日量比",
+        "catalyst": "财报后叠加CEO意外离任。",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nutanix-reports-first-quarter-fiscal-210100989.html"
+      },
+      {
+        "symbol": "HPQ",
+        "name": "HP Inc.",
+        "session": "最近完整常规交易",
+        "asOf": "2026-11-25 16:00 ET",
+        "changePct": 11.49,
+        "relativeVolume20d": null,
+        "volumeNote": "11月26日休市；供应商复权口径有冲突",
+        "catalyst": "财报收入与EPS高于预期，AI PC渗透提升。",
+        "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase/default.aspx"
+      }
+    ],
+    "selectionNote": "美国11月26日休市，科技异动只展示11月25日最近完整常规交易且明确标记，不冒充当日行情。三家公司分别覆盖AI边缘芯片、企业云基础设施软件与AI PC；20日量比缺统一可核验来源，均为null。当前会话未暴露可调用Wind工具，且未取得SOX、四大CSP等权、IGV与10年期收益率完整对齐历史序列，因此按规则整体省略trend字段与重点趋势栏目。",
+    "sources": [
+      {
+        "name": "NYSE交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      },
+      {
+        "name": "11月25日美国市场收盘",
+        "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+      },
+      {
+        "name": "HKEX 11月26日市场概览",
+        "url": "https://www.hkex.com.hk/?sc_lang=en"
+      },
+      {
+        "name": "亚洲市场汇总",
+        "url": "https://news.rthk.hk/rthk/en/component/k2/1879380-20261126.htm"
+      }
+    ]
+  }
+}
